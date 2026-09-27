@@ -154,6 +154,30 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
     C.add("No ghosting: one spreadsheet state per frame", not dbl,
           (f"{len(dbl)} blended frame(s), first: {dbl[0]}") if dbl else
           f"scene transition = {trn.get('scene', '?')}, before/after = {trn.get('morph', '?')}; checked every frame")
+    # blank-card flashes, measured on every decoded frame of the MP4
+    sw, shh = 384, 216
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(mp4), "-vf", f"scale={sw}:{shh},format=gray",
+                          "-f", "rawvideo", "-"], capture_output=True).stdout
+    import numpy as np
+    frames = np.frombuffer(raw, np.uint8).reshape(-1, shh, sw)
+    k = sw / W
+    cx0, cy0, cw0, ch0 = manifest["card"]
+    card_px = frames[:, int(cy0 * k) + 4:int((cy0 + ch0) * k) - 4, int(cx0 * k) + 4:int((cx0 + cw0) * k) - 4].astype(float)
+    blank = (card_px.std(axis=(1, 2)) < 3) & (card_px.mean(axis=(1, 2)) > 245)
+    runs, start = [], None
+    for i, bflag in enumerate(list(blank) + [False]):
+        if bflag and start is None:
+            start = i
+        elif not bflag and start is not None:
+            runs.append((start / fps, (i - start) * 1000 / fps))
+            start = None
+    C.add("Blank white card intervals (informational)", True,
+          ", ".join(f"{a:.2f}s ({ms:.0f} ms)" for a, ms in runs) or "none", "info")
+    for s in cfg["scenes"]:
+        if s is not cfg["scenes"][0] and s.get("transition", 1) == 0:
+            near = [(a, ms) for a, ms in runs if abs(a - s["_start"]) < 0.3]
+            C.add(f"Clean cut at {s['_start']:.2f}s into {s.get('id')}: no blank flash", not near,
+                  ", ".join(f"{a:.2f}s ({ms:.0f} ms)" for a, ms in near) or "0 blank frames within 0.3 s of the cut")
     # transition strip (from the encoded MP4) for visual readback of every cut / dip / swap
     marks = []
     for i, s in enumerate(timeline):

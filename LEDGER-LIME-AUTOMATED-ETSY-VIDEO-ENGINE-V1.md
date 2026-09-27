@@ -1,6 +1,6 @@
 # Ledger & Lime - Automated Etsy Video Engine V1
 
-Status: **engine READY - Product #13 V3.2 FINAL rendered (QA PASS, owner-approved reconstruction captures)**
+Status: **engine READY - Product #13 V3.3 FINAL rendered (QA PASS, owner-approved reconstruction captures)**
 Date: 2026-09-27. Branch: `claude/wonderful-cray-aqbfyp`. Etsy was not touched.
 
 ## 1. What it is
@@ -185,6 +185,20 @@ Changes:
 - **OCR readback hardening:** each phrase is read from 3 adjacent frames, so single-frame codec noise can't flip a digit.
 
 Unchanged: crops, STU IDs, 60% → 90%, No Recent Data → Improving, Needs Attention 2 → 1, typography, colours, highlights, scene timing, and the end card.
+
+## 8c. Product #13 - Video V3.3 FINAL (2026-09-27)
+
+V3.2 is the exact base, with one correction.
+
+- **Output:** `video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.3-FINAL.mp4` (1920x1080, 15.00 s, 5.32 MB).
+- **QA:** `video-engine/output/p13-iep-tracker/VIDEO-QA-REPORT-P13-V3.3.md` records **PASS: 103 pass, 0 warn, 0 fail**.
+
+The change:
+
+- The Automatic Result → Final Dashboard transition is now a clean direct cut at exactly 9.00 s (`"transition": 0` on `buyer-outcome`). It replaces the dip that showed a blank white card for about 167 ms. This is a config change only; the engine and template are unchanged.
+- A frame-by-frame diff against V3.2 shows only 8.80-9.17 s changed. Elsewhere the mean pixel difference is ≤ 0.19/255, i.e. encode noise.
+- **New QA check:** blank-card intervals are measured on every decoded frame of the MP4. Any scene set to a clean cut (`transition: 0`) fails if a blank frame appears within 0.3 s of it.
+- **Still present (not changed on request):** the 2.43 s (167 ms) and 5.93 s (133 ms) dips.
 
 ## 9. Reusability test - PASS
 

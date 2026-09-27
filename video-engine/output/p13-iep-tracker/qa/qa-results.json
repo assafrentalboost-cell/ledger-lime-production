@@ -54,7 +54,7 @@
   {
    "check": "Etsy: file < 100 MB",
    "status": "PASS",
-   "detail": "5.42 MB"
+   "detail": "5.32 MB"
   },
   {
    "check": "No audio track (Etsy plays muted)",
@@ -95,6 +95,16 @@
    "check": "No ghosting: one spreadsheet state per frame",
    "status": "PASS",
    "detail": "scene transition = dip, before/after = cut; checked every frame"
+  },
+  {
+   "check": "Blank white card intervals (informational)",
+   "status": "PASS",
+   "detail": "2.43s (167 ms), 5.93s (133 ms)"
+  },
+  {
+   "check": "Clean cut at 9.00s into buyer-outcome: no blank flash",
+   "status": "PASS",
+   "detail": "0 blank frames within 0.3 s of the cut"
   },
   {
    "check": "Mobile preview video written",
@@ -479,7 +489,7 @@
   {
    "check": "Sources cleared for listing",
    "status": "PASS",
-   "detail": "source_status = reconstruction; listing approved by Assaf (owner) on 2026-09-27: V3 creative direction approved; V3.1 removed internal labels and uses privacy-safe identifiers; V3.2 replaces overlapping dissolves with dip-to-blank scene transitions and clean before/after cuts."
+   "detail": "source_status = reconstruction; listing approved by Assaf (owner) on 2026-09-27: V3 creative direction approved; V3.1 removed internal labels and uses privacy-safe identifiers; V3.2 replaced overlapping dissolves; V3.3 replaces the blank-card dip at 9.0 s (Automatic Result -> Final Dashboard) with a clean cut."
   },
   {
    "check": "No internal / QA labels in any frame",
@@ -656,7 +666,7 @@
    "start_time": "0.000000",
    "duration_ts": 230400,
    "duration": "15.000000",
-   "bit_rate": "2886708",
+   "bit_rate": "2832793",
    "bits_per_raw_sample": "8",
    "nb_frames": "450",
    "extradata_size": 50,
@@ -688,15 +698,15 @@
    }
   },
   "format": {
-   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.2-FINAL.mp4",
+   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.3-FINAL.mp4",
    "nb_streams": 1,
    "nb_programs": 0,
    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
    "format_long_name": "QuickTime / MOV",
    "start_time": "0.000000",
    "duration": "15.000000",
-   "size": "5417461",
-   "bit_rate": "2889312",
+   "size": "5316433",
+   "bit_rate": "2835430",
    "probe_score": 100,
    "tags": {
     "major_brand": "isom",
@@ -706,5 +716,5 @@
    }
   }
  },
- "generated": "2026-09-27T11:48:18.824181+00:00"
+ "generated": "2026-09-27T12:14:27.800960+00:00"
 }
