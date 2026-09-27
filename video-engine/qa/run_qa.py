@@ -171,8 +171,10 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
         elif not bflag and start is not None:
             runs.append((start / fps, (i - start) * 1000 / fps))
             start = None
-    C.add("Blank white card intervals (informational)", True,
-          ", ".join(f"{a:.2f}s ({ms:.0f} ms)" for a, ms in runs) or "none", "info")
+    max_blank = cfg.get("qa", {}).get("max_blank_ms", 100)
+    long_runs = [(a, ms) for a, ms in runs if ms > max_blank]
+    C.add(f"No white flash (blank card > {max_blank} ms)", not long_runs,
+          ", ".join(f"{a:.2f}s ({ms:.0f} ms)" for a, ms in runs) or "0 blank-card frames")
     for s in cfg["scenes"]:
         if s is not cfg["scenes"][0] and s.get("transition", 1) == 0:
             near = [(a, ms) for a, ms in runs if abs(a - s["_start"]) < 0.3]
@@ -333,14 +335,15 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
         C.add("Privacy: no person-name labels in workbook data", not bad_src,
               ", ".join(bad_src[:8]) or f"{len(src_vals)} cell values scanned")
         ids = sorted({m for v in src_vals for m in id_re.findall(v)})
-        C.add("Privacy: student identifiers use the safe ID format", bool(ids) or not src_vals,
+        C.add("Privacy: identifiers use the safe ID format", bool(ids) or not src_vals,
               ", ".join(ids) if ids else "no IDs found in workbook data")
         bad_frames = sorted({f"{n}: {m}" for n, txt in frame_text.items() for m in name_re.findall(txt)})
         C.add("Privacy: no person-name labels in any frame (OCR)", not bad_frames,
               "; ".join(bad_frames[:6]) or f"{len(frame_text)} key frames scanned")
         ids_on_screen = sorted({m for txt in frame_text.values() for m in id_re.findall(txt)})
-        C.add("Privacy: safe identifiers visible on screen", bool(ids_on_screen),
-              ", ".join(ids_on_screen) or "none read", "warn")
+        if priv.get("require_ids_on_screen", True):
+            C.add("Privacy: safe identifiers visible on screen", bool(ids_on_screen),
+                  ", ".join(ids_on_screen) or "none read", "warn")
 
     # ---------------- verdict + report ----------------
     if C.failed:

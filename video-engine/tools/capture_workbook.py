@@ -63,7 +63,8 @@ def main() -> int:
     out.mkdir(parents=True, exist_ok=True)
 
     import openpyxl
-    sheet_names = openpyxl.load_workbook(wb_path).sheetnames
+    # hidden sheets are not exported to PDF, so only visible sheets map to pages
+    sheet_names = [ws.title for ws in openpyxl.load_workbook(wb_path).worksheets if ws.sheet_state == "visible"]
 
     with tempfile.TemporaryDirectory() as td:
         td = Path(td)

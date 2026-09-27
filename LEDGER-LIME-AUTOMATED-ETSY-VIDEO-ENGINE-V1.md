@@ -200,6 +200,24 @@ The change:
 - **New QA check:** blank-card intervals are measured on every decoded frame of the MP4. Any scene set to a clean cut (`transition: 0`) fails if a blank frame appears within 0.3 s of it.
 - **Still present (not changed on request):** the 2.43 s (167 ms) and 5.93 s (133 ms) dips.
 
+## 8d. Product #10 - Rental Property Spreadsheet V1 (2026-09-27)
+
+- **Output:** `video-engine/output/p10-rental-property/`.
+- **QA:** PASS, 104/0/0.
+- **Source:** the real packaged workbook; see `LEDGER-LIME-VIDEO-UPGRADE-AUDIT-1-12.md`.
+
+Engine / tooling changes (reusable, no renderer or template change):
+
+- `tools/capture_workbook.py`: maps PDF pages to *visible* sheets only. Hidden sheets were previously mis-labelling captures.
+- `engine/config.py`: `currency` / `currency0` truth formats matching Excel `"$"#,##0.00`.
+- `qa/run_qa.py`:
+  - global "No white flash" check (blank card > `qa.max_blank_ms`, default 100 ms);
+  - `qa.privacy.require_ids_on_screen` option;
+  - generic privacy labels.
+- Environment: `fonts-crosextra-carlito` (metric-compatible Calibri) for faithful LibreOffice rendering of Calibri workbooks.
+
+Note: under the new global white-flash check, a re-QA of P13 V3.3 would flag its two remaining approved dips (2.43 s 167 ms, 5.93 s 133 ms).
+
 ## 9. Reusability test - PASS
 
 `configs/dummy_home_maintenance.json` covers a dummy product, "Home Maintenance Planner & Service Log". Compared with Product #13 it uses:

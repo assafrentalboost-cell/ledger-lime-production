@@ -1,0 +1,345 @@
+{
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "p10-rental-property",
+    "number": 10,
+    "title": "Rental Property Spreadsheet",
+    "version": "V1"
+  },
+  "output": {
+    "filename": "P10-Rental-Property-Etsy-Video-V1.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "min_duration": 12,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "product_capture",
+    "pointer_rendered": false,
+    "notes": "Captured from the real packaged customer workbook sources/p10-rental-property/Rental-Property-Spreadsheet.xlsx (commit 65cd4c6), recalculated by LibreOffice. AFTER = packaged workbook as shipped (0 differing cells vs the packaged workbook's own recalculation). BEFORE = the same workbook with ONE input cleared: Rent Tracker H5/I5, the May 2026 Payment 1 of $1,000 for unit P1-U1 (tenant T1). Capture copies change print settings only (print area A3:P9, other sheets hidden) and make the workbook default font (Calibri, rendered with metric-compatible Carlito) explicit on header cells saved without a font name. No pointer is shown."
+  },
+  "truth": {
+    "states": {
+      "before": {
+        "may_paid": "$0.00",
+        "may_remaining": "$1,500.00",
+        "may_status": "Unpaid",
+        "june_prior": "$1,500.00",
+        "june_total_due": "$3,000.00",
+        "dashboard_outstanding": "$8,000.00",
+        "dashboard_overdue_partial": "8"
+      },
+      "after": {
+        "may_paid": "$1,000.00",
+        "may_remaining": "$500.00",
+        "may_status": "Partial",
+        "june_prior": "$500.00",
+        "june_total_due": "$2,000.00",
+        "dashboard_outstanding": "$4,300.00",
+        "dashboard_overdue_partial": "6"
+      }
+    },
+    "labels": {
+      "may_paid": "May paid",
+      "may_remaining": "May balance",
+      "may_status": "Status",
+      "june_prior": "Carried into June",
+      "june_total_due": "June total due",
+      "dashboard_outstanding": "Dashboard outstanding (not shown)",
+      "dashboard_overdue_partial": "Dashboard overdue/partial rows (not shown)"
+    },
+    "verify": {
+      "before": "sources/p10-rental-property/capture/captures/before_recalculated.json",
+      "after": "sources/p10-rental-property/capture/captures/after_recalculated.json",
+      "cells": {
+        "may_paid": {
+          "sheet": "Rent Tracker",
+          "cell": "N5",
+          "format": "currency"
+        },
+        "may_remaining": {
+          "sheet": "Rent Tracker",
+          "cell": "O5",
+          "format": "currency"
+        },
+        "may_status": {
+          "sheet": "Rent Tracker",
+          "cell": "P5"
+        },
+        "june_prior": {
+          "sheet": "Rent Tracker",
+          "cell": "F6",
+          "format": "currency"
+        },
+        "june_total_due": {
+          "sheet": "Rent Tracker",
+          "cell": "G6",
+          "format": "currency"
+        },
+        "dashboard_outstanding": {
+          "sheet": "Dashboard",
+          "cell": "B7",
+          "format": "currency"
+        },
+        "dashboard_overdue_partial": {
+          "sheet": "Dashboard",
+          "cell": "B15",
+          "format": "int"
+        }
+      }
+    }
+  },
+  "sources": {
+    "rt_before": {
+      "path": "sources/p10-rental-property/capture/captures/before_rent-tracker.png",
+      "state": "before"
+    },
+    "rt_after": {
+      "path": "sources/p10-rental-property/capture/captures/after_rent-tracker.png",
+      "state": "after"
+    }
+  },
+  "scenes": [
+    {
+      "id": "before-unpaid",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "rt_before",
+      "caption": "May rent is still unpaid.",
+      "camera": {
+        "from": [
+          6061,
+          0,
+          1557,
+          743
+        ],
+        "to": [
+          6061,
+          25,
+          1557,
+          743
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            6522,
+            231,
+            1071,
+            103
+          ],
+          "pad": 8,
+          "appear": 0.5
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "May rent is still unpaid",
+            "$1,500.00",
+            "Unpaid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "input-partial-payment",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "rt_before",
+      "source_to": "rt_after",
+      "swap_at": 0.9,
+      "swap_duration": 0.2,
+      "caption": "Log a partial payment.",
+      "camera": {
+        "from": [
+          2850,
+          0,
+          1390,
+          663
+        ],
+        "to": [
+          2850,
+          60,
+          1390,
+          663
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            3311,
+            231,
+            918,
+            103
+          ],
+          "pad": 8,
+          "appear": 1.1
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.6,
+          "text": [
+            "Log a partial payment",
+            "$1,000.00",
+            "May 4, 2026"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balance-updates",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "rt_before",
+      "source_to": "rt_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "caption": "The balance updates itself.",
+      "camera": {
+        "from": [
+          6061,
+          0,
+          1557,
+          743
+        ],
+        "to": [
+          6061,
+          25,
+          1557,
+          743
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            6522,
+            231,
+            1071,
+            103
+          ],
+          "pad": 8,
+          "appear": 0.2
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "may_remaining",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        },
+        {
+          "truth_key": "may_status",
+          "anchor": "bottom-left",
+          "appear": 1.2
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "The balance updates itself",
+            "$500.00",
+            "Partial"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "carry-forward",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "rt_before",
+      "source_to": "rt_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "caption": "Know who still owes — automatically.",
+      "camera": {
+        "from": [
+          1856,
+          0,
+          1460,
+          697
+        ],
+        "to": [
+          1856,
+          40,
+          1460,
+          697
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            2355,
+            334,
+            950,
+            103
+          ],
+          "pad": 4,
+          "appear": 0.2,
+          "label": "Carried from May",
+          "label_side": "left"
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "june_prior",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        },
+        {
+          "truth_key": "june_total_due",
+          "anchor": "bottom-left",
+          "appear": 1.2
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "Know who still owes",
+            "$500.00",
+            "$2,000.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 3.0,
+      "transition": 0.7,
+      "title": "Rental Property Spreadsheet",
+      "subtitle": "Rent • Partial Payments • Carried Balances",
+      "brand": "Ledger & Lime",
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "Rental Property Spreadsheet",
+            "Carried Balances",
+            "LEDGER"
+          ]
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "report_name": "VIDEO-QA-REPORT-P10.md",
+    "max_blank_ms": 100,
+    "privacy": {
+      "id_pattern": "\\bT\\d+[A-Z]?\\b",
+      "name_pattern": "\\b(John Smith|Maria Lopez|Aisha Bello|David Chen|Priya Patel|Marcus Webb)\\b",
+      "source_values": [],
+      "require_ids_on_screen": false
+    }
+  }
+}

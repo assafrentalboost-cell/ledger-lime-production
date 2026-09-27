@@ -1,0 +1,399 @@
+{
+ "config": "configs/product10_rental_property.json",
+ "duration": 15.0,
+ "fps": 30,
+ "nframes": 450,
+ "card": [
+  80,
+  184,
+  1760,
+  840
+ ],
+ "safe_margin": 0.035,
+ "width": 1920,
+ "height": 1080,
+ "draft_watermark": false,
+ "validation": {
+  "errors": [],
+  "warnings": [],
+  "notes": [
+   "truth verified: before.may_paid = '$0.00' (Rent Tracker!N5)",
+   "truth verified: before.may_remaining = '$1,500.00' (Rent Tracker!O5)",
+   "truth verified: before.may_status = 'Unpaid' (Rent Tracker!P5)",
+   "truth verified: before.june_prior = '$1,500.00' (Rent Tracker!F6)",
+   "truth verified: before.june_total_due = '$3,000.00' (Rent Tracker!G6)",
+   "truth verified: before.dashboard_outstanding = '$8,000.00' (Dashboard!B7)",
+   "truth verified: before.dashboard_overdue_partial = '8' (Dashboard!B15)",
+   "truth verified: after.may_paid = '$1,000.00' (Rent Tracker!N5)",
+   "truth verified: after.may_remaining = '$500.00' (Rent Tracker!O5)",
+   "truth verified: after.may_status = 'Partial' (Rent Tracker!P5)",
+   "truth verified: after.june_prior = '$500.00' (Rent Tracker!F6)",
+   "truth verified: after.june_total_due = '$2,000.00' (Rent Tracker!G6)",
+   "truth verified: after.dashboard_outstanding = '$4,300.00' (Dashboard!B7)",
+   "truth verified: after.dashboard_overdue_partial = '6' (Dashboard!B15)"
+  ]
+ },
+ "scenes": [
+  {
+   "scene": "s1:before-unpaid",
+   "scale_min": 0.885,
+   "scale_max": 0.885,
+   "pyramid_level": 0,
+   "max_upscale": 1.13
+  },
+  {
+   "scene": "s2:input-partial-payment",
+   "scale_min": 0.79,
+   "scale_max": 0.79,
+   "pyramid_level": 0,
+   "max_upscale": 1.266
+  },
+  {
+   "scene": "s3:balance-updates",
+   "scale_min": 0.885,
+   "scale_max": 0.885,
+   "pyramid_level": 0,
+   "max_upscale": 1.13
+  },
+  {
+   "scene": "s4:carry-forward",
+   "scale_min": 0.83,
+   "scale_max": 0.83,
+   "pyramid_level": 0,
+   "max_upscale": 1.205
+  }
+ ],
+ "elements": [
+  {
+   "scene": "global",
+   "kind": "wordmark",
+   "text": "LEDGER & LIME",
+   "font_px": 22,
+   "container": "frame",
+   "bbox": [
+    1603,
+    92,
+    1835,
+    108
+   ],
+   "frames": 1
+  },
+  {
+   "scene": "s1:before-unpaid",
+   "kind": "caption",
+   "text": "May rent is still unpaid.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    82,
+    67,
+    800,
+    146
+   ],
+   "frames": 90
+  },
+  {
+   "scene": "s1:before-unpaid",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    588.0491329479769,
+    403.9224415071367,
+    1824.7960822093771,
+    572.2435511821915
+   ],
+   "frames": 65
+  },
+  {
+   "scene": "s2:input-partial-payment",
+   "kind": "caption",
+   "text": "Log a partial payment.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    81,
+    67,
+    763,
+    146
+   ],
+   "frames": 76
+  },
+  {
+   "scene": "s2:input-partial-payment",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    650.6566746602717,
+    387.77739526897005,
+    1839.1274980015987,
+    587.0783947656689
+   ],
+   "frames": 47
+  },
+  {
+   "scene": "s3:balance-updates",
+   "kind": "caption",
+   "text": "The balance updates itself.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    83,
+    67,
+    880,
+    146
+   ],
+   "frames": 76
+  },
+  {
+   "scene": "s3:balance-updates",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    588.0491329479769,
+    403.9224415071367,
+    1824.7960822093771,
+    574.0312245331274
+   ],
+   "frames": 74
+  },
+  {
+   "scene": "s3:balance-updates",
+   "kind": "chip",
+   "text": "May balance: $1,500.00 -> $500.00",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    827,
+    990
+   ],
+   "frames": 49
+  },
+  {
+   "scene": "s3:balance-updates",
+   "kind": "chip",
+   "text": "Status: Unpaid -> Partial",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    849,
+    819,
+    1409,
+    990
+   ],
+   "frames": 43
+  },
+  {
+   "scene": "s4:carry-forward",
+   "kind": "caption",
+   "text": "Know who still owes \u2014 automatically.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    81,
+    67,
+    1237,
+    146
+   ],
+   "frames": 77
+  },
+  {
+   "scene": "s4:carry-forward",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    672.4786910197869,
+    529.3013698630136,
+    1835.7952815829528,
+    718.6567792246839
+   ],
+   "frames": 75
+  },
+  {
+   "scene": "s4:carry-forward",
+   "kind": "highlight_label",
+   "text": "Carried from May",
+   "font_px": 56,
+   "container": "card",
+   "bbox": [
+    146,
+    555,
+    660,
+    692
+   ],
+   "frames": 75
+  },
+  {
+   "scene": "s4:carry-forward",
+   "kind": "chip",
+   "text": "Carried into June: $1,500.00 -> $500.00",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    827,
+    990
+   ],
+   "frames": 50
+  },
+  {
+   "scene": "s4:carry-forward",
+   "kind": "chip",
+   "text": "June total due: $3,000.00 -> $2,000.00",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    849,
+    819,
+    1633,
+    990
+   ],
+   "frames": 44
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_title",
+   "text": "Rental Property Spreadsheet",
+   "font_px": 88,
+   "container": "frame",
+   "bbox": [
+    464,
+    417,
+    1454,
+    507
+   ],
+   "frames": 71
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_subtitle",
+   "text": "Rent \u2022 Partial Payments \u2022 Carried Balances",
+   "font_px": 38,
+   "container": "frame",
+   "bbox": [
+    554,
+    626,
+    1364,
+    662
+   ],
+   "frames": 53
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_brand",
+   "text": "LEDGER & LIME",
+   "font_px": 30,
+   "container": "frame",
+   "bbox": [
+    795,
+    919,
+    1122,
+    941
+   ],
+   "frames": 45
+  }
+ ],
+ "overlaps": [],
+ "double_table": [],
+ "transitions": {
+  "scene": "dip",
+  "morph": "cut"
+ },
+ "timeline": [
+  {
+   "id": "before-unpaid",
+   "type": "screen",
+   "start": 0.0,
+   "duration": 3.0,
+   "caption": "May rent is still unpaid.",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "May rent is still unpaid",
+      "$1,500.00",
+      "Unpaid"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "input-partial-payment",
+   "type": "morph",
+   "start": 3.0,
+   "duration": 3.0,
+   "caption": "Log a partial payment.",
+   "expect_text": [
+    {
+     "at": 2.6,
+     "text": [
+      "Log a partial payment",
+      "$1,000.00",
+      "May 4, 2026"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "balance-updates",
+   "type": "morph",
+   "start": 6.0,
+   "duration": 3.0,
+   "caption": "The balance updates itself.",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "The balance updates itself",
+      "$500.00",
+      "Partial"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "carry-forward",
+   "type": "morph",
+   "start": 9.0,
+   "duration": 3.0,
+   "caption": "Know who still owes \u2014 automatically.",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "Know who still owes",
+      "$500.00",
+      "$2,000.00"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-card",
+   "type": "end_card",
+   "start": 12.0,
+   "duration": 3.0,
+   "caption": "",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "Rental Property Spreadsheet",
+      "Carried Balances",
+      "LEDGER"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -69,6 +69,9 @@ def _fmt_value(v, fmt: str | None) -> str:
         return f"{round(v * 100)}%"
     if fmt == "int" and isinstance(v, (int, float)):
         return str(int(round(v)))
+    if fmt in ("currency", "currency0") and isinstance(v, (int, float)):
+        body = f"{abs(v):,.2f}" if fmt == "currency" else f"{abs(round(v)):,}"
+        return ("-$" if v < 0 else "$") + body   # matches Excel "$"#,##0.00
     return str(v)
 
 
