@@ -288,6 +288,11 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
         C.add(f"Source not over-upscaled ({s['scene']})", s["max_upscale"] <= 1.35,
               f"max upscale {s['max_upscale']}x, source px per output px {s['scale_min']}-{s['scale_max']}", "warn")
 
+    ms_notes = [n for n in manifest["validation"]["notes"] if n.startswith("must_show verified")]
+    for n in ms_notes:
+        C.add("Required region fully in frame (" + n.split(": ", 1)[1].split(" region")[0] + ")", True,
+              n.split(": ", 1)[1])
+
     # ---------------- 10. product truth + claims ----------------
     prov = cfg["provenance"]
     verified = [n for n in manifest["validation"]["notes"] if n.startswith("truth verified")]

@@ -30,37 +30,41 @@
    "truth verified: after.june_prior = '$500.00' (Rent Tracker!F6)",
    "truth verified: after.june_total_due = '$2,000.00' (Rent Tracker!G6)",
    "truth verified: after.dashboard_outstanding = '$4,300.00' (Dashboard!B7)",
-   "truth verified: after.dashboard_overdue_partial = '6' (Dashboard!B15)"
+   "truth verified: after.dashboard_overdue_partial = '6' (Dashboard!B15)",
+   "must_show verified: scene 1 (before-unpaid) region 1 [7533, 24, 1472, 714] stays fully in frame",
+   "must_show verified: scene 2 (input-partial-payment) region 1 [3118, 24, 1623, 408] stays fully in frame",
+   "must_show verified: scene 3 (balance-updates) region 1 [7533, 24, 1472, 714] stays fully in frame",
+   "must_show verified: scene 4 (carry-forward) region 1 [1873, 24, 1698, 510] stays fully in frame"
   ]
  },
  "scenes": [
   {
    "scene": "s1:before-unpaid",
-   "scale_min": 0.885,
-   "scale_max": 0.885,
+   "scale_min": 0.894,
+   "scale_max": 0.912,
    "pyramid_level": 0,
-   "max_upscale": 1.13
+   "max_upscale": 1.119
   },
   {
    "scene": "s2:input-partial-payment",
-   "scale_min": 0.79,
-   "scale_max": 0.79,
+   "scale_min": 0.924,
+   "scale_max": 0.924,
    "pyramid_level": 0,
-   "max_upscale": 1.266
+   "max_upscale": 1.082
   },
   {
    "scene": "s3:balance-updates",
-   "scale_min": 0.885,
-   "scale_max": 0.885,
+   "scale_min": 0.894,
+   "scale_max": 0.912,
    "pyramid_level": 0,
-   "max_upscale": 1.13
+   "max_upscale": 1.119
   },
   {
    "scene": "s4:carry-forward",
-   "scale_min": 0.83,
-   "scale_max": 0.83,
+   "scale_min": 0.967,
+   "scale_max": 0.967,
    "pyramid_level": 0,
-   "max_upscale": 1.205
+   "max_upscale": 1.034
   }
  ],
  "elements": [
@@ -99,10 +103,10 @@
    "font_px": 0,
    "container": "card",
    "bbox": [
-    588.0491329479769,
-    403.9224415071367,
-    1824.7960822093771,
-    572.2435511821915
+    86.3090884842696,
+    438.91611651195205,
+    1732.6361810241883,
+    565.5859833532011
    ],
    "frames": 65
   },
@@ -127,10 +131,10 @@
    "font_px": 0,
    "container": "card",
    "bbox": [
-    650.6566746602717,
-    387.77739526897005,
-    1839.1274980015987,
-    587.0783947656689
+    576.1196134671857,
+    431.11563912474924,
+    1833.9111179403128,
+    560.0026585829154
    ],
    "frames": 47
   },
@@ -155,10 +159,10 @@
    "font_px": 0,
    "container": "card",
    "bbox": [
-    588.0491329479769,
-    403.9224415071367,
-    1824.7960822093771,
-    574.0312245331274
+    86.29952395764619,
+    438.91611651195205,
+    1732.6361810241883,
+    565.8199199798628
    ],
    "frames": 74
   },
@@ -211,10 +215,10 @@
    "font_px": 0,
    "container": "card",
    "bbox": [
-    672.4786910197869,
-    529.3013698630136,
-    1835.7952815829528,
-    718.6567792246839
+    744.1289332811073,
+    546.3983548766157,
+    1833.5443922183053,
+    676.8197564714472
    ],
    "frames": 75
   },
@@ -225,10 +229,10 @@
    "font_px": 56,
    "container": "card",
    "bbox": [
-    146,
-    555,
-    660,
-    692
+    218,
+    559,
+    732,
+    663
    ],
    "frames": 75
   },

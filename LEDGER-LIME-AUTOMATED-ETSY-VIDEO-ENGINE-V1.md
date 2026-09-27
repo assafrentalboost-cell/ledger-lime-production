@@ -216,6 +216,10 @@ Engine / tooling changes (reusable, no renderer or template change):
   - generic privacy labels.
 - Environment: `fonts-crosextra-carlito` (metric-compatible Calibri) for faithful LibreOffice rendering of Calibri workbooks.
 
+P10 V1.1 (framing only) adds reusable engine options:
+- `canvas_pad` accepts `[left, top, right, bottom]`; config coordinates stay in source pixels.
+- `must_show` validates that listed source regions (e.g. header rows) stay fully in frame for the whole camera move. It is reported in QA.
+
 Note: under the new global white-flash check, a re-QA of P13 V3.3 would flag its two remaining approved dips (2.43 s 167 ms, 5.93 s 133 ms).
 
 ## 9. Reusability test - PASS

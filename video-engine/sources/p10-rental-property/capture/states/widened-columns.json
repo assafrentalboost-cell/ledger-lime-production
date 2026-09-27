@@ -1,0 +1,46 @@
+{
+ "B": {
+  "shipped": 10.0,
+  "capture": 11
+ },
+ "E": {
+  "shipped": 13.0,
+  "capture": 17
+ },
+ "F": {
+  "shipped": 13.0,
+  "capture": 16
+ },
+ "H": {
+  "shipped": 11.0,
+  "capture": 13
+ },
+ "I": {
+  "shipped": 13.0,
+  "capture": 18
+ },
+ "J": {
+  "shipped": 11.0,
+  "capture": 13
+ },
+ "K": {
+  "shipped": 13.0,
+  "capture": 18
+ },
+ "L": {
+  "shipped": 11.0,
+  "capture": 13
+ },
+ "M": {
+  "shipped": 13.0,
+  "capture": 18
+ },
+ "O": {
+  "shipped": 15.0,
+  "capture": 21
+ },
+ "P": {
+  "shipped": 13.0,
+  "capture": 18
+ }
+}

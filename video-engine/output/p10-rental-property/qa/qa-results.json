@@ -54,7 +54,7 @@
   {
    "check": "Etsy: file < 100 MB",
    "status": "PASS",
-   "detail": "3.86 MB"
+   "detail": "3.64 MB"
   },
   {
    "check": "No audio track (Etsy plays muted)",
@@ -89,7 +89,7 @@
   {
    "check": "First frame is a composed shot (not blank)",
    "status": "PASS",
-   "detail": "luma mean 216, stdev 72"
+   "detail": "luma mean 221, stdev 65"
   },
   {
    "check": "No ghosting: one spreadsheet state per frame",
@@ -229,7 +229,7 @@
   {
    "check": "No clipping: highlight \"highlight 1\" (s1:before-unpaid)",
    "status": "PASS",
-   "detail": "bbox [588, 404, 1825, 572] within card"
+   "detail": "bbox [86, 439, 1733, 566] within card"
   },
   {
    "check": "No clipping: caption \"Log a partial payment.\" (s2:input-partial-payment)",
@@ -239,7 +239,7 @@
   {
    "check": "No clipping: highlight \"highlight 1\" (s2:input-partial-payment)",
    "status": "PASS",
-   "detail": "bbox [651, 388, 1839, 587] within card"
+   "detail": "bbox [576, 431, 1834, 560] within card"
   },
   {
    "check": "No clipping: caption \"The balance updates itself.\" (s3:balance-updates)",
@@ -249,7 +249,7 @@
   {
    "check": "No clipping: highlight \"highlight 1\" (s3:balance-updates)",
    "status": "PASS",
-   "detail": "bbox [588, 404, 1825, 574] within card"
+   "detail": "bbox [86, 439, 1733, 566] within card"
   },
   {
    "check": "No clipping: chip \"May balance: $1,500.00 -> $500.00\" (s3:balance-updates)",
@@ -269,12 +269,12 @@
   {
    "check": "No clipping: highlight \"highlight 1\" (s4:carry-forward)",
    "status": "PASS",
-   "detail": "bbox [672, 529, 1836, 719] within card"
+   "detail": "bbox [744, 546, 1834, 677] within card"
   },
   {
    "check": "No clipping: highlight_label \"Carried from May\" (s4:carry-forward)",
    "status": "PASS",
-   "detail": "bbox [146, 555, 660, 692] within card"
+   "detail": "bbox [218, 559, 732, 663] within card"
   },
   {
    "check": "No clipping: chip \"Carried into June: $1,500.00 -> $500.00\" (s4:carry-forward)",
@@ -464,22 +464,42 @@
   {
    "check": "Source not over-upscaled (s1:before-unpaid)",
    "status": "PASS",
-   "detail": "max upscale 1.13x, source px per output px 0.885-0.885"
+   "detail": "max upscale 1.119x, source px per output px 0.894-0.912"
   },
   {
    "check": "Source not over-upscaled (s2:input-partial-payment)",
    "status": "PASS",
-   "detail": "max upscale 1.266x, source px per output px 0.79-0.79"
+   "detail": "max upscale 1.082x, source px per output px 0.924-0.924"
   },
   {
    "check": "Source not over-upscaled (s3:balance-updates)",
    "status": "PASS",
-   "detail": "max upscale 1.13x, source px per output px 0.885-0.885"
+   "detail": "max upscale 1.119x, source px per output px 0.894-0.912"
   },
   {
    "check": "Source not over-upscaled (s4:carry-forward)",
    "status": "PASS",
-   "detail": "max upscale 1.205x, source px per output px 0.83-0.83"
+   "detail": "max upscale 1.034x, source px per output px 0.967-0.967"
+  },
+  {
+   "check": "Required region fully in frame (scene 1 (before-unpaid))",
+   "status": "PASS",
+   "detail": "scene 1 (before-unpaid) region 1 [7533, 24, 1472, 714] stays fully in frame"
+  },
+  {
+   "check": "Required region fully in frame (scene 2 (input-partial-payment))",
+   "status": "PASS",
+   "detail": "scene 2 (input-partial-payment) region 1 [3118, 24, 1623, 408] stays fully in frame"
+  },
+  {
+   "check": "Required region fully in frame (scene 3 (balance-updates))",
+   "status": "PASS",
+   "detail": "scene 3 (balance-updates) region 1 [7533, 24, 1472, 714] stays fully in frame"
+  },
+  {
+   "check": "Required region fully in frame (scene 4 (carry-forward))",
+   "status": "PASS",
+   "detail": "scene 4 (carry-forward) region 1 [1873, 24, 1698, 510] stays fully in frame"
   },
   {
    "check": "Product truth: before/after values verified against workbook",
@@ -556,14 +576,14 @@
    "scene": "input-partial-payment",
    "phrase": "$1,000.00",
    "full": true,
-   "mobile": false
+   "mobile": true
   },
   {
    "t": 5.6,
    "scene": "input-partial-payment",
    "phrase": "May 4, 2026",
    "full": true,
-   "mobile": false
+   "mobile": true
   },
   {
    "t": 8.7,
@@ -664,7 +684,7 @@
    "start_time": "0.000000",
    "duration_ts": 230400,
    "duration": "15.000000",
-   "bit_rate": "2053505",
+   "bit_rate": "1936619",
    "bits_per_raw_sample": "8",
    "nb_frames": "450",
    "extradata_size": 50,
@@ -696,15 +716,15 @@
    }
   },
   "format": {
-   "filename": "/home/user/ledger-lime-production/video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.mp4",
+   "filename": "/home/user/ledger-lime-production/video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.1.mp4",
    "nb_streams": 1,
    "nb_programs": 0,
    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
    "format_long_name": "QuickTime / MOV",
    "start_time": "0.000000",
    "duration": "15.000000",
-   "size": "3855304",
-   "bit_rate": "2056162",
+   "size": "3635976",
+   "bit_rate": "1939187",
    "probe_score": 100,
    "tags": {
     "major_brand": "isom",
@@ -714,5 +734,5 @@
    }
   }
  },
- "generated": "2026-09-27T18:00:11.919679+00:00"
+ "generated": "2026-09-27T18:23:14.691733+00:00"
 }

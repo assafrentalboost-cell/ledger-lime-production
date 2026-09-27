@@ -20,11 +20,11 @@ def probe_video(path: Path) -> tuple[int, int, float, float]:
 
 
 class ImageSource:
-    def __init__(self, path: Path, canvas: tuple[int, int] | None = None):
+    def __init__(self, path: Path, canvas: tuple[int, int] | None = None, offset: tuple[int, int] = (0, 0)):
         im = Image.open(path).convert("RGB")
-        if canvas and canvas != im.size:  # common canvas for morphs (top-left aligned)
+        if canvas and (canvas != im.size or offset != (0, 0)):  # common / padded canvas
             c = Image.new("RGB", canvas, (255, 255, 255))
-            c.paste(im, (0, 0))
+            c.paste(im, tuple(offset))
             im = c
         self.size = im.size
         self.levels = [im]

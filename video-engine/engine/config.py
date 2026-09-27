@@ -206,17 +206,42 @@ def _validate(cfg: dict, brand: Brand, rep: Report) -> None:
             if sizes[src_ids[0]] != sizes[src_ids[1]]:
                 rep.warn(f"{tag}: morph sources differ in size {sizes[src_ids[0]]} vs {sizes[src_ids[1]]}; "
                          "they are top-left aligned on a common canvas - make sure the captures share geometry")
-        pad = sc.get("canvas_pad", [0, 0])  # extra white [right, bottom] so the camera can frame past an edge
-        W = max(sizes[s][0] for s in src_ids) + int(pad[0])
-        H = max(sizes[s][1] for s in src_ids) + int(pad[1])
+        # extra white margin so the camera can frame past an edge:
+        # [right, bottom] or [left, top, right, bottom]. Config coordinates stay in
+        # source pixels; they are shifted onto the padded canvas here.
+        pad = [int(v) for v in sc.get("canvas_pad", [0, 0])]
+        pl, pt, pr, pb = pad if len(pad) == 4 else (0, 0, pad[0], pad[1])
+        W = max(sizes[s][0] for s in src_ids) + pl + pr
+        H = max(sizes[s][1] for s in src_ids) + pt + pb
         sc["_canvas"] = (W, H)
+        sc["_offset"] = (pl, pt)
         cam = sc.get("camera")
         if not cam or "from" not in cam:
             rep.err(f"{tag}: camera.from [x, y, w, h] is required")
             continue
         cam.setdefault("to", cam["from"])
         for k in ("from", "to"):
-            cam[k] = _fit_rect(rep, f"{tag} camera.{k}", cam[k], aspect, W, H)
+            r = list(cam[k])
+            cam[k] = _fit_rect(rep, f"{tag} camera.{k}", [r[0] + pl, r[1] + pt, r[2], r[3]], aspect, W, H)
+        # must_show: source rects (e.g. a header row) that must stay fully in frame
+        # for the whole camera move - sampled with the renderer's interpolation.
+        for j, ms in enumerate(sc.get("must_show", [])):
+            mx, my, mw, mh = ms[0] + pl, ms[1] + pt, ms[2], ms[3]
+            f0, t0 = cam["from"], cam["to"]
+            bad = []
+            for i in range(21):
+                e = i / 20
+                w = f0[2] * (t0[2] / f0[2]) ** e
+                h = w / aspect
+                cxm = (f0[0] + f0[2] / 2) + ((t0[0] + t0[2] / 2) - (f0[0] + f0[2] / 2)) * e
+                cym = (f0[1] + f0[3] / 2) + ((t0[1] + t0[3] / 2) - (f0[1] + f0[3] / 2)) * e
+                x0, y0 = cxm - w / 2, cym - h / 2
+                if mx < x0 - 0.5 or my < y0 - 0.5 or mx + mw > x0 + w + 0.5 or my + mh > y0 + h + 0.5:
+                    bad.append(round(e, 2))
+            if bad:
+                rep.err(f"{tag}: must_show {j + 1} {ms} leaves the frame during the camera move (progress {bad[:4]})")
+            else:
+                rep.note(f"must_show verified: {tag} region {j + 1} {ms} stays fully in frame")
         scale_min = min(cam["from"][2], cam["to"][2]) / card[2]
         if scale_min < 1 / 1.35:
             rep.warn(f"{tag}: camera upscales the source {1 / scale_min:.2f}x - text may look soft; "
@@ -241,6 +266,7 @@ def _validate(cfg: dict, brand: Brand, rep: Report) -> None:
             if "rect" not in h:
                 rep.err(f"{htag}: needs 'rect' [x, y, w, h] or 'find'")
                 continue
+            h["rect"] = [h["rect"][0] + pl, h["rect"][1] + pt, h["rect"][2], h["rect"][3]]
             x, y, w, hh = h["rect"]
             if x < 0 or y < 0 or x + w > W or y + hh > H:
                 rep.err(f"{htag}: rect {h['rect']} outside source {W}x{H}")

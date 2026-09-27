@@ -5,10 +5,10 @@
     "id": "p10-rental-property",
     "number": 10,
     "title": "Rental Property Spreadsheet",
-    "version": "V1"
+    "version": "V1.1"
   },
   "output": {
-    "filename": "P10-Rental-Property-Etsy-Video-V1.mp4",
+    "filename": "P10-Rental-Property-Etsy-Video-V1.1.mp4",
     "width": 1920,
     "height": 1080,
     "fps": 30,
@@ -18,7 +18,7 @@
   "provenance": {
     "source_status": "product_capture",
     "pointer_rendered": false,
-    "notes": "Captured from the real packaged customer workbook sources/p10-rental-property/Rental-Property-Spreadsheet.xlsx (commit 65cd4c6), recalculated by LibreOffice. AFTER = packaged workbook as shipped (0 differing cells vs the packaged workbook's own recalculation). BEFORE = the same workbook with ONE input cleared: Rent Tracker H5/I5, the May 2026 Payment 1 of $1,000 for unit P1-U1 (tenant T1). Capture copies change print settings only (print area A3:P9, other sheets hidden) and make the workbook default font (Calibri, rendered with metric-compatible Carlito) explicit on header cells saved without a font name. No pointer is shown."
+    "notes": "Captured from the real packaged customer workbook sources/p10-rental-property/Rental-Property-Spreadsheet.xlsx (commit 65cd4c6), recalculated by LibreOffice. AFTER = packaged workbook as shipped (0 differing cells vs the packaged workbook's own recalculation). BEFORE = the same workbook with ONE input cleared: Rent Tracker H5/I5, the May 2026 Payment 1 of $1,000 for unit P1-U1 (tenant T1). Capture copies change print settings only (print area A3:P9, other sheets hidden) and make the workbook default font (Calibri, rendered with metric-compatible Carlito) explicit on header cells saved without a font name. No pointer is shown. V1.1 capture copies additionally widen only the columns whose header text is clipped at the shipped width (B,E,F,H-M,O,P; widths in capture/states/widened-columns.json) so headers read in full - a view-only change; values verified identical (0 differing cells). Captured at 960 dpi."
   },
   "truth": {
     "states": {
@@ -110,27 +110,27 @@
       "caption": "May rent is still unpaid.",
       "camera": {
         "from": [
-          6061,
-          0,
-          1557,
-          743
+          7531,
+          -14,
+          1605,
+          766
         ],
         "to": [
-          6061,
-          25,
-          1557,
-          743
+          7531,
+          -4,
+          1573,
+          751
         ]
       },
       "highlights": [
         {
           "rect": [
-            6522,
-            231,
-            1071,
-            103
+            7545,
+            232,
+            1455,
+            94
           ],
-          "pad": 8,
+          "pad": 4,
           "appear": 0.5
         }
       ],
@@ -143,6 +143,20 @@
             "Unpaid"
           ]
         }
+      ],
+      "canvas_pad": [
+        0,
+        160,
+        200,
+        160
+      ],
+      "must_show": [
+        [
+          7533,
+          24,
+          1472,
+          714
+        ]
       ]
     },
     {
@@ -157,27 +171,27 @@
       "caption": "Log a partial payment.",
       "camera": {
         "from": [
-          2850,
-          0,
-          1390,
-          663
+          3116,
+          -20,
+          1627,
+          777
         ],
         "to": [
-          2850,
-          60,
-          1390,
-          663
+          3116,
+          -5,
+          1627,
+          777
         ]
       },
       "highlights": [
         {
           "rect": [
-            3311,
-            231,
-            918,
-            103
+            3583,
+            232,
+            1146,
+            94
           ],
-          "pad": 8,
+          "pad": 4,
           "appear": 1.1
         }
       ],
@@ -190,6 +204,20 @@
             "May 4, 2026"
           ]
         }
+      ],
+      "canvas_pad": [
+        0,
+        160,
+        200,
+        160
+      ],
+      "must_show": [
+        [
+          3118,
+          24,
+          1623,
+          408
+        ]
       ]
     },
     {
@@ -204,27 +232,27 @@
       "caption": "The balance updates itself.",
       "camera": {
         "from": [
-          6061,
-          0,
-          1557,
-          743
+          7531,
+          -14,
+          1605,
+          766
         ],
         "to": [
-          6061,
-          25,
-          1557,
-          743
+          7531,
+          -4,
+          1573,
+          751
         ]
       },
       "highlights": [
         {
           "rect": [
-            6522,
-            231,
-            1071,
-            103
+            7545,
+            232,
+            1455,
+            94
           ],
-          "pad": 8,
+          "pad": 4,
           "appear": 0.2
         }
       ],
@@ -249,6 +277,20 @@
             "Partial"
           ]
         }
+      ],
+      "canvas_pad": [
+        0,
+        160,
+        200,
+        160
+      ],
+      "must_show": [
+        [
+          7533,
+          24,
+          1472,
+          714
+        ]
       ]
     },
     {
@@ -263,25 +305,25 @@
       "caption": "Know who still owes — automatically.",
       "camera": {
         "from": [
-          1856,
-          0,
-          1460,
-          697
+          1871,
+          -40,
+          1702,
+          812
         ],
         "to": [
-          1856,
-          40,
-          1460,
-          697
+          1871,
+          -25,
+          1702,
+          812
         ]
       },
       "highlights": [
         {
           "rect": [
-            2355,
+            2522,
             334,
-            950,
-            103
+            1036,
+            94
           ],
           "pad": 4,
           "appear": 0.2,
@@ -310,6 +352,20 @@
             "$2,000.00"
           ]
         }
+      ],
+      "canvas_pad": [
+        0,
+        160,
+        200,
+        160
+      ],
+      "must_show": [
+        [
+          1873,
+          24,
+          1698,
+          510
+        ]
       ]
     },
     {
@@ -333,7 +389,7 @@
     }
   ],
   "qa": {
-    "report_name": "VIDEO-QA-REPORT-P10.md",
+    "report_name": "VIDEO-QA-REPORT-P10-V1.1.md",
     "max_blank_ms": 100,
     "privacy": {
       "id_pattern": "\\bT\\d+[A-Z]?\\b",

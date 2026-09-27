@@ -9,9 +9,9 @@ Nothing is reconstructed. Both states are copies of
            for unit P1-U1 (Rent Tracker H5 = 1000, I5 = 2026-05-04) - i.e.
            the moment before the landlord logs that partial payment.
 
-Only print settings change in the copies (Rent Tracker print area = the
-header + unit P1-U1 rows, other sheets hidden), so LibreOffice exports just
-the rows being filmed. Every value is recalculated by LibreOffice from the
+Only view settings change in the copies: Rent Tracker print area = the
+header + unit P1-U1 rows, other sheets hidden, and (V1.1) columns whose header
+text is clipped at the shipped width are widened just enough to read in full. Every value is recalculated by LibreOffice from the
 product's own formulas.
 
 Usage: python prepare_states.py OUT_DIR
@@ -26,6 +26,28 @@ from openpyxl import load_workbook
 SRC = Path(__file__).resolve().parents[1] / "Rental-Property-Spreadsheet.xlsx"
 PRINT_AREA = "A3:P9"          # header row + P1-U1 Apr..Sep 2026
 INPUT_CELLS = ("H5", "I5")    # May 2026 Payment 1 (1000) + its date
+
+
+CARLITO_BOLD = "/usr/share/fonts/truetype/crosextra/Carlito-Bold.ttf"  # metric twin of Calibri
+
+
+def fit_header_columns(ws, header_row: int) -> dict:
+    """Widen columns whose header would be clipped. Excel width units are ~7 px
+    of Calibri 11 at 96 dpi plus ~5 px cell padding each side."""
+    import math
+    from PIL import ImageFont
+    widened = {}
+    for c in ws[header_row]:
+        if c.value in (None, ""):
+            continue
+        size_pt = (c.font.sz if c.font and c.font.sz else 11)
+        font = ImageFont.truetype(CARLITO_BOLD, round(size_pt * 96 / 72))
+        need = math.ceil((font.getlength(str(c.value)) + 10) / 7) + 1
+        dim = ws.column_dimensions[c.column_letter]
+        if (dim.width or 8.43) < need:
+            widened[c.column_letter] = (dim.width, need)
+            dim.width = need
+    return widened
 
 
 def build(state: str, out: Path) -> Path:
@@ -48,6 +70,10 @@ def build(state: str, out: Path) -> Path:
                 f = copy(c.font)
                 f.name = default
                 c.font = f
+    # V1.1: widen ONLY the columns whose header text is wider than the shipped
+    # column (the same view-only change as dragging a column edge in Excel/Sheets),
+    # so headers read in full. Values, formulas and formats are untouched.
+    widened = fit_header_columns(rt, header_row=3)
     rt.print_area = PRINT_AREA
     rt.page_setup.orientation = "landscape"
     rt.sheet_properties.pageSetUpPr.fitToPage = True
@@ -56,6 +82,8 @@ def build(state: str, out: Path) -> Path:
     rt.print_options.gridLines = True
     p = out / f"p10_{state}.xlsx"
     wb.save(p)
+    (out / "widened-columns.json").write_text(__import__("json").dumps(
+        {k: {"shipped": a, "capture": b} for k, (a, b) in widened.items()}, indent=1))
     return p
 
 

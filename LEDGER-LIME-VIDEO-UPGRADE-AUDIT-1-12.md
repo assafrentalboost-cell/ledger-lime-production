@@ -33,7 +33,7 @@ Reconstructing #1-#12 workbooks from product names was rejected. It would show p
 | 7 | - | NOT AUDITED | pending | - | NOT CREATED | - | HELD FOR EXPERIMENT |
 | 8 | Mortgage Payoff Tracker | NOT AUDITED | pending | - | NOT CREATED | - | NOT TOUCHED |
 | 9 | Premium Wedding Budget & Payment System | NOT AUDITED | pending | to be found in workbook | NOT CREATED | - | NOT TOUCHED |
-| 10 | Rental Property Spreadsheet | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Partial rent payment → remaining balance → carried into the next month (verified in the workbook formulas and sample data) | CREATED: `video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.mp4` | PASS (104/0/0) | NOT TOUCHED |
+| 10 | Rental Property Spreadsheet | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Partial rent payment → remaining balance → carried into the next month (verified in the workbook formulas and sample data) | CREATED: V1.1 `video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.1.mp4` (V1 kept) | PASS (108/0/0) | NOT TOUCHED |
 | 11 | - | NOT AUDITED | pending | - | NOT CREATED | - | HELD FOR EXPERIMENT |
 | 12 | Estate Settlement Command Center | NOT AUDITED | pending | estate reconciliation + unresolved-item detection (per brief; verify in workbook) | NOT CREATED | - | NOT TOUCHED |
 
@@ -72,3 +72,11 @@ The manifest's "$1,000 due / $600 paid" example is a QA test case and is not in 
 - Showing it would present an inflated "who still owes" number to buyers. Recommend fixing the formula to the latest row per unit, then adding a dashboard beat.
 
 **Other polish finding.** Several Rent Tracker headers are clipped at the shipped column widths ("Remaining Balan…", "Payment Statu…", "Payment 1 Dat…"). The video shows them faithfully.
+
+### Product #10 V1.1 - framing / readability only (2026-09-27)
+
+- **Headers in full.** The shipped column widths clip 10 of 17 Rent Tracker headers, so the camera alone could not reveal them. The V1.1 capture copies widen only those columns, just enough to fit the header text (B, E, F, H-M, O, P). This is a view-only change, like dragging a column edge; see `capture/states/widened-columns.json`. Values were re-verified: 0 differing cells against the packaged workbook.
+- **Header row never touches the card edge.** V1's downward camera drift clipped the header row (5.70 s on the phone sheet). V1.1 keeps white margin above and below via a 4-sided `canvas_pad`. New `must_show` validation proves each scene's header + rows stay fully in frame for the whole camera move.
+- **Right edge.** The balance scenes now end with white margin past the table's right edge instead of cutting flush.
+- **Total Paid column.** Dropped from the two balance scenes to keep numbers at V1 size on phones. Keeping it would shrink them about 25%.
+- **Unchanged.** Story, timing, captions, verified values, highlight cells (rings inset a few px), chips and end card.

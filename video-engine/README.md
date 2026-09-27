@@ -65,7 +65,8 @@ bash tools/setup_env.sh      # apt: ffmpeg tesseract-ocr libreoffice-calc popple
 | `scenes[].camera.from/to` | `[x, y, w, h]` crop in source pixels. Eased push/pan; aspect is auto-fitted. |
 | `scenes[].highlights[]` | `rect` or `find` (+`expand`, `occurrence`), `appear`, optional `pad`, `label`, `label_side`. |
 | `scenes[].chips[]` | `truth_key`, `anchor` (`bottom-left`, `bottom-right`, `bottom-center`, `top-*`), `appear`. |
-| `scenes[].canvas_pad` | `[right, bottom]` white margin, so the camera can frame past the capture edge. |
+| `scenes[].canvas_pad` | `[right, bottom]` or `[left, top, right, bottom]` white margin, so the camera can frame past the capture edge. Coordinates stay in source pixels. |
+| `scenes[].must_show` | `[[x, y, w, h], ...]` source regions (e.g. a header row) that must stay fully in frame for the whole camera move. Validation fails otherwise. |
 | `scenes[].expect_text[]` | `{"at": seconds, "text": [...]}`: QA OCR-reads these from the encoded MP4. |
 | `scenes[].transition` | Crossfade seconds into this scene (template default 0.5). |
 

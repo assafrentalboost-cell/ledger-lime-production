@@ -114,7 +114,7 @@ class Renderer:
                     if s.get("type", "image") == "video":
                         srcs.append(VideoSource(p, self.fps, s.get("in", 0.0)))
                     else:
-                        srcs.append(ImageSource(p, tuple(sc["_canvas"])))
+                        srcs.append(ImageSource(p, tuple(sc["_canvas"]), tuple(sc.get("_offset", (0, 0)))))
                 st["srcs"] = srcs
                 cam = sc["camera"]
                 smin = min(cam["from"][2], cam["to"][2]) / self.card[2]
