@@ -6,7 +6,8 @@ IMPORTANT - provenance
 The original Product #13 workbook / raw clips were not present in this
 repository, so this script rebuilds the documented Product #13 logic
 (goal progress, "No Recent Data" / "Improving" status, Needs Attention
-count) with real spreadsheet formulas and fictional sample students.
+count) with real spreadsheet formulas and fictional sample data. Students are
+shown only as privacy-safe identifiers (STU-001...), never names.
 
   before : Progress Log as-is.
   after  : exactly ONE new Progress Log row is appended (the "log progress
@@ -34,14 +35,14 @@ NAVY, CREAM, GOLD, INK, MUTED, LINE = "14213D", "F6F1E7", "B89B5E", "1B2433", "6
 REPORT_DATE = date(2026, 9, 25)
 STALE_DAYS = 30
 
-# Goal register (fictional sample students).
+# Goal register (fictional sample data; privacy-safe student IDs, no names).
 GOALS = [
-    ("G-101", "Ava M.",    "Reading fluency",       "Reading", 42, 120, 120),
-    ("G-102", "Liam R.",   "Multi-step word problems", "Math", 35, 90, 90),
-    ("G-103", "Noah K.",   "Self-advocacy requests", "Behavior", 20, 60, 45),
-    ("G-104", "Mia T.",    "Reading comprehension", "Reading", 40, 120, 120),
-    ("G-105", "Ella J.",   "Written expression",    "Writing", 30, 90, 90),
-    ("G-106", "Lucas P.",  "Math fact fluency",     "Math", 50, 60, 60),
+    ("G-101", "STU-001",   "Reading fluency",       "Reading", 42, 120, 120),
+    ("G-102", "STU-002",   "Multi-step word problems", "Math", 35, 90, 90),
+    ("G-103", "STU-003",   "Self-advocacy requests", "Behavior", 20, 60, 45),
+    ("G-104", "STU-004",   "Reading comprehension", "Reading", 40, 120, 120),
+    ("G-105", "STU-005",   "Written expression",    "Writing", 30, 90, 90),
+    ("G-106", "STU-006",   "Math fact fluency",     "Math", 50, 60, 60),
 ]
 
 # Existing Progress Log (date, goal, score %).

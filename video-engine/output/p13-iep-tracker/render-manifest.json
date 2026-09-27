@@ -12,11 +12,11 @@
  "safe_margin": 0.035,
  "width": 1920,
  "height": 1080,
- "draft_watermark": true,
+ "draft_watermark": false,
  "validation": {
   "errors": [],
   "warnings": [
-   "provenance.source_status = 'reconstruction': sources are NOT captures of the shipping product; the video is watermarked DRAFT and must not be used on Etsy",
+   "source_status = 'reconstruction' approved for listing by Assaf (owner) on 2026-09-27: no DRAFT tag; owner must confirm the screens match the shipping product",
    "scene 2 (real-input): morph sources differ in size (3094, 1830) vs (3094, 1926); they are top-left aligned on a common canvas - make sure the captures share geometry"
   ],
   "notes": [
@@ -138,9 +138,9 @@
    "container": "card",
    "bbox": [
     90.00655373559442,
-    723.5454545454545,
+    708.2727272727273,
     1822.6363636363637,
-    854.5353065043689
+    843.0195683585606
    ],
    "frames": 55
   },
@@ -330,6 +330,7 @@
      "text": [
       "Log progress once",
       "2026-09-24",
+      "STU-004",
       "90%"
      ]
     }

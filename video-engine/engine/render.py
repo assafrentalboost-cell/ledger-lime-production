@@ -49,7 +49,8 @@ class Renderer:
         o = cfg["output"]
         self.W, self.H, self.fps = o["width"], o["height"], o["fps"]
         self.card = brand.layout["card"]
-        self.draft = cfg["provenance"]["source_status"] != "product_capture"
+        prov = cfg["provenance"]
+        self.draft = prov["source_status"] != "product_capture" and not prov.get("listing_approval", {}).get("approved")
         self.scenes = cfg["scenes"]
         self.duration = cfg["_duration"]
         self.nframes = int(round(self.duration * self.fps))

@@ -1,6 +1,6 @@
 # Ledger & Lime - Automated Etsy Video Engine V1
 
-Status: **engine READY - Product #13 V3 rendered for review (NEEDS REVISION: stand-in sources)**
+Status: **engine READY - Product #13 V3.1 FINAL rendered (QA PASS, owner-approved reconstruction captures)**
 Date: 2026-09-27. Branch: `claude/wonderful-cray-aqbfyp`. Etsy was not touched.
 
 ## 1. What it is
@@ -147,6 +147,27 @@ MP4 · H.264 · ≤ 15 s · < 100 MB · 1080p · plays muted · fast-start. Etsy
 3. Adjust the rects if the layout differs (use `tools/locate.py`).
 4. Set `source_status` to `product_capture`.
 5. Re-run the same command.
+
+## 8a. Product #13 - Video V3.1 FINAL (2026-09-27)
+
+Owner-approved corrections to V3; the creative direction is unchanged.
+
+- **Output:** `video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.1-FINAL.mp4` (1920x1080, 15.00 s, 5.93 MB).
+- **QA:** `video-engine/output/p13-iep-tracker/VIDEO-QA-REPORT-P13-V3.1.md` records **PASS: 100 pass, 0 warn, 0 fail**.
+
+Changes from V3:
+
+1. **Internal footer removed.** The DRAFT tag is now suppressed only by an explicit, recorded `provenance.listing_approval` (owner, date, note). A new QA check OCR-scans every key frame for internal labels (DRAFT, RECONSTRUCTION, NOT FOR LISTING, DUMMY, STAND-IN, INTERNAL); none were found.
+2. **Privacy-safe identifiers.** STU-001 to STU-006 replace the name-style labels in the workbook, so the Dashboard and Progress Log captures were re-made. New QA checks:
+   - no person-name patterns in any of the 313 workbook cell values or in any frame,
+   - student IDs follow the safe `STU-###` format,
+   - the IDs are visible on screen.
+3. **Scene-2 ring re-centred.** The ring on the new Progress Log row sat about 20 px low and showed a gridline inside it. It now sits on the row's measured gridlines (y 1517-1613).
+4. **QA fix.** Key-frame extraction now deletes any earlier file first, so a stale frame from a previous render can never be read back.
+
+All values are unchanged and still verified against recalculated cells: 60% → 90%, No Recent Data → Improving, Needs Attention 2 → 1.
+
+**Remaining owner confirmation:** the screens are still the formula-driven reconstruction, not a capture of the shipping file. Listing them relies on the owner's approval that they match the shipping Product #13 workbook (columns, status labels, KPI tile).
 
 ## 9. Reusability test - PASS
 

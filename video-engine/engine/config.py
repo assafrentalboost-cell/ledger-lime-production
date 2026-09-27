@@ -95,7 +95,17 @@ def _validate(cfg: dict, brand: Brand, rep: Report) -> None:
     st = prov.get("source_status")
     if st not in SOURCE_STATUSES:
         rep.err(f"provenance.source_status must be one of {sorted(SOURCE_STATUSES)}")
-    if st != "product_capture":
+    appr = prov.get("listing_approval", {})
+    if appr.get("approved"):
+        if st == "dummy":
+            rep.err("provenance.listing_approval cannot approve 'dummy' sources")
+        for k in ("by", "date", "note"):
+            if not appr.get(k):
+                rep.err(f"provenance.listing_approval.{k} is required when approved is true")
+        if st != "product_capture":
+            rep.warn(f"source_status = '{st}' approved for listing by {appr.get('by')} on {appr.get('date')}: "
+                     "no DRAFT tag; owner must confirm the screens match the shipping product")
+    elif st != "product_capture":
         rep.warn(f"provenance.source_status = '{st}': sources are NOT captures of the shipping product; "
                  "the video is watermarked DRAFT and must not be used on Etsy")
     if prov.get("pointer_rendered"):

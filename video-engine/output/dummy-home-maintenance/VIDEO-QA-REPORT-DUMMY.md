@@ -3,7 +3,7 @@
 - **Verdict:** **NEEDS REVISION (technical QA passed; sources are stand-ins)**
 - **Video:** `DUMMY-Home-Maintenance-Etsy-Video.mp4` - 1920x1080, 12.50s, h264 High, yuv420p, 30/1 fps, 6.02 MB
 - **Config:** `configs/dummy_home_maintenance.json`
-- **Generated:** 2026-09-27 10:02 UTC by `render_video.py` (automated)
+- **Generated:** 2026-09-27 11:26 UTC by `render_video.py` (automated)
 - **Checks:** 82 pass, 1 warn, 0 fail
 
 ## Source provenance (product truth)
@@ -121,7 +121,8 @@
 | PASS | Product truth: before/after values verified against workbook | 6 value(s) verified against recalculated workbook cells |
 | PASS | No rendered pointer presented as live capture | provenance.pointer_rendered = false |
 | PASS | No compliance / legal claims in on-screen text | none found |
-| WARN | Sources are captures of the shipping product | source_status = dummy -> DRAFT watermark applied; replace sources before Etsy use |
+| WARN | Sources cleared for listing | source_status = dummy -> DRAFT watermark applied; replace sources (or record listing_approval) before Etsy use |
+| INFO | No internal / QA labels in any frame | 00_00.00s_overdue-before.png: DRAFT; 00_00.00s_overdue-before.png: DUMMY; 00_00.00s_overdue-before.png: NOT FOR LISTING; 01_01.50s_overdue-before.png: DRAFT; 01_01.50s_overdue-before.png: DUMMY; 01_01.50s_overdue-before.png: NOT FOR LISTING (DRAFT tag intended for stand-in sources) |
 
 ## OCR readback (text read from the encoded MP4)
 

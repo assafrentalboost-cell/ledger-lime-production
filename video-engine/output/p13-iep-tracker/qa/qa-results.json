@@ -1,5 +1,5 @@
 {
- "verdict": "NEEDS REVISION (technical QA passed; sources are stand-ins)",
+ "verdict": "PASS (owner-approved reconstruction captures)",
  "checks": [
   {
    "check": "File readable by ffprobe",
@@ -54,7 +54,7 @@
   {
    "check": "Etsy: file < 100 MB",
    "status": "PASS",
-   "detail": "5.94 MB"
+   "detail": "5.93 MB"
   },
   {
    "check": "No audio track (Etsy plays muted)",
@@ -84,12 +84,12 @@
   {
    "check": "Static holds > 1.5 s (informational)",
    "status": "PASS",
-   "detail": "none"
+   "detail": "13.13s (end card hold is expected)"
   },
   {
    "check": "First frame is a composed shot (not blank)",
    "status": "PASS",
-   "detail": "luma mean 223, stdev 64"
+   "detail": "luma mean 223, stdev 63"
   },
   {
    "check": "Mobile preview video written",
@@ -118,6 +118,11 @@
   },
   {
    "check": "OCR readback @5.60s: \"2026-09-24\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @5.60s: \"STU-004\"",
    "status": "PASS",
    "detail": "found in encoded frame"
   },
@@ -219,7 +224,7 @@
   {
    "check": "No clipping: highlight \"highlight 1\" (s2:real-input)",
    "status": "PASS",
-   "detail": "bbox [90, 724, 1823, 855] within card"
+   "detail": "bbox [90, 708, 1823, 843] within card"
   },
   {
    "check": "No clipping: caption \"Updates automatically.\" (s3:automatic-change)",
@@ -467,9 +472,34 @@
    "detail": "none found"
   },
   {
-   "check": "Sources are captures of the shipping product",
-   "status": "WARN",
-   "detail": "source_status = reconstruction -> DRAFT watermark applied; replace sources before Etsy use"
+   "check": "Sources cleared for listing",
+   "status": "PASS",
+   "detail": "source_status = reconstruction; listing approved by Assaf (owner) on 2026-09-27: V3 creative direction approved; owner requested V3.1/FINAL without internal labels and with privacy-safe identifiers."
+  },
+  {
+   "check": "No internal / QA labels in any frame",
+   "status": "PASS",
+   "detail": "OCR of 12 key frames: none found"
+  },
+  {
+   "check": "Privacy: no person-name labels in workbook data",
+   "status": "PASS",
+   "detail": "313 cell values scanned"
+  },
+  {
+   "check": "Privacy: student identifiers use the safe ID format",
+   "status": "PASS",
+   "detail": "STU-001, STU-002, STU-003, STU-004, STU-005, STU-006"
+  },
+  {
+   "check": "Privacy: no person-name labels in any frame (OCR)",
+   "status": "PASS",
+   "detail": "12 key frames scanned"
+  },
+  {
+   "check": "Privacy: safe identifiers visible on screen",
+   "status": "PASS",
+   "detail": "STU-002, STU-004, STU-005, STU-006"
   }
  ],
  "ocr": [
@@ -511,9 +541,16 @@
   {
    "t": 5.6,
    "scene": "real-input",
-   "phrase": "90%",
+   "phrase": "STU-004",
    "full": true,
    "mobile": true
+  },
+  {
+   "t": 5.6,
+   "scene": "real-input",
+   "phrase": "90%",
+   "full": true,
+   "mobile": false
   },
   {
    "t": 8.8,
@@ -614,7 +651,7 @@
    "start_time": "0.000000",
    "duration_ts": 230400,
    "duration": "15.000000",
-   "bit_rate": "3163476",
+   "bit_rate": "3157651",
    "bits_per_raw_sample": "8",
    "nb_frames": "450",
    "extradata_size": 50,
@@ -646,15 +683,15 @@
    }
   },
   "format": {
-   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.mp4",
+   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.1-FINAL.mp4",
    "nb_streams": 1,
    "nb_programs": 0,
    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
    "format_long_name": "QuickTime / MOV",
    "start_time": "0.000000",
    "duration": "15.000000",
-   "size": "5936564",
-   "bit_rate": "3166167",
+   "size": "5925611",
+   "bit_rate": "3160325",
    "probe_score": 100,
    "tags": {
     "major_brand": "isom",
@@ -664,5 +701,5 @@
    }
   }
  },
- "generated": "2026-09-27T10:01:29.291865+00:00"
+ "generated": "2026-09-27T11:28:03.742489+00:00"
 }

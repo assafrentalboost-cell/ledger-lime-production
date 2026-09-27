@@ -412,9 +412,14 @@
    "detail": "none found"
   },
   {
-   "check": "Sources are captures of the shipping product",
+   "check": "Sources cleared for listing",
    "status": "WARN",
-   "detail": "source_status = dummy -> DRAFT watermark applied; replace sources before Etsy use"
+   "detail": "source_status = dummy -> DRAFT watermark applied; replace sources (or record listing_approval) before Etsy use"
+  },
+  {
+   "check": "No internal / QA labels in any frame",
+   "status": "INFO",
+   "detail": "00_00.00s_overdue-before.png: DRAFT; 00_00.00s_overdue-before.png: DUMMY; 00_00.00s_overdue-before.png: NOT FOR LISTING; 01_01.50s_overdue-before.png: DRAFT; 01_01.50s_overdue-before.png: DUMMY; 01_01.50s_overdue-before.png: NOT FOR LISTING (DRAFT tag intended for stand-in sources)"
   }
  ],
  "ocr": [
@@ -581,5 +586,5 @@
    }
   }
  },
- "generated": "2026-09-27T10:02:17.672735+00:00"
+ "generated": "2026-09-27T11:26:06.432719+00:00"
 }

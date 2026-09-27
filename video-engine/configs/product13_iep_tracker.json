@@ -5,10 +5,10 @@
     "id": "p13-iep-tracker",
     "number": 13,
     "title": "IEP Caseload & Goal Progress Tracker",
-    "version": "V3"
+    "version": "V3.1 FINAL"
   },
   "output": {
-    "filename": "P13-IEP-Tracker-Etsy-Video-V3.mp4",
+    "filename": "P13-IEP-Tracker-Etsy-Video-V3.1-FINAL.mp4",
     "width": 1920,
     "height": 1080,
     "fps": 30,
@@ -18,7 +18,13 @@
   "provenance": {
     "source_status": "reconstruction",
     "pointer_rendered": false,
-    "notes": "Original Product #13 workbook / raw clips were not in the repository. Captures are from a reconstruction workbook (sources/p13-iep-tracker/workbook/build_workbook.py) whose values are produced by real formulas recalculated in LibreOffice. The only change between states is ONE appended Progress Log row. No pointer is shown. Replace with captures of the shipping Product #13 workbook before Etsy use."
+    "notes": "Original Product #13 workbook / raw clips were not in the repository. Captures are from a reconstruction workbook (sources/p13-iep-tracker/workbook/build_workbook.py) whose values are produced by real formulas recalculated in LibreOffice. The only change between states is ONE appended Progress Log row. No pointer is shown. Students appear only as privacy-safe identifiers (STU-001...STU-006).",
+    "listing_approval": {
+      "approved": true,
+      "by": "Assaf (owner)",
+      "date": "2026-09-27",
+      "note": "V3 creative direction approved; owner requested V3.1/FINAL without internal labels and with privacy-safe identifiers."
+    }
   },
   "truth": {
     "states": {
@@ -158,9 +164,9 @@
         {
           "rect": [
             70,
-            1537,
+            1516,
             2330,
-            94
+            98
           ],
           "appear": 1.6
         }
@@ -171,6 +177,7 @@
           "text": [
             "Log progress once",
             "2026-09-24",
+            "STU-004",
             "90%"
           ]
         }
@@ -316,6 +323,13 @@
     }
   ],
   "qa": {
-    "report_name": "VIDEO-QA-REPORT-P13.md"
+    "report_name": "VIDEO-QA-REPORT-P13-V3.1.md",
+    "privacy": {
+      "id_pattern": "STU-\\d{3}",
+      "source_values": [
+        "sources/p13-iep-tracker/captures/before_recalculated.json",
+        "sources/p13-iep-tracker/captures/after_recalculated.json"
+      ]
+    }
   }
 }

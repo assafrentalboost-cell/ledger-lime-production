@@ -55,6 +55,8 @@ bash tools/setup_env.sh      # apt: ffmpeg tesseract-ocr libreoffice-calc popple
 | Field | Meaning |
 |---|---|
 | `provenance.source_status` | `product_capture` (real product), `reconstruction`, or `dummy`. Anything other than `product_capture` gets a DRAFT tag burned in and a NEEDS REVISION verdict. |
+| `provenance.listing_approval` | `{"approved": true, "by", "date", "note"}`: the owner's recorded approval to list non-`product_capture` sources. Removes the DRAFT tag (not allowed for `dummy`). |
+| `qa.privacy` | `{"id_pattern": "STU-\\d{3}", "source_values": [recalculated json...]}`: fails QA on person-name labels in workbook data or any frame, and checks that safe IDs are used. |
 | `provenance.pointer_rendered` | Must be `false`. A rendered pointer is never shown as live capture. |
 | `truth.states.before/after` | The only source of numbers/states shown in value chips. |
 | `truth.verify` | Maps truth keys to workbook cells in `*_recalculated.json`. Any mismatch fails validation. |

@@ -56,6 +56,7 @@ class Checks:
 
 def extract_frame(mp4: Path, t: float, dst: Path, width: int | None = None) -> Image.Image:
     vf = ["-vf", f"scale={width}:-2:flags=lanczos"] if width else []
+    dst.unlink(missing_ok=True)  # never read back a stale frame from an earlier render
     sh(["ffmpeg", "-y", "-v", "error", "-ss", f"{t:.3f}", "-i", str(mp4), "-frames:v", "1", *vf, str(dst)])
     if not dst.exists():  # seeking onto the final frame: decode the tail and keep the last picture
         sh(["ffmpeg", "-y", "-v", "error", "-sseof", "-0.5", "-i", str(mp4), *vf, "-update", "1", str(dst)])
@@ -244,16 +245,58 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
     texts += [c.get("_label", "") for s in cfg["scenes"] for c in s.get("chips", [])]
     hits = sorted({t for t in texts if t for p in CLAIM_PATTERNS if re.search(p, t, re.I)})
     C.add("No compliance / legal claims in on-screen text", not hits, "; ".join(hits) or "none found")
-    gate = prov["source_status"] == "product_capture"
-    C.add("Sources are captures of the shipping product", gate,
-          f"source_status = {prov['source_status']}" + ("" if gate else " -> DRAFT watermark applied; replace sources before Etsy use"),
+    approval = prov.get("listing_approval", {})
+    approved = bool(approval.get("approved"))
+    gate = prov["source_status"] == "product_capture" or approved
+    C.add("Sources cleared for listing", gate,
+          f"source_status = {prov['source_status']}" + (
+              "" if prov["source_status"] == "product_capture" else
+              f"; listing approved by {approval.get('by')} on {approval.get('date')}: {approval.get('note')}" if approved else
+              " -> DRAFT watermark applied; replace sources (or record listing_approval) before Etsy use"),
           "warn")
+
+    # ---------------- 11. internal labels + privacy (OCR of every key frame) ----------------
+    frame_text = {}
+    if ocr.available():
+        strip = [brand.color(brand.hl["color"])]
+        for t, sid, what, dst, im in keyframes:
+            frame_text[dst.name] = ocr.read_text(im, strip=strip)
+        internal = [r"\bDRAFT\b", r"RECONSTRUCTION", r"NOT\s*FOR\s*LISTING", r"\bDUMMY\b", r"STAND-?IN", r"\bINTERNAL\b"]
+        hits = sorted({f"{n}: {m.group(0)}" for n, txt in frame_text.items() for p in internal
+                       for m in [re.search(p, txt, re.I)] if m})
+        watermark_expected = manifest.get("draft_watermark", False)
+        C.add("No internal / QA labels in any frame", not hits,
+              ("; ".join(hits[:6]) + (" (DRAFT tag intended for stand-in sources)" if watermark_expected else ""))
+              if hits else f"OCR of {len(frame_text)} key frames: none found",
+              "info" if watermark_expected else "fail")
+    priv = cfg.get("qa", {}).get("privacy")
+    if priv:
+        name_re = re.compile(priv.get("name_pattern", r"\b[A-Z][a-z]{1,15} [A-Z]\.(?=\s|$|\|)"))
+        id_re = re.compile(priv.get("id_pattern", r"STU-\d{3}"))
+        src_vals = []
+        for f in priv.get("source_values", []):
+            data = json.loads((ROOT / f).read_text())
+            src_vals += [str(v) for sheet in data.values() for v in sheet.values()]
+        bad_src = sorted({v for v in src_vals if name_re.search(v)})
+        C.add("Privacy: no person-name labels in workbook data", not bad_src,
+              ", ".join(bad_src[:8]) or f"{len(src_vals)} cell values scanned")
+        ids = sorted({m for v in src_vals for m in id_re.findall(v)})
+        C.add("Privacy: student identifiers use the safe ID format", bool(ids) or not src_vals,
+              ", ".join(ids) if ids else "no IDs found in workbook data")
+        bad_frames = sorted({f"{n}: {m}" for n, txt in frame_text.items() for m in name_re.findall(txt)})
+        C.add("Privacy: no person-name labels in any frame (OCR)", not bad_frames,
+              "; ".join(bad_frames[:6]) or f"{len(frame_text)} key frames scanned")
+        ids_on_screen = sorted({m for txt in frame_text.values() for m in id_re.findall(txt)})
+        C.add("Privacy: safe identifiers visible on screen", bool(ids_on_screen),
+              ", ".join(ids_on_screen) or "none read", "warn")
 
     # ---------------- verdict + report ----------------
     if C.failed:
         verdict = "FAIL"
     elif not gate:
         verdict = "NEEDS REVISION (technical QA passed; sources are stand-ins)"
+    elif approved and prov["source_status"] != "product_capture" and not C.warned:
+        verdict = "PASS (owner-approved reconstruction captures)"
     elif C.warned:
         verdict = "PASS WITH WARNINGS"
     else:
@@ -305,7 +348,10 @@ def render_report(cfg, manifest, mp4, out_dir, verdict, C, ocr_rows, leg_rows, v
     L.append(f"- `source_status`: **{prov['source_status']}**")
     L.append(f"- Rendered pointer shown: **{'yes' if prov.get('pointer_rendered') else 'no'}**")
     L.append(f"- Notes: {prov.get('notes', '')}")
-    if prov["source_status"] != "product_capture":
+    appr = prov.get("listing_approval", {})
+    if appr.get("approved"):
+        L.append(f"- Listing approval: **approved by {appr.get('by')} on {appr.get('date')}** - {appr.get('note')}")
+    if prov["source_status"] != "product_capture" and not appr.get("approved"):
         L.append("")
         L.append("> **Not for Etsy.** The sources are not captures of the shipping product, so every frame carries a "
                  "DRAFT tag. Capture the real workbook in the same before/after states, update `sources` and crop/rect "
