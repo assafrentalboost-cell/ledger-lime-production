@@ -5,10 +5,10 @@
     "id": "p13-iep-tracker",
     "number": 13,
     "title": "IEP Caseload & Goal Progress Tracker",
-    "version": "V3.1 FINAL"
+    "version": "V3.2 FINAL"
   },
   "output": {
-    "filename": "P13-IEP-Tracker-Etsy-Video-V3.1-FINAL.mp4",
+    "filename": "P13-IEP-Tracker-Etsy-Video-V3.2-FINAL.mp4",
     "width": 1920,
     "height": 1080,
     "fps": 30,
@@ -23,7 +23,7 @@
       "approved": true,
       "by": "Assaf (owner)",
       "date": "2026-09-27",
-      "note": "V3 creative direction approved; owner requested V3.1/FINAL without internal labels and with privacy-safe identifiers."
+      "note": "V3 creative direction approved; V3.1 removed internal labels and uses privacy-safe identifiers; V3.2 replaces overlapping dissolves with dip-to-blank scene transitions and clean before/after cuts."
     }
   },
   "truth": {
@@ -323,7 +323,7 @@
     }
   ],
   "qa": {
-    "report_name": "VIDEO-QA-REPORT-P13-V3.1.md",
+    "report_name": "VIDEO-QA-REPORT-P13-V3.2.md",
     "privacy": {
       "id_pattern": "STU-\\d{3}",
       "source_values": [

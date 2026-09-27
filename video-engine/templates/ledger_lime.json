@@ -56,7 +56,9 @@
     "highlight_inflate": 12,
     "chip_fade": 0.45,
     "chip_rise": 16,
-    "morph_dissolve": 0.6
+    "morph_dissolve": 0.6,
+    "morph_style": "cut",
+    "scene_transition": "dip"
   },
   "highlight": {"stroke": 5, "radius": 12, "pad": 14, "dim": 0.5, "dim_color": "paper", "color": "gold"},
   "end_card": {"background": "navy", "title_color": "cream", "subtitle_color": "gold_soft", "brand_color": "gold", "rule_color": "gold", "rule_width": 140}

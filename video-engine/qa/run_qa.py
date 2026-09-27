@@ -148,6 +148,30 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
     st = ImageStat.Stat(first.convert("L"))
     C.add("First frame is a composed shot (not blank)", st.stddev[0] > 20, f"luma mean {st.mean[0]:.0f}, stdev {st.stddev[0]:.0f}")
 
+    # ---------------- 4b. ghosting: never two spreadsheet states on screen ----------------
+    dbl = manifest.get("double_table", [])
+    trn = manifest.get("transitions", {})
+    C.add("No ghosting: one spreadsheet state per frame", not dbl,
+          (f"{len(dbl)} blended frame(s), first: {dbl[0]}") if dbl else
+          f"scene transition = {trn.get('scene', '?')}, before/after = {trn.get('morph', '?')}; checked every frame")
+    # transition strip (from the encoded MP4) for visual readback of every cut / dip / swap
+    marks = []
+    for i, s in enumerate(timeline):
+        if i:
+            marks.append((s["start"], f"cut into {s['id']}"))
+    for sc in cfg["scenes"]:
+        if sc["type"] == "morph":
+            marks.append((sc["_start"] + sc["swap_at"] + sc["swap_duration"] / 2, f"swap in {sc.get('id')}"))
+    strip = []
+    step = 2 / fps
+    for tm, what in sorted(marks):
+        for k in range(-4, 5):
+            t = min(max(0.0, tm + k * step), exp_dur - 1 / fps)
+            dst = qa / "keyframes" / f"tr_{t:06.3f}s.png"
+            strip.append((t, f"{k * step:+.2f}s", what.replace("cut into ", "cut>").replace("swap in ", "swap:"), dst, extract_frame(mp4, t, dst, 480)))
+    if strip:
+        contact_sheet(strip, qa / "transition-strip.png", "Transitions (every 2nd frame around each cut / swap)", 9, 240)
+
     # ---------------- 5. mobile previews ----------------
     mob = qa / "mobile"
     sh(["ffmpeg", "-y", "-v", "error", "-i", str(mp4), "-vf", f"scale={MOBILE_W * 2}:-2:flags=lanczos",
@@ -170,6 +194,10 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
                 t = s["start"] + e["at"]
                 big = extract_frame(mp4, t, qa / "keyframes" / f"ocr_{t:05.2f}s.png")
                 txt = ocr.read_text(big, strip=[brand.color(brand.hl["color"])])
+                # read 3 nearby frames (t-2f, t, t+2f) so single-frame codec noise can't flip a digit
+                for dt in (-2 / fps, 2 / fps):
+                    nb = extract_frame(mp4, t + dt, qa / "keyframes" / f"ocr_{t + dt:06.3f}s.png")
+                    txt += " || " + ocr.read_text(nb, strip=[brand.color(brand.hl["color"])])
                 small = extract_frame(mp4, t, qa / "mobile" / f"ocr_m_{t:05.2f}s.png", MOBILE_W)
                 small_up = small.resize((small.width * 4, small.height * 4), Image.LANCZOS)
                 txt_m = ocr.read_text(small_up, strip=[brand.color(brand.hl["color"])])
@@ -325,7 +353,10 @@ def contact_sheet(frames, dst: Path, title: str, cols: int, tw: int) -> Path:
         y = top + (i // cols) * (th + lab + pad)
         sheet.paste(im.resize((tw, th), Image.LANCZOS) if im.width != tw else im, (x, y))
         d.rectangle([x - 1, y - 1, x + tw, y + th], outline=(210, 200, 180))
-        d.text((x, y + th + 6), f"{t:05.2f}s  {sid}  ({what})", font=f, fill=(27, 36, 51))
+        label = f"{t:05.2f}s  {sid}  ({what})"
+        while f.getlength(label) > tw and len(label) > 8:
+            label = label[:-2]
+        d.text((x, y + th + 6), label, font=f, fill=(27, 36, 51))
     sheet.save(dst, optimize=True)
     return dst
 
@@ -401,6 +432,7 @@ def render_report(cfg, manifest, mp4, out_dir, verdict, C, ocr_rows, leg_rows, v
     L.append("## Artifacts")
     L.append("")
     L.append(f"- Contact sheet: `qa/contact-sheet.png`")
+    L.append(f"- Transition strip (frames around every cut / swap): `qa/transition-strip.png`")
     L.append(f"- Phone-size contact sheet: `qa/mobile-contact-sheet.png`")
     L.append(f"- Phone preview video: `qa/mobile/mobile-preview-{MOBILE_W * 2}w.mp4`")
     L.append(f"- Key frames: `qa/keyframes/`")

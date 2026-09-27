@@ -1,6 +1,6 @@
 # Ledger & Lime - Automated Etsy Video Engine V1
 
-Status: **engine READY - Product #13 V3.1 FINAL rendered (QA PASS, owner-approved reconstruction captures)**
+Status: **engine READY - Product #13 V3.2 FINAL rendered (QA PASS, owner-approved reconstruction captures)**
 Date: 2026-09-27. Branch: `claude/wonderful-cray-aqbfyp`. Etsy was not touched.
 
 ## 1. What it is
@@ -69,8 +69,8 @@ Total length is 12-15 s. Etsy trims longer videos, so validation enforces `max_d
 - **Layout**: a cream canvas with the product in a rounded card (1760x840, soft navy shadow), the caption top-left, and the wordmark top-right.
 - **Motion** (all timings in the template):
   - One slow camera move per scene.
-  - 0.5 s crossfades between scenes.
-  - 0.6 s in-place dissolve for before→after.
+  - 0.5 s dip-to-blank transitions between scenes (V3.2; never two tables at once).
+  - Clean in-place cut for before→after (V3.2).
   - Highlights: a gold ring, with a paper wash dimming everything else.
   - Captions and chips fade and rise 14-16 px.
   - No bounces, zoom-blurs, spins, or fake UI.
@@ -168,6 +168,23 @@ Changes from V3:
 All values are unchanged and still verified against recalculated cells: 60% → 90%, No Recent Data → Improving, Needs Attention 2 → 1.
 
 **Remaining owner confirmation:** the screens are still the formula-driven reconstruction, not a capture of the shipping file. Listing them relies on the owner's approval that they match the shipping Product #13 workbook (columns, status labels, KPI tile).
+
+## 8b. Product #13 - Video V3.2 FINAL (2026-09-27)
+
+V3.1 is the base. The only change is at template level, to transitions.
+
+- **Output:** `video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.2-FINAL.mp4` (1920x1080, 15.00 s, 5.42 MB).
+- **QA:** `video-engine/output/p13-iep-tracker/VIDEO-QA-REPORT-P13-V3.2.md` records **PASS: 101 pass, 0 warn, 0 fail**.
+
+Changes:
+
+- `motion.scene_transition: "dip"`. Over the same 0.5 s (0.7 s into the end card), the outgoing scene fades fully to an empty card (or to the end card's navy) before the incoming scene fades in. Two tables, or a table and end-card text, are never on screen together.
+- `motion.morph_style: "cut"`. Before→after is a clean in-place cut at the midpoint of the old dissolve window, so 60%/90% and No Recent Data/Improving never overlap.
+- **New QA check:** "No ghosting: one spreadsheet state per frame". The renderer logs every frame where two table states would be composited, and QA fails on any.
+- **New QA artifact:** `qa/transition-strip.png`, showing every 2nd frame around each cut and swap, extracted from the MP4.
+- **OCR readback hardening:** each phrase is read from 3 adjacent frames, so single-frame codec noise can't flip a digit.
+
+Unchanged: crops, STU IDs, 60% → 90%, No Recent Data → Improving, Needs Attention 2 → 1, typography, colours, highlights, scene timing, and the end card.
 
 ## 9. Reusability test - PASS
 

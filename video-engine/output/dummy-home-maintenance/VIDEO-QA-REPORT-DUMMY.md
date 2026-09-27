@@ -1,10 +1,10 @@
 # VIDEO QA REPORT - Home Maintenance Planner & Service Log reusability-test
 
 - **Verdict:** **NEEDS REVISION (technical QA passed; sources are stand-ins)**
-- **Video:** `DUMMY-Home-Maintenance-Etsy-Video.mp4` - 1920x1080, 12.50s, h264 High, yuv420p, 30/1 fps, 6.02 MB
+- **Video:** `DUMMY-Home-Maintenance-Etsy-Video.mp4` - 1920x1080, 12.50s, h264 High, yuv420p, 30/1 fps, 5.61 MB
 - **Config:** `configs/dummy_home_maintenance.json`
-- **Generated:** 2026-09-27 11:26 UTC by `render_video.py` (automated)
-- **Checks:** 82 pass, 1 warn, 0 fail
+- **Generated:** 2026-09-27 11:51 UTC by `render_video.py` (automated)
+- **Checks:** 83 pass, 1 warn, 0 fail
 
 ## Source provenance (product truth)
 
@@ -49,7 +49,7 @@
 | PASS | Duration matches timeline | 12.500s (expected 12.500s) |
 | PASS | Duration within 10-15s | 12.50s |
 | PASS | Etsy: <= 15 s (longer is trimmed) | 12.50s |
-| PASS | Etsy: file < 100 MB | 6.02 MB |
+| PASS | Etsy: file < 100 MB | 5.61 MB |
 | PASS | No audio track (Etsy plays muted) | 0 audio stream(s) |
 | PASS | Web fast-start (moov before mdat) | moov -> mdat |
 | PASS | Full decode without errors | clean |
@@ -57,6 +57,7 @@
 | PASS | No black frames (blackdetect) | none detected |
 | PASS | Static holds > 1.5 s (informational) | none |
 | PASS | First frame is a composed shot (not blank) | luma mean 228, stdev 53 |
+| PASS | No ghosting: one spreadsheet state per frame | scene transition = dip, before/after = cut; checked every frame |
 | PASS | Mobile preview video written | mobile/mobile-preview-780w.mp4 |
 | PASS | OCR readback @2.60s: "Spot what is overdue" | found in encoded frame |
 | PASS | OCR readback @2.60s: "Overdue" | found in encoded frame |
@@ -89,17 +90,17 @@
 | PASS | No clipping: end_subtitle "Tasks • Schedules • Service History" (s4:end-card) | bbox [616, 626, 1302, 662] within frame safe area |
 | PASS | No clipping: end_brand "LEDGER & LIME" (s4:end-card) | bbox [795, 919, 1122, 941] within frame safe area |
 | PASS | Chips never cover a visible highlight (s3:plan-updates) | checked every frame |
-| PASS | Readable dwell >= 0.6s: caption "Spot what is overdue." | fully visible 3.20s |
-| PASS | Readable dwell >= 0.6s: highlight "highlight 1" | fully visible 2.47s |
-| PASS | Readable dwell >= 0.6s: highlight "highlight 2" | fully visible 1.97s |
-| PASS | Readable dwell >= 0.6s: caption "Record the service." | fully visible 3.23s |
-| PASS | Readable dwell >= 0.6s: highlight "highlight 1" | fully visible 1.27s |
-| PASS | Readable dwell >= 0.6s: caption "The plan reschedules itself." | fully visible 3.33s |
-| PASS | Readable dwell >= 0.6s: highlight "highlight 1" | fully visible 3.27s |
-| PASS | Readable dwell >= 0.6s: highlight "highlight 2" | fully visible 2.07s |
-| PASS | Readable dwell >= 0.6s: chip "Overdue tasks: 3 -> 2" | fully visible 1.93s |
-| PASS | Readable dwell >= 0.6s: chip "HVAC filter: Overdue -> Schedule" | fully visible 1.77s |
-| PASS | Readable dwell >= 0.6s: chip "On schedule: 75% -> 83%" | fully visible 1.63s |
+| PASS | Readable dwell >= 0.6s: caption "Spot what is overdue." | fully visible 3.00s |
+| PASS | Readable dwell >= 0.6s: highlight "highlight 1" | fully visible 2.27s |
+| PASS | Readable dwell >= 0.6s: highlight "highlight 2" | fully visible 1.77s |
+| PASS | Readable dwell >= 0.6s: caption "Record the service." | fully visible 3.03s |
+| PASS | Readable dwell >= 0.6s: highlight "highlight 1" | fully visible 1.07s |
+| PASS | Readable dwell >= 0.6s: caption "The plan reschedules itself." | fully visible 3.03s |
+| PASS | Readable dwell >= 0.6s: highlight "highlight 1" | fully visible 2.97s |
+| PASS | Readable dwell >= 0.6s: highlight "highlight 2" | fully visible 1.77s |
+| PASS | Readable dwell >= 0.6s: chip "Overdue tasks: 3 -> 2" | fully visible 1.63s |
+| PASS | Readable dwell >= 0.6s: chip "HVAC filter: Overdue -> Schedule" | fully visible 1.47s |
+| PASS | Readable dwell >= 0.6s: chip "On schedule: 75% -> 83%" | fully visible 1.33s |
 | PASS | Readable dwell >= 0.6s: end_title "Home Maintenance Planner & Servi" | fully visible 1.87s |
 | PASS | Caption rendered: "Spot what is overdue." |  |
 | PASS | Caption rendered: "Record the service." |  |
@@ -160,6 +161,7 @@ Phone-frame OCR is a legibility proxy: spreadsheet cell text is expected to be t
 ## Artifacts
 
 - Contact sheet: `qa/contact-sheet.png`
+- Transition strip (frames around every cut / swap): `qa/transition-strip.png`
 - Phone-size contact sheet: `qa/mobile-contact-sheet.png`
 - Phone preview video: `qa/mobile/mobile-preview-780w.mp4`
 - Key frames: `qa/keyframes/`

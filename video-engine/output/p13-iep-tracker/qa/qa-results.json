@@ -54,7 +54,7 @@
   {
    "check": "Etsy: file < 100 MB",
    "status": "PASS",
-   "detail": "5.93 MB"
+   "detail": "5.42 MB"
   },
   {
    "check": "No audio track (Etsy plays muted)",
@@ -90,6 +90,11 @@
    "check": "First frame is a composed shot (not blank)",
    "status": "PASS",
    "detail": "luma mean 223, stdev 63"
+  },
+  {
+   "check": "No ghosting: one spreadsheet state per frame",
+   "status": "PASS",
+   "detail": "scene transition = dip, before/after = cut; checked every frame"
   },
   {
    "check": "Mobile preview video written",
@@ -294,22 +299,7 @@
   {
    "check": "Readable dwell >= 0.6s: caption \"See what needs attention.\"",
    "status": "PASS",
-   "detail": "fully visible 2.77s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
-   "status": "PASS",
-   "detail": "fully visible 2.10s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: highlight \"No Recent Data\"",
-   "status": "PASS",
-   "detail": "fully visible 1.73s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: caption \"Log progress once.\"",
-   "status": "PASS",
-   "detail": "fully visible 3.30s"
+   "detail": "fully visible 2.50s"
   },
   {
    "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
@@ -317,44 +307,59 @@
    "detail": "fully visible 1.83s"
   },
   {
-   "check": "Readable dwell >= 0.6s: caption \"Updates automatically.\"",
+   "check": "Readable dwell >= 0.6s: highlight \"No Recent Data\"",
    "status": "PASS",
-   "detail": "fully visible 2.80s"
+   "detail": "fully visible 1.47s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Log progress once.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.03s"
   },
   {
    "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
    "status": "PASS",
-   "detail": "fully visible 2.63s"
+   "detail": "fully visible 1.57s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Updates automatically.\"",
+   "status": "PASS",
+   "detail": "fully visible 2.53s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.37s"
   },
   {
    "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
    "status": "PASS",
-   "detail": "fully visible 2.63s"
+   "detail": "fully visible 2.37s"
   },
   {
    "check": "Readable dwell >= 0.6s: chip \"Goal progress: 60% -> 90%\"",
    "status": "PASS",
-   "detail": "fully visible 1.40s"
+   "detail": "fully visible 1.13s"
   },
   {
    "check": "Readable dwell >= 0.6s: chip \"Status: No Recent Data -> Improv\"",
    "status": "PASS",
-   "detail": "fully visible 1.20s"
+   "detail": "fully visible 0.93s"
   },
   {
    "check": "Readable dwell >= 0.6s: caption \"Know what needs attention next.\"",
    "status": "PASS",
-   "detail": "fully visible 2.90s"
+   "detail": "fully visible 2.57s"
   },
   {
    "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
    "status": "PASS",
-   "detail": "fully visible 2.63s"
+   "detail": "fully visible 2.30s"
   },
   {
    "check": "Readable dwell >= 0.6s: chip \"Needs attention: 2 -> 1\"",
    "status": "PASS",
-   "detail": "fully visible 2.20s"
+   "detail": "fully visible 1.87s"
   },
   {
    "check": "Readable dwell >= 0.6s: end_title \"IEP Caseload & Goal Progress Tra\"",
@@ -474,7 +479,7 @@
   {
    "check": "Sources cleared for listing",
    "status": "PASS",
-   "detail": "source_status = reconstruction; listing approved by Assaf (owner) on 2026-09-27: V3 creative direction approved; owner requested V3.1/FINAL without internal labels and with privacy-safe identifiers."
+   "detail": "source_status = reconstruction; listing approved by Assaf (owner) on 2026-09-27: V3 creative direction approved; V3.1 removed internal labels and uses privacy-safe identifiers; V3.2 replaces overlapping dissolves with dip-to-blank scene transitions and clean before/after cuts."
   },
   {
    "check": "No internal / QA labels in any frame",
@@ -536,7 +541,7 @@
    "scene": "real-input",
    "phrase": "2026-09-24",
    "full": true,
-   "mobile": true
+   "mobile": false
   },
   {
    "t": 5.6,
@@ -651,7 +656,7 @@
    "start_time": "0.000000",
    "duration_ts": 230400,
    "duration": "15.000000",
-   "bit_rate": "3157651",
+   "bit_rate": "2886708",
    "bits_per_raw_sample": "8",
    "nb_frames": "450",
    "extradata_size": 50,
@@ -683,15 +688,15 @@
    }
   },
   "format": {
-   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.1-FINAL.mp4",
+   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.2-FINAL.mp4",
    "nb_streams": 1,
    "nb_programs": 0,
    "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
    "format_long_name": "QuickTime / MOV",
    "start_time": "0.000000",
    "duration": "15.000000",
-   "size": "5925611",
-   "bit_rate": "3160325",
+   "size": "5417461",
+   "bit_rate": "2889312",
    "probe_score": 100,
    "tags": {
     "major_brand": "isom",
@@ -701,5 +706,5 @@
    }
   }
  },
- "generated": "2026-09-27T11:28:03.742489+00:00"
+ "generated": "2026-09-27T11:48:18.824181+00:00"
 }

@@ -70,6 +70,9 @@ def main() -> int:
                 "draft_watermark": r.draft, "validation": rep.__dict__,
                 "scenes": r.manifest["scenes"], "elements": list(r.manifest["elements"].values()),
                 "overlaps": r.manifest.get("overlaps", []),
+                "double_table": r.manifest.get("double_table", []),
+                "transitions": {"scene": brand.motion.get("scene_transition", "crossfade"),
+                                "morph": brand.motion.get("morph_style", "dissolve")},
                 "timeline": [{"id": s.get("id", s["type"]), "type": s["type"], "start": s["_start"],
                               "duration": s["duration"], "caption": s.get("caption", ""),
                               "expect_text": s.get("expect_text", [])} for s in cfg["scenes"]]}

@@ -54,7 +54,7 @@
   {
    "check": "Etsy: file < 100 MB",
    "status": "PASS",
-   "detail": "6.02 MB"
+   "detail": "5.61 MB"
   },
   {
    "check": "No audio track (Etsy plays muted)",
@@ -90,6 +90,11 @@
    "check": "First frame is a composed shot (not blank)",
    "status": "PASS",
    "detail": "luma mean 228, stdev 53"
+  },
+  {
+   "check": "No ghosting: one spreadsheet state per frame",
+   "status": "PASS",
+   "detail": "scene transition = dip, before/after = cut; checked every frame"
   },
   {
    "check": "Mobile preview video written",
@@ -254,57 +259,57 @@
   {
    "check": "Readable dwell >= 0.6s: caption \"Spot what is overdue.\"",
    "status": "PASS",
-   "detail": "fully visible 3.20s"
+   "detail": "fully visible 3.00s"
   },
   {
    "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
    "status": "PASS",
-   "detail": "fully visible 2.47s"
+   "detail": "fully visible 2.27s"
   },
   {
    "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
-   "status": "PASS",
-   "detail": "fully visible 1.97s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: caption \"Record the service.\"",
-   "status": "PASS",
-   "detail": "fully visible 3.23s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
-   "status": "PASS",
-   "detail": "fully visible 1.27s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: caption \"The plan reschedules itself.\"",
-   "status": "PASS",
-   "detail": "fully visible 3.33s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
-   "status": "PASS",
-   "detail": "fully visible 3.27s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
-   "status": "PASS",
-   "detail": "fully visible 2.07s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: chip \"Overdue tasks: 3 -> 2\"",
-   "status": "PASS",
-   "detail": "fully visible 1.93s"
-  },
-  {
-   "check": "Readable dwell >= 0.6s: chip \"HVAC filter: Overdue -> Schedule\"",
    "status": "PASS",
    "detail": "fully visible 1.77s"
   },
   {
-   "check": "Readable dwell >= 0.6s: chip \"On schedule: 75% -> 83%\"",
+   "check": "Readable dwell >= 0.6s: caption \"Record the service.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.03s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 1.07s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"The plan reschedules itself.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.03s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.97s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
+   "status": "PASS",
+   "detail": "fully visible 1.77s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"Overdue tasks: 3 -> 2\"",
    "status": "PASS",
    "detail": "fully visible 1.63s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"HVAC filter: Overdue -> Schedule\"",
+   "status": "PASS",
+   "detail": "fully visible 1.47s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"On schedule: 75% -> 83%\"",
+   "status": "PASS",
+   "detail": "fully visible 1.33s"
   },
   {
    "check": "Readable dwell >= 0.6s: end_title \"Home Maintenance Planner & Servi\"",
@@ -536,7 +541,7 @@
    "start_time": "0.000000",
    "duration_ts": 192000,
    "duration": "12.500000",
-   "bit_rate": "3848574",
+   "bit_rate": "3584870",
    "bits_per_raw_sample": "8",
    "nb_frames": "375",
    "extradata_size": 50,
@@ -575,8 +580,8 @@
    "format_long_name": "QuickTime / MOV",
    "start_time": "0.000000",
    "duration": "12.500000",
-   "size": "6017740",
-   "bit_rate": "3851353",
+   "size": "5605742",
+   "bit_rate": "3587674",
    "probe_score": 100,
    "tags": {
     "major_brand": "isom",
@@ -586,5 +591,5 @@
    }
   }
  },
- "generated": "2026-09-27T11:26:06.432719+00:00"
+ "generated": "2026-09-27T11:51:54.647486+00:00"
 }

@@ -82,6 +82,9 @@ class Renderer:
         self._record("global", "wordmark", "LEDGER & LIME", b.type["wordmark_size"],
                      self._bbox(layer, self.wordmark[1]), "frame")
         self.base = base
+        # neutral frame for "dip" transitions: empty white card, no caption
+        self.neutral = base.copy()
+        self.neutral.paste(Image.new("RGB", (cw, ch), (255, 255, 255)), (cx, cy), self.card_mask)
         # end-card background
         self.end_bg = Image.new("RGB", (self.W, self.H), b.color(b.end["background"]))
         # draft tag
@@ -239,9 +242,16 @@ class Renderer:
         s = w / self.card[2]
         img = self._card_image(st, 0, rect, u)
         if sc["type"] == "morph":
-            mp = in_out_cubic((u - sc["swap_at"]) / sc["swap_duration"])
-            if mp > 0:
+            if b.motion.get("morph_style", "dissolve") == "cut":
+                # clean in-place cut at the midpoint of the swap window: one table state per frame
+                mp = 1.0 if u >= sc["swap_at"] + sc["swap_duration"] / 2 else 0.0
+            else:
+                mp = in_out_cubic((u - sc["swap_at"]) / sc["swap_duration"])
+            if mp >= 1.0:
+                img = self._card_image(st, 1, rect, u)
+            elif mp > 0:
                 img = Image.blend(img, self._card_image(st, 1, rect, u), mp)
+                self._double_table(st["tag"], u, "morph dissolve")
         cx, cy, cw, ch = self.card
         # --- highlights (card coordinates) ---
         hls = []
@@ -367,6 +377,34 @@ class Renderer:
         return frame
 
     # ------------------------------------------------------------------ timeline
+    def _double_table(self, scene, u, why):
+        self.manifest.setdefault("double_table", []).append({"scene": scene, "t_local": round(u, 3), "why": why})
+
+    def _is_table(self, st):
+        return st["sc"]["type"] in ("screen", "morph")
+
+    def _transition(self, out_st, in_st, t, cut, tr):
+        """Blend two scenes around `cut`. 'dip' passes through a neutral frame so two
+        spreadsheet states (or a table and end-card text) are never visible together;
+        'crossfade' blends directly."""
+        lin = clamp01((t - (cut - tr / 2)) / tr)
+        mode = self.b.motion.get("scene_transition", "crossfade")
+        if mode == "dip" and self._is_table(out_st):
+            # table -> table dips through an empty card; table -> end card dips through
+            # the end card's own background, so its text never sits over a fading table
+            neutral = self.neutral if self._is_table(in_st) else self.end_bg
+            if lin < 0.5:
+                img = self.scene_frame(out_st, t - out_st["sc"]["_start"])
+                return Image.blend(img, neutral, in_out_cubic(lin * 2))
+            img = self.scene_frame(in_st, t - cut)
+            return Image.blend(neutral, img, in_out_cubic((lin - 0.5) * 2))
+        p = in_out_cubic(lin)
+        a = self.scene_frame(out_st, t - out_st["sc"]["_start"])
+        b = self.scene_frame(in_st, t - cut)
+        if 0 < p < 1 and self._is_table(out_st) and self._is_table(in_st):
+            self._double_table(in_st["tag"], round(t - cut, 3), "scene crossfade")
+        return Image.blend(a, b, p)
+
     def frame(self, n: int) -> Image.Image:
         t = n / self.fps
         idx = 0
@@ -374,22 +412,18 @@ class Renderer:
             if t >= sc["_start"]:
                 idx = i
         st = self._st[idx]
-        img = self.scene_frame(st, t - st["sc"]["_start"])
-        # crossfade into the NEXT scene (centred on the cut) / out of the PREVIOUS one
+        img = None
         if idx + 1 < len(self.scenes):
             nxt = self._st[idx + 1]
-            tr = nxt["sc"]["transition"]
-            cut = nxt["sc"]["_start"]
+            tr, cut = nxt["sc"]["transition"], nxt["sc"]["_start"]
             if tr and t > cut - tr / 2:
-                p = in_out_cubic((t - (cut - tr / 2)) / tr)
-                img = Image.blend(img, self.scene_frame(nxt, t - cut), p)
-        if idx > 0:
-            tr = st["sc"]["transition"]
-            cut = st["sc"]["_start"]
+                img = self._transition(st, nxt, t, cut, tr)
+        if img is None and idx > 0:
+            tr, cut = st["sc"]["transition"], st["sc"]["_start"]
             if tr and t < cut + tr / 2:
-                prv = self._st[idx - 1]
-                p = in_out_cubic((t - (cut - tr / 2)) / tr)
-                img = Image.blend(self.scene_frame(prv, t - prv["sc"]["_start"]), img, p)
+                img = self._transition(self._st[idx - 1], st, t, cut, tr)
+        if img is None:
+            img = self.scene_frame(st, t - st["sc"]["_start"])
         if self.draft_tag:
             pill, pos = self.draft_tag
             img.paste(pill, pos, pill)
