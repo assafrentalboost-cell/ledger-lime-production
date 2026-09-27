@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+# regenerable QA frames (contact sheets, reports, previews and MP4s ARE committed)
+video-engine/output/*/qa/keyframes/
+video-engine/output/*/qa/mobile/*.png

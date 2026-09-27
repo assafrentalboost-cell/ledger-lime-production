@@ -1,0 +1,63 @@
+{
+  "name": "Ledger & Lime - Premium Calm",
+  "description": "Navy / cream / restrained gold. Framed product card, serif captions, minimal motion. All pixel values are for a 1920x1080 canvas.",
+  "colors": {
+    "navy": "#14213D",
+    "navy_soft": "#22335A",
+    "cream": "#F6F1E7",
+    "paper": "#FBF8F2",
+    "gold": "#B89B5E",
+    "gold_soft": "#D8C49A",
+    "ink": "#1B2433",
+    "muted": "#6B7280",
+    "card_border": "#E3DACA"
+  },
+  "fonts": {
+    "serif": "assets/fonts/CormorantGaramond-SemiBold.ttf",
+    "serif_medium": "assets/fonts/CormorantGaramond-Medium.ttf",
+    "sans": "assets/fonts/Inter-Regular.ttf",
+    "sans_medium": "assets/fonts/Inter-Medium.ttf",
+    "sans_semibold": "assets/fonts/Inter-SemiBold.ttf"
+  },
+  "canvas": {"width": 1920, "height": 1080, "background": "cream"},
+  "layout": {
+    "card": [80, 184, 1760, 840],
+    "card_radius": 18,
+    "card_shadow": {"blur": 26, "offset_y": 12, "opacity": 0.16},
+    "caption": {"x": 80, "center_y": 100, "max_width": 1300},
+    "wordmark": {"right": 1840, "center_y": 100},
+    "draft_tag": {"right": 1840, "center_y": 1052},
+    "chip_inset": 34,
+    "chip_gap": 22,
+    "safe_margin": 0.035
+  },
+  "type": {
+    "caption_size": 78,
+    "wordmark_size": 22,
+    "wordmark_tracking": 6,
+    "chip_label_size": 30,
+    "chip_label_tracking": 3,
+    "chip_value_size": 60,
+    "highlight_label_size": 56,
+    "draft_tag_size": 20,
+    "end_title_size": 88,
+    "end_subtitle_size": 38,
+    "end_subtitle_tracking": 1,
+    "end_brand_size": 30,
+    "end_brand_tracking": 9
+  },
+  "motion": {
+    "ease": "in_out_cubic",
+    "transition": 0.5,
+    "caption_fade": 0.45,
+    "caption_rise": 14,
+    "caption_delay": 0.1,
+    "highlight_fade": 0.4,
+    "highlight_inflate": 12,
+    "chip_fade": 0.45,
+    "chip_rise": 16,
+    "morph_dissolve": 0.6
+  },
+  "highlight": {"stroke": 5, "radius": 12, "pad": 14, "dim": 0.5, "dim_color": "paper", "color": "gold"},
+  "end_card": {"background": "navy", "title_color": "cream", "subtitle_color": "gold_soft", "brand_color": "gold", "rule_color": "gold", "rule_width": 140}
+}

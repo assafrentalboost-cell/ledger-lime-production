@@ -1,0 +1,266 @@
+{
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "dummy-home-maintenance",
+    "number": 0,
+    "title": "Home Maintenance Planner & Service Log",
+    "version": "reusability-test"
+  },
+  "output": {
+    "filename": "DUMMY-Home-Maintenance-Etsy-Video.mp4",
+    "fps": 30,
+    "min_duration": 10,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "dummy",
+    "pointer_rendered": false,
+    "notes": "Engine reusability test only - not a Ledger & Lime listing. Formula-driven workbook built by sources/dummy-home-maintenance/workbook/build_workbook.py, captured after each typed cell; the input clip is those real captured states in sequence (tools/stills_to_clip.py)."
+  },
+  "truth": {
+    "states": {
+      "before": {
+        "overdue": "3",
+        "hvac_status": "Overdue",
+        "on_schedule": "75%"
+      },
+      "after": {
+        "overdue": "2",
+        "hvac_status": "Scheduled",
+        "on_schedule": "83%"
+      }
+    },
+    "labels": {
+      "overdue": "Overdue tasks",
+      "hvac_status": "HVAC filter",
+      "on_schedule": "On schedule"
+    },
+    "verify": {
+      "before": "sources/dummy-home-maintenance/captures/step0_recalculated.json",
+      "after": "sources/dummy-home-maintenance/captures/step3_recalculated.json",
+      "cells": {
+        "overdue": {
+          "sheet": "Plan",
+          "cell": "A5",
+          "format": "int"
+        },
+        "hvac_status": {
+          "sheet": "Plan",
+          "cell": "F7"
+        },
+        "on_schedule": {
+          "sheet": "Plan",
+          "cell": "E5",
+          "format": "percent"
+        }
+      }
+    }
+  },
+  "sources": {
+    "plan_before": {
+      "path": "sources/dummy-home-maintenance/captures/step0_plan.png"
+    },
+    "plan_after": {
+      "path": "sources/dummy-home-maintenance/captures/step3_plan.png"
+    },
+    "entry_clip": {
+      "path": "sources/dummy-home-maintenance/captures/service-log-entry-clip.mp4",
+      "type": "video",
+      "in": 0
+    }
+  },
+  "scenes": [
+    {
+      "id": "overdue-before",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "plan_before",
+      "caption": "Spot what is overdue.",
+      "camera": {
+        "from": [
+          0,
+          200,
+          2589,
+          1236
+        ],
+        "to": [
+          29,
+          215,
+          2560,
+          1222
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            700,
+            318,
+            120,
+            104
+          ],
+          "appear": 0.4
+        },
+        {
+          "rect": [
+            2185,
+            518,
+            378,
+            87
+          ],
+          "pad": 8,
+          "label": "Past due",
+          "appear": 0.9,
+          "label_side": "left"
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.6,
+          "text": [
+            "Spot what is overdue",
+            "Overdue",
+            "Past due"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "log-service",
+      "type": "screen",
+      "duration": 3.5,
+      "transition": 0.4,
+      "source": "entry_clip",
+      "caption": "Record the service.",
+      "camera": {
+        "from": [
+          0,
+          332,
+          2326,
+          1110
+        ],
+        "to": [
+          0,
+          559,
+          1850,
+          883
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            26,
+            1181,
+            1520,
+            76
+          ],
+          "appear": 2.1
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 3.2,
+          "text": [
+            "Record the service",
+            "2026-09-24",
+            "$24"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan-updates",
+      "type": "morph",
+      "duration": 3.5,
+      "transition": 0.4,
+      "source_from": "plan_before",
+      "source_to": "plan_after",
+      "swap_at": 0.7,
+      "swap_duration": 0.7,
+      "caption": "The plan reschedules itself.",
+      "camera": {
+        "from": [
+          300,
+          215,
+          2289,
+          1093
+        ],
+        "to": [
+          600,
+          222,
+          1989,
+          949
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            2185,
+            518,
+            378,
+            87
+          ],
+          "pad": 8,
+          "appear": 0.2
+        },
+        {
+          "rect": [
+            1975,
+            315,
+            250,
+            105
+          ],
+          "appear": 1.4
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "overdue",
+          "anchor": "bottom-center",
+          "appear": 1.5
+        },
+        {
+          "truth_key": "hvac_status",
+          "anchor": "bottom-center",
+          "appear": 1.65
+        },
+        {
+          "truth_key": "on_schedule",
+          "anchor": "bottom-center",
+          "appear": 1.8
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 3.2,
+          "text": [
+            "reschedules itself",
+            "Scheduled",
+            "83%"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 2.5,
+      "transition": 0.6,
+      "title": "Home Maintenance Planner & Service Log",
+      "subtitle": "Tasks • Schedules • Service History",
+      "brand": "Ledger & Lime",
+      "expect_text": [
+        {
+          "at": 2.2,
+          "text": [
+            "Home Maintenance Planner",
+            "Service History"
+          ]
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "report_name": "VIDEO-QA-REPORT-DUMMY.md"
+  }
+}

@@ -1,0 +1,349 @@
+{
+ "config": "configs/dummy_home_maintenance.json",
+ "duration": 12.5,
+ "fps": 30,
+ "nframes": 375,
+ "card": [
+  80,
+  184,
+  1760,
+  840
+ ],
+ "safe_margin": 0.035,
+ "width": 1920,
+ "height": 1080,
+ "draft_watermark": true,
+ "validation": {
+  "errors": [],
+  "warnings": [
+   "provenance.source_status = 'dummy': sources are NOT captures of the shipping product; the video is watermarked DRAFT and must not be used on Etsy"
+  ],
+  "notes": [
+   "truth verified: before.overdue = '3' (Plan!A5)",
+   "truth verified: before.hvac_status = 'Overdue' (Plan!F7)",
+   "truth verified: before.on_schedule = '75%' (Plan!E5)",
+   "truth verified: after.overdue = '2' (Plan!A5)",
+   "truth verified: after.hvac_status = 'Scheduled' (Plan!F7)",
+   "truth verified: after.on_schedule = '83%' (Plan!E5)"
+  ]
+ },
+ "scenes": [
+  {
+   "scene": "s1:overdue-before",
+   "scale_min": 1.455,
+   "scale_max": 1.471,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s2:log-service",
+   "scale_min": 1.051,
+   "scale_max": 1.322,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s3:plan-updates",
+   "scale_min": 1.13,
+   "scale_max": 1.301,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  }
+ ],
+ "elements": [
+  {
+   "scene": "global",
+   "kind": "wordmark",
+   "text": "LEDGER & LIME",
+   "font_px": 22,
+   "container": "frame",
+   "bbox": [
+    1603,
+    92,
+    1835,
+    108
+   ],
+   "frames": 1
+  },
+  {
+   "scene": "s1:overdue-before",
+   "kind": "caption",
+   "text": "Spot what is overdue.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    85,
+    67,
+    734,
+    146
+   ],
+   "frames": 96
+  },
+  {
+   "scene": "s1:overdue-before",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    522.3125,
+    235.74999999999997,
+    655.702218257113,
+    353.3599168395855
+   ],
+   "frames": 74
+  },
+  {
+   "scene": "s1:overdue-before",
+   "kind": "highlight",
+   "text": "highlight 2",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    1549.25,
+    379.25,
+    1835.336541512966,
+    470.28806356590775
+   ],
+   "frames": 59
+  },
+  {
+   "scene": "s1:overdue-before",
+   "kind": "highlight_label",
+   "text": "Past due",
+   "font_px": 56,
+   "container": "card",
+   "bbox": [
+    1261,
+    377,
+    1539,
+    472
+   ],
+   "frames": 59
+  },
+  {
+   "scene": "s2:log-service",
+   "kind": "caption",
+   "text": "Record the service.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    82,
+    67,
+    657,
+    126
+   ],
+   "frames": 97
+  },
+  {
+   "scene": "s2:log-service",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    82.5864431004803,
+    756.718918918919,
+    1569.7891891891893,
+    872.7453087535421
+   ],
+   "frames": 38
+  },
+  {
+   "scene": "s3:plan-updates",
+   "kind": "caption",
+   "text": "The plan reschedules itself.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    83,
+    67,
+    894,
+    146
+   ],
+   "frames": 100
+  },
+  {
+   "scene": "s3:plan-updates",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    1469.5138260432382,
+    404.05470964083344,
+    1833.9511206184259,
+    536.0346907993967
+   ],
+   "frames": 98
+  },
+  {
+   "scene": "s3:plan-updates",
+   "kind": "highlight",
+   "text": "highlight 2",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    1277.6918049270994,
+    243.37958603308988,
+    1561.5753807709384,
+    378.3343388637506
+   ],
+   "frames": 62
+  },
+  {
+   "scene": "s3:plan-updates",
+   "kind": "chip",
+   "text": "Overdue tasks: 3 -> 2",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    177,
+    819,
+    535,
+    990
+   ],
+   "frames": 58
+  },
+  {
+   "scene": "s3:plan-updates",
+   "kind": "chip",
+   "text": "HVAC filter: Overdue -> Scheduled",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    557,
+    819,
+    1283,
+    990
+   ],
+   "frames": 53
+  },
+  {
+   "scene": "s3:plan-updates",
+   "kind": "chip",
+   "text": "On schedule: 75% -> 83%",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    1305,
+    819,
+    1742,
+    990
+   ],
+   "frames": 49
+  },
+  {
+   "scene": "s4:end-card",
+   "kind": "end_title",
+   "text": "Home Maintenance Planner & Service Log",
+   "font_px": 88,
+   "container": "frame",
+   "bbox": [
+    221,
+    418,
+    1696,
+    507
+   ],
+   "frames": 56
+  },
+  {
+   "scene": "s4:end-card",
+   "kind": "end_subtitle",
+   "text": "Tasks \u2022 Schedules \u2022 Service History",
+   "font_px": 38,
+   "container": "frame",
+   "bbox": [
+    616,
+    626,
+    1302,
+    662
+   ],
+   "frames": 38
+  },
+  {
+   "scene": "s4:end-card",
+   "kind": "end_brand",
+   "text": "LEDGER & LIME",
+   "font_px": 30,
+   "container": "frame",
+   "bbox": [
+    795,
+    919,
+    1122,
+    941
+   ],
+   "frames": 30
+  }
+ ],
+ "overlaps": [],
+ "timeline": [
+  {
+   "id": "overdue-before",
+   "type": "screen",
+   "start": 0.0,
+   "duration": 3.0,
+   "caption": "Spot what is overdue.",
+   "expect_text": [
+    {
+     "at": 2.6,
+     "text": [
+      "Spot what is overdue",
+      "Overdue",
+      "Past due"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "log-service",
+   "type": "screen",
+   "start": 3.0,
+   "duration": 3.5,
+   "caption": "Record the service.",
+   "expect_text": [
+    {
+     "at": 3.2,
+     "text": [
+      "Record the service",
+      "2026-09-24",
+      "$24"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "plan-updates",
+   "type": "morph",
+   "start": 6.5,
+   "duration": 3.5,
+   "caption": "The plan reschedules itself.",
+   "expect_text": [
+    {
+     "at": 3.2,
+     "text": [
+      "reschedules itself",
+      "Scheduled",
+      "83%"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-card",
+   "type": "end_card",
+   "start": 10.0,
+   "duration": 2.5,
+   "caption": "",
+   "expect_text": [
+    {
+     "at": 2.2,
+     "text": [
+      "Home Maintenance Planner",
+      "Service History"
+     ]
+    }
+   ]
+  }
+ ]
+}

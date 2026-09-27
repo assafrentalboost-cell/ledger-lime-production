@@ -1,0 +1,321 @@
+{
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "p13-iep-tracker",
+    "number": 13,
+    "title": "IEP Caseload & Goal Progress Tracker",
+    "version": "V3"
+  },
+  "output": {
+    "filename": "P13-IEP-Tracker-Etsy-Video-V3.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "min_duration": 12,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "reconstruction",
+    "pointer_rendered": false,
+    "notes": "Original Product #13 workbook / raw clips were not in the repository. Captures are from a reconstruction workbook (sources/p13-iep-tracker/workbook/build_workbook.py) whose values are produced by real formulas recalculated in LibreOffice. The only change between states is ONE appended Progress Log row. No pointer is shown. Replace with captures of the shipping Product #13 workbook before Etsy use."
+  },
+  "truth": {
+    "states": {
+      "before": {
+        "latest_progress": "60%",
+        "status": "No Recent Data",
+        "needs_attention": "2"
+      },
+      "after": {
+        "latest_progress": "90%",
+        "status": "Improving",
+        "needs_attention": "1"
+      }
+    },
+    "labels": {
+      "latest_progress": "Goal progress",
+      "status": "Status",
+      "needs_attention": "Needs attention"
+    },
+    "verify": {
+      "before": "sources/p13-iep-tracker/captures/before_recalculated.json",
+      "after": "sources/p13-iep-tracker/captures/after_recalculated.json",
+      "cells": {
+        "latest_progress": {
+          "sheet": "Dashboard",
+          "cell": "G13",
+          "format": "percent"
+        },
+        "status": {
+          "sheet": "Dashboard",
+          "cell": "J13"
+        },
+        "needs_attention": {
+          "sheet": "Dashboard",
+          "cell": "E6",
+          "format": "int"
+        }
+      }
+    }
+  },
+  "sources": {
+    "dash_before": {
+      "path": "sources/p13-iep-tracker/captures/before_dashboard.png",
+      "state": "before"
+    },
+    "dash_after": {
+      "path": "sources/p13-iep-tracker/captures/after_dashboard.png",
+      "state": "after"
+    },
+    "log_before": {
+      "path": "sources/p13-iep-tracker/captures/before_progress-log.png",
+      "state": "before"
+    },
+    "log_after": {
+      "path": "sources/p13-iep-tracker/captures/after_progress-log.png",
+      "state": "after"
+    }
+  },
+  "scenes": [
+    {
+      "id": "problem-before",
+      "type": "screen",
+      "duration": 2.5,
+      "source": "dash_before",
+      "caption": "See what needs attention.",
+      "camera": {
+        "from": [
+          1650,
+          320,
+          2600,
+          1241
+        ],
+        "to": [
+          1705,
+          350,
+          2545,
+          1215
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            1950,
+            385,
+            495,
+            240
+          ],
+          "appear": 0.35
+        },
+        {
+          "find": "No Recent Data",
+          "expand": [
+            87,
+            29,
+            53,
+            44
+          ],
+          "pad": 8,
+          "appear": 0.7
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.1,
+          "text": [
+            "See what needs attention",
+            "Needs Attention",
+            "No Recent Data"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "real-input",
+      "type": "morph",
+      "duration": 3.5,
+      "source_from": "log_before",
+      "source_to": "log_after",
+      "swap_at": 0.9,
+      "swap_duration": 0.6,
+      "caption": "Log progress once.",
+      "camera": {
+        "from": [
+          0,
+          483,
+          2950,
+          1408
+        ],
+        "to": [
+          30,
+          769,
+          2420,
+          1155
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            70,
+            1537,
+            2330,
+            94
+          ],
+          "appear": 1.6
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 3.1,
+          "text": [
+            "Log progress once",
+            "2026-09-24",
+            "90%"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automatic-change",
+      "type": "morph",
+      "duration": 3.0,
+      "source_from": "dash_before",
+      "source_to": "dash_after",
+      "swap_at": 0.8,
+      "swap_duration": 0.6,
+      "caption": "Updates automatically.",
+      "camera": {
+        "from": [
+          2300,
+          654,
+          1950,
+          931
+        ],
+        "to": [
+          2380,
+          770,
+          1870,
+          892
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            2420,
+            1251,
+            270,
+            109
+          ],
+          "appear": 0.3
+        },
+        {
+          "rect": [
+            3704,
+            1251,
+            515,
+            109
+          ],
+          "appear": 0.3
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "latest_progress",
+          "anchor": "bottom-left",
+          "appear": 1.5
+        },
+        {
+          "truth_key": "status",
+          "anchor": "bottom-left",
+          "appear": 1.7
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.8,
+          "text": [
+            "Updates automatically",
+            "Improving",
+            "90%"
+          ]
+        }
+      ],
+      "canvas_pad": [
+        0,
+        200
+      ]
+    },
+    {
+      "id": "buyer-outcome",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "dash_after",
+      "caption": "Know what needs attention next.",
+      "camera": {
+        "from": [
+          1705,
+          350,
+          2545,
+          1215
+        ],
+        "to": [
+          1650,
+          320,
+          2600,
+          1241
+        ]
+      },
+      "highlights": [
+        {
+          "rect": [
+            1950,
+            385,
+            495,
+            240
+          ],
+          "appear": 0.4
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "needs_attention",
+          "anchor": "bottom-left",
+          "appear": 0.8
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "Know what needs attention next",
+            "Needs Attention"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 3.0,
+      "transition": 0.7,
+      "title": "IEP Caseload & Goal Progress Tracker",
+      "subtitle": "Track Goals • Progress • Service Minutes",
+      "brand": "Ledger & Lime",
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "IEP Caseload",
+            "Goal Progress Tracker",
+            "Service Minutes",
+            "LEDGER"
+          ]
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "report_name": "VIDEO-QA-REPORT-P13.md"
+  }
+}

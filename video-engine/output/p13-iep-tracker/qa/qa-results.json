@@ -1,0 +1,668 @@
+{
+ "verdict": "NEEDS REVISION (technical QA passed; sources are stand-ins)",
+ "checks": [
+  {
+   "check": "File readable by ffprobe",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Container MP4",
+   "status": "PASS",
+   "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+  },
+  {
+   "check": "Codec H.264 (High)",
+   "status": "PASS",
+   "detail": "h264 / High / level 41"
+  },
+  {
+   "check": "Resolution",
+   "status": "PASS",
+   "detail": "1920x1080 (expected 1920x1080)"
+  },
+  {
+   "check": "Pixel format yuv420p",
+   "status": "PASS",
+   "detail": "yuv420p"
+  },
+  {
+   "check": "Frame rate",
+   "status": "PASS",
+   "detail": "30/1"
+  },
+  {
+   "check": "Colour tagged BT.709",
+   "status": "PASS",
+   "detail": "bt709/bt709/bt709"
+  },
+  {
+   "check": "Duration matches timeline",
+   "status": "PASS",
+   "detail": "15.000s (expected 15.000s)"
+  },
+  {
+   "check": "Duration within 12-15s",
+   "status": "PASS",
+   "detail": "15.00s"
+  },
+  {
+   "check": "Etsy: <= 15 s (longer is trimmed)",
+   "status": "PASS",
+   "detail": "15.00s"
+  },
+  {
+   "check": "Etsy: file < 100 MB",
+   "status": "PASS",
+   "detail": "5.94 MB"
+  },
+  {
+   "check": "No audio track (Etsy plays muted)",
+   "status": "PASS",
+   "detail": "0 audio stream(s)"
+  },
+  {
+   "check": "Web fast-start (moov before mdat)",
+   "status": "PASS",
+   "detail": "moov -> mdat"
+  },
+  {
+   "check": "Full decode without errors",
+   "status": "PASS",
+   "detail": "clean"
+  },
+  {
+   "check": "Frame count",
+   "status": "PASS",
+   "detail": "450 decoded (expected 450)"
+  },
+  {
+   "check": "No black frames (blackdetect)",
+   "status": "PASS",
+   "detail": "none detected"
+  },
+  {
+   "check": "Static holds > 1.5 s (informational)",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "First frame is a composed shot (not blank)",
+   "status": "PASS",
+   "detail": "luma mean 223, stdev 64"
+  },
+  {
+   "check": "Mobile preview video written",
+   "status": "PASS",
+   "detail": "mobile/mobile-preview-780w.mp4"
+  },
+  {
+   "check": "OCR readback @2.10s: \"See what needs attention\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @2.10s: \"Needs Attention\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @2.10s: \"No Recent Data\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @5.60s: \"Log progress once\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @5.60s: \"2026-09-24\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @5.60s: \"90%\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @8.80s: \"Updates automatically\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @8.80s: \"Improving\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @8.80s: \"90%\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @11.70s: \"Know what needs attention next\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @11.70s: \"Needs Attention\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @14.50s: \"IEP Caseload\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @14.50s: \"Goal Progress Tracker\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @14.50s: \"Service Minutes\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @14.50s: \"LEDGER\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"See what needs attention.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"Log progress once.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"Updates automatically.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"Know what needs attention next.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "No clipping: wordmark \"LEDGER & LIME\" (global)",
+   "status": "PASS",
+   "detail": "bbox [1603, 92, 1835, 108] within frame safe area"
+  },
+  {
+   "check": "No clipping: caption \"See what needs attention.\" (s1:problem-before)",
+   "status": "PASS",
+   "detail": "bbox [85, 67, 858, 126] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s1:problem-before)",
+   "status": "PASS",
+   "detail": "bbox [230, 189, 635, 408] within card"
+  },
+  {
+   "check": "No clipping: highlight \"No Recent Data\" (s1:problem-before)",
+   "status": "PASS",
+   "detail": "bbox [1449, 794, 1832, 899] within card"
+  },
+  {
+   "check": "No clipping: caption \"Log progress once.\" (s2:real-input)",
+   "status": "PASS",
+   "detail": "bbox [81, 75, 642, 146] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s2:real-input)",
+   "status": "PASS",
+   "detail": "bbox [90, 724, 1823, 855] within card"
+  },
+  {
+   "check": "No clipping: caption \"Updates automatically.\" (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "bbox [81, 67, 774, 146] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "bbox [99, 618, 449, 837] within card"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 2\" (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "bbox [1307, 618, 1831, 837] within card"
+  },
+  {
+   "check": "No clipping: chip \"Goal progress: 60% -> 90%\" (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "bbox [114, 819, 560, 990] within card"
+  },
+  {
+   "check": "No clipping: chip \"Status: No Recent Data -> Improving\" (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "bbox [582, 819, 1491, 990] within card"
+  },
+  {
+   "check": "No clipping: caption \"Know what needs attention next.\" (s4:buyer-outcome)",
+   "status": "PASS",
+   "detail": "bbox [81, 67, 1087, 126] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s4:buyer-outcome)",
+   "status": "PASS",
+   "detail": "bbox [232, 190, 637, 409] within card"
+  },
+  {
+   "check": "No clipping: chip \"Needs attention: 2 -> 1\" (s4:buyer-outcome)",
+   "status": "PASS",
+   "detail": "bbox [114, 819, 508, 990] within card"
+  },
+  {
+   "check": "No clipping: end_title \"IEP Caseload & Goal Progress Tracker\" (s5:end-card)",
+   "status": "PASS",
+   "detail": "bbox [299, 417, 1619, 507] within frame safe area"
+  },
+  {
+   "check": "No clipping: end_subtitle \"Track Goals \u2022 Progress \u2022 Service Minutes\" (s5:end-card)",
+   "status": "PASS",
+   "detail": "bbox [565, 626, 1352, 662] within frame safe area"
+  },
+  {
+   "check": "No clipping: end_brand \"LEDGER & LIME\" (s5:end-card)",
+   "status": "PASS",
+   "detail": "bbox [795, 919, 1122, 941] within frame safe area"
+  },
+  {
+   "check": "Chips never cover a visible highlight (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "checked every frame"
+  },
+  {
+   "check": "Chips never cover a visible highlight (s4:buyer-outcome)",
+   "status": "PASS",
+   "detail": "checked every frame"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"See what needs attention.\"",
+   "status": "PASS",
+   "detail": "fully visible 2.77s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.10s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"No Recent Data\"",
+   "status": "PASS",
+   "detail": "fully visible 1.73s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Log progress once.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.30s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 1.83s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Updates automatically.\"",
+   "status": "PASS",
+   "detail": "fully visible 2.80s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.63s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
+   "status": "PASS",
+   "detail": "fully visible 2.63s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"Goal progress: 60% -> 90%\"",
+   "status": "PASS",
+   "detail": "fully visible 1.40s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"Status: No Recent Data -> Improv\"",
+   "status": "PASS",
+   "detail": "fully visible 1.20s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Know what needs attention next.\"",
+   "status": "PASS",
+   "detail": "fully visible 2.90s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.63s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"Needs attention: 2 -> 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.20s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: end_title \"IEP Caseload & Goal Progress Tra\"",
+   "status": "PASS",
+   "detail": "fully visible 2.37s"
+  },
+  {
+   "check": "Caption rendered: \"See what needs attention.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Caption rendered: \"Log progress once.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Caption rendered: \"Updates automatically.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Caption rendered: \"Know what needs attention next.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Phone legibility (primary): caption \"See what needs attention.\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): caption \"Log progress once.\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): caption \"Updates automatically.\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): chip \"Goal progress: 60% -> 90%\"",
+   "status": "PASS",
+   "detail": "60px -> 12.2px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): chip \"Status: No Recent Data -> Impr\"",
+   "status": "PASS",
+   "detail": "60px -> 12.2px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): caption \"Know what needs attention next\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): chip \"Needs attention: 2 -> 1\"",
+   "status": "PASS",
+   "detail": "60px -> 12.2px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): end_title \"IEP Caseload & Goal Progress T\"",
+   "status": "PASS",
+   "detail": "88px -> 17.9px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (secondary): end_subtitle \"Track Goals \u2022 Progress \u2022 Servi\"",
+   "status": "PASS",
+   "detail": "38px -> 7.7px on a 390px phone (min 6.0)"
+  },
+  {
+   "check": "Phone legibility (secondary): end_brand \"LEDGER & LIME\"",
+   "status": "PASS",
+   "detail": "30px -> 6.1px on a 390px phone (min 6.0)"
+  },
+  {
+   "check": "Phone legibility (secondary): chip labels",
+   "status": "PASS",
+   "detail": "30px -> 6.1px"
+  },
+  {
+   "check": "Source not over-upscaled (s1:problem-before)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.446-1.477"
+  },
+  {
+   "check": "Source not over-upscaled (s2:real-input)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.375-1.676"
+  },
+  {
+   "check": "Source not over-upscaled (s3:automatic-change)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.062-1.108"
+  },
+  {
+   "check": "Source not over-upscaled (s4:buyer-outcome)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.446-1.477"
+  },
+  {
+   "check": "Product truth: before/after values verified against workbook",
+   "status": "PASS",
+   "detail": "6 value(s) verified against recalculated workbook cells"
+  },
+  {
+   "check": "No rendered pointer presented as live capture",
+   "status": "PASS",
+   "detail": "provenance.pointer_rendered = false"
+  },
+  {
+   "check": "No compliance / legal claims in on-screen text",
+   "status": "PASS",
+   "detail": "none found"
+  },
+  {
+   "check": "Sources are captures of the shipping product",
+   "status": "WARN",
+   "detail": "source_status = reconstruction -> DRAFT watermark applied; replace sources before Etsy use"
+  }
+ ],
+ "ocr": [
+  {
+   "t": 2.1,
+   "scene": "problem-before",
+   "phrase": "See what needs attention",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 2.1,
+   "scene": "problem-before",
+   "phrase": "Needs Attention",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 2.1,
+   "scene": "problem-before",
+   "phrase": "No Recent Data",
+   "full": true,
+   "mobile": false
+  },
+  {
+   "t": 5.6,
+   "scene": "real-input",
+   "phrase": "Log progress once",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 5.6,
+   "scene": "real-input",
+   "phrase": "2026-09-24",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 5.6,
+   "scene": "real-input",
+   "phrase": "90%",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 8.8,
+   "scene": "automatic-change",
+   "phrase": "Updates automatically",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 8.8,
+   "scene": "automatic-change",
+   "phrase": "Improving",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 8.8,
+   "scene": "automatic-change",
+   "phrase": "90%",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 11.7,
+   "scene": "buyer-outcome",
+   "phrase": "Know what needs attention next",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 11.7,
+   "scene": "buyer-outcome",
+   "phrase": "Needs Attention",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 14.5,
+   "scene": "end-card",
+   "phrase": "IEP Caseload",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 14.5,
+   "scene": "end-card",
+   "phrase": "Goal Progress Tracker",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 14.5,
+   "scene": "end-card",
+   "phrase": "Service Minutes",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 14.5,
+   "scene": "end-card",
+   "phrase": "LEDGER",
+   "full": true,
+   "mobile": true
+  }
+ ],
+ "probe": {
+  "video": {
+   "index": 0,
+   "codec_name": "h264",
+   "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+   "profile": "High",
+   "codec_type": "video",
+   "codec_tag_string": "avc1",
+   "codec_tag": "0x31637661",
+   "width": 1920,
+   "height": 1080,
+   "coded_width": 1920,
+   "coded_height": 1080,
+   "closed_captions": 0,
+   "film_grain": 0,
+   "has_b_frames": 2,
+   "pix_fmt": "yuv420p",
+   "level": 41,
+   "color_range": "tv",
+   "color_space": "bt709",
+   "color_transfer": "bt709",
+   "color_primaries": "bt709",
+   "chroma_location": "left",
+   "field_order": "progressive",
+   "refs": 1,
+   "is_avc": "true",
+   "nal_length_size": "4",
+   "id": "0x1",
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "time_base": "1/15360",
+   "start_pts": 0,
+   "start_time": "0.000000",
+   "duration_ts": 230400,
+   "duration": "15.000000",
+   "bit_rate": "3163476",
+   "bits_per_raw_sample": "8",
+   "nb_frames": "450",
+   "extradata_size": 50,
+   "disposition": {
+    "default": 1,
+    "dub": 0,
+    "original": 0,
+    "comment": 0,
+    "lyrics": 0,
+    "karaoke": 0,
+    "forced": 0,
+    "hearing_impaired": 0,
+    "visual_impaired": 0,
+    "clean_effects": 0,
+    "attached_pic": 0,
+    "timed_thumbnails": 0,
+    "non_diegetic": 0,
+    "captions": 0,
+    "descriptions": 0,
+    "metadata": 0,
+    "dependent": 0,
+    "still_image": 0
+   },
+   "tags": {
+    "language": "und",
+    "handler_name": "VideoHandler",
+    "vendor_id": "[0][0][0][0]",
+    "encoder": "Lavc60.31.102 libx264"
+   }
+  },
+  "format": {
+   "filename": "/home/user/ledger-lime-production/video-engine/output/p13-iep-tracker/P13-IEP-Tracker-Etsy-Video-V3.mp4",
+   "nb_streams": 1,
+   "nb_programs": 0,
+   "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+   "format_long_name": "QuickTime / MOV",
+   "start_time": "0.000000",
+   "duration": "15.000000",
+   "size": "5936564",
+   "bit_rate": "3166167",
+   "probe_score": 100,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "encoder": "Lavf60.16.100"
+   }
+  }
+ },
+ "generated": "2026-09-27T10:01:29.291865+00:00"
+}

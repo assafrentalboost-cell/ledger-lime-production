@@ -1,0 +1,94 @@
+{
+  "_README": "Copy to configs/productNN_<slug>.json and replace every REPLACE_ value. Coordinates are [x, y, w, h] in SOURCE-image pixels (find them with tools/locate.py). Camera rects are auto-fitted to the card aspect (2.095:1). Run: python render_video.py configs/productNN_<slug>.json --validate-only",
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "pNN-REPLACE-slug",
+    "number": 0,
+    "title": "REPLACE Product Title",
+    "version": "V1"
+  },
+  "output": {
+    "filename": "PNN-REPLACE-Etsy-Video-V1.mp4",
+    "fps": 30,
+    "min_duration": 12,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "product_capture",
+    "pointer_rendered": false,
+    "notes": "REPLACE: where the captures came from (file name, date) and what single input causes the change."
+  },
+  "truth": {
+    "states": {
+      "before": {"primary_value": "REPLACE e.g. 60%", "status": "REPLACE e.g. No Recent Data", "count": "REPLACE e.g. 2"},
+      "after":  {"primary_value": "REPLACE e.g. 90%", "status": "REPLACE e.g. Improving", "count": "REPLACE e.g. 1"}
+    },
+    "labels": {"primary_value": "REPLACE chip label", "status": "Status", "count": "REPLACE chip label"},
+    "_verify_optional": "If you have the workbook, capture it with tools/capture_workbook.py and add a 'verify' block (see product13_iep_tracker.json) so every value is checked against recalculated cells."
+  },
+  "sources": {
+    "dash_before": {"path": "sources/pNN-REPLACE/captures/before_dashboard.png"},
+    "dash_after":  {"path": "sources/pNN-REPLACE/captures/after_dashboard.png"},
+    "input_after": {"path": "sources/pNN-REPLACE/captures/after_input.png"}
+  },
+  "scenes": [
+    {
+      "id": "problem-before",
+      "type": "screen",
+      "duration": 2.5,
+      "source": "dash_before",
+      "caption": "REPLACE problem caption.",
+      "camera": {"from": [0, 0, 2400, 1146], "to": [100, 50, 2200, 1050]},
+      "highlights": [
+        {"find": "REPLACE text to ring", "expand": [20, 12, 20, 12], "appear": 0.4}
+      ],
+      "expect_text": [{"at": 2.0, "text": ["REPLACE problem caption"]}]
+    },
+    {
+      "id": "real-input",
+      "type": "screen",
+      "duration": 3.5,
+      "source": "input_after",
+      "caption": "REPLACE input caption.",
+      "camera": {"from": [0, 0, 2400, 1146], "to": [0, 200, 2000, 955]},
+      "highlights": [{"rect": [0, 0, 100, 50], "appear": 1.2}]
+    },
+    {
+      "id": "automatic-change",
+      "type": "morph",
+      "duration": 3.0,
+      "source_from": "dash_before",
+      "source_to": "dash_after",
+      "swap_at": 0.8,
+      "swap_duration": 0.6,
+      "caption": "Updates automatically.",
+      "camera": {"from": [0, 0, 2400, 1146], "to": [200, 100, 2000, 955]},
+      "highlights": [{"rect": [0, 0, 100, 50], "appear": 0.3}],
+      "chips": [
+        {"truth_key": "primary_value", "anchor": "bottom-left", "appear": 1.5},
+        {"truth_key": "status", "anchor": "bottom-left", "appear": 1.7}
+      ]
+    },
+    {
+      "id": "buyer-outcome",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "dash_after",
+      "caption": "REPLACE outcome caption.",
+      "camera": {"from": [0, 0, 2400, 1146], "to": [100, 50, 2200, 1050]},
+      "highlights": [{"rect": [0, 0, 100, 50], "appear": 0.4}],
+      "chips": [{"truth_key": "count", "anchor": "bottom-left", "appear": 0.8}]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 3.0,
+      "transition": 0.7,
+      "title": "REPLACE Product Title",
+      "subtitle": "REPLACE Feature • Feature • Feature",
+      "brand": "Ledger & Lime"
+    }
+  ],
+  "qa": {"report_name": "VIDEO-QA-REPORT-PNN.md"}
+}

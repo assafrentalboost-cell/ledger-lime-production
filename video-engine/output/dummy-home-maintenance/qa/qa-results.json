@@ -1,0 +1,585 @@
+{
+ "verdict": "NEEDS REVISION (technical QA passed; sources are stand-ins)",
+ "checks": [
+  {
+   "check": "File readable by ffprobe",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Container MP4",
+   "status": "PASS",
+   "detail": "mov,mp4,m4a,3gp,3g2,mj2"
+  },
+  {
+   "check": "Codec H.264 (High)",
+   "status": "PASS",
+   "detail": "h264 / High / level 41"
+  },
+  {
+   "check": "Resolution",
+   "status": "PASS",
+   "detail": "1920x1080 (expected 1920x1080)"
+  },
+  {
+   "check": "Pixel format yuv420p",
+   "status": "PASS",
+   "detail": "yuv420p"
+  },
+  {
+   "check": "Frame rate",
+   "status": "PASS",
+   "detail": "30/1"
+  },
+  {
+   "check": "Colour tagged BT.709",
+   "status": "PASS",
+   "detail": "bt709/bt709/bt709"
+  },
+  {
+   "check": "Duration matches timeline",
+   "status": "PASS",
+   "detail": "12.500s (expected 12.500s)"
+  },
+  {
+   "check": "Duration within 10-15s",
+   "status": "PASS",
+   "detail": "12.50s"
+  },
+  {
+   "check": "Etsy: <= 15 s (longer is trimmed)",
+   "status": "PASS",
+   "detail": "12.50s"
+  },
+  {
+   "check": "Etsy: file < 100 MB",
+   "status": "PASS",
+   "detail": "6.02 MB"
+  },
+  {
+   "check": "No audio track (Etsy plays muted)",
+   "status": "PASS",
+   "detail": "0 audio stream(s)"
+  },
+  {
+   "check": "Web fast-start (moov before mdat)",
+   "status": "PASS",
+   "detail": "moov -> mdat"
+  },
+  {
+   "check": "Full decode without errors",
+   "status": "PASS",
+   "detail": "clean"
+  },
+  {
+   "check": "Frame count",
+   "status": "PASS",
+   "detail": "375 decoded (expected 375)"
+  },
+  {
+   "check": "No black frames (blackdetect)",
+   "status": "PASS",
+   "detail": "none detected"
+  },
+  {
+   "check": "Static holds > 1.5 s (informational)",
+   "status": "PASS",
+   "detail": "none"
+  },
+  {
+   "check": "First frame is a composed shot (not blank)",
+   "status": "PASS",
+   "detail": "luma mean 228, stdev 53"
+  },
+  {
+   "check": "Mobile preview video written",
+   "status": "PASS",
+   "detail": "mobile/mobile-preview-780w.mp4"
+  },
+  {
+   "check": "OCR readback @2.60s: \"Spot what is overdue\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @2.60s: \"Overdue\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @2.60s: \"Past due\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @6.20s: \"Record the service\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @6.20s: \"2026-09-24\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @6.20s: \"$24\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @9.70s: \"reschedules itself\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @9.70s: \"Scheduled\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @9.70s: \"83%\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @12.20s: \"Home Maintenance Planner\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "OCR readback @12.20s: \"Service History\"",
+   "status": "PASS",
+   "detail": "found in encoded frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"Spot what is overdue.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"Record the service.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "Phone-size OCR: caption \"The plan reschedules itself.\"",
+   "status": "PASS",
+   "detail": "read back from a 390px-wide frame"
+  },
+  {
+   "check": "No clipping: wordmark \"LEDGER & LIME\" (global)",
+   "status": "PASS",
+   "detail": "bbox [1603, 92, 1835, 108] within frame safe area"
+  },
+  {
+   "check": "No clipping: caption \"Spot what is overdue.\" (s1:overdue-before)",
+   "status": "PASS",
+   "detail": "bbox [85, 67, 734, 146] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s1:overdue-before)",
+   "status": "PASS",
+   "detail": "bbox [522, 236, 656, 353] within card"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 2\" (s1:overdue-before)",
+   "status": "PASS",
+   "detail": "bbox [1549, 379, 1835, 470] within card"
+  },
+  {
+   "check": "No clipping: highlight_label \"Past due\" (s1:overdue-before)",
+   "status": "PASS",
+   "detail": "bbox [1261, 377, 1539, 472] within card"
+  },
+  {
+   "check": "No clipping: caption \"Record the service.\" (s2:log-service)",
+   "status": "PASS",
+   "detail": "bbox [82, 67, 657, 126] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s2:log-service)",
+   "status": "PASS",
+   "detail": "bbox [83, 757, 1570, 873] within card"
+  },
+  {
+   "check": "No clipping: caption \"The plan reschedules itself.\" (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "bbox [83, 67, 894, 146] within frame safe area"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 1\" (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "bbox [1470, 404, 1834, 536] within card"
+  },
+  {
+   "check": "No clipping: highlight \"highlight 2\" (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "bbox [1278, 243, 1562, 378] within card"
+  },
+  {
+   "check": "No clipping: chip \"Overdue tasks: 3 -> 2\" (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "bbox [177, 819, 535, 990] within card"
+  },
+  {
+   "check": "No clipping: chip \"HVAC filter: Overdue -> Scheduled\" (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "bbox [557, 819, 1283, 990] within card"
+  },
+  {
+   "check": "No clipping: chip \"On schedule: 75% -> 83%\" (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "bbox [1305, 819, 1742, 990] within card"
+  },
+  {
+   "check": "No clipping: end_title \"Home Maintenance Planner & Service Log\" (s4:end-card)",
+   "status": "PASS",
+   "detail": "bbox [221, 418, 1696, 507] within frame safe area"
+  },
+  {
+   "check": "No clipping: end_subtitle \"Tasks \u2022 Schedules \u2022 Service History\" (s4:end-card)",
+   "status": "PASS",
+   "detail": "bbox [616, 626, 1302, 662] within frame safe area"
+  },
+  {
+   "check": "No clipping: end_brand \"LEDGER & LIME\" (s4:end-card)",
+   "status": "PASS",
+   "detail": "bbox [795, 919, 1122, 941] within frame safe area"
+  },
+  {
+   "check": "Chips never cover a visible highlight (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "checked every frame"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Spot what is overdue.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.20s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 2.47s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
+   "status": "PASS",
+   "detail": "fully visible 1.97s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"Record the service.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.23s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 1.27s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: caption \"The plan reschedules itself.\"",
+   "status": "PASS",
+   "detail": "fully visible 3.33s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 1\"",
+   "status": "PASS",
+   "detail": "fully visible 3.27s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: highlight \"highlight 2\"",
+   "status": "PASS",
+   "detail": "fully visible 2.07s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"Overdue tasks: 3 -> 2\"",
+   "status": "PASS",
+   "detail": "fully visible 1.93s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"HVAC filter: Overdue -> Schedule\"",
+   "status": "PASS",
+   "detail": "fully visible 1.77s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: chip \"On schedule: 75% -> 83%\"",
+   "status": "PASS",
+   "detail": "fully visible 1.63s"
+  },
+  {
+   "check": "Readable dwell >= 0.6s: end_title \"Home Maintenance Planner & Servi\"",
+   "status": "PASS",
+   "detail": "fully visible 1.87s"
+  },
+  {
+   "check": "Caption rendered: \"Spot what is overdue.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Caption rendered: \"Record the service.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Caption rendered: \"The plan reschedules itself.\"",
+   "status": "PASS",
+   "detail": ""
+  },
+  {
+   "check": "Phone legibility (primary): caption \"Spot what is overdue.\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): highlight_label \"Past due\"",
+   "status": "PASS",
+   "detail": "56px -> 11.4px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): caption \"Record the service.\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): caption \"The plan reschedules itself.\"",
+   "status": "PASS",
+   "detail": "78px -> 15.8px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): chip \"Overdue tasks: 3 -> 2\"",
+   "status": "PASS",
+   "detail": "60px -> 12.2px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): chip \"HVAC filter: Overdue -> Schedu\"",
+   "status": "PASS",
+   "detail": "60px -> 12.2px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): chip \"On schedule: 75% -> 83%\"",
+   "status": "PASS",
+   "detail": "60px -> 12.2px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (primary): end_title \"Home Maintenance Planner & Ser\"",
+   "status": "PASS",
+   "detail": "88px -> 17.9px on a 390px phone (min 11.0)"
+  },
+  {
+   "check": "Phone legibility (secondary): end_subtitle \"Tasks \u2022 Schedules \u2022 Service Hi\"",
+   "status": "PASS",
+   "detail": "38px -> 7.7px on a 390px phone (min 6.0)"
+  },
+  {
+   "check": "Phone legibility (secondary): end_brand \"LEDGER & LIME\"",
+   "status": "PASS",
+   "detail": "30px -> 6.1px on a 390px phone (min 6.0)"
+  },
+  {
+   "check": "Phone legibility (secondary): chip labels",
+   "status": "PASS",
+   "detail": "30px -> 6.1px"
+  },
+  {
+   "check": "Source not over-upscaled (s1:overdue-before)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.455-1.471"
+  },
+  {
+   "check": "Source not over-upscaled (s2:log-service)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.051-1.322"
+  },
+  {
+   "check": "Source not over-upscaled (s3:plan-updates)",
+   "status": "PASS",
+   "detail": "max upscale 1.0x, source px per output px 1.13-1.301"
+  },
+  {
+   "check": "Product truth: before/after values verified against workbook",
+   "status": "PASS",
+   "detail": "6 value(s) verified against recalculated workbook cells"
+  },
+  {
+   "check": "No rendered pointer presented as live capture",
+   "status": "PASS",
+   "detail": "provenance.pointer_rendered = false"
+  },
+  {
+   "check": "No compliance / legal claims in on-screen text",
+   "status": "PASS",
+   "detail": "none found"
+  },
+  {
+   "check": "Sources are captures of the shipping product",
+   "status": "WARN",
+   "detail": "source_status = dummy -> DRAFT watermark applied; replace sources before Etsy use"
+  }
+ ],
+ "ocr": [
+  {
+   "t": 2.6,
+   "scene": "overdue-before",
+   "phrase": "Spot what is overdue",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 2.6,
+   "scene": "overdue-before",
+   "phrase": "Overdue",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 2.6,
+   "scene": "overdue-before",
+   "phrase": "Past due",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 6.2,
+   "scene": "log-service",
+   "phrase": "Record the service",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 6.2,
+   "scene": "log-service",
+   "phrase": "2026-09-24",
+   "full": true,
+   "mobile": false
+  },
+  {
+   "t": 6.2,
+   "scene": "log-service",
+   "phrase": "$24",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 9.7,
+   "scene": "plan-updates",
+   "phrase": "reschedules itself",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 9.7,
+   "scene": "plan-updates",
+   "phrase": "Scheduled",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 9.7,
+   "scene": "plan-updates",
+   "phrase": "83%",
+   "full": true,
+   "mobile": true
+  },
+  {
+   "t": 12.2,
+   "scene": "end-card",
+   "phrase": "Home Maintenance Planner",
+   "full": true,
+   "mobile": false
+  },
+  {
+   "t": 12.2,
+   "scene": "end-card",
+   "phrase": "Service History",
+   "full": true,
+   "mobile": true
+  }
+ ],
+ "probe": {
+  "video": {
+   "index": 0,
+   "codec_name": "h264",
+   "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+   "profile": "High",
+   "codec_type": "video",
+   "codec_tag_string": "avc1",
+   "codec_tag": "0x31637661",
+   "width": 1920,
+   "height": 1080,
+   "coded_width": 1920,
+   "coded_height": 1080,
+   "closed_captions": 0,
+   "film_grain": 0,
+   "has_b_frames": 2,
+   "pix_fmt": "yuv420p",
+   "level": 41,
+   "color_range": "tv",
+   "color_space": "bt709",
+   "color_transfer": "bt709",
+   "color_primaries": "bt709",
+   "chroma_location": "left",
+   "field_order": "progressive",
+   "refs": 1,
+   "is_avc": "true",
+   "nal_length_size": "4",
+   "id": "0x1",
+   "r_frame_rate": "30/1",
+   "avg_frame_rate": "30/1",
+   "time_base": "1/15360",
+   "start_pts": 0,
+   "start_time": "0.000000",
+   "duration_ts": 192000,
+   "duration": "12.500000",
+   "bit_rate": "3848574",
+   "bits_per_raw_sample": "8",
+   "nb_frames": "375",
+   "extradata_size": 50,
+   "disposition": {
+    "default": 1,
+    "dub": 0,
+    "original": 0,
+    "comment": 0,
+    "lyrics": 0,
+    "karaoke": 0,
+    "forced": 0,
+    "hearing_impaired": 0,
+    "visual_impaired": 0,
+    "clean_effects": 0,
+    "attached_pic": 0,
+    "timed_thumbnails": 0,
+    "non_diegetic": 0,
+    "captions": 0,
+    "descriptions": 0,
+    "metadata": 0,
+    "dependent": 0,
+    "still_image": 0
+   },
+   "tags": {
+    "language": "und",
+    "handler_name": "VideoHandler",
+    "vendor_id": "[0][0][0][0]",
+    "encoder": "Lavc60.31.102 libx264"
+   }
+  },
+  "format": {
+   "filename": "/home/user/ledger-lime-production/video-engine/output/dummy-home-maintenance/DUMMY-Home-Maintenance-Etsy-Video.mp4",
+   "nb_streams": 1,
+   "nb_programs": 0,
+   "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+   "format_long_name": "QuickTime / MOV",
+   "start_time": "0.000000",
+   "duration": "12.500000",
+   "size": "6017740",
+   "bit_rate": "3851353",
+   "probe_score": 100,
+   "tags": {
+    "major_brand": "isom",
+    "minor_version": "512",
+    "compatible_brands": "isomiso2avc1mp41",
+    "encoder": "Lavf60.16.100"
+   }
+  }
+ },
+ "generated": "2026-09-27T10:02:17.672735+00:00"
+}

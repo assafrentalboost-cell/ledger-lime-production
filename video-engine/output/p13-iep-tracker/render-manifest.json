@@ -1,0 +1,390 @@
+{
+ "config": "configs/product13_iep_tracker.json",
+ "duration": 15.0,
+ "fps": 30,
+ "nframes": 450,
+ "card": [
+  80,
+  184,
+  1760,
+  840
+ ],
+ "safe_margin": 0.035,
+ "width": 1920,
+ "height": 1080,
+ "draft_watermark": true,
+ "validation": {
+  "errors": [],
+  "warnings": [
+   "provenance.source_status = 'reconstruction': sources are NOT captures of the shipping product; the video is watermarked DRAFT and must not be used on Etsy",
+   "scene 2 (real-input): morph sources differ in size (3094, 1830) vs (3094, 1926); they are top-left aligned on a common canvas - make sure the captures share geometry"
+  ],
+  "notes": [
+   "truth verified: before.latest_progress = '60%' (Dashboard!G13)",
+   "truth verified: before.status = 'No Recent Data' (Dashboard!J13)",
+   "truth verified: before.needs_attention = '2' (Dashboard!E6)",
+   "truth verified: after.latest_progress = '90%' (Dashboard!G13)",
+   "truth verified: after.status = 'Improving' (Dashboard!J13)",
+   "truth verified: after.needs_attention = '1' (Dashboard!E6)",
+   "scene 1 (problem-before) highlight 2: 'No Recent Data' located at [3791, 1280, 375, 36] -> rect [3704, 1251, 515, 109]"
+  ]
+ },
+ "scenes": [
+  {
+   "scene": "s1:problem-before",
+   "scale_min": 1.446,
+   "scale_max": 1.477,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s2:real-input",
+   "scale_min": 1.375,
+   "scale_max": 1.676,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s3:automatic-change",
+   "scale_min": 1.062,
+   "scale_max": 1.108,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s4:buyer-outcome",
+   "scale_min": 1.446,
+   "scale_max": 1.477,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  }
+ ],
+ "elements": [
+  {
+   "scene": "global",
+   "kind": "wordmark",
+   "text": "LEDGER & LIME",
+   "font_px": 22,
+   "container": "frame",
+   "bbox": [
+    1603,
+    92,
+    1835,
+    108
+   ],
+   "frames": 1
+  },
+  {
+   "scene": "s1:problem-before",
+   "kind": "caption",
+   "text": "See what needs attention.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    85,
+    67,
+    858,
+    126
+   ],
+   "frames": 83
+  },
+  {
+   "scene": "s1:problem-before",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    230.43025540275048,
+    189.08644400785857,
+    635.2932032594158,
+    408.31833784066083
+   ],
+   "frames": 63
+  },
+  {
+   "scene": "s1:problem-before",
+   "kind": "highlight",
+   "text": "No Recent Data",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    1449.4125736738704,
+    793.9705304518665,
+    1831.9844657040546,
+    899.4747597156498
+   ],
+   "frames": 52
+  },
+  {
+   "scene": "s2:real-input",
+   "kind": "caption",
+   "text": "Log progress once.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    81,
+    75,
+    642,
+    146
+   ],
+   "frames": 99
+  },
+  {
+   "scene": "s2:real-input",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    90.00655373559442,
+    723.5454545454545,
+    1822.6363636363637,
+    854.5353065043689
+   ],
+   "frames": 55
+  },
+  {
+   "scene": "s3:automatic-change",
+   "kind": "caption",
+   "text": "Updates automatically.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    81,
+    67,
+    774,
+    146
+   ],
+   "frames": 84
+  },
+  {
+   "scene": "s3:automatic-change",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    98.64705882352942,
+    617.9411764705883,
+    448.8616017843297,
+    837.1816189230518
+   ],
+   "frames": 79
+  },
+  {
+   "scene": "s3:automatic-change",
+   "kind": "highlight",
+   "text": "highlight 2",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    1307.1176470588234,
+    617.9411764705883,
+    1831.0595301746555,
+    837.1816189230518
+   ],
+   "frames": 79
+  },
+  {
+   "scene": "s3:automatic-change",
+   "kind": "chip",
+   "text": "Goal progress: 60% -> 90%",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    560,
+    990
+   ],
+   "frames": 42
+  },
+  {
+   "scene": "s3:automatic-change",
+   "kind": "chip",
+   "text": "Status: No Recent Data -> Improving",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    582,
+    819,
+    1491,
+    990
+   ],
+   "frames": 36
+  },
+  {
+   "scene": "s4:buyer-outcome",
+   "kind": "caption",
+   "text": "Know what needs attention next.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    81,
+    67,
+    1087,
+    126
+   ],
+   "frames": 87
+  },
+  {
+   "scene": "s4:buyer-outcome",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    232.37149933508636,
+    190.21115834955344,
+    637.1538461538462,
+    409.4307692307692
+   ],
+   "frames": 79
+  },
+  {
+   "scene": "s4:buyer-outcome",
+   "kind": "chip",
+   "text": "Needs attention: 2 -> 1",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    508,
+    990
+   ],
+   "frames": 66
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_title",
+   "text": "IEP Caseload & Goal Progress Tracker",
+   "font_px": 88,
+   "container": "frame",
+   "bbox": [
+    299,
+    417,
+    1619,
+    507
+   ],
+   "frames": 71
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_subtitle",
+   "text": "Track Goals \u2022 Progress \u2022 Service Minutes",
+   "font_px": 38,
+   "container": "frame",
+   "bbox": [
+    565,
+    626,
+    1352,
+    662
+   ],
+   "frames": 53
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_brand",
+   "text": "LEDGER & LIME",
+   "font_px": 30,
+   "container": "frame",
+   "bbox": [
+    795,
+    919,
+    1122,
+    941
+   ],
+   "frames": 45
+  }
+ ],
+ "overlaps": [],
+ "timeline": [
+  {
+   "id": "problem-before",
+   "type": "screen",
+   "start": 0.0,
+   "duration": 2.5,
+   "caption": "See what needs attention.",
+   "expect_text": [
+    {
+     "at": 2.1,
+     "text": [
+      "See what needs attention",
+      "Needs Attention",
+      "No Recent Data"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "real-input",
+   "type": "morph",
+   "start": 2.5,
+   "duration": 3.5,
+   "caption": "Log progress once.",
+   "expect_text": [
+    {
+     "at": 3.1,
+     "text": [
+      "Log progress once",
+      "2026-09-24",
+      "90%"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "automatic-change",
+   "type": "morph",
+   "start": 6.0,
+   "duration": 3.0,
+   "caption": "Updates automatically.",
+   "expect_text": [
+    {
+     "at": 2.8,
+     "text": [
+      "Updates automatically",
+      "Improving",
+      "90%"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "buyer-outcome",
+   "type": "screen",
+   "start": 9.0,
+   "duration": 3.0,
+   "caption": "Know what needs attention next.",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "Know what needs attention next",
+      "Needs Attention"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-card",
+   "type": "end_card",
+   "start": 12.0,
+   "duration": 3.0,
+   "caption": "",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "IEP Caseload",
+      "Goal Progress Tracker",
+      "Service Minutes",
+      "LEDGER"
+     ]
+    }
+   ]
+  }
+ ]
+}
