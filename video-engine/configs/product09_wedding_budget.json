@@ -1,0 +1,413 @@
+{
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "p09-wedding-budget",
+    "number": 9,
+    "title": "Premium Wedding Budget & Payment System",
+    "version": "V1"
+  },
+  "output": {
+    "filename": "P09-Wedding-Budget-Etsy-Video-V1.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "min_duration": 12,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "product_capture",
+    "pointer_rendered": false,
+    "notes": "Captured from the real packaged customer workbook sources/p09-wedding-budget/Premium-Wedding-Budget-System.xlsx (commit 65cd4c6), recalculated by LibreOffice on 2026-09-28. AFTER = packaged workbook as shipped (0 differing cells vs its own recalculation): Tasty Catering Co, Contracted $8,500, Total Paid To Date $8,500, PAID IN FULL. BEFORE = the same workbook with that ONE vendor's final payment not yet logged, using the sample's own convention for vendors with an open balance (Total Paid To Date = Deposit Required = $1,000). Status / overdue figures compare due dates with Settings!B7 = TODAY(); both states were captured in the same run on 2026-09-28. Capture copies change view settings only (2 sheets visible, print areas, workbook default font explicit, columns widened just enough for headers to read in full - see capture/states/widened-columns.json). No pointer is shown; no personal names appear (payers are 'Partner 1/2', 'Family')."
+  },
+  "truth": {
+    "states": {
+      "before": {
+        "catering_paid": "$1,000.00",
+        "catering_balance": "$7,500.00",
+        "catering_status": "OVERDUE",
+        "total_paid": "$3,800.00",
+        "total_remaining": "$29,700.00",
+        "overdue_count": "3",
+        "overdue_amount": "$11,500.00"
+      },
+      "after": {
+        "catering_paid": "$8,500.00",
+        "catering_balance": "$0.00",
+        "catering_status": "PAID IN FULL",
+        "total_paid": "$11,300.00",
+        "total_remaining": "$22,200.00",
+        "overdue_count": "2",
+        "overdue_amount": "$4,000.00"
+      }
+    },
+    "labels": {
+      "catering_paid": "Catering paid",
+      "catering_balance": "Catering balance",
+      "catering_status": "Status",
+      "total_paid": "Total paid",
+      "total_remaining": "Total remaining",
+      "overdue_count": "Overdue payments",
+      "overdue_amount": "Overdue amount"
+    },
+    "verify": {
+      "before": "sources/p09-wedding-budget/capture/captures/before_recalculated.json",
+      "after": "sources/p09-wedding-budget/capture/captures/after_recalculated.json",
+      "cells": {
+        "catering_paid": {
+          "sheet": "Vendor & Payments",
+          "cell": "E5",
+          "format": "currency"
+        },
+        "catering_balance": {
+          "sheet": "Vendor & Payments",
+          "cell": "F5",
+          "format": "currency"
+        },
+        "catering_status": {
+          "sheet": "Vendor & Payments",
+          "cell": "I5"
+        },
+        "total_paid": {
+          "sheet": "Dashboard",
+          "cell": "B6",
+          "format": "currency"
+        },
+        "total_remaining": {
+          "sheet": "Dashboard",
+          "cell": "B7",
+          "format": "currency"
+        },
+        "overdue_count": {
+          "sheet": "Dashboard",
+          "cell": "B11",
+          "format": "int"
+        },
+        "overdue_amount": {
+          "sheet": "Dashboard",
+          "cell": "B12",
+          "format": "currency"
+        }
+      }
+    }
+  },
+  "sources": {
+    "db_before": {
+      "path": "sources/p09-wedding-budget/capture/captures/before_dashboard.png",
+      "state": "before"
+    },
+    "db_after": {
+      "path": "sources/p09-wedding-budget/capture/captures/after_dashboard.png",
+      "state": "after"
+    },
+    "vp_before": {
+      "path": "sources/p09-wedding-budget/capture/captures/before_vendor-payments.png",
+      "state": "before"
+    },
+    "vp_after": {
+      "path": "sources/p09-wedding-budget/capture/captures/after_vendor-payments.png",
+      "state": "after"
+    }
+  },
+  "scenes": [
+    {
+      "id": "before-overdue",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "db_before",
+      "canvas_pad": [
+        150,
+        100,
+        150,
+        800
+      ],
+      "caption": "See which payments are overdue.",
+      "camera": {
+        "from": [
+          -128,
+          -60,
+          5900,
+          2816
+        ],
+        "to": [
+          -100,
+          -50,
+          5845,
+          2790
+        ]
+      },
+      "must_show": [
+        [
+          24,
+          24,
+          5643,
+          2001
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            34,
+            1529,
+            5623,
+            490
+          ],
+          "pad": 6,
+          "appear": 0.5
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "See which payments are overdue",
+            "Overdue Payments",
+            "$11,500.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "log-final-payment",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "vp_before",
+      "source_to": "vp_after",
+      "swap_at": 0.9,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        0,
+        450,
+        0,
+        450
+      ],
+      "caption": "Log the final payment.",
+      "camera": {
+        "from": [
+          2831,
+          -395,
+          3750,
+          1790
+        ],
+        "to": [
+          2831,
+          -370,
+          3750,
+          1790
+        ]
+      },
+      "must_show": [
+        [
+          2833,
+          24,
+          3724,
+          991
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            5345,
+            360,
+            1203,
+            155
+          ],
+          "pad": 4,
+          "appear": 1.1,
+          "label": "Tasty Catering Co",
+          "label_side": "below"
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.6,
+          "text": [
+            "Log the final payment",
+            "$8,500.00",
+            "Total Paid To Date"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "balance-status-update",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "vp_before",
+      "source_to": "vp_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        0,
+        250,
+        150,
+        1300
+      ],
+      "caption": "Balance and status update themselves.",
+      "camera": {
+        "from": [
+          6555,
+          -150,
+          4900,
+          2339
+        ],
+        "to": [
+          6555,
+          -140,
+          4900,
+          2339
+        ]
+      },
+      "must_show": [
+        [
+          6557,
+          24,
+          4822,
+          991
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            6590,
+            360,
+            4780,
+            155
+          ],
+          "pad": 4,
+          "appear": 0.2
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "catering_balance",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        },
+        {
+          "truth_key": "catering_status",
+          "anchor": "bottom-left",
+          "appear": 1.2
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "update themselves",
+            "$0.00",
+            "PAID IN FULL"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dashboard-updates",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "db_before",
+      "source_to": "db_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        150,
+        100,
+        150,
+        800
+      ],
+      "caption": "See what’s paid — and what’s still owed.",
+      "camera": {
+        "from": [
+          -100,
+          -50,
+          5845,
+          2790
+        ],
+        "to": [
+          -128,
+          -60,
+          5900,
+          2816
+        ]
+      },
+      "must_show": [
+        [
+          24,
+          24,
+          5643,
+          2001
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            34,
+            280,
+            5623,
+            240
+          ],
+          "pad": 6,
+          "appear": 0.2
+        },
+        {
+          "rect": [
+            34,
+            1529,
+            5623,
+            490
+          ],
+          "pad": 6,
+          "appear": 0.2
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "overdue_count",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        },
+        {
+          "truth_key": "overdue_amount",
+          "anchor": "bottom-left",
+          "appear": 1.2
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "still owed",
+            "$11,300.00",
+            "$4,000.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 3.0,
+      "transition": 0.7,
+      "title": "Premium Wedding Budget & Payment System",
+      "subtitle": "Budget • Vendor Payments • Cash Flow",
+      "brand": "Ledger & Lime",
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "Wedding Budget",
+            "Vendor Payments",
+            "LEDGER"
+          ]
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "report_name": "VIDEO-QA-REPORT-P09.md",
+    "max_blank_ms": 100
+  }
+}

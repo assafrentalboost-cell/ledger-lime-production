@@ -1,6 +1,6 @@
 # Ledger & Lime - Video Upgrade Audit, Products #1-#12
 
-**Sprint status (2026-09-27): IN PROGRESS.** Source packages for #9, #10 and #12 arrived in commit 65cd4c6. #10 (V1.1) and #12 (V1) are done offline. #9 is not started (per instruction). Etsy has not been touched.
+**Sprint status (2026-09-27): IN PROGRESS.** Source packages for #9, #10 and #12 arrived in commit 65cd4c6. #10 (V1.1), #12 (V1) and #9 (V1) are done offline. Etsy has not been touched.
 
 Benchmark: Product #13 Video V3.3 FINAL (`video-engine/output/p13-iep-tracker/`). Engine: Ledger & Lime Automated Etsy Video Engine V1, unchanged in this sprint.
 
@@ -32,7 +32,7 @@ Reconstructing #1-#12 workbooks from product names was rejected. It would show p
 | 6 | ADHD-Friendly Budget Spreadsheet | NOT AUDITED | pending | - | NOT CREATED | - | NOT TOUCHED |
 | 7 | - | NOT AUDITED | pending | - | NOT CREATED | - | HELD FOR EXPERIMENT |
 | 8 | Mortgage Payoff Tracker | NOT AUDITED | pending | - | NOT CREATED | - | NOT TOUCHED |
-| 9 | Premium Wedding Budget & Payment System | NOT AUDITED | pending | to be found in workbook | NOT CREATED | - | NOT TOUCHED |
+| 9 | Premium Wedding Budget & Payment System | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Vendor payment logged → Balance Remaining + auto Status update → Dashboard Total Paid / Overdue update (verified in workbook formulas) | CREATED: `video-engine/output/p09-wedding-budget/P09-Wedding-Budget-Etsy-Video-V1.mp4` | PASS (107/0/0) | NOT TOUCHED |
 | 10 | Rental Property Spreadsheet | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Partial rent payment → remaining balance → carried into the next month (verified in the workbook formulas and sample data) | CREATED: V1.1 `video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.1.mp4` (V1 kept) | PASS (108/0/0) | NOT TOUCHED |
 | 11 | - | NOT AUDITED | pending | - | NOT CREATED | - | HELD FOR EXPERIMENT |
 | 12 | Estate Settlement Command Center | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Liability marked Paid → auto-warning clears → Command Center "Unpaid / Disputed Liabilities" 4 → 3 (verified in workbook formulas) | CREATED: `video-engine/output/p12-estate-settlement/P12-Estate-Settlement-Etsy-Video-V1.mp4` | PASS (102/0/0) | NOT TOUCHED |
@@ -110,3 +110,33 @@ The manifest's "$1,000 due / $600 paid" example is a QA test case and is not in 
 - Adding a liability moves the count the wrong way for the buyer outcome ("fewer unresolved"), so the video uses the real resolving action already present in the sample data. The L-DEMO story is not used.
 
 **Privacy.** No creditor or person names appear in any crop. The register crops show only the Status, Amount Paid, Payment Date and Warning columns; the one on-screen label is the business name "Lakeside Funeral Home". No legal / probate / tax claims appear.
+
+## Product #9 - details (2026-09-28)
+
+**Source.** The packaged workbook `video-engine/sources/p09-wedding-budget/Premium-Wedding-Budget-System.xlsx` (commit 65cd4c6), recalculated by LibreOffice on 2026-09-28.
+- The SOURCE-MANIFEST states it has no extracted before/after numbers, so every value below was derived from the workbook.
+- AFTER is the workbook exactly as shipped: 0 differing cells.
+- BEFORE is the same workbook with one vendor's final payment not yet logged. For Tasty Catering Co, Total Paid To Date is set to its $1,000 deposit. That is the sample's own convention: every other vendor with an open balance has paid exactly its deposit.
+- Builder: `sources/p09-wedding-budget/capture/prepare_states.py`.
+
+**Mechanism.**
+- Vendor & Payments: F = MAX(Contracted − Paid, 0).
+- I = PAID IN FULL / OVERDUE / DUE SOON / UPCOMING, comparing the due date with Settings!B7 = TODAY().
+- Dashboard: Total Paid comes from Master Budget (SUMIF of vendor paid); Overdue Count / Amount are COUNTIF / SUMIF on Status.
+- The same single input also updates the Cash-Flow Timeline, Contributions and Master Budget (36 cells in all).
+
+**Values, all verified cell-by-cell.**
+
+| Cell | Before | After |
+|---|---|---|
+| V&P E5 Catering Total Paid To Date | $1,000.00 | $8,500.00 (input) |
+| V&P F5 Balance Remaining | $7,500.00 | $0.00 |
+| V&P I5 Status | OVERDUE | PAID IN FULL |
+| Dashboard B6 Total Paid | $3,800.00 | $11,300.00 |
+| Dashboard B7 Total Remaining | $29,700.00 | $22,200.00 |
+| Dashboard B11 Overdue Payments — Count | 3 | 2 |
+| Dashboard B12 Overdue Payments — Amount | $11,500.00 | $4,000.00 |
+
+**Date dependence.** OVERDUE depends on the capture date (catering was due Aug 15, 2026). Both states were captured on 2026-09-28. A re-render after Nov 13, 2026 would also turn the Venue row OVERDUE, so re-verify numbers if this video is re-rendered later.
+
+**Privacy.** Payers appear only as "Partner 1 / Partner 2 / Family". Vendors are fictional businesses.

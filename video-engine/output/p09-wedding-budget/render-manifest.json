@@ -1,0 +1,417 @@
+{
+ "config": "configs/product09_wedding_budget.json",
+ "duration": 15.0,
+ "fps": 30,
+ "nframes": 450,
+ "card": [
+  80,
+  184,
+  1760,
+  840
+ ],
+ "safe_margin": 0.035,
+ "width": 1920,
+ "height": 1080,
+ "draft_watermark": false,
+ "validation": {
+  "errors": [],
+  "warnings": [],
+  "notes": [
+   "truth verified: before.catering_paid = '$1,000.00' (Vendor & Payments!E5)",
+   "truth verified: before.catering_balance = '$7,500.00' (Vendor & Payments!F5)",
+   "truth verified: before.catering_status = 'OVERDUE' (Vendor & Payments!I5)",
+   "truth verified: before.total_paid = '$3,800.00' (Dashboard!B6)",
+   "truth verified: before.total_remaining = '$29,700.00' (Dashboard!B7)",
+   "truth verified: before.overdue_count = '3' (Dashboard!B11)",
+   "truth verified: before.overdue_amount = '$11,500.00' (Dashboard!B12)",
+   "truth verified: after.catering_paid = '$8,500.00' (Vendor & Payments!E5)",
+   "truth verified: after.catering_balance = '$0.00' (Vendor & Payments!F5)",
+   "truth verified: after.catering_status = 'PAID IN FULL' (Vendor & Payments!I5)",
+   "truth verified: after.total_paid = '$11,300.00' (Dashboard!B6)",
+   "truth verified: after.total_remaining = '$22,200.00' (Dashboard!B7)",
+   "truth verified: after.overdue_count = '2' (Dashboard!B11)",
+   "truth verified: after.overdue_amount = '$4,000.00' (Dashboard!B12)",
+   "must_show verified: scene 1 (before-overdue) region 1 [24, 24, 5643, 2001] stays fully in frame",
+   "must_show verified: scene 2 (log-final-payment) region 1 [2833, 24, 3724, 991] stays fully in frame",
+   "must_show verified: scene 3 (balance-status-update) region 1 [6557, 24, 4822, 991] stays fully in frame",
+   "must_show verified: scene 4 (dashboard-updates) region 1 [24, 24, 5643, 2001] stays fully in frame"
+  ]
+ },
+ "scenes": [
+  {
+   "scene": "s1:before-overdue",
+   "scale_min": 3.321,
+   "scale_max": 3.352,
+   "pyramid_level": 1,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s2:log-final-payment",
+   "scale_min": 2.131,
+   "scale_max": 2.131,
+   "pyramid_level": 1,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s3:balance-status-update",
+   "scale_min": 2.784,
+   "scale_max": 2.784,
+   "pyramid_level": 1,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s4:dashboard-updates",
+   "scale_min": 3.321,
+   "scale_max": 3.352,
+   "pyramid_level": 1,
+   "max_upscale": 1.0
+  }
+ ],
+ "elements": [
+  {
+   "scene": "global",
+   "kind": "wordmark",
+   "text": "LEDGER & LIME",
+   "font_px": 22,
+   "container": "frame",
+   "bbox": [
+    1603,
+    92,
+    1835,
+    108
+   ],
+   "frames": 1
+  },
+  {
+   "scene": "s1:before-overdue",
+   "kind": "caption",
+   "text": "See which payments are overdue.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    85,
+    67,
+    1084,
+    146
+   ],
+   "frames": 90
+  },
+  {
+   "scene": "s1:before-overdue",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    109.34906022863753,
+    647.0578229222608,
+    1824.5020955449402,
+    817.9495141263305
+   ],
+   "frames": 65
+  },
+  {
+   "scene": "s2:log-final-payment",
+   "kind": "caption",
+   "text": "Log the final payment.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    81,
+    67,
+    765,
+    146
+   ],
+   "frames": 76
+  },
+  {
+   "scene": "s2:log-final-payment",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    1250.8484444444443,
+    517.5600643804298,
+    1833.5675555555556,
+    614.9768607224507
+   ],
+   "frames": 47
+  },
+  {
+   "scene": "s2:log-final-payment",
+   "kind": "highlight_label",
+   "text": "Tasty Catering Co",
+   "font_px": 56,
+   "container": "card",
+   "bbox": [
+    1278,
+    620,
+    1805,
+    715
+   ],
+   "frames": 47
+  },
+  {
+   "scene": "s3:balance-status-update",
+   "kind": "caption",
+   "text": "Balance and status update themselves.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    82,
+    67,
+    1234,
+    146
+   ],
+   "frames": 76
+  },
+  {
+   "scene": "s3:balance-status-update",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    83.51587301587301,
+    354.5265503205397,
+    1818.5249433106576,
+    431.76666711458245
+   ],
+   "frames": 74
+  },
+  {
+   "scene": "s3:balance-status-update",
+   "kind": "chip",
+   "text": "Catering balance: $7,500.00 -> $0.00",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    753,
+    990
+   ],
+   "frames": 49
+  },
+  {
+   "scene": "s3:balance-status-update",
+   "kind": "chip",
+   "text": "Status: OVERDUE -> PAID IN FULL",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    775,
+    819,
+    1608,
+    990
+   ],
+   "frames": 43
+  },
+  {
+   "scene": "s4:dashboard-updates",
+   "kind": "caption",
+   "text": "See what\u2019s paid \u2014 and what\u2019s still owed.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    85,
+    67,
+    1294,
+    146
+   ],
+   "frames": 77
+  },
+  {
+   "scene": "s4:dashboard-updates",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    109.47356475013237,
+    272.30729531481416,
+    1824.3814407905882,
+    368.00338983050847
+   ],
+   "frames": 75
+  },
+  {
+   "scene": "s4:dashboard-updates",
+   "kind": "highlight",
+   "text": "highlight 2",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    109.47356475013237,
+    646.9932203389831,
+    1824.3814407905882,
+    817.9420724782337
+   ],
+   "frames": 75
+  },
+  {
+   "scene": "s4:dashboard-updates",
+   "kind": "chip",
+   "text": "Overdue payments: 3 -> 2",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    549,
+    990
+   ],
+   "frames": 50
+  },
+  {
+   "scene": "s4:dashboard-updates",
+   "kind": "chip",
+   "text": "Overdue amount: $11,500.00 -> $4,000.00",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    571,
+    819,
+    1368,
+    990
+   ],
+   "frames": 44
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_title",
+   "text": "Premium Wedding Budget & Payment System",
+   "font_px": 88,
+   "container": "frame",
+   "bbox": [
+    169,
+    417,
+    1751,
+    507
+   ],
+   "frames": 71
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_subtitle",
+   "text": "Budget \u2022 Vendor Payments \u2022 Cash Flow",
+   "font_px": 38,
+   "container": "frame",
+   "bbox": [
+    583,
+    626,
+    1335,
+    662
+   ],
+   "frames": 53
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_brand",
+   "text": "LEDGER & LIME",
+   "font_px": 30,
+   "container": "frame",
+   "bbox": [
+    795,
+    919,
+    1122,
+    941
+   ],
+   "frames": 45
+  }
+ ],
+ "overlaps": [],
+ "double_table": [],
+ "transitions": {
+  "scene": "dip",
+  "morph": "cut"
+ },
+ "timeline": [
+  {
+   "id": "before-overdue",
+   "type": "screen",
+   "start": 0.0,
+   "duration": 3.0,
+   "caption": "See which payments are overdue.",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "See which payments are overdue",
+      "Overdue Payments",
+      "$11,500.00"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "log-final-payment",
+   "type": "morph",
+   "start": 3.0,
+   "duration": 3.0,
+   "caption": "Log the final payment.",
+   "expect_text": [
+    {
+     "at": 2.6,
+     "text": [
+      "Log the final payment",
+      "$8,500.00",
+      "Total Paid To Date"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "balance-status-update",
+   "type": "morph",
+   "start": 6.0,
+   "duration": 3.0,
+   "caption": "Balance and status update themselves.",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "update themselves",
+      "$0.00",
+      "PAID IN FULL"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "dashboard-updates",
+   "type": "morph",
+   "start": 9.0,
+   "duration": 3.0,
+   "caption": "See what\u2019s paid \u2014 and what\u2019s still owed.",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "still owed",
+      "$11,300.00",
+      "$4,000.00"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-card",
+   "type": "end_card",
+   "start": 12.0,
+   "duration": 3.0,
+   "caption": "",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "Wedding Budget",
+      "Vendor Payments",
+      "LEDGER"
+     ]
+    }
+   ]
+  }
+ ]
+}

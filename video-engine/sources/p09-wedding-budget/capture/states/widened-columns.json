@@ -1,0 +1,30 @@
+{
+ "Vendor & Payments": {
+  "C": {
+   "shipped": 14.0,
+   "capture": 22
+  },
+  "D": {
+   "shipped": 14.0,
+   "capture": 19
+  },
+  "E": {
+   "shipped": 14.0,
+   "capture": 20
+  },
+  "F": {
+   "shipped": 14.0,
+   "capture": 21
+  },
+  "G": {
+   "shipped": 16.0,
+   "capture": 26
+  }
+ },
+ "Dashboard": {
+  "A": {
+   "shipped": 34.0,
+   "capture": 41
+  }
+ }
+}
