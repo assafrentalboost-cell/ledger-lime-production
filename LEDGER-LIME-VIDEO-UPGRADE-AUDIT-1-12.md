@@ -1,6 +1,6 @@
 # Ledger & Lime - Video Upgrade Audit, Products #1-#12
 
-**Sprint status (2026-09-27): IN PROGRESS.** Source packages for #9, #10 and #12 arrived in commit 65cd4c6. #10 is done offline. #12 and #9 are not started (per instruction). Etsy has not been touched.
+**Sprint status (2026-09-27): IN PROGRESS.** Source packages for #9, #10 and #12 arrived in commit 65cd4c6. #10 (V1.1) and #12 (V1) are done offline. #9 is not started (per instruction). Etsy has not been touched.
 
 Benchmark: Product #13 Video V3.3 FINAL (`video-engine/output/p13-iep-tracker/`). Engine: Ledger & Lime Automated Etsy Video Engine V1, unchanged in this sprint.
 
@@ -35,7 +35,7 @@ Reconstructing #1-#12 workbooks from product names was rejected. It would show p
 | 9 | Premium Wedding Budget & Payment System | NOT AUDITED | pending | to be found in workbook | NOT CREATED | - | NOT TOUCHED |
 | 10 | Rental Property Spreadsheet | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Partial rent payment → remaining balance → carried into the next month (verified in the workbook formulas and sample data) | CREATED: V1.1 `video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.1.mp4` (V1 kept) | PASS (108/0/0) | NOT TOUCHED |
 | 11 | - | NOT AUDITED | pending | - | NOT CREATED | - | HELD FOR EXPERIMENT |
-| 12 | Estate Settlement Command Center | NOT AUDITED | pending | estate reconciliation + unresolved-item detection (per brief; verify in workbook) | NOT CREATED | - | NOT TOUCHED |
+| 12 | Estate Settlement Command Center | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Liability marked Paid → auto-warning clears → Command Center "Unpaid / Disputed Liabilities" 4 → 3 (verified in workbook formulas) | CREATED: `video-engine/output/p12-estate-settlement/P12-Estate-Settlement-Etsy-Video-V1.mp4` | PASS (102/0/0) | NOT TOUCHED |
 
 ## To unblock (fastest path: #10, #12, #9 first)
 
@@ -80,3 +80,33 @@ The manifest's "$1,000 due / $600 paid" example is a QA test case and is not in 
 - **Right edge.** The balance scenes now end with white margin past the table's right edge instead of cutting flush.
 - **Total Paid column.** Dropped from the two balance scenes to keep numbers at V1 size on phones. Keeping it would shrink them about 25%.
 - **Unchanged.** Story, timing, captions, verified values, highlight cells (rings inset a few px), chips and end card.
+
+## Product #12 - details (2026-09-28)
+
+**Source.** The packaged workbook `video-engine/sources/p12-estate-settlement/Estate-Settlement-Command-Center.xlsx` (commit 65cd4c6; byte-identical to the SAMPLE-v1 copy), recalculated by LibreOffice.
+- AFTER is the workbook exactly as shipped: 0 differing cells.
+- BEFORE is the same workbook with one liability record not yet updated. Liability L3 (Lakeside Funeral Home, $8,900 verified) is set back to the sample's own unpaid convention (Status "Verified, Unpaid", Amount Paid 0, Payment Date blank).
+- Builder: `sources/p12-estate-settlement/capture/prepare_states.py`.
+
+**Mechanism.**
+- Register K: `⚠ unpaid verified balance` while the Status is "Verified, Unpaid" and verified > paid.
+- Closeout Review B7 = unpaid-verified + disputed count.
+- Command Center B17 "Unpaid / Disputed Liabilities" mirrors B7.
+- The closeout status (B12) stays REVIEW because other items remain open. That is what the "still needs attention" beat shows.
+
+**Values, all verified cell-by-cell.**
+
+| Cell | Before | After |
+|---|---|---|
+| 04 H6 L3 Status | Verified, Unpaid | Paid |
+| 04 I6 L3 Amount Paid | $0.00 | $8,900.00 |
+| 04 J6 L3 Payment Date | (blank) | Jul 16, 2026 |
+| 04 K6 L3 Warning | ⚠ unpaid verified balance | (clear) |
+| 01 B17 Unpaid / Disputed Liabilities | 4 | 3 |
+| 01 B12 Closeout Status | REVIEW | REVIEW |
+
+**Manifest discrepancies.**
+- SOURCE-MANIFEST says the count "sits at 5" and cites an L-DEMO add taking it 5 → 6. The shipped workbook computes **3**.
+- Adding a liability moves the count the wrong way for the buyer outcome ("fewer unresolved"), so the video uses the real resolving action already present in the sample data. The L-DEMO story is not used.
+
+**Privacy.** No creditor or person names appear in any crop. The register crops show only the Status, Amount Paid, Payment Date and Warning columns; the one on-screen label is the business name "Lakeside Funeral Home". No legal / probate / tax claims appear.

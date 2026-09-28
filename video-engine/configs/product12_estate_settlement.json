@@ -1,0 +1,373 @@
+{
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "p12-estate-settlement",
+    "number": 12,
+    "title": "Estate Settlement Command Center",
+    "version": "V1"
+  },
+  "output": {
+    "filename": "P12-Estate-Settlement-Etsy-Video-V1.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "min_duration": 12,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "product_capture",
+    "pointer_rendered": false,
+    "notes": "Captured from the real packaged customer workbook sources/p12-estate-settlement/Estate-Settlement-Command-Center.xlsx (commit 65cd4c6; byte-identical to the SAMPLE-v1 copy), recalculated by LibreOffice. AFTER = packaged workbook as shipped (0 differing cells vs its own recalculation). BEFORE = the same workbook with ONE liability record (L3, Lakeside Funeral Home, $8,900 verified) not yet updated, using the sample's own convention for unpaid rows: Status 'Verified, Unpaid', Amount Paid 0, Payment Date blank. Capture copies change view settings only (2 sheets visible, print areas, workbook default font explicit, columns widened just enough for headers/auto-warnings to read in full - see capture/states/widened-columns.json). Overdue Tasks uses TODAY(); both states were captured on the same day. No pointer is shown; no creditor or person names are in any crop."
+  },
+  "truth": {
+    "states": {
+      "before": {
+        "l3_status": "Verified, Unpaid",
+        "l3_paid": "$0.00",
+        "unpaid_disputed": "4",
+        "closeout_status": "REVIEW"
+      },
+      "after": {
+        "l3_status": "Paid",
+        "l3_paid": "$8,900.00",
+        "unpaid_disputed": "3",
+        "closeout_status": "REVIEW"
+      }
+    },
+    "labels": {
+      "l3_status": "Funeral home bill",
+      "l3_paid": "Amount paid",
+      "unpaid_disputed": "Unpaid / disputed liabilities",
+      "closeout_status": "Closeout status"
+    },
+    "verify": {
+      "before": "sources/p12-estate-settlement/capture/captures/before_recalculated.json",
+      "after": "sources/p12-estate-settlement/capture/captures/after_recalculated.json",
+      "cells": {
+        "l3_status": {
+          "sheet": "04_LIABILITY_REGISTER",
+          "cell": "H6"
+        },
+        "l3_paid": {
+          "sheet": "04_LIABILITY_REGISTER",
+          "cell": "I6",
+          "format": "currency"
+        },
+        "unpaid_disputed": {
+          "sheet": "01_COMMAND_CENTER",
+          "cell": "B17",
+          "format": "int"
+        },
+        "closeout_status": {
+          "sheet": "01_COMMAND_CENTER",
+          "cell": "B12"
+        }
+      }
+    }
+  },
+  "sources": {
+    "cc_before": {
+      "path": "sources/p12-estate-settlement/capture/captures/before_01-command-center.png",
+      "state": "before"
+    },
+    "cc_after": {
+      "path": "sources/p12-estate-settlement/capture/captures/after_01-command-center.png",
+      "state": "after"
+    },
+    "lr_before": {
+      "path": "sources/p12-estate-settlement/capture/captures/before_04-liability-register.png",
+      "state": "before"
+    },
+    "lr_after": {
+      "path": "sources/p12-estate-settlement/capture/captures/after_04-liability-register.png",
+      "state": "after"
+    }
+  },
+  "scenes": [
+    {
+      "id": "before-needs-attention",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "cc_before",
+      "canvas_pad": [
+        150,
+        300,
+        150,
+        900
+      ],
+      "caption": "Open estate bills need attention.",
+      "camera": {
+        "from": [
+          -101,
+          -250,
+          6325,
+          3019
+        ],
+        "to": [
+          -60,
+          -235,
+          6245,
+          2981
+        ]
+      },
+      "must_show": [
+        [
+          24,
+          24,
+          6100,
+          1850
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            34,
+            1204,
+            6080,
+            215
+          ],
+          "pad": 8,
+          "appear": 0.5
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "Open estate bills need attention",
+            "NEEDS ATTENTION NOW",
+            "Unpaid / Disputed Liabilities"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "record-payment",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "lr_before",
+      "source_to": "lr_after",
+      "swap_at": 0.9,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        0,
+        150,
+        0,
+        150
+      ],
+      "caption": "Record the payment.",
+      "camera": {
+        "from": [
+          7011,
+          -40,
+          1850,
+          883
+        ],
+        "to": [
+          7011,
+          -25,
+          1850,
+          883
+        ]
+      },
+      "must_show": [
+        [
+          7013,
+          24,
+          1845,
+          757
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            7022,
+            414,
+            1827,
+            115
+          ],
+          "pad": 4,
+          "appear": 1.1,
+          "label": "Lakeside Funeral Home"
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.6,
+          "text": [
+            "Record the payment",
+            "Paid",
+            "$8,900.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warning-clears",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "lr_before",
+      "source_to": "lr_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        0,
+        150,
+        200,
+        450
+      ],
+      "caption": "See what’s settled —",
+      "camera": {
+        "from": [
+          8856,
+          -110,
+          2640,
+          1260
+        ],
+        "to": [
+          8856,
+          -95,
+          2640,
+          1260
+        ]
+      },
+      "must_show": [
+        [
+          8858,
+          24,
+          2516,
+          757
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            8878,
+            414,
+            2487,
+            115
+          ],
+          "pad": 4,
+          "appear": 0.2
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "l3_status",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "settled",
+            "Jul 16, 2026",
+            "Paid"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outcome-still-open",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "cc_before",
+      "source_to": "cc_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        150,
+        300,
+        150,
+        900
+      ],
+      "caption": "and what still needs attention.",
+      "camera": {
+        "from": [
+          -60,
+          -235,
+          6245,
+          2981
+        ],
+        "to": [
+          -101,
+          -250,
+          6325,
+          3019
+        ]
+      },
+      "must_show": [
+        [
+          24,
+          24,
+          6100,
+          1850
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            34,
+            1204,
+            6080,
+            215
+          ],
+          "pad": 8,
+          "appear": 0.2
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "unpaid_disputed",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "and what still needs attention",
+            "REVIEW",
+            "Unpaid / Disputed Liabilities"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 3.0,
+      "transition": 0.7,
+      "title": "Estate Settlement Command Center",
+      "subtitle": "Track • Reconcile • Close Out",
+      "brand": "Ledger & Lime",
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "Estate Settlement Command Center",
+            "Reconcile",
+            "LEDGER"
+          ]
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "report_name": "VIDEO-QA-REPORT-P12.md",
+    "max_blank_ms": 100,
+    "privacy": {
+      "id_pattern": "\\bL\\d\\b",
+      "name_pattern": "\\b(Ellen Farrow|Nadia Doyle|Doyle)\\b",
+      "require_ids_on_screen": false,
+      "source_values": []
+    }
+  }
+}

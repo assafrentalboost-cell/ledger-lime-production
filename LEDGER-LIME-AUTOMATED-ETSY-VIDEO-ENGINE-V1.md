@@ -220,6 +220,14 @@ P10 V1.1 (framing only) adds reusable engine options:
 - `canvas_pad` accepts `[left, top, right, bottom]`; config coordinates stay in source pixels.
 - `must_show` validates that listed source regions (e.g. header rows) stay fully in frame for the whole camera move. It is reported in QA.
 
+P12 V1 (2026-09-28) adds `tools/capture_prep.py`, shared view-only capture helpers:
+- explicit default font;
+- `fit_columns` / `fit_column_to_text`;
+- one-page print areas;
+- Arial→Liberation Sans and Calibri→Carlito metric fonts.
+
+No renderer or template change.
+
 Note: under the new global white-flash check, a re-QA of P13 V3.3 would flag its two remaining approved dips (2.43 s 167 ms, 5.93 s 133 ms).
 
 ## 9. Reusability test - PASS

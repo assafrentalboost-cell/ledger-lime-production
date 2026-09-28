@@ -1,0 +1,33 @@
+{
+ "04_LIABILITY_REGISTER": {
+  "A": {
+   "shipped": 8.0,
+   "capture": 14
+  },
+  "D": {
+   "shipped": 14.0,
+   "capture": 21
+  },
+  "E": {
+   "shipped": 13.0,
+   "capture": 20
+  },
+  "G": {
+   "shipped": 10.0,
+   "capture": 14
+  },
+  "I": {
+   "shipped": 12.0,
+   "capture": 17
+  },
+  "J": {
+   "shipped": 13.0,
+   "capture": 18
+  },
+  "K": {
+   "shipped": 19.0,
+   "capture": 27
+  }
+ },
+ "01_COMMAND_CENTER": {}
+}

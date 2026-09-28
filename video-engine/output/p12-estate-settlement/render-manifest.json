@@ -1,0 +1,371 @@
+{
+ "config": "configs/product12_estate_settlement.json",
+ "duration": 15.0,
+ "fps": 30,
+ "nframes": 450,
+ "card": [
+  80,
+  184,
+  1760,
+  840
+ ],
+ "safe_margin": 0.035,
+ "width": 1920,
+ "height": 1080,
+ "draft_watermark": false,
+ "validation": {
+  "errors": [],
+  "warnings": [
+   "truth key 'closeout_status' is identical before and after"
+  ],
+  "notes": [
+   "truth verified: before.l3_status = 'Verified, Unpaid' (04_LIABILITY_REGISTER!H6)",
+   "truth verified: before.l3_paid = '$0.00' (04_LIABILITY_REGISTER!I6)",
+   "truth verified: before.unpaid_disputed = '4' (01_COMMAND_CENTER!B17)",
+   "truth verified: before.closeout_status = 'REVIEW' (01_COMMAND_CENTER!B12)",
+   "truth verified: after.l3_status = 'Paid' (04_LIABILITY_REGISTER!H6)",
+   "truth verified: after.l3_paid = '$8,900.00' (04_LIABILITY_REGISTER!I6)",
+   "truth verified: after.unpaid_disputed = '3' (01_COMMAND_CENTER!B17)",
+   "truth verified: after.closeout_status = 'REVIEW' (01_COMMAND_CENTER!B12)",
+   "must_show verified: scene 1 (before-needs-attention) region 1 [24, 24, 6100, 1850] stays fully in frame",
+   "must_show verified: scene 2 (record-payment) region 1 [7013, 24, 1845, 757] stays fully in frame",
+   "must_show verified: scene 3 (warning-clears) region 1 [8858, 24, 2516, 757] stays fully in frame",
+   "must_show verified: scene 4 (outcome-still-open) region 1 [24, 24, 6100, 1850] stays fully in frame"
+  ]
+ },
+ "scenes": [
+  {
+   "scene": "s1:before-needs-attention",
+   "scale_min": 3.548,
+   "scale_max": 3.594,
+   "pyramid_level": 1,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s2:record-payment",
+   "scale_min": 1.051,
+   "scale_max": 1.051,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s3:warning-clears",
+   "scale_min": 1.5,
+   "scale_max": 1.5,
+   "pyramid_level": 0,
+   "max_upscale": 1.0
+  },
+  {
+   "scene": "s4:outcome-still-open",
+   "scale_min": 3.548,
+   "scale_max": 3.594,
+   "pyramid_level": 1,
+   "max_upscale": 1.0
+  }
+ ],
+ "elements": [
+  {
+   "scene": "global",
+   "kind": "wordmark",
+   "text": "LEDGER & LIME",
+   "font_px": 22,
+   "container": "frame",
+   "bbox": [
+    1603,
+    92,
+    1835,
+    108
+   ],
+   "frames": 1
+  },
+  {
+   "scene": "s1:before-needs-attention",
+   "kind": "caption",
+   "text": "Open estate bills need attention.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    84,
+    67,
+    1072,
+    146
+   ],
+   "frames": 90
+  },
+  {
+   "scene": "s1:before-needs-attention",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    93.49165443259253,
+    575.5796332916701,
+    1832.9903337958913,
+    663.0784533664878
+   ],
+   "frames": 65
+  },
+  {
+   "scene": "s2:record-payment",
+   "kind": "caption",
+   "text": "Record the payment.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    82,
+    67,
+    715,
+    146
+   ],
+   "frames": 76
+  },
+  {
+   "scene": "s2:record-payment",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    81.40930930930931,
+    592.6216999221444,
+    1837.6393393393396,
+    728.1274131909688
+   ],
+   "frames": 47
+  },
+  {
+   "scene": "s2:record-payment",
+   "kind": "highlight_label",
+   "text": "Lakeside Funeral Home",
+   "font_px": 56,
+   "container": "card",
+   "bbox": [
+    624,
+    491,
+    1295,
+    588
+   ],
+   "frames": 47
+  },
+  {
+   "scene": "s3:warning-clears",
+   "kind": "caption",
+   "text": "See what\u2019s settled \u2014",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    85,
+    67,
+    696,
+    126
+   ],
+   "frames": 76
+  },
+  {
+   "scene": "s3:warning-clears",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    85.61111111111111,
+    514.3333882030179,
+    1761.7222222222224,
+    618.8308093278463
+   ],
+   "frames": 74
+  },
+  {
+   "scene": "s3:warning-clears",
+   "kind": "chip",
+   "text": "Funeral home bill: Verified, Unpaid -> Paid",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    876,
+    990
+   ],
+   "frames": 49
+  },
+  {
+   "scene": "s4:outcome-still-open",
+   "kind": "caption",
+   "text": "and what still needs attention.",
+   "font_px": 78,
+   "container": "frame",
+   "bbox": [
+    84,
+    67,
+    1000,
+    126
+   ],
+   "frames": 77
+  },
+  {
+   "scene": "s4:outcome-still-open",
+   "kind": "highlight",
+   "text": "highlight 1",
+   "font_px": 0,
+   "container": "card",
+   "bbox": [
+    93.68650405121622,
+    575.5565217391304,
+    1832.8062916736815,
+    663.0955097848935
+   ],
+   "frames": 75
+  },
+  {
+   "scene": "s4:outcome-still-open",
+   "kind": "chip",
+   "text": "Unpaid / disputed liabilities: 4 -> 3",
+   "font_px": 60,
+   "container": "card",
+   "bbox": [
+    114,
+    819,
+    732,
+    990
+   ],
+   "frames": 50
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_title",
+   "text": "Estate Settlement Command Center",
+   "font_px": 88,
+   "container": "frame",
+   "bbox": [
+    331,
+    417,
+    1588,
+    483
+   ],
+   "frames": 71
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_subtitle",
+   "text": "Track \u2022 Reconcile \u2022 Close Out",
+   "font_px": 38,
+   "container": "frame",
+   "bbox": [
+    676,
+    626,
+    1243,
+    654
+   ],
+   "frames": 53
+  },
+  {
+   "scene": "s5:end-card",
+   "kind": "end_brand",
+   "text": "LEDGER & LIME",
+   "font_px": 30,
+   "container": "frame",
+   "bbox": [
+    795,
+    919,
+    1122,
+    941
+   ],
+   "frames": 45
+  }
+ ],
+ "overlaps": [],
+ "double_table": [],
+ "transitions": {
+  "scene": "dip",
+  "morph": "cut"
+ },
+ "timeline": [
+  {
+   "id": "before-needs-attention",
+   "type": "screen",
+   "start": 0.0,
+   "duration": 3.0,
+   "caption": "Open estate bills need attention.",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "Open estate bills need attention",
+      "NEEDS ATTENTION NOW",
+      "Unpaid / Disputed Liabilities"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "record-payment",
+   "type": "morph",
+   "start": 3.0,
+   "duration": 3.0,
+   "caption": "Record the payment.",
+   "expect_text": [
+    {
+     "at": 2.6,
+     "text": [
+      "Record the payment",
+      "Paid",
+      "$8,900.00"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "warning-clears",
+   "type": "morph",
+   "start": 6.0,
+   "duration": 3.0,
+   "caption": "See what\u2019s settled \u2014",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "settled",
+      "Jul 16, 2026",
+      "Paid"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "outcome-still-open",
+   "type": "morph",
+   "start": 9.0,
+   "duration": 3.0,
+   "caption": "and what still needs attention.",
+   "expect_text": [
+    {
+     "at": 2.7,
+     "text": [
+      "and what still needs attention",
+      "REVIEW",
+      "Unpaid / Disputed Liabilities"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "end-card",
+   "type": "end_card",
+   "start": 12.0,
+   "duration": 3.0,
+   "caption": "",
+   "expect_text": [
+    {
+     "at": 2.5,
+     "text": [
+      "Estate Settlement Command Center",
+      "Reconcile",
+      "LEDGER"
+     ]
+    }
+   ]
+  }
+ ]
+}
