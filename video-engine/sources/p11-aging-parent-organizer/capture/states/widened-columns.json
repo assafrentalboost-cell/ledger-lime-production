@@ -1,0 +1,71 @@
+{
+ "Expenses & Receipts": {
+  "A": {
+   "shipped": 10.0,
+   "capture": 13
+  },
+  "F": {
+   "shipped": 12.0,
+   "capture": 19
+  },
+  "H": {
+   "shipped": 12.0,
+   "capture": 19
+  },
+  "I": {
+   "shipped": 12.0,
+   "capture": 17
+  },
+  "J": {
+   "shipped": 14.0,
+   "capture": 20
+  },
+  "K": {
+   "shipped": 20.0,
+   "capture": 25
+  },
+  "L": {
+   "shipped": 22.0,
+   "capture": 31
+  },
+  "M": {
+   "shipped": 14.0,
+   "capture": 29
+  },
+  "N": {
+   "shipped": 16.0,
+   "capture": 35
+  },
+  "P": {
+   "shipped": 12.0,
+   "capture": 19
+  },
+  "D": {
+   "shipped": 30.0,
+   "capture": 37
+  }
+ },
+ "Family Contributions": {
+  "A": {
+   "shipped": 12.0,
+   "capture": 18
+  },
+  "G": {
+   "shipped": 14.0,
+   "capture": 25
+  },
+  "H": {
+   "shipped": 16.0,
+   "capture": 28
+  },
+  "I": {
+   "shipped": 14.0,
+   "capture": 21
+  },
+  "E": {
+   "shipped": 22.0,
+   "capture": 32
+  }
+ },
+ "Dashboard": {}
+}

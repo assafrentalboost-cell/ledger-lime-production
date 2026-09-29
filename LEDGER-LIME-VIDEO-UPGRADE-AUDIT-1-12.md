@@ -34,7 +34,7 @@ Reconstructing #1-#12 workbooks from product names was rejected. It would show p
 | 8 | Mortgage Payoff Tracker | NOT AUDITED | pending | - | NOT CREATED | - | NOT TOUCHED |
 | 9 | Premium Wedding Budget & Payment System | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Vendor payment logged → Balance Remaining + auto Status update → Dashboard Total Paid / Overdue update (verified in workbook formulas) | CREATED: `video-engine/output/p09-wedding-budget/P09-Wedding-Budget-Etsy-Video-V1.mp4` | PASS (107/0/0) | NOT TOUCHED |
 | 10 | Rental Property Spreadsheet | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Partial rent payment → remaining balance → carried into the next month (verified in the workbook formulas and sample data) | CREATED: V1.1 `video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.1.mp4` (V1 kept) | PASS (108/0/0) | NOT TOUCHED |
-| 11 | Aging Parent Financial Organizer | NOT AUDITED | BLOCKED: source package missing (2026-09-29) | - | NOT CREATED | - | HELD FOR EXPERIMENT (to 2026-10-04) |
+| 11 | Aging Parent Financial Organizer | AUDITED vs package copy of live video 843528305 (3:2 rendered slides, not workbook UI) | REPLACE WITH NEW after the 2026-10-04 checkpoint (offline file ready) | Reimbursement recorded (C7 → E7) → Applied Amount → E7 Pending → Reimbursed, $40 → $0 → Dashboard Pending 4 → 3, Outstanding $164.50 → $124.50 (verified in workbook formulas) | CREATED: `video-engine/output/p11-aging-parent-organizer/P11-Aging-Parent-Organizer-Etsy-Video-V1.mp4` | PASS (118/0/0) | HELD FOR EXPERIMENT (to 2026-10-04) - NOT TOUCHED |
 | 12 | Estate Settlement Command Center | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Liability marked Paid → auto-warning clears → Command Center "Unpaid / Disputed Liabilities" 4 → 3 (verified in workbook formulas) | CREATED: `video-engine/output/p12-estate-settlement/P12-Estate-Settlement-Etsy-Video-V1.mp4` | PASS (102/0/0) | NOT TOUCHED |
 
 ## To unblock (fastest path: #10, #12, #9 first)
@@ -141,7 +141,36 @@ The manifest's "$1,000 due / $600 paid" example is a QA test case and is not in 
 
 **Privacy.** Payers appear only as "Partner 1 / Partner 2 / Family". Vendors are fictional businesses.
 
-## Product #11 - blocked (2026-09-29)
+## Product #11 - details (2026-09-29, resumed)
+
+**Source.** The delivered workbook in `video-engine/sources/p11-aging-parent-organizer/workbook/`, added in commit 09e83c4. Its SHA-256 `eaaac91d…9f23` and size of 223,940 bytes were verified and are unchanged after capture.
+- AFTER is the workbook exactly as shipped: 0 differing cells, and the Dashboard matches the build report.
+- BEFORE is the same workbook with one reimbursement row (C7: Parent Account → $40 for expense E7, Dental copay) not yet recorded.
+- Builder: `sources/p11-aging-parent-organizer/capture/prepare_states.py`.
+- Full cell list, formula chain and independent Python re-derivation: `video-engine/output/p11-aging-parent-organizer/P11-BEFORE-AFTER-MANIFEST.md`.
+
+**Values.**
+
+| Cell | Before | After |
+|---|---|---|
+| Family Contributions G10 Applied Amount | $0.00 | $40.00 |
+| Expenses L10 Status (E7) | Pending | Reimbursed |
+| Expenses N10 Remaining (E7) | $40.00 | $0.00 |
+| Dashboard B5 Reimbursements Pending | 4 | 3 |
+| Dashboard B7 Outstanding Reimbursement | $164.50 | $124.50 |
+
+**Current live video.** The package copy is 1920x1280, 24 fps, 14 s: slides rendered from Sheets API values, not the workbook UI.
+- Its numbers are true: the E5 $34.50 edit reproduces Pending 3 → 2 and $124.50 → $90.00.
+- But its end state is a demo edit that is not in the delivered file.
+- Its table text is about 3.7 px on a phone.
+
+**Recommendation.** REPLACE WITH NEW, after the 2026-10-04 checkpoint only. See `video-engine/output/p11-aging-parent-organizer/P11-VIDEO-RECOMMENDATION.md`.
+
+**Workbook defects.** None found in the filmed metrics.
+
+**Privacy.** Only the workbook's fictional sample family appears. No emails or parent profile are shown.
+
+### Earlier status: Product #11 - blocked (2026-09-29)
 
 This was a replacement-video prep request, offline only; Product #11 is held for the title experiment until 2026-10-04. It stopped before any rendering because the source of truth is missing. The repository has no Product #11 workbook or package on any branch; `video-engine/sources/` holds only p09, p10, p12, p13 and a dummy. The live Master is also unreachable: there is no Google Drive connector in this session.
 

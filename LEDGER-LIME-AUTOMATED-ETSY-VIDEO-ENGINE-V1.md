@@ -230,6 +230,18 @@ No renderer or template change.
 
 Note: under the new global white-flash check, a re-QA of P13 V3.3 would flag its two remaining approved dips (2.43 s 167 ms, 5.93 s 133 ms).
 
+## 8e. Product #11 - Aging Parent Financial Organizer V1 (2026-09-29, offline only)
+
+- **Source:** the delivered workbook, commit 09e83c4. SHA-256 verified; the file was never modified. Config: `configs/product11_aging_parent.json`.
+- **Story:**
+  1. Dashboard shows 4 reimbursements pending, $164.50 outstanding.
+  2. Contribution C7 is recorded (Applied Amount $0 → $40).
+  3. Expense E7 goes Pending → Reimbursed, $40 → $0.
+  4. Dashboard shows 4 → 3 pending, $164.50 → $124.50 outstanding.
+  5. End card.
+- **QA:** PASS, 118/0/0. The build is held for the 2026-10-04 title-experiment checkpoint.
+- **QA engine fix:** the internal-label scan pattern `STAND-?IN` matched inside the workbook's own word "Outstanding". It is now `\bSTAND-?INS?\b`. This only removes a false positive; real "stand-in" / "standins" labels are still caught.
+
 ## 9. Reusability test - PASS
 
 `configs/dummy_home_maintenance.json` covers a dummy product, "Home Maintenance Planner & Service Log". Compared with Product #13 it uses:

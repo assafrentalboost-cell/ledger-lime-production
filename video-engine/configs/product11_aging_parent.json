@@ -1,0 +1,446 @@
+{
+  "schema": "ledger-lime-video/1",
+  "template": "ledger_lime",
+  "product": {
+    "id": "p11-aging-parent-organizer",
+    "number": 11,
+    "title": "Aging Parent Financial Organizer",
+    "version": "V1"
+  },
+  "output": {
+    "filename": "P11-Aging-Parent-Organizer-Etsy-Video-V1.mp4",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "min_duration": 12,
+    "max_duration": 15
+  },
+  "provenance": {
+    "source_status": "product_capture",
+    "pointer_rendered": false,
+    "notes": "Captured from the real delivered customer workbook sources/p11-aging-parent-organizer/workbook/Aging-Parent-Financial-Organizer.xlsx (Etsy buyer file for listing 4579424851, 223,940 bytes, SHA-256 eaaac91d...9f23, commit 09e83c4; never modified), recalculated by LibreOffice. AFTER = delivered workbook as shipped (0 differing cells vs its own recalculation; Dashboard matches the build report: Pending 3, Outstanding $124.50, Contributions $790.00). BEFORE = the same workbook with ONE reimbursement not yet recorded: contribution row C7 (Parent Account -> $40 for expense E7, Dental copay) left empty, the workbook's own convention for an unused row. Capture copies change view settings only (3 sheets visible, print areas, workbook default font explicit, columns widened just enough for headers / sample text to read in full - see capture/states/widened-columns.json). None of the filmed values use TODAY(). No pointer is shown. Names on screen are the workbook's fictional sample family."
+  },
+  "truth": {
+    "states": {
+      "before": {
+        "c7_applied": "$0.00",
+        "e7_status": "Pending",
+        "e7_reimbursed": "$0.00",
+        "e7_remaining": "$40.00",
+        "pending_count": "4",
+        "contributions_applied": "$750.00",
+        "outstanding": "$164.50"
+      },
+      "after": {
+        "c7_applied": "$40.00",
+        "e7_status": "Reimbursed",
+        "e7_reimbursed": "$40.00",
+        "e7_remaining": "$0.00",
+        "pending_count": "3",
+        "contributions_applied": "$790.00",
+        "outstanding": "$124.50"
+      }
+    },
+    "labels": {
+      "c7_applied": "Applied to expense",
+      "e7_status": "Reimbursement status",
+      "e7_reimbursed": "Reimbursed",
+      "e7_remaining": "Still owed",
+      "pending_count": "Reimbursements pending",
+      "contributions_applied": "Family contributions",
+      "outstanding": "Outstanding reimbursement"
+    },
+    "verify": {
+      "before": "sources/p11-aging-parent-organizer/capture/captures/before_recalculated.json",
+      "after": "sources/p11-aging-parent-organizer/capture/captures/after_recalculated.json",
+      "cells": {
+        "c7_applied": {
+          "sheet": "Family Contributions",
+          "cell": "G10",
+          "format": "currency"
+        },
+        "e7_status": {
+          "sheet": "Expenses & Receipts",
+          "cell": "L10"
+        },
+        "e7_reimbursed": {
+          "sheet": "Expenses & Receipts",
+          "cell": "M10",
+          "format": "currency"
+        },
+        "e7_remaining": {
+          "sheet": "Expenses & Receipts",
+          "cell": "N10",
+          "format": "currency"
+        },
+        "pending_count": {
+          "sheet": "Dashboard",
+          "cell": "B5",
+          "format": "int"
+        },
+        "contributions_applied": {
+          "sheet": "Dashboard",
+          "cell": "B6",
+          "format": "currency"
+        },
+        "outstanding": {
+          "sheet": "Dashboard",
+          "cell": "B7",
+          "format": "currency"
+        }
+      }
+    }
+  },
+  "sources": {
+    "db_before": {
+      "path": "sources/p11-aging-parent-organizer/capture/captures/before_dashboard.png",
+      "state": "before"
+    },
+    "db_after": {
+      "path": "sources/p11-aging-parent-organizer/capture/captures/after_dashboard.png",
+      "state": "after"
+    },
+    "fc_before": {
+      "path": "sources/p11-aging-parent-organizer/capture/captures/before_family-contributions.png",
+      "state": "before"
+    },
+    "fc_after": {
+      "path": "sources/p11-aging-parent-organizer/capture/captures/after_family-contributions.png",
+      "state": "after"
+    },
+    "ex_before": {
+      "path": "sources/p11-aging-parent-organizer/capture/captures/before_expenses-receipts.png",
+      "state": "before"
+    },
+    "ex_after": {
+      "path": "sources/p11-aging-parent-organizer/capture/captures/after_expenses-receipts.png",
+      "state": "after"
+    }
+  },
+  "scenes": [
+    {
+      "id": "before-still-owed",
+      "type": "screen",
+      "duration": 3.0,
+      "source": "db_before",
+      "canvas_pad": [
+        620,
+        100,
+        620,
+        800
+      ],
+      "caption": "See who’s still waiting to be paid back.",
+      "camera": {
+        "from": [
+          -600,
+          -70,
+          5073,
+          2421
+        ],
+        "to": [
+          -560,
+          -55,
+          4993,
+          2383
+        ]
+      },
+      "must_show": [
+        [
+          24,
+          24,
+          3823,
+          1693
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            34,
+            727,
+            3803,
+            147
+          ],
+          "pad": 6,
+          "appear": 0.5
+        },
+        {
+          "rect": [
+            34,
+            1060,
+            3803,
+            147
+          ],
+          "pad": 6,
+          "appear": 0.5
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "waiting to be paid back",
+            "Reimbursements Pending",
+            "$164.50"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "record-reimbursement",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "fc_before",
+      "source_to": "fc_after",
+      "swap_at": 0.9,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        0,
+        100,
+        0,
+        1100
+      ],
+      "caption": "Record a family reimbursement.",
+      "camera": {
+        "from": [
+          660,
+          -70,
+          4140,
+          1976
+        ],
+        "to": [
+          660,
+          -50,
+          4140,
+          1976
+        ]
+      },
+      "must_show": [
+        [
+          681,
+          24,
+          4105,
+          885
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            689,
+            722,
+            4085,
+            83
+          ],
+          "pad": 4,
+          "appear": 1.1,
+          "label": "Related Expense ID: E7",
+          "label_side": "below"
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.6,
+          "text": [
+            "Record a family reimbursement",
+            "Applied Amount",
+            "$40.00"
+          ]
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "c7_applied",
+          "anchor": "bottom-left",
+          "appear": 1.3
+        }
+      ]
+    },
+    {
+      "id": "expense-updates",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "ex_before",
+      "source_to": "ex_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        0,
+        150,
+        100,
+        800
+      ],
+      "caption": "The expense updates itself.",
+      "camera": {
+        "from": [
+          5130,
+          -110,
+          2460,
+          1174
+        ],
+        "to": [
+          5130,
+          -95,
+          2460,
+          1174
+        ]
+      },
+      "must_show": [
+        [
+          5142,
+          24,
+          2416,
+          547
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            5166,
+            507,
+            2382,
+            59
+          ],
+          "pad": 4,
+          "appear": 0.2,
+          "label": "E7 • Dental copay",
+          "label_side": "below"
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "e7_status",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        },
+        {
+          "truth_key": "e7_remaining",
+          "anchor": "bottom-left",
+          "appear": 1.2
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "expense updates",
+            "Reimbursed",
+            "$40.00"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dashboard-updates",
+      "type": "morph",
+      "duration": 3.0,
+      "transition": 0,
+      "source_from": "db_before",
+      "source_to": "db_after",
+      "swap_at": 0.6,
+      "swap_duration": 0.2,
+      "canvas_pad": [
+        620,
+        100,
+        620,
+        800
+      ],
+      "caption": "The whole family sees what’s still owed.",
+      "camera": {
+        "from": [
+          -560,
+          -55,
+          4993,
+          2383
+        ],
+        "to": [
+          -600,
+          -70,
+          5073,
+          2421
+        ]
+      },
+      "must_show": [
+        [
+          24,
+          24,
+          3823,
+          1693
+        ]
+      ],
+      "highlights": [
+        {
+          "rect": [
+            34,
+            727,
+            3803,
+            147
+          ],
+          "pad": 6,
+          "appear": 0.2
+        },
+        {
+          "rect": [
+            34,
+            1060,
+            3803,
+            147
+          ],
+          "pad": 6,
+          "appear": 0.2
+        }
+      ],
+      "chips": [
+        {
+          "truth_key": "pending_count",
+          "anchor": "bottom-left",
+          "appear": 1.0
+        },
+        {
+          "truth_key": "outstanding",
+          "anchor": "bottom-left",
+          "appear": 1.2
+        }
+      ],
+      "expect_text": [
+        {
+          "at": 2.7,
+          "text": [
+            "still owed",
+            "$124.50",
+            "Reimbursements Pending"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "end-card",
+      "type": "end_card",
+      "duration": 3.0,
+      "transition": 0.7,
+      "title": "Aging Parent Financial Organizer",
+      "subtitle": "Expenses • Reimbursements • Family Handoff",
+      "brand": "Ledger & Lime",
+      "expect_text": [
+        {
+          "at": 2.5,
+          "text": [
+            "Aging Parent Financial Organizer",
+            "Reimbursements",
+            "LEDGER"
+          ]
+        }
+      ]
+    }
+  ],
+  "qa": {
+    "report_name": "VIDEO-QA-REPORT-P11.md",
+    "max_blank_ms": 100,
+    "privacy": {
+      "id_pattern": "\\bE7\\b",
+      "name_pattern": "(@example\\.com|Eleanor)",
+      "require_ids_on_screen": false,
+      "source_values": []
+    }
+  }
+}

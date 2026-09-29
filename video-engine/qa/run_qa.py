@@ -320,7 +320,7 @@ def run_qa(cfg: dict, mp4: Path, out_dir: Path, manifest: dict) -> tuple[str, Pa
         strip = [brand.color(brand.hl["color"])]
         for t, sid, what, dst, im in keyframes:
             frame_text[dst.name] = ocr.read_text(im, strip=strip)
-        internal = [r"\bDRAFT\b", r"RECONSTRUCTION", r"NOT\s*FOR\s*LISTING", r"\bDUMMY\b", r"STAND-?IN", r"\bINTERNAL\b"]
+        internal = [r"\bDRAFT\b", r"RECONSTRUCTION", r"NOT\s*FOR\s*LISTING", r"\bDUMMY\b", r"\bSTAND-?INS?\b", r"\bINTERNAL\b"]
         hits = sorted({f"{n}: {m.group(0)}" for n, txt in frame_text.items() for p in internal
                        for m in [re.search(p, txt, re.I)] if m})
         watermark_expected = manifest.get("draft_watermark", False)
