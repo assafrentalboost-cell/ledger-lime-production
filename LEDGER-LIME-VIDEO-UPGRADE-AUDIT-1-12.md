@@ -34,7 +34,7 @@ Reconstructing #1-#12 workbooks from product names was rejected. It would show p
 | 8 | Mortgage Payoff Tracker | NOT AUDITED | pending | - | NOT CREATED | - | NOT TOUCHED |
 | 9 | Premium Wedding Budget & Payment System | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Vendor payment logged → Balance Remaining + auto Status update → Dashboard Total Paid / Overdue update (verified in workbook formulas) | CREATED: `video-engine/output/p09-wedding-budget/P09-Wedding-Budget-Etsy-Video-V1.mp4` | PASS (107/0/0) | NOT TOUCHED |
 | 10 | Rental Property Spreadsheet | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Partial rent payment → remaining balance → carried into the next month (verified in the workbook formulas and sample data) | CREATED: V1.1 `video-engine/output/p10-rental-property/P10-Rental-Property-Etsy-Video-V1.1.mp4` (V1 kept) | PASS (108/0/0) | NOT TOUCHED |
-| 11 | - | NOT AUDITED | pending | - | NOT CREATED | - | HELD FOR EXPERIMENT |
+| 11 | Aging Parent Financial Organizer | NOT AUDITED | BLOCKED: source package missing (2026-09-29) | - | NOT CREATED | - | HELD FOR EXPERIMENT (to 2026-10-04) |
 | 12 | Estate Settlement Command Center | NOT AUDITED (no Etsy access) | ADD / REPLACE (offline file ready) | Liability marked Paid → auto-warning clears → Command Center "Unpaid / Disputed Liabilities" 4 → 3 (verified in workbook formulas) | CREATED: `video-engine/output/p12-estate-settlement/P12-Estate-Settlement-Etsy-Video-V1.mp4` | PASS (102/0/0) | NOT TOUCHED |
 
 ## To unblock (fastest path: #10, #12, #9 first)
@@ -140,3 +140,14 @@ The manifest's "$1,000 due / $600 paid" example is a QA test case and is not in 
 **Date dependence.** OVERDUE depends on the capture date (catering was due Aug 15, 2026). Both states were captured on 2026-09-28. A re-render after Nov 13, 2026 would also turn the Venue row OVERDUE, so re-verify numbers if this video is re-rendered later.
 
 **Privacy.** Payers appear only as "Partner 1 / Partner 2 / Family". Vendors are fictional businesses.
+
+## Product #11 - blocked (2026-09-29)
+
+This was a replacement-video prep request, offline only; Product #11 is held for the title experiment until 2026-10-04. It stopped before any rendering because the source of truth is missing. The repository has no Product #11 workbook or package on any branch; `video-engine/sources/` holds only p09, p10, p12, p13 and a dummy. The live Master is also unreachable: there is no Google Drive connector in this session.
+
+Needed inputs:
+- `video-engine/sources/p11-aging-parent-organizer/` containing the delivered customer workbook (.xlsx).
+- A SOURCE-MANIFEST.md, same format as #9 / #10 / #12.
+- Any existing listing images.
+
+Nothing was created and Etsy was not touched.
