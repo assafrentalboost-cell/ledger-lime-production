@@ -1,0 +1,185 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "checks": [
+  {
+   "idea": "pta treasurer report",
+   "product_idea": "pta treasurer report",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 0
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 51
+   }
+  },
+  {
+   "idea": "insurance policy tracker",
+   "product_idea": "insurance policy tracker",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 2
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 179
+   }
+  },
+  {
+   "idea": "bakery pricing calculator",
+   "product_idea": "bakery pricing calculator",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 10
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 691
+   }
+  },
+  {
+   "idea": "dog breeder records",
+   "product_idea": "dog breeder records",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 61
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 664
+   }
+  },
+  {
+   "idea": "home daycare forms",
+   "product_idea": "home daycare forms",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 151
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 2074
+   }
+  },
+  {
+   "idea": "subscription tracker",
+   "product_idea": "subscription tracker",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 185
+   },
+   "competition": {
+    "band": "medium",
+    "competing_listings": 6209
+   }
+  },
+  {
+   "idea": "ceu tracker",
+   "product_idea": "ceu tracker",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 5
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 226
+   }
+  },
+  {
+   "idea": "chicken egg tracker",
+   "product_idea": "chicken egg tracker",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 10
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 602
+   }
+  },
+  {
+   "idea": "salon client intake form",
+   "product_idea": "salon client intake form",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 1
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 2242
+   }
+  },
+  {
+   "idea": "travel itinerary template",
+   "product_idea": "travel itinerary template",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 472
+   },
+   "competition": {
+    "band": "high",
+    "competing_listings": 15300
+   }
+  },
+  {
+   "idea": "daycare business",
+   "product_idea": "daycare business",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 137
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 4189
+   }
+  },
+  {
+   "idea": "photography business forms",
+   "product_idea": "photography business forms",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 2
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 2004
+   }
+  },
+  {
+   "idea": "esthetician forms",
+   "product_idea": "esthetician forms",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 317
+   },
+   "competition": {
+    "band": "medium",
+    "competing_listings": 8031
+   }
+  },
+  {
+   "idea": "sports team manager",
+   "product_idea": "sports team manager",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 58
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 1649
+   }
+  },
+  {
+   "idea": "personal trainer forms",
+   "product_idea": "personal trainer forms",
+   "demand": {
+    "band": "low",
+    "monthly_searches": 21
+   },
+   "competition": {
+    "band": "low",
+    "competing_listings": 446
+   }
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+ "captured": "2026-10-07T10:29:03.555Z",
+ "phase": "SUPPLEMENTARY (evidence-pack pull, after the original decision)",
+ "tool": "view_shops",
+ "input": {
+  "params": {
+   "shop_name": "DigitalsbyHyphen"
+  },
+  "columns": [
+   "shop_name",
+   "listing_active_count",
+   "transaction_sold_count",
+   "shop_age_month",
+   "sales_30_days"
+  ]
+ },
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "rows": [
+  {
+   "shop_name": "DigitalsbyHyphen",
+   "shop_name_href": "https://www.etsy.com/shop/DigitalsbyHyphen",
+   "listing_active_count": "7",
+   "transaction_sold_count": "653",
+   "shop_age_month": "21 Mo.",
+   "sales_30_days": "12"
+  }
+ ]
+}

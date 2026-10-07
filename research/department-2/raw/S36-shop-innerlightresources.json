@@ -1,0 +1,28 @@
+{
+ "captured": "2026-10-07T10:29:01.105Z",
+ "phase": "SUPPLEMENTARY (evidence-pack pull, after the original decision)",
+ "tool": "view_shops",
+ "input": {
+  "params": {
+   "shop_name": "InnerLightResources"
+  },
+  "columns": [
+   "shop_name",
+   "listing_active_count",
+   "transaction_sold_count",
+   "shop_age_month",
+   "sales_30_days"
+  ]
+ },
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "rows": [
+  {
+   "shop_name": "InnerLightResources",
+   "shop_name_href": "https://www.etsy.com/shop/InnerLightResources",
+   "listing_active_count": "126",
+   "transaction_sold_count": "610",
+   "shop_age_month": "10 Mo.",
+   "sales_30_days": "91"
+  }
+ ]
+}

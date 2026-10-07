@@ -1,0 +1,28 @@
+{
+ "captured": "2026-10-07T10:29:02.869Z",
+ "phase": "SUPPLEMENTARY (evidence-pack pull, after the original decision)",
+ "tool": "view_shops",
+ "input": {
+  "params": {
+   "shop_name": "TheOrganizedNotary"
+  },
+  "columns": [
+   "shop_name",
+   "listing_active_count",
+   "transaction_sold_count",
+   "shop_age_month",
+   "sales_30_days"
+  ]
+ },
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "rows": [
+  {
+   "shop_name": "TheOrganizedNotary",
+   "shop_name_href": "https://www.etsy.com/shop/TheOrganizedNotary",
+   "listing_active_count": "1",
+   "transaction_sold_count": "286",
+   "shop_age_month": "15 Mo.",
+   "sales_30_days": "0"
+  }
+ ]
+}

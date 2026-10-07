@@ -1,0 +1,28 @@
+{
+ "captured": "2026-10-07T10:29:12.215Z",
+ "phase": "SUPPLEMENTARY (evidence-pack pull, after the original decision)",
+ "tool": "view_shops",
+ "input": {
+  "params": {
+   "shop_name": "TheSpreadsheetSquad"
+  },
+  "columns": [
+   "shop_name",
+   "listing_active_count",
+   "transaction_sold_count",
+   "shop_age_month",
+   "sales_30_days"
+  ]
+ },
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "rows": [
+  {
+   "shop_name": "TheSpreadsheetSquad",
+   "shop_name_href": "https://www.etsy.com/shop/TheSpreadsheetSquad",
+   "listing_active_count": "62",
+   "transaction_sold_count": "9,916",
+   "shop_age_month": "39 Mo.",
+   "sales_30_days": "311"
+  }
+ ]
+}
