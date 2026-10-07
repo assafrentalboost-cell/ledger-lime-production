@@ -1,0 +1,351 @@
+{
+ "overlay": "ADHD_ADULT",
+ "listings": 31,
+ "clean_shops": 20,
+ "near_shops": 7,
+ "units": 21109,
+ "top_shop": "CustomGroupGifts",
+ "top_shop_share": 0.161,
+ "price_median": 7.99,
+ "price_q3": 11.66,
+ "jobs": {
+  "PERSONAL_BUDGET": {
+   "units": 4841,
+   "shops": [
+    "CustomGroupGifts",
+    "EzPlanningStudio",
+    "Heart2HeartbyYoli",
+    "SunnyKiteHill"
+   ]
+  },
+  "CLEANING_HOME": {
+   "units": 9720,
+   "shops": [
+    "BaileysWonderland",
+    "LifePrintableStore",
+    "LinkDigitalStudio",
+    "SavvySheetsStudio8",
+    "TheTreasuredTreetop",
+    "fikadoodle"
+   ]
+  },
+  "LIFE_PLANNER": {
+   "units": 5141,
+   "shops": [
+    "AravellaCreative",
+    "BossMeansBusiness",
+    "Craftoking365",
+    "DragonHoardTemplates",
+    "PlanMindco",
+    "PlanoraNotion",
+    "SoulsArchive",
+    "TemplateMuseAlchemy",
+    "TrackifyPremium",
+    "Webudding",
+    "habitualsheets"
+   ]
+  },
+  "OTHER": {
+   "units": 523,
+   "shops": [
+    "CellRise",
+    "NeurodivergentHQ"
+   ]
+  },
+  "PARTY_GIFT_DECOR": {
+   "units": 629,
+   "shops": [
+    "DailyPlansCoStore",
+    "MadeForFunction",
+    "RichvaleCreatives"
+   ]
+  },
+  "KIDS_EDU_CONTENT": {
+   "units": 255,
+   "shops": [
+    "Templix8"
+   ]
+  }
+ },
+ "rows": [
+  [
+   "CLEAN",
+   "CustomGroupGifts",
+   "$1.94",
+   "3,396",
+   12,
+   "PERSONAL_BUDGET",
+   "ADHD Adult Digital Budget Planner Google Sheets Monthly Bill Tracker Personal Income Expen"
+  ],
+  [
+   "CLEAN",
+   "LifePrintableStore",
+   "$6.70",
+   "2,621",
+   11,
+   "CLEANING_HOME",
+   "ADHD Cleaning Planner Bundle, ADHD Cleaning Checklist, ADHD Chore Chart, Home Cleaning Sch"
+  ],
+  [
+   "CLEAN",
+   "SavvySheetsStudio8",
+   "$1.65",
+   "1,894",
+   11,
+   "CLEANING_HOME",
+   "ADHD Cleaning Planner Bundle, ADHD Home Organization, Master Cleaning Checklist, Family Ch"
+  ],
+  [
+   "NEAR-CLEAN",
+   "fikadoodle",
+   "$6.14",
+   "1,867",
+   7,
+   "CLEANING_HOME",
+   "ADHD Cleaning Planner Printable | Cleaning Schedule Checklist PDF | Declutter & Cleaning R"
+  ],
+  [
+   "CLEAN",
+   "PlanMindco",
+   "$8.30",
+   "1,640",
+   12,
+   "LIFE_PLANNER",
+   "ADHD Digital Planner, Adult ADHD Planner, 2026 Digital Planner, Neurodivergent Planner, Da"
+  ],
+  [
+   "NEAR-CLEAN",
+   "fikadoodle",
+   "$0.88",
+   "966",
+   4,
+   "CLEANING_HOME",
+   "Editable Cleaning Cards for ADHD | Printable Room-by-Room Cleaning Checklists | 40 Canva C"
+  ],
+  [
+   "CLEAN",
+   "EzPlanningStudio",
+   "$7.88",
+   "764",
+   12,
+   "PERSONAL_BUDGET",
+   "Ongoing Monthly Bill Spreadsheet \u2022 ADHD Friendly Budget Tracker for Google Sheets & Excel "
+  ],
+  [
+   "CLEAN",
+   "TheTreasuredTreetop",
+   "$7.99",
+   "722",
+   11,
+   "CLEANING_HOME",
+   "ADHD Cleaning Planner Bundle | 80+ Editable Checklists & Schedules | Declutter Challenge, "
+  ],
+  [
+   "CLEAN",
+   "BossMeansBusiness",
+   "$11.34",
+   "609",
+   11,
+   "LIFE_PLANNER",
+   "Weekly Planner Google sheets | ADHD Planner & Productivity Tracker | Digital download"
+  ],
+  [
+   "NEAR-CLEAN",
+   "PlanoraNotion",
+   "$19.70",
+   "583",
+   4,
+   "LIFE_PLANNER",
+   "2026 All In One Life Planner Minimal Notion Dashboard Template Aesthetic Daily Personal Pl"
+  ],
+  [
+   "NEAR-CLEAN",
+   "LinkDigitalStudio",
+   "$8.54",
+   "570",
+   4,
+   "CLEANING_HOME",
+   "Adhd cleaning planner bundle, adhd cleaning schedule, adhd cleaning checklist, adhd cleani"
+  ],
+  [
+   "CLEAN",
+   "PlanMindco",
+   "$12.45",
+   "518",
+   10,
+   "LIFE_PLANNER",
+   "ADHD Digital Planner (made by an ADHD Coach) for Goodnotes, iPad & Android. Adhd Digital P"
+  ],
+  [
+   "CLEAN",
+   "Heart2HeartbyYoli",
+   "$2.99",
+   "512",
+   12,
+   "PERSONAL_BUDGET",
+   "ADHD Budget Planner Google Sheets Monthly Bill Tracker Personal Income Expense Weekly Payc"
+  ],
+  [
+   "CLEAN",
+   "BaileysWonderland",
+   "$2.99",
+   "474",
+   10,
+   "CLEANING_HOME",
+   "ADHD EDITABLE digital cleaning schedule checklist"
+  ],
+  [
+   "NEAR-CLEAN",
+   "fikadoodle",
+   "$1.68",
+   "432",
+   7,
+   "CLEANING_HOME",
+   "Editable Cleaning Schedule Printable ADHD Cleaning Planner Daily Weekly Monthly Cleaning C"
+  ],
+  [
+   "CLEAN",
+   "NeurodivergentHQ",
+   "$15.00",
+   "379",
+   8,
+   "OTHER",
+   "Start Anytime ADHD Workbook | Undated Goal Setting | Fillable A4 PDF"
+  ],
+  [
+   "CLEAN",
+   "Craftoking365",
+   "$1.99",
+   "371",
+   9,
+   "LIFE_PLANNER",
+   "ADHD Mega Planner Bundle, 300+ Pages, Productivity Journal (Printable PDF)"
+  ],
+  [
+   "NEAR-CLEAN",
+   "Webudding",
+   "$16.99",
+   "306",
+   5,
+   "LIFE_PLANNER",
+   "2026 ADHD Structured All-in-One Planner l Digital Planner Goodnotes Notability Samsung Not"
+  ],
+  [
+   "CLEAN",
+   "MadeForFunction",
+   "$37.00",
+   "274",
+   11,
+   "PARTY_GIFT_DECOR",
+   "Whole Shop ADHD Brain Dump Bundle | Executive Function, Thought Organizer, To-Do List, Tas"
+  ],
+  [
+   "CLEAN",
+   "Templix8",
+   "$3.96",
+   "255",
+   8,
+   "KIDS_EDU_CONTENT",
+   "ADHD Brain Reset Bundle, ADHD Organization, Brain Dump Worksheet, ADHD Task Tracker, Adhd "
+  ],
+  [
+   "CLEAN",
+   "AravellaCreative",
+   "$3.47",
+   "235",
+   9,
+   "LIFE_PLANNER",
+   "Habit Tracker Spreadsheet, Daily Routine & Goal Planner for Google Sheets and Excel, ADHD "
+  ],
+  [
+   "NEAR-CLEAN",
+   "RichvaleCreatives",
+   "$11.25",
+   "231",
+   6,
+   "PARTY_GIFT_DECOR",
+   "Task Tracker Spreadsheet To Do List Task Tracker Template Team Project Manager Digital ADH"
+  ],
+  [
+   "CLEAN",
+   "TemplateMuseAlchemy",
+   "$46.00",
+   "217",
+   9,
+   "LIFE_PLANNER",
+   "Notion Life Planner Template: Second Brain for ADHD | All-in-One Life Management System | "
+  ],
+  [
+   "CLEAN",
+   "SoulsArchive",
+   "$8.18",
+   "215",
+   8,
+   "LIFE_PLANNER",
+   "Undated ADHD Witchy Digital Planner - Fully Hyperlinked"
+  ],
+  [
+   "CLEAN",
+   "TrackifyPremium",
+   "$8.78",
+   "189",
+   8,
+   "LIFE_PLANNER",
+   "ADHD Book and Series Tracker Spreadsheet, Reading Journal, Digital Library (Google Sheets)"
+  ],
+  [
+   "CLEAN",
+   "TheTreasuredTreetop",
+   "$9.99",
+   "174",
+   10,
+   "CLEANING_HOME",
+   "ADHD Cleaning Planner Bundle | 80+ Editable Checklists & Schedules | Declutter Challenge, "
+  ],
+  [
+   "NEAR-CLEAN",
+   "SunnyKiteHill",
+   "$11.99",
+   "169",
+   6,
+   "PERSONAL_BUDGET",
+   "Gamified ADHD Planner Bundle | RPG Fantasy Quest Log & Life Organizer | Neurodivergent Exe"
+  ],
+  [
+   "CLEAN",
+   "DragonHoardTemplates",
+   "$29.99",
+   "145",
+   12,
+   "LIFE_PLANNER",
+   "2026 ADHD Notion Gamified RPG Template Digital Planner: Habit Tracking, Goal Setting, ADHD"
+  ],
+  [
+   "CLEAN",
+   "CellRise",
+   "$5.61",
+   "144",
+   8,
+   "OTHER",
+   "Eisenhower Matrix Spreadsheet Decision Matrix Google Sheets Task Priority Tracker Urgent I"
+  ],
+  [
+   "CLEAN",
+   "DailyPlansCoStore",
+   "$6.19",
+   "124",
+   12,
+   "PARTY_GIFT_DECOR",
+   "Printable Work Day Planner PDF & Canva | To Do Checklist, ADHD Productivity Organizer, Wor"
+  ],
+  [
+   "NEAR-CLEAN",
+   "habitualsheets",
+   "$7.93",
+   "113",
+   6,
+   "LIFE_PLANNER",
+   "ADHD Planner Bundle printable, Neurodivergent Brain, Daily, Weekly (Digital Download, US/E"
+  ]
+ ]
+}

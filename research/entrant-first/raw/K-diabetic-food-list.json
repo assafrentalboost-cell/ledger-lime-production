@@ -1,0 +1,113 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:03:49.190Z",
+ "tool": "view_keyword",
+ "keyword": "diabetic food list",
+ "params": {
+  "per_page": 20,
+  "order_by": "new_volume",
+  "order_direction": "desc"
+ },
+ "rows": [
+  {
+   "keyword": "diabetic foods list",
+   "new_volume": "1,731",
+   "competition": "1,367"
+  },
+  {
+   "keyword": "diabetes food list",
+   "new_volume": "1,731",
+   "competition": "1,198"
+  },
+  {
+   "keyword": "diabetic food list",
+   "new_volume": "1,688",
+   "competition": "1,372"
+  },
+  {
+   "keyword": "diabetes foods list",
+   "new_volume": "1,688",
+   "competition": "1,199"
+  },
+  {
+   "keyword": "food list diabetes",
+   "new_volume": "1,682",
+   "competition": "1,200"
+  },
+  {
+   "keyword": "food list diabetic",
+   "new_volume": "1,660",
+   "competition": "1,377"
+  },
+  {
+   "keyword": "food list diabetics",
+   "new_volume": "1,611",
+   "competition": "1,647"
+  },
+  {
+   "keyword": "diabetic food list diabetic",
+   "new_volume": "1,605",
+   "competition": "1,629"
+  },
+  {
+   "keyword": "diabetes food lists",
+   "new_volume": "1,591",
+   "competition": "139"
+  },
+  {
+   "keyword": "diabetes food list chart",
+   "new_volume": "1,548",
+   "competition": "1,412"
+  },
+  {
+   "keyword": "diabetes diet food list",
+   "new_volume": "1,367",
+   "competition": "941"
+  },
+  {
+   "keyword": "diabetic food grocery list",
+   "new_volume": "1,277",
+   "competition": "916"
+  },
+  {
+   "keyword": "diabetic diet food list",
+   "new_volume": "1,238",
+   "competition": "1,066"
+  },
+  {
+   "keyword": "diabetic food chart list",
+   "new_volume": "1,075",
+   "competition": "912"
+  },
+  {
+   "keyword": "diabetes food list diabetic food chart",
+   "new_volume": "1,070",
+   "competition": "790"
+  },
+  {
+   "keyword": "diabetes food list meal",
+   "new_volume": "1,043",
+   "competition": "933"
+  },
+  {
+   "keyword": "diabetic food list printable",
+   "new_volume": "1,037",
+   "competition": "1,170"
+  },
+  {
+   "keyword": "diabetic food chart diabetic list",
+   "new_volume": "1,012",
+   "competition": "916"
+  },
+  {
+   "keyword": "diabetic food list chart",
+   "new_volume": "1,012",
+   "competition": "916"
+  },
+  {
+   "keyword": "diabetes food list printable",
+   "new_volume": "840",
+   "competition": "588"
+  }
+ ]
+}

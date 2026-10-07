@@ -1,0 +1,66 @@
+cluster                fit      cln  nr  lst   units  top%   med$    q3$ prem  prior
+DESIGN_ASSETS          WEAK      85  33  132   83193    6%   6.73  11.27   12  new
+CRAFT_PATTERNS         WEAK      80  21  115  172564    4%    6.1    8.0    1  new
+PARTY_GIFT_DECOR       WEAK      37  21   70   42709    8%    5.0    8.4    2  new
+WEDDING_DECOR          WEAK      36  15   66   36658    8%    8.2  19.44   10  new
+PERSONAL_BUDGET        STRONG    31   7   62   41462   18%    6.7  11.99    5  LIVE CORE (#1,#3-#7; not new)
+IP_RISK                EXCLUDED  29  11   50   54540   13%   4.99    6.0    2  new
+LIFE_PLANNER           WEAK      24   6   37   19973   12%   8.78  16.15    7  new
+KIDS_EDU_CONTENT       WEAK      22   7   32   15390   13%    6.0  14.46    2  new
+WEDDING_PLAN_ADMIN     STRONG    17   0   19   11820   16%  10.22  21.82    5  explored: #9 V2 HOLD
+TRAVEL_PLANNING        MEDIUM    16   9   25    5792   10%    7.0  11.99    1  screened & dropped (Discovery 2.0)
+BABY_SHOWER_DECOR      WEAK      15   2   20   19764   18%    4.5   7.24    0  new
+DIET_CONDITION         WEAK      13   1   22    5730   17%   7.68  14.47    0  new
+CREATOR_MARKETING      WEAK      12   2   15    5347   16%    5.0  13.91    3  new
+OTHER                  WEAK      10   7   19   10895   22%   8.39  15.55    1  new
+SMALL_BIZ_ADMIN        STRONG    10   4   16    4071   20%   3.62    9.4    2  explored: bookkeeping/invoice rejected, #14 inventory
+CLEANING_HOME          MEDIUM     8   4   15   11601   28%   5.64   8.27    1  Dept #1 household (failed)
+REJECT_RISK            EXCLUDED   8   7   15    6486   32%    3.5   3.85    0  new
+CAREGIVER_HEALTH       STRONG     8   2   11    4048   16%   3.33   8.38    0  explored: #11/#16 live-adjacent
+MEAL_PLANNING          MEDIUM     5   1    6    2853   42%   5.17    6.0    0  new
+NEW_PARENT_ORG         MEDIUM     5   2    7    2564   26%    3.5   6.07    0  new
+HOMESCHOOL_ADMIN       STRONG     5   1    7    1996   36%    7.0   7.58    0  screened & dropped (Discovery 2.0)
+HOBBY_TRACKER          WEAK       3   0    3    1432   60%  11.75  17.32    1  book tracker dropped
+CO_PARENTING           STRONG     2   0    5    2267   64%  18.99  18.99    1  LIVE PRODUCT #17 (not new)
+VEHICLE_PRIVATE_SALE   STRONG     2   1    5    1540   69%   1.47   1.99    0  Dept #1 data reused (not a finalist)
+STR_HOST               MEDIUM     1   1    2    1540   65%   4.96   5.45    0  Dept #1 alternative
+TEACHER_ADMIN          MEDIUM     1   1    2     352   66%  14.45  16.68    0  new
+
+OVERLAY ADHD_ADULT {'overlay': 'ADHD_ADULT', 'listings': 31, 'clean_shops': 20, 'near_shops': 7, 'units': 21109, 'top_shop': 'CustomGroupGifts', 'top_shop_share': 0.161, 'price_median': 7.99, 'price_q3': 11.66}
+  CLEANING_HOME        units=  9720 shops=6
+  LIFE_PLANNER         units=  5141 shops=11
+  PERSONAL_BUDGET      units=  4841 shops=4
+  PARTY_GIFT_DECOR     units=   629 shops=3
+  OTHER                units=   523 shops=2
+  KIDS_EDU_CONTENT     units=   255 shops=1
+   CLEAN CustomGroupGifts $1.94 3,396 12 PERSONAL_BUDGET ADHD Adult Digital Budget Planner Google Sheets Monthly Bill Tracker Personal Income Expen
+   CLEAN LifePrintableStore $6.70 2,621 11 CLEANING_HOME ADHD Cleaning Planner Bundle, ADHD Cleaning Checklist, ADHD Chore Chart, Home Cleaning Sch
+   CLEAN SavvySheetsStudio8 $1.65 1,894 11 CLEANING_HOME ADHD Cleaning Planner Bundle, ADHD Home Organization, Master Cleaning Checklist, Family Ch
+   NEAR-CLEAN fikadoodle $6.14 1,867 7 CLEANING_HOME ADHD Cleaning Planner Printable | Cleaning Schedule Checklist PDF | Declutter & Cleaning R
+   CLEAN PlanMindco $8.30 1,640 12 LIFE_PLANNER ADHD Digital Planner, Adult ADHD Planner, 2026 Digital Planner, Neurodivergent Planner, Da
+   NEAR-CLEAN fikadoodle $0.88 966 4 CLEANING_HOME Editable Cleaning Cards for ADHD | Printable Room-by-Room Cleaning Checklists | 40 Canva C
+   CLEAN EzPlanningStudio $7.88 764 12 PERSONAL_BUDGET Ongoing Monthly Bill Spreadsheet • ADHD Friendly Budget Tracker for Google Sheets & Excel 
+   CLEAN TheTreasuredTreetop $7.99 722 11 CLEANING_HOME ADHD Cleaning Planner Bundle | 80+ Editable Checklists & Schedules | Declutter Challenge, 
+   CLEAN BossMeansBusiness $11.34 609 11 LIFE_PLANNER Weekly Planner Google sheets | ADHD Planner & Productivity Tracker | Digital download
+   NEAR-CLEAN PlanoraNotion $19.70 583 4 LIFE_PLANNER 2026 All In One Life Planner Minimal Notion Dashboard Template Aesthetic Daily Personal Pl
+   NEAR-CLEAN LinkDigitalStudio $8.54 570 4 CLEANING_HOME Adhd cleaning planner bundle, adhd cleaning schedule, adhd cleaning checklist, adhd cleani
+   CLEAN PlanMindco $12.45 518 10 LIFE_PLANNER ADHD Digital Planner (made by an ADHD Coach) for Goodnotes, iPad & Android. Adhd Digital P
+   CLEAN Heart2HeartbyYoli $2.99 512 12 PERSONAL_BUDGET ADHD Budget Planner Google Sheets Monthly Bill Tracker Personal Income Expense Weekly Payc
+   CLEAN BaileysWonderland $2.99 474 10 CLEANING_HOME ADHD EDITABLE digital cleaning schedule checklist
+   NEAR-CLEAN fikadoodle $1.68 432 7 CLEANING_HOME Editable Cleaning Schedule Printable ADHD Cleaning Planner Daily Weekly Monthly Cleaning C
+   CLEAN NeurodivergentHQ $15.00 379 8 OTHER Start Anytime ADHD Workbook | Undated Goal Setting | Fillable A4 PDF
+   CLEAN Craftoking365 $1.99 371 9 LIFE_PLANNER ADHD Mega Planner Bundle, 300+ Pages, Productivity Journal (Printable PDF)
+   NEAR-CLEAN Webudding $16.99 306 5 LIFE_PLANNER 2026 ADHD Structured All-in-One Planner l Digital Planner Goodnotes Notability Samsung Not
+   CLEAN MadeForFunction $37.00 274 11 PARTY_GIFT_DECOR Whole Shop ADHD Brain Dump Bundle | Executive Function, Thought Organizer, To-Do List, Tas
+   CLEAN Templix8 $3.96 255 8 KIDS_EDU_CONTENT ADHD Brain Reset Bundle, ADHD Organization, Brain Dump Worksheet, ADHD Task Tracker, Adhd 
+   CLEAN AravellaCreative $3.47 235 9 LIFE_PLANNER Habit Tracker Spreadsheet, Daily Routine & Goal Planner for Google Sheets and Excel, ADHD 
+   NEAR-CLEAN RichvaleCreatives $11.25 231 6 PARTY_GIFT_DECOR Task Tracker Spreadsheet To Do List Task Tracker Template Team Project Manager Digital ADH
+   CLEAN TemplateMuseAlchemy $46.00 217 9 LIFE_PLANNER Notion Life Planner Template: Second Brain for ADHD | All-in-One Life Management System | 
+   CLEAN SoulsArchive $8.18 215 8 LIFE_PLANNER Undated ADHD Witchy Digital Planner - Fully Hyperlinked
+   CLEAN TrackifyPremium $8.78 189 8 LIFE_PLANNER ADHD Book and Series Tracker Spreadsheet, Reading Journal, Digital Library (Google Sheets)
+   CLEAN TheTreasuredTreetop $9.99 174 10 CLEANING_HOME ADHD Cleaning Planner Bundle | 80+ Editable Checklists & Schedules | Declutter Challenge, 
+   NEAR-CLEAN SunnyKiteHill $11.99 169 6 PERSONAL_BUDGET Gamified ADHD Planner Bundle | RPG Fantasy Quest Log & Life Organizer | Neurodivergent Exe
+   CLEAN DragonHoardTemplates $29.99 145 12 LIFE_PLANNER 2026 ADHD Notion Gamified RPG Template Digital Planner: Habit Tracking, Goal Setting, ADHD
+   CLEAN CellRise $5.61 144 8 OTHER Eisenhower Matrix Spreadsheet Decision Matrix Google Sheets Task Priority Tracker Urgent I
+   CLEAN DailyPlansCoStore $6.19 124 12 PARTY_GIFT_DECOR Printable Work Day Planner PDF & Canva | To Do Checklist, ADHD Productivity Organizer, Wor
+   NEAR-CLEAN habitualsheets $7.93 113 6 LIFE_PLANNER ADHD Planner Bundle printable, Neurodivergent Brain, Daily, Weekly (Digital Download, US/E

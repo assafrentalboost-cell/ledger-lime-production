@@ -1,0 +1,238 @@
+{
+ "Bills, budget & paycheck": {
+  "shops": 6,
+  "units": 4862,
+  "counted": true,
+  "examples": [
+   [
+    "CustomGroupGifts",
+    "$1.94",
+    "3,396",
+    "entrant",
+    "ADHD Adult Digital Budget Planner Google Sheets Monthly Bill Tracker P"
+   ],
+   [
+    "EzPlanningStudio",
+    "$7.88",
+    "764",
+    "entrant",
+    "Ongoing Monthly Bill Spreadsheet \u2022 ADHD Friendly Budget Tracker for Go"
+   ],
+   [
+    "Heart2HeartbyYoli",
+    "$2.99",
+    "512",
+    "entrant",
+    "ADHD Budget Planner Google Sheets Monthly Bill Tracker Personal Income"
+   ],
+   [
+    "MasterMoneyBudget",
+    "$15.99",
+    "67",
+    "young<=3mo",
+    "ADHD Budget Planner App Beginner-Friendly Paycheck & Monthly Budget Tr"
+   ]
+  ]
+ },
+ "Cleaning & chore system": {
+  "shops": 9,
+  "units": 9893,
+  "counted": true,
+  "examples": [
+   [
+    "LifePrintableStore",
+    "$6.70",
+    "2,621",
+    "entrant",
+    "ADHD Cleaning Planner Bundle, ADHD Cleaning Checklist, ADHD Chore Char"
+   ],
+   [
+    "SavvySheetsStudio8",
+    "$1.65",
+    "1,894",
+    "entrant",
+    "ADHD Cleaning Planner Bundle, ADHD Home Organization, Master Cleaning "
+   ],
+   [
+    "fikadoodle",
+    "$6.14",
+    "1,867",
+    "entrant",
+    "ADHD Cleaning Planner Printable | Cleaning Schedule Checklist PDF | De"
+   ],
+   [
+    "fikadoodle",
+    "$0.88",
+    "966",
+    "entrant",
+    "Editable Cleaning Cards for ADHD | Printable Room-by-Room Cleaning Che"
+   ]
+  ]
+ },
+ "Brain dump / task paralysis / prioritising": {
+  "shops": 4,
+  "units": 773,
+  "counted": true,
+  "examples": [
+   [
+    "MadeForFunction",
+    "$37.00",
+    "274",
+    "entrant",
+    "Whole Shop ADHD Brain Dump Bundle | Executive Function, Thought Organi"
+   ],
+   [
+    "RichvaleCreatives",
+    "$11.25",
+    "231",
+    "entrant",
+    "Task Tracker Spreadsheet To Do List Task Tracker Template Team Project"
+   ],
+   [
+    "CellRise",
+    "$5.61",
+    "144",
+    "entrant",
+    "Eisenhower Matrix Spreadsheet Decision Matrix Google Sheets Task Prior"
+   ],
+   [
+    "DailyPlansCoStore",
+    "$6.19",
+    "124",
+    "entrant",
+    "Printable Work Day Planner PDF & Canva | To Do Checklist, ADHD Product"
+   ]
+  ]
+ },
+ "Life OS / second brain (all-in-one)": {
+  "shops": 6,
+  "units": 1555,
+  "counted": true,
+  "examples": [
+   [
+    "PlanoraNotion",
+    "$19.70",
+    "583",
+    "entrant",
+    "2026 All In One Life Planner Minimal Notion Dashboard Template Aesthet"
+   ],
+   [
+    "Webudding",
+    "$16.99",
+    "306",
+    "entrant",
+    "2026 ADHD Structured All-in-One Planner l Digital Planner Goodnotes No"
+   ],
+   [
+    "Webudding",
+    "$16.99",
+    "306",
+    "young<=3mo",
+    "2026 ADHD Structured All-in-One Planner l Digital Planner Goodnotes No"
+   ],
+   [
+    "TemplateMuseAlchemy",
+    "$46.00",
+    "217",
+    "entrant",
+    "Notion Life Planner Template: Second Brain for ADHD | All-in-One Life "
+   ]
+  ]
+ },
+ "12-month task & deadline calendar": {
+  "shops": 0,
+  "units": 0,
+  "counted": false,
+  "examples": []
+ },
+ "Habits, goals & routines": {
+  "shops": 4,
+  "units": 826,
+  "counted": true,
+  "examples": [
+   [
+    "NeurodivergentHQ",
+    "$15.00",
+    "379",
+    "entrant",
+    "Start Anytime ADHD Workbook | Undated Goal Setting | Fillable A4 PDF"
+   ],
+   [
+    "AravellaCreative",
+    "$3.47",
+    "235",
+    "entrant",
+    "Habit Tracker Spreadsheet, Daily Routine & Goal Planner for Google She"
+   ],
+   [
+    "DragonHoardTemplates",
+    "$29.99",
+    "145",
+    "entrant",
+    "2026 ADHD Notion Gamified RPG Template Digital Planner: Habit Tracking"
+   ],
+   [
+    "EverydayApps",
+    "$19.00",
+    "67",
+    "young<=3mo",
+    "ADHD Planner App, ADHD Digital Planner, Executive Function Organizer, "
+   ]
+  ]
+ },
+ "Daily / weekly planner": {
+  "shops": 10,
+  "units": 3801,
+  "counted": true,
+  "examples": [
+   [
+    "PlanMindco",
+    "$8.30",
+    "1,640",
+    "entrant",
+    "ADHD Digital Planner, Adult ADHD Planner, 2026 Digital Planner, Neurod"
+   ],
+   [
+    "BossMeansBusiness",
+    "$11.34",
+    "609",
+    "entrant",
+    "Weekly Planner Google sheets | ADHD Planner & Productivity Tracker | D"
+   ],
+   [
+    "PlanMindco",
+    "$12.45",
+    "518",
+    "entrant",
+    "ADHD Digital Planner (made by an ADHD Coach) for Goodnotes, iPad & And"
+   ],
+   [
+    "Craftoking365",
+    "$1.99",
+    "371",
+    "entrant",
+    "ADHD Mega Planner Bundle, 300+ Pages, Productivity Journal (Printable "
+   ]
+  ]
+ },
+ "Symptom & medication log": {
+  "shops": 0,
+  "units": 0,
+  "counted": false,
+  "examples": []
+ },
+ "Reading tracker (hobby)": {
+  "shops": 1,
+  "units": 189,
+  "counted": false,
+  "examples": [
+   [
+    "TrackifyPremium",
+    "$8.78",
+    "189",
+    "entrant",
+    "ADHD Book and Series Tracker Spreadsheet, Reading Journal, Digital Lib"
+   ]
+  ]
+ }
+}

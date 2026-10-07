@@ -1,0 +1,88 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:01:24.536Z",
+ "tool": "view_keyword",
+ "keyword": "adhd bill tracker",
+ "params": {
+  "per_page": 15,
+  "order_by": "new_volume",
+  "order_direction": "desc"
+ },
+ "rows": [
+  {
+   "keyword": "adhd bill tracker",
+   "new_volume": "32",
+   "competition": "220"
+  },
+  {
+   "keyword": "adhd bill tracker planner",
+   "new_volume": "31",
+   "competition": "247"
+  },
+  {
+   "keyword": "adhd budget planner bill tracker excel",
+   "new_volume": "9",
+   "competition": "48"
+  },
+  {
+   "keyword": "adhd bill tracker spreadsheet",
+   "new_volume": "1",
+   "competition": "409"
+  },
+  {
+   "keyword": "adhd planner adult journal with bill tracker",
+   "new_volume": "1",
+   "competition": "5"
+  },
+  {
+   "keyword": "adhd bill tracke",
+   "new_volume": "1",
+   "competition": "2"
+  },
+  {
+   "keyword": "adhd budget and bill tracker",
+   "new_volume": "1",
+   "competition": "293"
+  },
+  {
+   "keyword": "adhd money & bills tracker",
+   "new_volume": "1",
+   "competition": "287"
+  },
+  {
+   "keyword": "adhd budget planner google sheets bill tracker",
+   "new_volume": "1",
+   "competition": "187"
+  },
+  {
+   "keyword": "adhd bill tracker excel",
+   "new_volume": "1",
+   "competition": "271"
+  },
+  {
+   "keyword": "adhd friendly bill tracker",
+   "new_volume": "1",
+   "competition": "294"
+  },
+  {
+   "keyword": "adhd monthly bill tracker",
+   "new_volume": "1",
+   "competition": "169"
+  },
+  {
+   "keyword": "adhd billing tracker",
+   "new_volume": "1",
+   "competition": "270"
+  },
+  {
+   "keyword": "bill planner and tracker adhd",
+   "new_volume": "1",
+   "competition": "263"
+  },
+  {
+   "keyword": "adhd bill payment tracker template google sheets",
+   "new_volume": "1",
+   "competition": "12"
+  }
+ ]
+}
