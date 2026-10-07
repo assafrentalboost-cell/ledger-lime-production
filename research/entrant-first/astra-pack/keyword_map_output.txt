@@ -1,0 +1,81 @@
+
+## ADHD_ADULT (30 terms)
+  ad-hd                                                   vol= 3,606 comp=106,378
+  adhd                                                    vol= 3,558 comp=123,818
+  adhd planner                                            vol= 3,225 comp=43,547
+  digital adhd planner                                    vol= 2,532 comp=25,153
+  adhd  digital                                           vol= 2,529 comp=38,232
+  daily planner adhd                                      vol= 2,471 comp=20,842
+  adhd daily                                              vol= 2,345 comp=17,834
+  weekly  adhd                                            vol= 2,316 comp=14,911
+  daily planner digital adhd                              vol= 2,280 comp=10,533
+  adhd notability planner                                 vol= 1,157 comp=2,641
+  adhd planner clean                                      vol=   930 comp=5,681
+  adhd notability goodnotes template                      vol=   835 comp=1,928
+  adhd cleaning                                           vol=   785 comp=5,216
+  adhd clean                                              vol=   782 comp=5,214
+  cleaning adhd planner                                   vol=   758 comp=4,736
+  adhd notability templates                               vol=   728 comp=1,888
+  cleaning planner adhd checklist                         vol=   711 comp=4,147
+  adhd cleaning schedules                                 vol=   687 comp=3,741
+  adhd clean checklist                                    vol=   661 comp=3,967
+  adhd cleaning  checklist                                vol=   661 comp=3,964
+  adhd digital planner notion                             vol=   507 comp=1,748
+  budget planner adhd                                     vol=   485 comp=2,791
+  adhd notion                                             vol=   470 comp=2,598
+  planner notion adhd                                     vol=   460 comp=2,575
+  notion templates adhd                                   vol=   445 comp=2,494
+  adhd budget planner digital                             vol=   323 comp=1,851
+  budget templates adhd                                   vol=   289 comp=2,075
+  adhd monthly budget                                     vol=   287 comp=1,122
+  adhd budgeting                                          vol=   276 comp=2,505
+  adhd budget                                             vol=   275 comp=2,494
+
+## WEDDING_PLAN_ADMIN (19 terms)
+  wedding planners                                        vol= 1,425 comp=61,645
+  wedding planner plan                                    vol=   895 comp=16,430
+  wedding planner books                                   vol=   866 comp=13,315
+  wedding planning planners                               vol=   853 comp=16,702
+  checklist wedding planner                               vol=   769 comp=9,899
+  wedding budget spreadsheets                             vol=   324 comp=2,258
+  wedding budgeting spreadsheet                           vol=   245 comp=1,931
+  wedding spreadsheet budget planner                      vol=   198 comp=1,826
+  wedding planner spreadsheet google sheets wedding budget vol=   176 comp=1,378
+  wedding budget spreadsheet template                     vol=   161 comp=1,773
+  wedding budget tracker spreadsheet                      vol=   156 comp=1,292
+  wedding planning budget spreadsheet                     vol=   150 comp=1,227
+  wedding planner spreadsheet wedding budget tracker      vol=   150 comp=1,218
+  google sheets wedding budget spreadsheet                vol=   111 comp=1,144
+  wedding budget spreadsheet google                       vol=   111 comp=1,171
+  budget wedding planner spreadsheet template             vol=   108 comp=1,666
+  wedding budget excel spreadsheet                        vol=    62 comp=659
+  digital wedding planner spreadsheet wedding budget tracker vol=    61 comp=716
+  excel wedding budget planner spreadsheet                vol=    55 comp=615
+
+## DIET_CONDITION (26 terms)
+  food list chart                                         vol= 5,507 comp=10,466
+  low food list                                           vol= 4,983 comp=7,779
+  pdf foods list                                          vol= 3,843 comp=13,744
+  food list diet pdf                                      vol= 3,663 comp=7,951
+  grocery food list                                       vol= 3,302 comp=12,170
+  diet foods list                                         vol= 3,257 comp=8,233
+  food  list                                              vol= 3,087 comp=23,104
+  food listings                                           vol= 3,081 comp=22,611
+  food guide list                                         vol= 3,015 comp=3,886
+  food chart listings                                     vol= 2,823 comp=3,683
+  plan food list                                          vol= 2,779 comp=15,035
+  food list diet charts                                   vol= 2,756 comp=2,650
+  diet food guide list                                    vol= 2,502 comp=2,803
+  diet plan food list                                     vol= 2,441 comp=4,732
+  meal food list                                          vol= 2,417 comp=12,856
+  food list diabetes                                      vol= 1,682 comp=1,200
+  food list diabetics                                     vol= 1,611 comp=1,647
+  diabetes food list chart                                vol= 1,548 comp=1,412
+  diabetes diet food list                                 vol= 1,367 comp=941
+  diabetic food grocery list                              vol= 1,277 comp=916
+  diabetic diet food list                                 vol= 1,238 comp=1,066
+  diabetes food list diabetic food chart                  vol= 1,070 comp=790
+  diabetes food list meal                                 vol= 1,043 comp=933
+  diabetic food list printable                            vol= 1,037 comp=1,170
+  diabetic food chart diabetic list                       vol= 1,012 comp=916
+  diabetes food list printable                            vol=   840 comp=588

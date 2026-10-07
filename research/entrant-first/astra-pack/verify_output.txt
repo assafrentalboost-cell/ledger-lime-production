@@ -1,0 +1,14 @@
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA
+YES       | 20 ADHD clean entrant shops | reproduced: 20
+YES       | 7 ADHD near-clean entrant shops | reproduced: 7
+YES       | young pool = 75 adult ADHD listings | reproduced: 75
+YES       | 24 / 75 young listings >= 30 units | reproduced: 24
+YES       | 17 of those from new shops (<=24 mo) | reproduced: 17
+YES       | 2 near-duplicate title pairs in young pool | reproduced: 2
+YES       | ~40% of overlay units priced < $4 | reproduced: 0.404
+YES       | ADHD overlay units 21,109 | reproduced: 21109
+YES       | 6 same-buyer jobs (>=2 shops) | reproduced: 6
+INFO      | VALID jobs incl. bolt-on test (new, stricter) | reproduced: 5
+CORRECTED | "premium tier is Notion and apps" (report section 10 item 5) | reproduced: Notion+app share of premium units = 0.17
+YES       | Wedding young >=30 = 5, dup pairs 89 | reproduced: see RUNNER-UP line
+YES       | Diet young >=30 = 51, new-shop 49, dup pairs 73 | reproduced: see RUNNER-UP line

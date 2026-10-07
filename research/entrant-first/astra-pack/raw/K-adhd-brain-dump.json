@@ -1,0 +1,88 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:01:23.585Z",
+ "tool": "view_keyword",
+ "keyword": "adhd brain dump",
+ "params": {
+  "per_page": 15,
+  "order_by": "new_volume",
+  "order_direction": "desc"
+ },
+ "rows": [
+  {
+   "keyword": "adhd planner brain dump",
+   "new_volume": "234",
+   "competition": "3,530"
+  },
+  {
+   "keyword": "adhd to do brain dump",
+   "new_volume": "179",
+   "competition": "1,509"
+  },
+  {
+   "keyword": "brain dump adhd",
+   "new_volume": "137",
+   "competition": "1,618"
+  },
+  {
+   "keyword": "adhd brain dump",
+   "new_volume": "137",
+   "competition": "1,599"
+  },
+  {
+   "keyword": "brain dump adhd planner",
+   "new_volume": "120",
+   "competition": "1,675"
+  },
+  {
+   "keyword": "brain dumps planner adhd",
+   "new_volume": "120",
+   "competition": "8"
+  },
+  {
+   "keyword": "adhd brain dumps planner",
+   "new_volume": "120",
+   "competition": "8"
+  },
+  {
+   "keyword": "adhd brain dump planner",
+   "new_volume": "120",
+   "competition": "1,517"
+  },
+  {
+   "keyword": "brain dump planner adhd",
+   "new_volume": "111",
+   "competition": "1,522"
+  },
+  {
+   "keyword": "adhd templates brain dump",
+   "new_volume": "105",
+   "competition": "1,335"
+  },
+  {
+   "keyword": "brain dump templates adhd",
+   "new_volume": "105",
+   "competition": "1,342"
+  },
+  {
+   "keyword": "adhd brain dump template",
+   "new_volume": "98",
+   "competition": "1,157"
+  },
+  {
+   "keyword": "brain dump adhd templates",
+   "new_volume": "97",
+   "competition": "1,097"
+  },
+  {
+   "keyword": "adhd brain dump to do list",
+   "new_volume": "87",
+   "competition": "921"
+  },
+  {
+   "keyword": "adhd brain dump organizer",
+   "new_volume": "81",
+   "competition": "812"
+  }
+ ]
+}

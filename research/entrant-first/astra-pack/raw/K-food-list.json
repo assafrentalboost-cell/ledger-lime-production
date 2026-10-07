@@ -1,0 +1,253 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:01:16.360Z",
+ "tool": "view_keyword",
+ "keyword": "food list",
+ "params": {
+  "per_page": 40,
+  "order_by": "new_volume",
+  "order_direction": "desc"
+ },
+ "rows": [
+  {
+   "keyword": "food chart list",
+   "new_volume": "5,509",
+   "competition": "10,460",
+   "score": "530"
+  },
+  {
+   "keyword": "food list chart",
+   "new_volume": "5,507",
+   "competition": "10,466",
+   "score": "530"
+  },
+  {
+   "keyword": "food lister",
+   "new_volume": "5,145",
+   "competition": "25",
+   "score": "205,830"
+  },
+  {
+   "keyword": "low food list",
+   "new_volume": "4,983",
+   "competition": "7,779",
+   "score": "640"
+  },
+  {
+   "keyword": "pdf foods list",
+   "new_volume": "3,843",
+   "competition": "13,744",
+   "score": "280"
+  },
+  {
+   "keyword": "food list diet pdf",
+   "new_volume": "3,663",
+   "competition": "7,951",
+   "score": "460"
+  },
+  {
+   "keyword": "grocery foodlist",
+   "new_volume": "3,558",
+   "competition": "72",
+   "score": "49,430"
+  },
+  {
+   "keyword": "foodlist",
+   "new_volume": "3,446",
+   "competition": "109",
+   "score": "31,620"
+  },
+  {
+   "keyword": "diet food list",
+   "new_volume": "3,378",
+   "competition": "6,735",
+   "score": "500"
+  },
+  {
+   "keyword": "food grocery list",
+   "new_volume": "3,338",
+   "competition": "12,160",
+   "score": "270"
+  },
+  {
+   "keyword": "grocery list food",
+   "new_volume": "3,338",
+   "competition": "12,155",
+   "score": "270"
+  },
+  {
+   "keyword": "food list grocery",
+   "new_volume": "3,303",
+   "competition": "12,162",
+   "score": "270"
+  },
+  {
+   "keyword": "grocery food list",
+   "new_volume": "3,302",
+   "competition": "12,170",
+   "score": "270"
+  },
+  {
+   "keyword": "diet list food",
+   "new_volume": "3,293",
+   "competition": "7,865",
+   "score": "420"
+  },
+  {
+   "keyword": "diet list foods",
+   "new_volume": "3,276",
+   "competition": "6,753",
+   "score": "490"
+  },
+  {
+   "keyword": "food list charts",
+   "new_volume": "3,270",
+   "competition": "3,561",
+   "score": "920"
+  },
+  {
+   "keyword": "diet foods list",
+   "new_volume": "3,257",
+   "competition": "8,233",
+   "score": "0"
+  },
+  {
+   "keyword": "grocery foodlists",
+   "new_volume": "3,127",
+   "competition": "80",
+   "score": "39,090"
+  },
+  {
+   "keyword": "food diet list",
+   "new_volume": "3,117",
+   "competition": "6,945",
+   "score": "0"
+  },
+  {
+   "keyword": "food list food chart",
+   "new_volume": "3,092",
+   "competition": "3,577",
+   "score": "860"
+  },
+  {
+   "keyword": "food  list",
+   "new_volume": "3,087",
+   "competition": "23,104",
+   "score": "130"
+  },
+  {
+   "keyword": "food listings",
+   "new_volume": "3,081",
+   "competition": "22,611",
+   "score": "0"
+  },
+  {
+   "keyword": "foods list",
+   "new_volume": "3,021",
+   "competition": "22,243",
+   "score": "140"
+  },
+  {
+   "keyword": "food guide list",
+   "new_volume": "3,015",
+   "competition": "3,886",
+   "score": "780"
+  },
+  {
+   "keyword": "food lists",
+   "new_volume": "3,003",
+   "competition": "1,485",
+   "score": "2,020"
+  },
+  {
+   "keyword": "list food",
+   "new_volume": "2,996",
+   "competition": "22,272",
+   "score": "130"
+  },
+  {
+   "keyword": "food list food guide",
+   "new_volume": "2,983",
+   "competition": "3,884",
+   "score": "770"
+  },
+  {
+   "keyword": "food list guide",
+   "new_volume": "2,983",
+   "competition": "3,884",
+   "score": "770"
+  },
+  {
+   "keyword": "food listing",
+   "new_volume": "2,956",
+   "competition": "22,262",
+   "score": "130"
+  },
+  {
+   "keyword": "food guide lists",
+   "new_volume": "2,933",
+   "competition": "323",
+   "score": "9,080"
+  },
+  {
+   "keyword": "food list",
+   "new_volume": "2,926",
+   "competition": "22,308",
+   "score": "130"
+  },
+  {
+   "keyword": "food lists guide",
+   "new_volume": "2,842",
+   "competition": "417",
+   "score": "6,820"
+  },
+  {
+   "keyword": "foods list chart",
+   "new_volume": "2,825",
+   "competition": "3,602",
+   "score": "780"
+  },
+  {
+   "keyword": "food chart listings",
+   "new_volume": "2,823",
+   "competition": "3,683",
+   "score": "0"
+  },
+  {
+   "keyword": "food plan food list",
+   "new_volume": "2,779",
+   "competition": "15,028",
+   "score": "180"
+  },
+  {
+   "keyword": "plan food list",
+   "new_volume": "2,779",
+   "competition": "15,035",
+   "score": "180"
+  },
+  {
+   "keyword": "food list diet charts",
+   "new_volume": "2,756",
+   "competition": "2,650",
+   "score": "1,040"
+  },
+  {
+   "keyword": "diet food guide list",
+   "new_volume": "2,502",
+   "competition": "2,803",
+   "score": "890"
+  },
+  {
+   "keyword": "diet plan food list",
+   "new_volume": "2,441",
+   "competition": "4,732",
+   "score": "520"
+  },
+  {
+   "keyword": "meal food list",
+   "new_volume": "2,417",
+   "competition": "12,856",
+   "score": "190"
+  }
+ ]
+}

@@ -1,0 +1,89 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:01:25.386Z",
+ "tool": "view_keyword",
+ "keyword": "adhd notion",
+ "params": {
+  "per_page": 15,
+  "order_by": "new_volume",
+  "order_direction": "desc",
+  "keyword_include": "adhd"
+ },
+ "rows": [
+  {
+   "keyword": "adhd notability planner",
+   "new_volume": "1,157",
+   "competition": "2,641"
+  },
+  {
+   "keyword": "adhd planner notions",
+   "new_volume": "992",
+   "competition": "26"
+  },
+  {
+   "keyword": "adhd notability goodnotes template",
+   "new_volume": "835",
+   "competition": "1,928"
+  },
+  {
+   "keyword": "adhd notability templates",
+   "new_volume": "728",
+   "competition": "1,888"
+  },
+  {
+   "keyword": "adhd digital planner notion",
+   "new_volume": "507",
+   "competition": "1,748"
+  },
+  {
+   "keyword": "adhd planner notion",
+   "new_volume": "489",
+   "competition": "2,491"
+  },
+  {
+   "keyword": "adhd notion",
+   "new_volume": "470",
+   "competition": "2,598"
+  },
+  {
+   "keyword": "adhd notion planner",
+   "new_volume": "463",
+   "competition": "2,561"
+  },
+  {
+   "keyword": "notion adhd planners",
+   "new_volume": "461",
+   "competition": "2,544"
+  },
+  {
+   "keyword": "adhd planners notion",
+   "new_volume": "461",
+   "competition": "2,547"
+  },
+  {
+   "keyword": "notion adhd planner",
+   "new_volume": "460",
+   "competition": "2,550"
+  },
+  {
+   "keyword": "notion planners adhd",
+   "new_volume": "460",
+   "competition": "2,569"
+  },
+  {
+   "keyword": "planner notion adhd",
+   "new_volume": "460",
+   "competition": "2,575"
+  },
+  {
+   "keyword": "notion planner adhd",
+   "new_volume": "458",
+   "competition": "2,565"
+  },
+  {
+   "keyword": "notion templates adhd",
+   "new_volume": "445",
+   "competition": "2,494"
+  }
+ ]
+}

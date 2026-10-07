@@ -1,0 +1,139 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:03:48.420Z",
+ "tool": "view_keyword",
+ "keyword": "wedding budget spreadsheet",
+ "params": {
+  "per_page": 25,
+  "order_by": "new_volume",
+  "order_direction": "desc",
+  "keyword_include": "wedding"
+ },
+ "rows": [
+  {
+   "keyword": "wedding budget spreadsheet",
+   "new_volume": "324",
+   "competition": "2,230"
+  },
+  {
+   "keyword": "wedding budget spreadsheets",
+   "new_volume": "324",
+   "competition": "2,258"
+  },
+  {
+   "keyword": "wedding budgeting spreadsheet",
+   "new_volume": "245",
+   "competition": "1,931"
+  },
+  {
+   "keyword": "spreadsheet budget wedding",
+   "new_volume": "243",
+   "competition": "1,910"
+  },
+  {
+   "keyword": "wedding spreadsheet budget",
+   "new_volume": "237",
+   "competition": "1,933"
+  },
+  {
+   "keyword": "wedding spreadsheet budget planner",
+   "new_volume": "198",
+   "competition": "1,826"
+  },
+  {
+   "keyword": "wedding budget planner spreadsheet",
+   "new_volume": "197",
+   "competition": "1,814"
+  },
+  {
+   "keyword": "wedding planner budget spreadsheet",
+   "new_volume": "196",
+   "competition": "1,814"
+  },
+  {
+   "keyword": "wedding planner spreadsheet wedding budget",
+   "new_volume": "193",
+   "competition": "1,820"
+  },
+  {
+   "keyword": "wedding planner spreadsheet google sheets wedding budget",
+   "new_volume": "176",
+   "competition": "1,378"
+  },
+  {
+   "keyword": "wedding budget spreadsheet template",
+   "new_volume": "161",
+   "competition": "1,773"
+  },
+  {
+   "keyword": "wedding budget tracker spreadsheet",
+   "new_volume": "156",
+   "competition": "1,292"
+  },
+  {
+   "keyword": "wedding planning budget spreadsheet",
+   "new_volume": "150",
+   "competition": "1,227"
+  },
+  {
+   "keyword": "wedding planner spreadsheet wedding budget tracker",
+   "new_volume": "150",
+   "competition": "1,218"
+  },
+  {
+   "keyword": "wedding planner spreadsheet wedding budget tracker wedding",
+   "new_volume": "147",
+   "competition": "1,205"
+  },
+  {
+   "keyword": "google sheets wedding budget spreadsheet",
+   "new_volume": "111",
+   "competition": "1,144"
+  },
+  {
+   "keyword": "wedding budget spreadsheet google",
+   "new_volume": "111",
+   "competition": "1,171"
+  },
+  {
+   "keyword": "google spreadsheet wedding budget",
+   "new_volume": "110",
+   "competition": "1,164"
+  },
+  {
+   "keyword": "budget wedding planner spreadsheet template",
+   "new_volume": "108",
+   "competition": "1,666"
+  },
+  {
+   "keyword": "wedding budget spreadsheet google sheet",
+   "new_volume": "108",
+   "competition": "1,129"
+  },
+  {
+   "keyword": "wedding budget excel spreadsheet",
+   "new_volume": "62",
+   "competition": "659"
+  },
+  {
+   "keyword": "excel wedding budget spreadsheet",
+   "new_volume": "62",
+   "competition": "659"
+  },
+  {
+   "keyword": "wedding budget spreadsheet excel",
+   "new_volume": "62",
+   "competition": "659"
+  },
+  {
+   "keyword": "digital wedding planner spreadsheet wedding budget tracker",
+   "new_volume": "61",
+   "competition": "716"
+  },
+  {
+   "keyword": "excel wedding budget planner spreadsheet",
+   "new_volume": "55",
+   "competition": "615"
+  }
+ ]
+}

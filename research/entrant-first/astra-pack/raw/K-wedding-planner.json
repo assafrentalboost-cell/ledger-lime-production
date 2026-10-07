@@ -1,0 +1,253 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-07T11:01:15.576Z",
+ "tool": "view_keyword",
+ "keyword": "wedding planner",
+ "params": {
+  "per_page": 40,
+  "order_by": "new_volume",
+  "order_direction": "desc"
+ },
+ "rows": [
+  {
+   "keyword": "weds planner",
+   "new_volume": "1,438",
+   "competition": "260",
+   "score": "5,530"
+  },
+  {
+   "keyword": "planner wed",
+   "new_volume": "1,432",
+   "competition": "263",
+   "score": "5,450"
+  },
+  {
+   "keyword": "planner wedding",
+   "new_volume": "1,427",
+   "competition": "60,790",
+   "score": "20"
+  },
+  {
+   "keyword": "weddings planner",
+   "new_volume": "1,427",
+   "competition": "60,794",
+   "score": "20"
+  },
+  {
+   "keyword": "wedding planners",
+   "new_volume": "1,425",
+   "competition": "61,645",
+   "score": "20"
+  },
+  {
+   "keyword": "weddings planners",
+   "new_volume": "1,412",
+   "competition": "61,167",
+   "score": "20"
+  },
+  {
+   "keyword": "planner wedding planner",
+   "new_volume": "1,372",
+   "competition": "58,838",
+   "score": "0"
+  },
+  {
+   "keyword": "wedding  planner",
+   "new_volume": "1,368",
+   "competition": "61,304",
+   "score": "20"
+  },
+  {
+   "keyword": "wed planner",
+   "new_volume": "1,368",
+   "competition": "267",
+   "score": "5,130"
+  },
+  {
+   "keyword": "wedding plannere",
+   "new_volume": "1,368",
+   "competition": "2",
+   "score": "684,380"
+  },
+  {
+   "keyword": "planners wedding",
+   "new_volume": "1,368",
+   "competition": "61,177",
+   "score": "20"
+  },
+  {
+   "keyword": "wedding plann",
+   "new_volume": "1,318",
+   "competition": "45",
+   "score": "29,310"
+  },
+  {
+   "keyword": "wedding plann er",
+   "new_volume": "1,318",
+   "competition": "14",
+   "score": "94,200"
+  },
+  {
+   "keyword": "wedding planner red",
+   "new_volume": "1,315",
+   "competition": "2,998",
+   "score": "440"
+  },
+  {
+   "keyword": "weddingplanner",
+   "new_volume": "1,315",
+   "competition": "250",
+   "score": "5,260"
+  },
+  {
+   "keyword": "wedding planne",
+   "new_volume": "1,292",
+   "competition": "77",
+   "score": "16,790"
+  },
+  {
+   "keyword": "weddingplann",
+   "new_volume": "1,258",
+   "competition": "372",
+   "score": "3,380"
+  },
+  {
+   "keyword": "wedding planner wedding gift",
+   "new_volume": "986",
+   "competition": "20,750",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planner gift",
+   "new_volume": "985",
+   "competition": "20,780",
+   "score": "50"
+  },
+  {
+   "keyword": "gift wedding planner",
+   "new_volume": "983",
+   "competition": "20,924",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planners gifts",
+   "new_volume": "983",
+   "competition": "20,908",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planners gift",
+   "new_volume": "966",
+   "competition": "20,912",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planner gifts",
+   "new_volume": "963",
+   "competition": "20,834",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding gift planner",
+   "new_volume": "899",
+   "competition": "21,158",
+   "score": "40"
+  },
+  {
+   "keyword": "planly planners wedding",
+   "new_volume": "896",
+   "competition": "16,830",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planner plan",
+   "new_volume": "895",
+   "competition": "16,430",
+   "score": "50"
+  },
+  {
+   "keyword": "planner wedding plan",
+   "new_volume": "886",
+   "competition": "16,429",
+   "score": "50"
+  },
+  {
+   "keyword": "planning wedding planner",
+   "new_volume": "882",
+   "competition": "16,522",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planning planner",
+   "new_volume": "882",
+   "competition": "16,375",
+   "score": "50"
+  },
+  {
+   "keyword": "wedding planner book",
+   "new_volume": "868",
+   "competition": "8,246",
+   "score": "110"
+  },
+  {
+   "keyword": "wedding planner books",
+   "new_volume": "866",
+   "competition": "13,315",
+   "score": "70"
+  },
+  {
+   "keyword": "wedding book planner",
+   "new_volume": "865",
+   "competition": "8,269",
+   "score": "100"
+  },
+  {
+   "keyword": "wedding planning planners",
+   "new_volume": "853",
+   "competition": "16,702",
+   "score": "0"
+  },
+  {
+   "keyword": "wedding planners book",
+   "new_volume": "845",
+   "competition": "8,410",
+   "score": "100"
+  },
+  {
+   "keyword": "wedding planners books",
+   "new_volume": "812",
+   "competition": "13,098",
+   "score": "60"
+  },
+  {
+   "keyword": "weddingplanner book",
+   "new_volume": "808",
+   "competition": "15",
+   "score": "53,920"
+  },
+  {
+   "keyword": "wedding planners checklist",
+   "new_volume": "770",
+   "competition": "9,783",
+   "score": "80"
+  },
+  {
+   "keyword": "checklist wedding planner",
+   "new_volume": "769",
+   "competition": "9,899",
+   "score": "80"
+  },
+  {
+   "keyword": "wedding plan ner",
+   "new_volume": "766",
+   "competition": "7",
+   "score": "109,460"
+  },
+  {
+   "keyword": "wedding checklist planner",
+   "new_volume": "763",
+   "competition": "9,871",
+   "score": "80"
+  }
+ ]
+}

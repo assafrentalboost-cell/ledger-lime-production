@@ -1,0 +1,57 @@
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA
+ADHD listings in overlay: 31 | CLEAN shops: 20 | NEAR-CLEAN-only shops: 7 ['LinkDigitalStudio', 'PlanoraNotion', 'RichvaleCreatives', 'SunnyKiteHill', 'Webudding', 'fikadoodle', 'habitualsheets']
+
+JOB DEPTH (rule: >=2 distinct shops). Same-row note: a young listing that is also an entrant row is counted once per shop, not per row.
+  Bills, budget & paycheck: shops=7 units=5031 classes={'ADHD-ADAPTED': 4, 'ADHD-NATIVE': 4} | shops with a non-bolt-on listing=7 -> VALID
+  Cleaning & chore system: shops=9 units=9893 classes={'ADHD-ADAPTED': 10, 'ADHD-NATIVE': 2} | shops with a non-bolt-on listing=9 -> VALID
+  Daily / weekly planner: shops=9 units=3632 classes={'ADHD-NATIVE': 3, 'ADHD-ADAPTED': 6, 'ADHD-BOLT-ON': 2} | shops with a non-bolt-on listing=8 -> VALID
+  Life OS / second brain (all-in-one): shops=7 units=1700 classes={'ADHD-NATIVE': 2, 'ADHD-ADAPTED': 5, 'ADHD-BOLT-ON': 1} | shops with a non-bolt-on listing=6 -> VALID
+  Brain dump / task paralysis / prioritising: shops=4 units=773 classes={'ADHD-NATIVE': 1, 'ADHD-BOLT-ON': 3} | shops with a non-bolt-on listing=1 -> WEAK
+  Habits, goals & routines: shops=3 units=681 classes={'ADHD-ADAPTED': 1, 'ADHD-BOLT-ON': 1, 'ADHD-NATIVE': 1} | shops with a non-bolt-on listing=2 -> VALID
+VALID SAME-BUYER JOBS (>=2 shops AND >=2 shops with a non-bolt-on listing): 5
+   sensitivity — brain-dump shops with a non-bolt-on listing if "worksheet" is not excluded: 2 ['MadeForFunction', 'Templix8']
+
+RECENT ENTRY: pool=75 (raw pull=100; 25 removed by overlay exclusion) | >=30 units=24 | of which new shop=17 | near-dup pairs=2
+   dup pair (0.83, 'JoyAjjima', 'Lovelycoloringclub', 'ADHD Cleaning Schedule Printable, Weekly Cleaning Planner, H', 'ADHD Cleaning Checklist Bundle Printable, Cleaning Planner, ')
+   dup pair (0.7, 'Lovelycoloringclub', 'RoseValeCreations', 'ADHD Overwhelm Collection Printable Bundle, ADHD Planner, Ex', 'ADHD Overwhelm Reset Sheet Printable Bundle, Mental Clutter ')
+   sensitivity: >=30 units AND in one of the 6 life-admin jobs = 17; of which new shop = 13
+   pool definition: top 100 listings with listing age <=3 months and "adhd" in title, ANY shop, sorted by 12-mo units desc. All 100 raw rows have units>=1, so the pool cap was hit: this is a TOP-SELLERS sample, not all new listings; 24/75 is not a sell-through rate.
+   listing ages present (months): [1.0, 2.0, 3.0]
+
+PRICE: unit share by price band — overlay passing listings (the report base): ({'<$4': 0.404, '$4-12': 0.481, '$12-15': 0.025, '>=$15': 0.09}, 21109)
+PRICE: same — every adult-ADHD listing held (incl. rejected + young): ({'<$4': 0.36, '$4-12': 0.51, '$12-15': 0.036, '>=$15': 0.094}, 30572)
+PREMIUM (>=$15) listings: 20 | by format family (listings, units, shops): {'hybrid': (5, 848, 4), 'PDF': (6, 766, 6), 'unstated': (3, 465, 3), 'Digital planner (Goodnotes/Notability)': (1, 306, 1), 'Notion': (2, 357, 2), 'app/web': (3, 147, 3)}
+PREMIUM units in Notion or app/web = 504/2889 = 0.17
+   premium PlanoraNotion 19.70 583 active 4 hybrid (Notion+Digital planner (Goodnotes/Notability)) entrant pull (NEAR-CLEAN) | 2026 All In One Life Planner Minimal Notion Dashboard Templa
+   premium NeurodivergentHQ 15.00 379 active 8 PDF entrant pull (CLEAN) | Start Anytime ADHD Workbook | Undated Goal Setting | Fillabl
+   premium HocusPocusFiliFocus 20.75 323 active 6 unstated entrant pull (REJECT) | ADHD Cleaning Planner with Stickers, Checklists, Tips & Hack
+   premium Webudding 16.99 306 active 5 Digital planner (Goodnotes/Notability) entrant pull (NEAR-CLEAN) | 2026 ADHD Structured All-in-One Planner l Digital Planner Go
+   premium MadeForFunction 37.00 274 active 11 PDF entrant pull (CLEAN) | Whole Shop ADHD Brain Dump Bundle | Executive Function, Thou
+   premium TemplateMuseAlchemy 46.00 217 active 9 Notion entrant pull (CLEAN) | Notion Life Planner Template: Second Brain for ADHD | All-in
+   premium DragonHoardTemplates 29.99 145 active 12 hybrid (Notion+Digital planner (Goodnotes/Notability)) entrant pull (CLEAN) | 2026 ADHD Notion Gamified RPG Template Digital Planner: Habi
+   premium Kitnote 17.50 140 active 5 Notion entrant pull (REJECT) | 2026 Notion Life Planner, ADHD Notion, Productivity Self Car
+   premium Kolloura 15.97 105 active 4 unstated entrant pull (REJECT) | 30,000 Pages ADHD & Autism E-Books Bundle: OT, PT, Speech Th
+   premium EverydayApps 19.00 67 active 3 hybrid (app/web+Digital planner (Goodnotes/Notability)) young pool (<=3mo, any shop) | ADHD Planner App, ADHD Digital Planner, Executive Function O
+   premium MasterMoneyBudget 15.99 67 active 1 app/web young pool (<=3mo, any shop) | ADHD Budget Planner App Beginner-Friendly Paycheck & Monthly
+   premium ElthivarDigitalCo 17.59 62 active 3 PDF young pool (<=3mo, any shop) | Adhd Cleaning Planner Printable Bundle Home Organization Tem
+   premium EzPlanningStudio 39.38 58 active 3 app/web young pool (<=3mo, any shop) | Ultimate Paycheck Budget App • Paycheck Budget, Savings, Deb
+   premium ThePurpleCatCo 39.99 37 active 2 unstated young pool (<=3mo, any shop) | Home Management Mega Bundle | 1000+ Page Home Planner, Famil
+   premium AYxSTUDIOS 22.23 31 active 1 hybrid (app/web+Digital planner (Goodnotes/Notability)) young pool (<=3mo, any shop) | ADHD Life Planner App All in One Digital Planner Daily Weekl
+   premium AYxSTUDIOS 22.23 22 active 1 hybrid (app/web+Digital planner (Goodnotes/Notability)) young pool (<=3mo, any shop) | ADHD Ultimate Life Planner | All-in-One Digital Planner App 
+   premium FocusFlowMethods 20.33 22 active 1 app/web young pool (<=3mo, any shop) | ADHD Cleaning App | Panic Clean Timer, Cleaning Schedule by 
+   premium TEKAROStudio 19.99 20 active 3 PDF young pool (<=3mo, any shop) | ADHD Dopamine Menu Workbook | 106-Page Executive Function Pl
+   premium SirensSageAndStoneCo 30.31 16 active 2 PDF young pool (<=3mo, any shop) | Whimsigoth Academy Planner | 280+ Page Printable Journal | W
+   premium ADHDResetCo 44.98 15 active 1 PDF young pool (<=3mo, any shop) | ADHD Planner, 5 Workbooks, Late Diagnosis, Burnout Recovery,
+
+CLONE/FLOOD per subcluster (TITLE-level evidence only; product files not inspected, so no PRODUCT cloning is claimed):
+   {'subcluster': 'Bills, budget & paycheck', 'listings_sampled': 14, 'listings_le_1mo': 2, 'listings_le_3mo': 7, 'near_duplicate_title_pairs': 1, 'near_duplicate_shops': 2, 'identical_title_pairs': 0, 'plr_resell_examples': 'none', 'units_total': 5802, 'units_new_shops': 5715, 'price_min': 1.94, 'price_median': 9.26, 'price_q3': 14.99, 'price_max': 39.38, 'share_listings_under_4': 0.29}
+   {'subcluster': 'Cleaning & chore system', 'listings_sampled': 27, 'listings_le_1mo': 3, 'listings_le_3mo': 11, 'near_duplicate_title_pairs': 27, 'near_duplicate_shops': 12, 'identical_title_pairs': 0, 'plr_resell_examples': 'none', 'units_total': 11365, 'units_new_shops': 11365, 'price_min': 0.88, 'price_median': 6.14, 'price_q3': 9.5, 'price_max': 44.98, 'share_listings_under_4': 0.41}
+   {'subcluster': 'Daily / weekly planner', 'listings_sampled': 22, 'listings_le_1mo': 1, 'listings_le_3mo': 11, 'near_duplicate_title_pairs': 1, 'near_duplicate_shops': 2, 'identical_title_pairs': 0, 'plr_resell_examples': 'none', 'units_total': 4617, 'units_new_shops': 4524, 'price_min': 1.73, 'price_median': 8.07, 'price_q3': 10.42, 'price_max': 30.31, 'share_listings_under_4': 0.27}
+   {'subcluster': 'Life OS / second brain (all-in-one)', 'listings_sampled': 15, 'listings_le_1mo': 0, 'listings_le_3mo': 4, 'near_duplicate_title_pairs': 2, 'near_duplicate_shops': 4, 'identical_title_pairs': 0, 'plr_resell_examples': 'PLRxMRR: All-in-One Digital Planner 2026 2027 2028 Printabl | StarOfPlannerStore: 1000 Adhd Life Planner & Calendar Bundle Pdf, Adhd | TheSelfMaderPLRMRR: 1000 ADHD Life Planner & Calendar Bundle PDF, Edit', 'units_total': 2824, 'units_new_shops': 2787, 'price_min': 2.0, 'price_median': 8.54, 'price_q3': 18.6, 'price_max': 46.0, 'share_listings_under_4': 0.33}
+   {'subcluster': 'Brain dump / task paralysis / prioritising', 'listings_sampled': 15, 'listings_le_1mo': 0, 'listings_le_3mo': 6, 'near_duplicate_title_pairs': 0, 'near_duplicate_shops': 0, 'identical_title_pairs': 0, 'plr_resell_examples': 'none', 'units_total': 1734, 'units_new_shops': 1734, 'price_min': 2.0, 'price_median': 5.03, 'price_q3': 8.1, 'price_max': 37.0, 'share_listings_under_4': 0.2}
+   {'subcluster': 'Habits, goals & routines', 'listings_sampled': 17, 'listings_le_1mo': 0, 'listings_le_3mo': 13, 'near_duplicate_title_pairs': 0, 'near_duplicate_shops': 0, 'identical_title_pairs': 0, 'plr_resell_examples': 'none', 'units_total': 1131, 'units_new_shops': 1086, 'price_min': 2.0, 'price_median': 4.99, 'price_q3': 11.34, 'price_max': 19.0, 'share_listings_under_4': 0.47}
+   note: listing age is whole months in EverBee; "<=30 days" is approximated by listing_age_in_months <= 1, "<=90 days" by <= 3.
+
+RUNNER-UP WEDDING_PLAN_ADMIN: entrant listings=19 clean shops=17 | young pool=100 >=30=5 new-shop>=30=2 dup pairs=89
+
+RUNNER-UP DIET_CONDITION: entrant listings=22 clean shops=13 | young pool=100 >=30=51 new-shop>=30=49 dup pairs=73
