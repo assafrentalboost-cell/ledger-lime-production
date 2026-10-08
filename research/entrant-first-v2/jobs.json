@@ -1,0 +1,3354 @@
+{
+ "Nurse / nursing student": {
+  "pool_listings": 60,
+  "pool_units": 18284,
+  "clean_shops": 15,
+  "active_shops": 11,
+  "all_in_one_unit_share": 0.027,
+  "valid_jobs": 7,
+  "jobs_ge2_selling": 8,
+  "complementary": 3,
+  "partial": 3,
+  "substitute": 1,
+  "young_pool": 20,
+  "young_winners": 20,
+  "young_winner_new": 14,
+  "young_dup_pairs": 0,
+  "jobs": {
+   "Shift report / handoff sheet": {
+    "trigger": "start of every shift; hand-off at shift change",
+    "acquisition_phrase": "nurse report sheet",
+    "brand_fit": "STRONG (documentation / handoff)",
+    "relationship": "CORE",
+    "relationship_reason": "daily bedside workflow; re-bought per unit/specialty",
+    "selling_shops": 7,
+    "clean_shops": 3,
+    "active_shops": 2,
+    "health": {
+     "ACTIVE": 2,
+     "FADING": 1,
+     "HISTORIC": 1,
+     "OTHER": 4
+    },
+    "units": 2865,
+    "young_listings": 2,
+    "young_winners": 2,
+    "young_winner_new_shops": 2,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 5.0,
+    "price_bands": {
+     "<$5": 0.34,
+     "$5-9.99": 0.66,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 4,
+     "Sheets/Excel": 1,
+     "Canva": 2,
+     "PDF": 2
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4338932280",
+      "TheNurseNest",
+      6.66,
+      1136,
+      "CLEAN",
+      "ACTIVE",
+      "Editable Nurse Report Sheet: Med Surg ICU, RN Report (PDF & Canva Template)"
+     ],
+     [
+      "4382906571",
+      "NurseMama2025",
+      1.0,
+      389,
+      "REJECT",
+      "OTHER",
+      "Nurse Report Sheet"
+     ],
+     [
+      "1863344662",
+      "RNGrind",
+      3.14,
+      320,
+      "CLEAN",
+      "ACTIVE",
+      "SBAR Nurse Report Sheet | Med Surg SBAR Report Sheet for Nursing Student | Brain"
+     ],
+     [
+      "4350602183",
+      "TheNurseNest",
+      7.74,
+      273,
+      "CLEAN",
+      "ACTIVE",
+      "SBAR Nursing Report Templates: Editable Nurse Handoff Sbar Sheets (PDF)"
+     ],
+     [
+      "4396827938",
+      "AdvanceNursing",
+      6.3,
+      184,
+      "REJECT",
+      "OTHER",
+      "MedSurg Nurse Report Sheet Day Shift (Digital Download)"
+     ],
+     [
+      "4396169507",
+      "yournursebestieco",
+      5.0,
+      165,
+      "CLEAN",
+      "FADING",
+      "ICU Nurse Report Sheet | Customizable RN Template (Digital Download)"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4562854089",
+      "UnclutterYourLife",
+      1.6,
+      61,
+      8,
+      "Nursing Report Sheet for Med Surg and ICU, Nurse Brain for New Grads"
+     ],
+     [
+      "4564690213",
+      "MackHausCo",
+      4.99,
+      32,
+      16,
+      "Med-Surg Nurse 4 Patient Report Sheet"
+     ]
+    ]
+   },
+   "Patient assessment template": {
+    "trigger": "clinical rotation or new unit",
+    "acquisition_phrase": "head to toe assessment template",
+    "brand_fit": "STRONG (documentation)",
+    "relationship": "P",
+    "relationship_reason": "many report sheets already contain an assessment block",
+    "selling_shops": 2,
+    "clean_shops": 1,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 1,
+     "HISTORIC": 1,
+     "OTHER": 0
+    },
+    "units": 910,
+    "young_listings": 0,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 7.04,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 1.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "PDF": 1
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4336491209",
+      "TheNurseNest",
+      7.4,
+      588,
+      "CLEAN",
+      "FADING",
+      "Editable Head-to-Toe Nursing Assessment Template: Clinical Study Sheet (Digital "
+     ],
+     [
+      "4374113232",
+      "AdvanceNursing",
+      6.67,
+      322,
+      "REJECT",
+      "HISTORIC",
+      "Head to Toe Nursing Assessment Checklist | Patient Assessment Template | Nursing"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Career documents (resume / pivot)": {
+    "trigger": "job change, new-grad hiring, career pivot",
+    "acquisition_phrase": "nurse resume template",
+    "brand_fit": "MEDIUM (career admin)",
+    "relationship": "C",
+    "relationship_reason": "different trigger (job change); never replaced by a report sheet",
+    "selling_shops": 3,
+    "clean_shops": 2,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 1,
+     "HISTORIC": 0,
+     "OTHER": 1
+    },
+    "units": 1144,
+    "young_listings": 1,
+    "young_winners": 1,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 11.9,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.52,
+     "$15-24.99": 0.0,
+     "$25+": 0.48
+    },
+    "formats": {
+     "PDF": 1,
+     "Word/Docs": 2
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4338515589",
+      "LegalNurseLeads",
+      99.0,
+      551,
+      "CLEAN",
+      "FADING",
+      "Legal Nurse Consultant Starter Bundle | Resume + Marketing + Report Writing | In"
+     ],
+     [
+      "4357530594",
+      "ResumeInn",
+      11.9,
+      449,
+      "CLEAN",
+      "ACTIVE",
+      "Nurse Resume Template Word, Google Docs,Apple Pages Resume Template, Nurse CV, N"
+     ],
+     [
+      "4461361075",
+      "ZeeWins",
+      10.13,
+      144,
+      "REJECT",
+      "OTHER",
+      "Nurse Resume Template Word, Google-Docs,Pages Registered Nurse Resume Template R"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4527443433",
+      "PixelartStd",
+      9.0,
+      32,
+      58,
+      "Nursing Resume Template, Registered Nurse Resume RN, CNA, Canva Word P"
+     ]
+    ]
+   },
+   "Unit recognition / staff appreciation": {
+    "trigger": "Nurses Week, preceptor thank-you (bought by charge nurse / manager)",
+    "acquisition_phrase": "nurse appreciation awards",
+    "brand_fit": "WEAK (gift)",
+    "relationship": "C",
+    "relationship_reason": "different buyer role (charge nurse/manager) and occasion",
+    "selling_shops": 5,
+    "clean_shops": 0,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 0,
+     "HISTORIC": 1,
+     "OTHER": 3
+    },
+    "units": 897,
+    "young_listings": 1,
+    "young_winners": 1,
+    "young_winner_new_shops": 1,
+    "young_le1mo": 1,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 4.0,
+    "price_bands": {
+     "<$5": 0.57,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.43,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 3,
+     "PDF": 1,
+     "Canva": 1
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4398720279",
+      "BrightNotePrintables",
+      16.6,
+      209,
+      "REJECT",
+      "OTHER",
+      "Snack and Candy Treat Tags for Employee, Teacher, Staff, Nurse Appreciation Week"
+     ],
+     [
+      "4401812765",
+      "Gracebydesignsprints",
+      4.0,
+      200,
+      "REJECT",
+      "OTHER",
+      "Labor & Delivery Nurse Thank You Card | Hospital Staff Appreciation (Digital Dow"
+     ],
+     [
+      "4301185762",
+      "SkyMadeTreasures",
+      16.0,
+      176,
+      "REJECT",
+      "OTHER",
+      "Editable Nurse Superlatives Award Certificates, Nursing Awards Funny Gift, Staff"
+     ],
+     [
+      "4432321646",
+      "PNWDesignSmith",
+      2.99,
+      172,
+      "REJECT",
+      "HISTORIC",
+      "Cardiac Warrior Nurse Appreciation Patriotic Home Decor Medical Office 3d Yarn W"
+     ],
+     [
+      "4492304707",
+      "TheneonnestStudio",
+      3.97,
+      140,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "50 Nursing Awards Funny Superlatives Printable, Editable Nurse Award Certificate"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4490987335",
+      "HolyChaosAndCo",
+      1.49,
+      62,
+      19,
+      "NURSE Appreciation Gift Tag, Happy Nurses Week Printable, Editable Tha"
+     ]
+    ]
+   },
+   "School planner / clinical tracker": {
+    "trigger": "semester start",
+    "acquisition_phrase": "nursing school planner",
+    "brand_fit": "STRONG (planning / records)",
+    "relationship": "C",
+    "relationship_reason": "student-phase scheduling; different artifact",
+    "selling_shops": 4,
+    "clean_shops": 2,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 1,
+     "HISTORIC": 0,
+     "OTHER": 2
+    },
+    "units": 1494,
+    "young_listings": 2,
+    "young_winners": 2,
+    "young_winner_new_shops": 2,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 2.8,
+    "price_bands": {
+     "<$5": 0.79,
+     "$5-9.99": 0.21,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "PDF": 3
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4344896137",
+      "DigiPlannerLab",
+      2.7,
+      627,
+      "CLEAN",
+      "ACTIVE",
+      "Daily Medication Tracker, Medication Log, Printable Medicine Log for Nurses, Med"
+     ],
+     [
+      "4297094550",
+      "FreshFolioPrintables",
+      2.52,
+      433,
+      "REJECT",
+      "OTHER",
+      "Daily Medication Tracker, Medication Log, Printable Medicine Log for Nurses, Med"
+     ],
+     [
+      "4349928712",
+      "ScrubDoodles",
+      7.0,
+      320,
+      "CLEAN",
+      "FADING",
+      "Nursing school Planner/Tracker Nighingale College Tracker"
+     ],
+     [
+      "4383490034",
+      "DuVenture",
+      2.9,
+      114,
+      "REJECT",
+      "OTHER",
+      "Vital Signs Log, Daily Vital Signs Tracker Nurse, Vital Sign Template Chart Shee"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4539270169",
+      "MutedStudioCo",
+      20.14,
+      51,
+      4,
+      "School Nurse Planner & Health Office Tracker | Medication Log, Immuniz"
+     ],
+     [
+      "4535052887",
+      "Templix8",
+      6.6,
+      34,
+      13,
+      "2026 2027 Student Planner Bundle, Printable Academic Planner, Nursing "
+     ]
+    ]
+   },
+   "Drug / pharmacology reference": {
+    "trigger": "pharm course; new meds on unit",
+    "acquisition_phrase": "pharmacology cheat sheet",
+    "brand_fit": "WEAK (clinical content; liability)",
+    "relationship": "P",
+    "relationship_reason": "overlaps study bundles and bedside cheat sheets",
+    "selling_shops": 7,
+    "clean_shops": 3,
+    "active_shops": 4,
+    "health": {
+     "ACTIVE": 4,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 3
+    },
+    "units": 2054,
+    "young_listings": 0,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 10.0,
+    "price_bands": {
+     "<$5": 0.19,
+     "$5-9.99": 0.25,
+     "$10-14.99": 0.17,
+     "$15-24.99": 0.1,
+     "$25+": 0.3
+    },
+    "formats": {
+     "unstated": 4,
+     "PDF": 3
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4368159260",
+      "AdvanceNursing",
+      6.42,
+      506,
+      "CLEAN",
+      "ACTIVE",
+      "Editable Pharmacology Study Sheet, Nursing Meds Guide (PDF)"
+     ],
+     [
+      "4479543640",
+      "Blossomsprintablez",
+      40.0,
+      456,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "Nursing School Notes 4400+ Pages, Nclex Study Guide | MedSurg | Pharmacology |  "
+     ],
+     [
+      "4349660646",
+      "Drumy",
+      10.0,
+      340,
+      "CLEAN",
+      "ACTIVE",
+      "Pharmacology Cheat Sheet Bundle | Nursing Study Notes (Instant Download)"
+     ],
+     [
+      "4441750252",
+      "LOUVADA",
+      1.74,
+      288,
+      "CLEAN",
+      "ACTIVE",
+      "NURSING concept map bundle TEMPLATE, pharmacology, disease processes, student nu"
+     ],
+     [
+      "4346677772",
+      "DigitalBloomByKett",
+      17.0,
+      209,
+      "REJECT",
+      "OTHER",
+      "FNP Pharmacology Review: Nurse Practitioner Study Guide & Practice Questions Hyp"
+     ],
+     [
+      "4426965872",
+      "VetloSchool",
+      25.0,
+      153,
+      "REJECT",
+      "OTHER",
+      "Pharmacology Coloring Book PDF Hyperlinked Bundle | 220+ Pages | 200+ Drugs | Nu"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Bedside quick-reference": {
+    "trigger": "new specialty unit / float",
+    "acquisition_phrase": "nurse cheat sheet",
+    "brand_fit": "WEAK (clinical content; liability)",
+    "relationship": "P",
+    "relationship_reason": "overlaps pharmacology reference and study bundles",
+    "selling_shops": 6,
+    "clean_shops": 2,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 2,
+     "HISTORIC": 1,
+     "OTHER": 3
+    },
+    "units": 1771,
+    "young_listings": 1,
+    "young_winners": 1,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 8.0,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.69,
+     "$10-14.99": 0.11,
+     "$15-24.99": 0.2,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 2,
+     "Sheets/Excel": 2,
+     "Canva": 1,
+     "PDF": 2
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4329662839",
+      "TheNurseNest",
+      7.14,
+      504,
+      "CLEAN",
+      "FADING",
+      "Cranial Nerves Assessment: Nursing Cheat Sheet with Mnemonics (Printable PDF & C"
+     ],
+     [
+      "4477026923",
+      "SnookToSky",
+      20.0,
+      356,
+      "REJECT",
+      "OTHER",
+      "Phlebotomy Cheat Sheet PDF | Nursing Study Guide | Order of Draw Chart | Tube Co"
+     ],
+     [
+      "4335754112",
+      "SnookToSky",
+      8.0,
+      299,
+      "REJECT",
+      "OTHER",
+      "ER Nurse Cheat Sheets: 90+ Emergency Reference Guide (Digital Download 2025-26 U"
+     ],
+     [
+      "1809603741",
+      "BayseStudio",
+      11.1,
+      188,
+      "CLEAN",
+      "FADING",
+      "Botox Reconstitution and Dosing Chart | Nurse Injector | Botox Cheat Sheet | Med"
+     ],
+     [
+      "4367389828",
+      "AdvanceNursing",
+      6.1,
+      161,
+      "REJECT",
+      "HISTORIC",
+      "Cranial Nerves assessment Printable | Nursing Nerve Study Guide Chart PDF"
+     ],
+     [
+      "4370375221",
+      "DigitalBloomByKett",
+      7.0,
+      133,
+      "REJECT",
+      "OTHER",
+      "100+ Dosage Calculations Cheat Sheet 20+ Pages, Nursing Study Guide 2025-26 (Dig"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4532665035",
+      "ReganRN327",
+      1.5,
+      35,
+      87,
+      "Nursing Dosage Calculation Cheat Sheet | Medication Math Study Guide ("
+     ]
+    ]
+   },
+   "Course / exam study notes": {
+    "trigger": "exam / course",
+    "acquisition_phrase": "nursing study guide",
+    "brand_fit": "WEAK (education content)",
+    "relationship": "S",
+    "relationship_reason": "4,400-page \"nursing school notes\" mega bundles replace single study guides",
+    "selling_shops": 9,
+    "clean_shops": 5,
+    "active_shops": 3,
+    "health": {
+     "ACTIVE": 3,
+     "FADING": 4,
+     "HISTORIC": 2,
+     "OTHER": 3
+    },
+    "units": 5721,
+    "young_listings": 3,
+    "young_winners": 3,
+    "young_winner_new_shops": 3,
+    "young_le1mo": 1,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 17.0,
+    "price_bands": {
+     "<$5": 0.1,
+     "$5-9.99": 0.15,
+     "$10-14.99": 0.02,
+     "$15-24.99": 0.47,
+     "$25+": 0.26
+    },
+    "formats": {
+     "Sheets/Excel": 6,
+     "unstated": 4,
+     "PDF": 4
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4333883059",
+      "VetloSchool",
+      34.0,
+      765,
+      "CLEAN",
+      "FADING",
+      "Anatomy & Physiology Digital Study Bundle, Human Body Systems Functions Guide, M"
+     ],
+     [
+      "4417863600",
+      "SnookToSky",
+      15.0,
+      746,
+      "CLEAN",
+      "ACTIVE",
+      "Anatomy Labeling Workbook | Nursing Study Guide | Human Body Systems | A&P Print"
+     ],
+     [
+      "4310138541",
+      "VetloSchool",
+      7.5,
+      646,
+      "CLEAN",
+      "ACTIVE",
+      "Medical Terminology Flashcards, Digital Nursing & Healthcare Study Cards, Anatom"
+     ],
+     [
+      "4362587044",
+      "DioMind3d",
+      3.5,
+      577,
+      "CLEAN",
+      "FADING",
+      "200 Sheets Veterinary Anatomy & Physiology Study Sheets, Nursing School Notes Ve"
+     ],
+     [
+      "4363253187",
+      "Drumy",
+      18.0,
+      576,
+      "CLEAN",
+      "FADING",
+      "Anatomy & Physiology Bundle with Flashcards-Complete Anatomy Study Guide-Nursing"
+     ],
+     [
+      "4417462234",
+      "VetloSchool",
+      16.0,
+      544,
+      "CLEAN",
+      "ACTIVE",
+      "Human Anatomy Labeling Workbook | Anatomy Study Guide PDF | Nursing Student Stud"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4537059167",
+      "Blossomsprintablez",
+      11.96,
+      112,
+      12,
+      "600+ Human Anatomy Coloring Book | Nursing School Study Guide | Body S"
+     ],
+     [
+      "4380507538",
+      "DigitalByOctevius",
+      18.98,
+      60,
+      18,
+      "TEAS 7 Study Guide \u2013 2025 Nursing Exam Prep Book"
+     ],
+     [
+      "4546796919",
+      "Blossomsprintablez",
+      19.96,
+      48,
+      12,
+      "FNP Cardiology Clinical Guide, EKG Rhythms Htn Chf ACS Notes, Nurse Pr"
+     ]
+    ]
+   }
+  },
+  "credible_jobs": [
+   "Shift report / handoff sheet",
+   "Patient assessment template",
+   "Career documents (resume / pivot)",
+   "School planner / clinical tracker"
+  ],
+  "credible_complementary": 2,
+  "credible_with_repeat_paid": 4,
+  "flood_rating": "LOW",
+  "substitute_unit_share": 0.339,
+  "under5_unit_share": 0.215,
+  "mid_price_credible_jobs": 2,
+  "gates": {
+   "G1 >=2 clean entrants on core job": true,
+   "G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)": false,
+   "G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)": true,
+   "G4 >=4 complementary relationships among credible jobs": false,
+   "G5 not dominated by substitutes (substitute-job units < 50%)": true,
+   "G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)": true,
+   "G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)": true
+  },
+  "passes": false
+ },
+ "Esthetician / lash / nail / hair pro": {
+  "pool_listings": 175,
+  "pool_units": 39063,
+  "clean_shops": 16,
+  "active_shops": 14,
+  "all_in_one_unit_share": 0.006,
+  "valid_jobs": 5,
+  "jobs_ge2_selling": 7,
+  "complementary": 2,
+  "partial": 2,
+  "substitute": 0,
+  "young_pool": 97,
+  "young_winners": 6,
+  "young_winner_new": 4,
+  "young_dup_pairs": 47,
+  "jobs": {
+   "Contracts / client policy / consent": {
+    "trigger": "opening a suite / renting a booth",
+    "acquisition_phrase": "salon booth rental agreement",
+    "brand_fit": "STRONG (admin / records)",
+    "relationship": "C",
+    "relationship_reason": "legal/admin artifact, different trigger",
+    "selling_shops": 1,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 1,
+     "OTHER": 0
+    },
+    "units": 184,
+    "young_listings": 10,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 3.5,
+    "price_bands": {
+     "<$5": 1.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "PDF": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4332187034",
+      "VentureBloom",
+      3.5,
+      184,
+      "REJECT",
+      "HISTORIC",
+      "Salon Booth Rental Contract, Customizable Booth Rental Agreement Form Template, "
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Client aftercare cards": {
+    "trigger": "every appointment",
+    "acquisition_phrase": "lash aftercare card",
+    "brand_fit": "MEDIUM (client documentation)",
+    "relationship": "C",
+    "relationship_reason": "per-service client hand-out",
+    "selling_shops": 2,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 1,
+     "OTHER": 2
+    },
+    "units": 577,
+    "young_listings": 6,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 5.54,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 1.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 1,
+     "PDF": 3
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4331508342",
+      "LuxeKittyStudio",
+      6.39,
+      129,
+      "REJECT",
+      "OTHER",
+      "Waxing Aftercare Card Waxing Aftercare Guide Instructions Thank You Card Editabl"
+     ],
+     [
+      "4378273512",
+      "PureBeautyTherapy",
+      5.54,
+      112,
+      "REJECT",
+      "OTHER",
+      "Facial Aftercare Cards | Skincare After Treatment Care Card for Clients | Editab"
+     ],
+     [
+      "4377886993",
+      "PureBeautyTherapy",
+      5.54,
+      112,
+      "REJECT",
+      "OTHER",
+      "Brow Lamination Aftercare Cards | Lash & Brow Care Card for Clients | Editable P"
+     ],
+     [
+      "4377894135",
+      "PureBeautyTherapy",
+      5.54,
+      112,
+      "REJECT",
+      "HISTORIC",
+      "Lash Lift Aftercare Cards | Lash & Brow Care Card for Clients | Editable Printab"
+     ],
+     [
+      "4382960138",
+      "PureBeautyTherapy",
+      5.54,
+      112,
+      "REJECT",
+      "OTHER",
+      "Botox Aftercare Card Template | Aesthetic Clinic Client Instructions (Digital Do"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Training / course materials": {
+    "trigger": "teaching students / launching a course",
+    "acquisition_phrase": "lash training manual",
+    "brand_fit": "MEDIUM",
+    "relationship": "C",
+    "relationship_reason": "only for pros who teach",
+    "selling_shops": 5,
+    "clean_shops": 2,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 2,
+     "HISTORIC": 0,
+     "OTHER": 3
+    },
+    "units": 945,
+    "young_listings": 1,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 1,
+    "price_median": 15.92,
+    "price_bands": {
+     "<$5": 0.15,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.2,
+     "$15-24.99": 0.35,
+     "$25+": 0.3
+    },
+    "formats": {
+     "unstated": 2,
+     "Canva": 3
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4336357795",
+      "Hercontenthaus",
+      15.92,
+      330,
+      "REJECT",
+      "OTHER",
+      "Lash Training Manual Canva Template | 48-Page Editable Lash Course Guide | Lash "
+     ],
+     [
+      "1809603741",
+      "BayseStudio",
+      11.1,
+      188,
+      "CLEAN",
+      "FADING",
+      "Botox Reconstitution and Dosing Chart | Nurse Injector | Botox Cheat Sheet | Med"
+     ],
+     [
+      "1795784844",
+      "BeautyBossIntl",
+      3.48,
+      146,
+      "REJECT",
+      "OTHER",
+      "Lash Lift and Tint Training Manual Guide | Editable Course (Ebook) English Langu"
+     ],
+     [
+      "1793160650",
+      "UhMazynDesigns",
+      30.0,
+      146,
+      "CLEAN",
+      "FADING",
+      "Braiding & Loc Foundations Textbook | 149-Page Editable Canva Template | Student"
+     ],
+     [
+      "4472556519",
+      "BloomLashBar",
+      33.45,
+      135,
+      "REJECT",
+      "OTHER",
+      "Lash Training Manual Template | Korean Lash Lift Course | Editable on Canva | Re"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Service menu / price list": {
+    "trigger": "price change, new services",
+    "acquisition_phrase": "salon price list template",
+    "brand_fit": "MEDIUM (pricing)",
+    "relationship": "P",
+    "relationship_reason": "often bundled into branding kits",
+    "selling_shops": 10,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 8,
+     "OTHER": 2
+    },
+    "units": 2084,
+    "young_listings": 6,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 1,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 4.5,
+    "price_bands": {
+     "<$5": 0.57,
+     "$5-9.99": 0.32,
+     "$10-14.99": 0.11,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 9,
+     "PDF": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4370719149",
+      "PinkishArts",
+      4.5,
+      396,
+      "REJECT",
+      "HISTORIC",
+      "Halloween Nails Specials Flyer, Price List Template, Halloween Nails Booking Ava"
+     ],
+     [
+      "4366966637",
+      "TheDesigneNote",
+      5.5,
+      360,
+      "REJECT",
+      "OTHER",
+      "Beauty Salon Price List Template, Price List Sheet, Hair Price List, Lash, Nail,"
+     ],
+     [
+      "4367477652",
+      "UZACREATIONSS",
+      3.48,
+      216,
+      "REJECT",
+      "HISTORIC",
+      "Fall Braids Special Flyer, September Bookings Available Flyer, Hair Salon Price "
+     ],
+     [
+      "4307719527",
+      "StyledbySocials",
+      5.5,
+      198,
+      "REJECT",
+      "HISTORIC",
+      "Editable Price List Template Canva: Salon Pricing Guide (Digital Download)"
+     ],
+     [
+      "4388085100",
+      "DIYPinkCo",
+      4.0,
+      192,
+      "REJECT",
+      "HISTORIC",
+      "Knotless Braids Special Flyer, Salon Pricelist Template (Editable Canva Template"
+     ],
+     [
+      "4468463898",
+      "ElegentDigiArtStore",
+      2.99,
+      168,
+      "REJECT",
+      "HISTORIC",
+      "2x Pink Graduation Price List Canva Editable Template, Graduation Package Flyer,"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Online booking site": {
+    "trigger": "going independent / new booking system",
+    "acquisition_phrase": "acuity scheduling template",
+    "brand_fit": "WEAK (web design)",
+    "relationship": "CORE",
+    "relationship_reason": "one-time set-up of the booking front door",
+    "selling_shops": 18,
+    "clean_shops": 5,
+    "active_shops": 5,
+    "health": {
+     "ACTIVE": 5,
+     "FADING": 4,
+     "HISTORIC": 4,
+     "OTHER": 8
+    },
+    "units": 7691,
+    "young_listings": 12,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 11,
+    "plr": 0,
+    "price_median": 5.0,
+    "price_bands": {
+     "<$5": 0.49,
+     "$5-9.99": 0.45,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.03,
+     "$25+": 0.02
+    },
+    "formats": {
+     "Canva": 22,
+     "app/web": 7
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4315444312",
+      "SocialTemply",
+      5.83,
+      753,
+      "CLEAN",
+      "FADING",
+      "Acuity Scheduling Template: Hair Salon Website Design, Canva Editable"
+     ],
+     [
+      "4328209218",
+      "MaroonDesignsco",
+      3.5,
+      689,
+      "CLEAN",
+      "FADING",
+      "Black and Pink Acuity Hair Scheduling Template, DIY Hairstylist Booking Website,"
+     ],
+     [
+      "4343894934",
+      "TheDesigneNote",
+      5.0,
+      630,
+      "REJECT",
+      "HISTORIC",
+      "Hairstylist Acuity Scheduling Template, Hair Stylist Booking Website, Profession"
+     ],
+     [
+      "4299563801",
+      "HotGirlBrands",
+      3.0,
+      570,
+      "CLEAN",
+      "FADING",
+      "Cream Hair Stylist Acuity Lashing Template, Nailtech Acuity Book Site, DIY Luxur"
+     ],
+     [
+      "4447992523",
+      "ByCreativeAgency",
+      3.7,
+      440,
+      "REJECT",
+      "OTHER",
+      "Acuity Scheduling Template Hair, Lash, Nail, Makeup Website Banners (Digital Dow"
+     ],
+     [
+      "4520522923",
+      "AcuityAura",
+      6.0,
+      350,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "Lash Acuity Scheduling Template Lash Website Acuity Luxury Booking Site Acuity L"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Brand identity (logo / card)": {
+    "trigger": "launching the business",
+    "acquisition_phrase": "lash tech business card",
+    "brand_fit": "WEAK (design)",
+    "relationship": "P",
+    "relationship_reason": "branding kits bundle logo + card + IG",
+    "selling_shops": 18,
+    "clean_shops": 4,
+    "active_shops": 3,
+    "health": {
+     "ACTIVE": 3,
+     "FADING": 2,
+     "HISTORIC": 7,
+     "OTHER": 9
+    },
+    "units": 5391,
+    "young_listings": 17,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 4,
+    "young_dup_pairs": 7,
+    "plr": 0,
+    "price_median": 4.33,
+    "price_bands": {
+     "<$5": 0.58,
+     "$5-9.99": 0.32,
+     "$10-14.99": 0.07,
+     "$15-24.99": 0.0,
+     "$25+": 0.02
+    },
+    "formats": {
+     "unstated": 10,
+     "Canva": 13,
+     "PDF": 1
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4379737288",
+      "LuvionStudio",
+      3.99,
+      874,
+      "CLEAN",
+      "FADING",
+      "Hair Logo Designs Business Logo Beauty Hair Salon Logo Hairstylist Designer Hair"
+     ],
+     [
+      "4376786311",
+      "allfaithart",
+      7.0,
+      524,
+      "REJECT",
+      "OTHER",
+      "DIY Beauty Logo Design|Logo Templates|Nail Hair Braids Lash Wig MUA| Canva Edita"
+     ],
+     [
+      "1847821327",
+      "DigiDreamsHost",
+      3.99,
+      414,
+      "REJECT",
+      "OTHER",
+      "Business Card, IG Business Card, Loyalty Card, DIY Discount Card, Visiting Card,"
+     ],
+     [
+      "4320671095",
+      "YonaGraphics",
+      5.0,
+      301,
+      "CLEAN",
+      "ACTIVE",
+      "Business Card Template | Editable Canva Template | Hair Stylist | Lash Tech | MU"
+     ],
+     [
+      "4426762184",
+      "LuvionStudio",
+      3.0,
+      266,
+      "REJECT",
+      "HISTORIC",
+      "Hair Logo Designs Business Logo Beauty Hair Salon Logo Hairstylist Designer Hair"
+     ],
+     [
+      "4386888059",
+      "TheDesigneNote",
+      5.0,
+      226,
+      "REJECT",
+      "HISTORIC",
+      "Beauty Logo Design, Business Logo, Professional Logo, Hair Logo, Lash Logo, Nail"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Social content (posts / reels)": {
+    "trigger": "ongoing marketing",
+    "acquisition_phrase": "esthetician instagram templates",
+    "brand_fit": "WEAK (design)",
+    "relationship": "P",
+    "relationship_reason": "branding kits bundle IG templates",
+    "selling_shops": 12,
+    "clean_shops": 6,
+    "active_shops": 3,
+    "health": {
+     "ACTIVE": 3,
+     "FADING": 3,
+     "HISTORIC": 6,
+     "OTHER": 2
+    },
+    "units": 2952,
+    "young_listings": 14,
+    "young_winners": 2,
+    "young_winner_new_shops": 1,
+    "young_le1mo": 2,
+    "young_dup_pairs": 11,
+    "plr": 1,
+    "price_median": 22.5,
+    "price_bands": {
+     "<$5": 0.16,
+     "$5-9.99": 0.17,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.46,
+     "$25+": 0.21
+    },
+    "formats": {
+     "unstated": 11,
+     "Canva": 6
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4426423592",
+      "TheDesignHausbyLily",
+      22.5,
+      374,
+      "CLEAN",
+      "ACTIVE",
+      "Esthetician Skincare Instagram Template | Luxury Skincare Instagram Templates | "
+     ],
+     [
+      "1896946623",
+      "Hercontenthaus",
+      7.96,
+      275,
+      "REJECT",
+      "HISTORIC",
+      "Lash Tech Looking For Models Flyer Template | Lash Business | DIY Flyer | Model "
+     ],
+     [
+      "1903900885",
+      "BayseStudio",
+      24.43,
+      261,
+      "CLEAN",
+      "FADING",
+      "Medspa Social Media Templates, Nurse Injector Instagram, Aesthetic Nurse, Medica"
+     ],
+     [
+      "4450279659",
+      "TheDesignHausbyLily",
+      22.5,
+      204,
+      "REJECT",
+      "HISTORIC",
+      "480+ Luxury Skincare Instagram Templates | Esthetician Medspa Canva Bundle | Est"
+     ],
+     [
+      "4427156838",
+      "StudioLumeya",
+      18.73,
+      181,
+      "CLEAN",
+      "ACTIVE",
+      "Esthetician Instagram Canva Templates for Beauty Salons, Skincare Studios, and L"
+     ],
+     [
+      "4489541632",
+      "EverRiseStudioCo",
+      3.99,
+      177,
+      "REJECT",
+      "HISTORIC",
+      "May Availability Calendar Flyer, Mother's Day Special Deals, May Books Now Open,"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4538785690",
+      "GridGirlsCreative",
+      22.45,
+      131,
+      38,
+      "Skincare Instagram Templates Luxury, Esthetician Template, Medspa Inst"
+     ],
+     [
+      "4539847745",
+      "MaisonCreativeCo",
+      21.0,
+      41,
+      9,
+      "Esthetician Stock Photos | 65 Skincare Images Bundle | Medspa Marketin"
+     ]
+    ]
+   },
+   "Promotion / booking flyers": {
+    "trigger": "monthly / seasonal promotion",
+    "acquisition_phrase": "booking flyer",
+    "brand_fit": "WEAK (design)",
+    "relationship": "C",
+    "relationship_reason": "monthly re-purchase; seasonal",
+    "selling_shops": 46,
+    "clean_shops": 2,
+    "active_shops": 4,
+    "health": {
+     "ACTIVE": 4,
+     "FADING": 2,
+     "HISTORIC": 35,
+     "OTHER": 15
+    },
+    "units": 18045,
+    "young_listings": 9,
+    "young_winners": 3,
+    "young_winner_new_shops": 3,
+    "young_le1mo": 1,
+    "young_dup_pairs": 4,
+    "plr": 0,
+    "price_median": 2.99,
+    "price_bands": {
+     "<$5": 0.87,
+     "$5-9.99": 0.12,
+     "$10-14.99": 0.01,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 19,
+     "Canva": 58
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4400585840",
+      "TemplyxDesigns",
+      1.99,
+      980,
+      "REJECT",
+      "HISTORIC",
+      "December Booking flyer , Holiday Booking Flyer, Book Now Flyer, Christmas Sale F"
+     ],
+     [
+      "4337445733",
+      "TheTemplateAlchemy",
+      2.15,
+      715,
+      "CLEAN",
+      "FADING",
+      "Client Appreciation Flyer, Client Appreciation Sale Flyer, Book Now Flyer, Hairs"
+     ],
+     [
+      "4401153743",
+      "EverRiseStudioCo",
+      3.99,
+      650,
+      "REJECT",
+      "HISTORIC",
+      "Christmas Booking Flyer, Editable December Booking Flyer, Pink Christmas Flyer, "
+     ],
+     [
+      "4304443935",
+      "YonaGraphics",
+      5.0,
+      515,
+      "CLEAN",
+      "FADING",
+      "Deal Or No Deal Flyer | Hair Stylist | Lash Tech | MUA | Nail Tech | Sale Flyer"
+     ],
+     [
+      "4389797636",
+      "TemplatesRealm",
+      3.96,
+      493,
+      "REJECT",
+      "HISTORIC",
+      "November Booking Flyer, Fall, Autumn, fall flyer, booking flyer, Salon Template,"
+     ],
+     [
+      "4393756146",
+      "BossGirlTools",
+      4.99,
+      476,
+      "REJECT",
+      "OTHER",
+      "New Client Special Flyer: Hair, Lashes, Nails Canva Template (Digital Download)"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4550943563",
+      "TEMPFLYERDIY",
+      2.4,
+      44,
+      7,
+      "September Lash Special Flyer, September Lash Extension Sale Flyer Lash"
+     ],
+     [
+      "4541391779",
+      "QuickCanvasCo",
+      2.2,
+      32,
+      8,
+      "Fall Szn Lash Special Flyer, Lash Esthetician Flyer, Fall Beauty Sale "
+     ],
+     [
+      "4532228519",
+      "TemploCabin",
+      3.8,
+      30,
+      8,
+      "August Lash Special Flyer, August Lash Extension Sale Flyer, Lash Esth"
+     ]
+    ]
+   }
+  },
+  "credible_jobs": [
+   "Training / course materials"
+  ],
+  "credible_complementary": 1,
+  "credible_with_repeat_paid": 1,
+  "flood_rating": "HIGH",
+  "substitute_unit_share": 0.0,
+  "under5_unit_share": 0.649,
+  "mid_price_credible_jobs": 1,
+  "gates": {
+   "G1 >=2 clean entrants on core job": true,
+   "G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)": false,
+   "G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)": false,
+   "G4 >=4 complementary relationships among credible jobs": false,
+   "G5 not dominated by substitutes (substitute-job units < 50%)": true,
+   "G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)": true,
+   "G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)": false
+  },
+  "passes": false
+ },
+ "Homeschool parent": {
+  "pool_listings": 103,
+  "pool_units": 28775,
+  "clean_shops": 21,
+  "active_shops": 18,
+  "all_in_one_unit_share": 0.0,
+  "valid_jobs": 5,
+  "jobs_ge2_selling": 5,
+  "complementary": 4,
+  "partial": 0,
+  "substitute": 0,
+  "young_pool": 95,
+  "young_winners": 95,
+  "young_winner_new": 62,
+  "young_dup_pairs": 5,
+  "jobs": {
+   "High-school transcript": {
+    "trigger": "teen applying to college / job",
+    "acquisition_phrase": "homeschool transcript template",
+    "brand_fit": "STRONG (records)",
+    "relationship": "C",
+    "relationship_reason": "records for college applications",
+    "selling_shops": 3,
+    "clean_shops": 1,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 0,
+     "HISTORIC": 1,
+     "OTHER": 1
+    },
+    "units": 898,
+    "young_listings": 1,
+    "young_winners": 1,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 3.98,
+    "price_bands": {
+     "<$5": 0.7,
+     "$5-9.99": 0.3,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "Canva": 2,
+     "PDF": 1
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4325849301",
+      "MyLifeSpin",
+      3.98,
+      494,
+      "REJECT",
+      "OTHER",
+      "Editable High School Transcript Template, Home School Transcript Form, Printable"
+     ],
+     [
+      "4430969640",
+      "SeyyahDigital",
+      7.0,
+      267,
+      "CLEAN",
+      "ACTIVE",
+      "High School Transcript Template | Printables Home School Diploma | Editable Home"
+     ],
+     [
+      "4365092541",
+      "PaperWorkPlanner",
+      2.49,
+      137,
+      "REJECT",
+      "HISTORIC",
+      "Editable Homeschool Transcript Template: High School Record PDF Canva (Digital D"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4532042114",
+      "lartdelore",
+      19.99,
+      93,
+      60,
+      "Ultimate Homeschool Planner App | Digital Command Center for Multiple "
+     ]
+    ]
+   },
+   "Diploma / graduation": {
+    "trigger": "graduation",
+    "acquisition_phrase": "homeschool diploma",
+    "brand_fit": "MEDIUM (document)",
+    "relationship": "C",
+    "relationship_reason": "one-time graduation document",
+    "selling_shops": 2,
+    "clean_shops": 1,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 1,
+     "HISTORIC": 0,
+     "OTHER": 1
+    },
+    "units": 1003,
+    "young_listings": 0,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 3.5,
+    "price_bands": {
+     "<$5": 1.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 1
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4342145309",
+      "TheArtwares",
+      3.0,
+      720,
+      "CLEAN",
+      "FADING",
+      "Editable High School Diploma Template: Homeschool Replica, Canva Editable (Insta"
+     ],
+     [
+      "1881416007",
+      "PrimeDigitalZone",
+      4.0,
+      283,
+      "REJECT",
+      "OTHER",
+      "Editable High School Diploma Template, Home School Diploma, High School Diploma,"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Attendance / compliance / progress records": {
+    "trigger": "state reporting, annual review",
+    "acquisition_phrase": "homeschool attendance record",
+    "brand_fit": "STRONG (records / compliance)",
+    "relationship": "P",
+    "relationship_reason": "all-in-one homeschool planners often include attendance",
+    "selling_shops": 1,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 1
+    },
+    "units": 133,
+    "young_listings": 3,
+    "young_winners": 3,
+    "young_winner_new_shops": 2,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 4.8,
+    "price_bands": {
+     "<$5": 1.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "PDF": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4320415106",
+      "BloomyPixelDesigns",
+      4.8,
+      133,
+      "REJECT",
+      "OTHER",
+      "Attendance Tracker Printable Log , Attendance Sheet Template, Attendance Tracker"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4531515975",
+      "TheCalmMindLab",
+      9.99,
+      67,
+      10,
+      "Homeschool Planner Web App for Multiple Kids, Record Keeping and Atten"
+     ],
+     [
+      "4540248393",
+      "HomeAndHarvestStudio",
+      3.95,
+      59,
+      5,
+      "Homeschool Tracker Bundle | Homeschool Hour Log Printable | Attendance"
+     ],
+     [
+      "4546503255",
+      "LearnLaughPlay",
+      12.57,
+      57,
+      43,
+      "Homeschool Record Keeping System | Attendance and Hours Tracker | Goog"
+     ]
+    ]
+   },
+   "Planner / lesson scheduling": {
+    "trigger": "school-year start",
+    "acquisition_phrase": "homeschool planner",
+    "brand_fit": "STRONG (planning)",
+    "relationship": "CORE",
+    "relationship_reason": "yearly planning",
+    "selling_shops": 13,
+    "clean_shops": 5,
+    "active_shops": 6,
+    "health": {
+     "ACTIVE": 6,
+     "FADING": 0,
+     "HISTORIC": 2,
+     "OTHER": 5
+    },
+    "units": 3266,
+    "young_listings": 10,
+    "young_winners": 10,
+    "young_winner_new_shops": 5,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 3.96,
+    "price_bands": {
+     "<$5": 0.64,
+     "$5-9.99": 0.24,
+     "$10-14.99": 0.05,
+     "$15-24.99": 0.07,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "PDF": 11,
+     "fillable PDF": 1,
+     "Sheets/Excel": 2,
+     "Canva": 2
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4471979732",
+      "FNDROBE",
+      2.99,
+      348,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "ADHD/ Neurodivergent Daily Routine Chart For Kids & Toddler, Printable Morning E"
+     ],
+     [
+      "4389016148",
+      "Templix8",
+      3.96,
+      340,
+      "CLEAN",
+      "ACTIVE",
+      "2026 2027 Homeschool Planner, Daily Homeschool Checklist, Homeschool Lesson Plan"
+     ],
+     [
+      "4389729009",
+      "Miniprintsandco",
+      1.99,
+      288,
+      "REJECT",
+      "OTHER",
+      "Daycare Daily Schedule Template Editable Canva Printable Preschool Routine Chart"
+     ],
+     [
+      "4344262421",
+      "DreamworkC",
+      18.91,
+      231,
+      "CLEAN",
+      "ACTIVE",
+      "Toddler Curriculum 1\u20132 Years 365 Daily Activities Montessori Lesson Plans | Prin"
+     ],
+     [
+      "4536677322",
+      "HoneyHillLearning",
+      8.0,
+      203,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "Ultimate Homeschool Mom Planner"
+     ],
+     [
+      "4433894910",
+      "TheAusomeCorner",
+      3.27,
+      202,
+      "CLEAN",
+      "ACTIVE",
+      "Visual Schedule with Activity Icons - 5 Routine Slots - Autism ADHD Printable AB"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4519683443",
+      "SimplyCreativeNook",
+      3.0,
+      322,
+      41,
+      "2026-2027 School Year Calendar, Monthly Calendar Editable for teachers"
+     ],
+     [
+      "4536677322",
+      "HoneyHillLearning",
+      8.0,
+      203,
+      15,
+      "Ultimate Homeschool Mom Planner"
+     ],
+     [
+      "4528167110",
+      "CodexGraphic",
+      2.15,
+      152,
+      17,
+      "Editable Homeschool Checklist | Printable Daily Routine Schedule Plann"
+     ],
+     [
+      "4533107128",
+      "ForEveryMamas",
+      2.99,
+      95,
+      15,
+      "Classical Conversations Cycle 3 Tutor Planner | 24-Week Homeschool Bin"
+     ]
+    ]
+   },
+   "Faith / Bible crafts": {
+    "trigger": "weekly lesson",
+    "acquisition_phrase": "bible craft printable",
+    "brand_fit": "WEAK (content)",
+    "relationship": "C",
+    "relationship_reason": "content, different budget line",
+    "selling_shops": 16,
+    "clean_shops": 5,
+    "active_shops": 3,
+    "health": {
+     "ACTIVE": 3,
+     "FADING": 3,
+     "HISTORIC": 6,
+     "OTHER": 9
+    },
+    "units": 14082,
+    "young_listings": 35,
+    "young_winners": 35,
+    "young_winner_new_shops": 27,
+    "young_le1mo": 3,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 4.28,
+    "price_bands": {
+     "<$5": 0.97,
+     "$5-9.99": 0.02,
+     "$10-14.99": 0.01,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 3,
+     "PDF": 46
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4375171349",
+      "LittleLightCrafters",
+      4.39,
+      860,
+      "CLEAN",
+      "ACTIVE",
+      "7 Days of Creation folding surprise craft, The Creation story for kids, Bible Pr"
+     ],
+     [
+      "4427819715",
+      "LittleLightCrafters",
+      4.39,
+      800,
+      "REJECT",
+      "HISTORIC",
+      "Easter story folding surprise craft, Holy week story for kids, Bible Printable A"
+     ],
+     [
+      "4441036589",
+      "LittleLightCrafters",
+      4.28,
+      799,
+      "REJECT",
+      "HISTORIC",
+      "Palm Sunday folding surprise craft, Holy week story for kids, Bible Printable Ac"
+     ],
+     [
+      "4391112318",
+      "BibleKidsCrafts",
+      2.99,
+      703,
+      "CLEAN",
+      "ACTIVE",
+      "Walls of Jericho Craft Kit | Joshua Sunday School Bible Lesson & Homeschool Acti"
+     ],
+     [
+      "4413146230",
+      "LittleLightCrafters",
+      4.28,
+      654,
+      "CLEAN",
+      "ACTIVE",
+      "The Lord's Prayer folding surprise craft, Church story for kids, Bible Printable"
+     ],
+     [
+      "4378044038",
+      "LittleLightCrafters",
+      4.28,
+      535,
+      "REJECT",
+      "OTHER",
+      "The Ten Commandments folding surprise craft, Moses story for kids, Bible Printab"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4543016840",
+      "GentleMomCreations",
+      2.29,
+      181,
+      39,
+      "Christian Back to School Coloring Page, Godly Choices Activity, Sunday"
+     ],
+     [
+      "4551691501",
+      "GentleMomCreations",
+      2.29,
+      104,
+      39,
+      "The Lord's Prayer  Coloring Page, Christian Printable Activity, Sunday"
+     ],
+     [
+      "4543617079",
+      "GentleMomCreations",
+      7.21,
+      103,
+      39,
+      "Christian Virtue Curriculum, 12 Month Christian Homeschool Curriculum "
+     ],
+     [
+      "4530947625",
+      "StreamsofMercyCo",
+      2.99,
+      96,
+      23,
+      "Lord\u2019s Prayer Activity Worksheet for Kids, Sunday School Bible Colorin"
+     ]
+    ]
+   },
+   "Curriculum / worksheets": {
+    "trigger": "subject gap / new grade",
+    "acquisition_phrase": "homeschool curriculum",
+    "brand_fit": "WEAK (education content)",
+    "relationship": "C",
+    "relationship_reason": "content; different supplier choice",
+    "selling_shops": 17,
+    "clean_shops": 9,
+    "active_shops": 7,
+    "health": {
+     "ACTIVE": 7,
+     "FADING": 3,
+     "HISTORIC": 2,
+     "OTHER": 7
+    },
+    "units": 7460,
+    "young_listings": 24,
+    "young_winners": 24,
+    "young_winner_new_shops": 15,
+    "young_le1mo": 4,
+    "young_dup_pairs": 0,
+    "plr": 4,
+    "price_median": 3.26,
+    "price_bands": {
+     "<$5": 0.39,
+     "$5-9.99": 0.46,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.07,
+     "$25+": 0.09
+    },
+    "formats": {
+     "Sheets/Excel": 10,
+     "PDF": 12
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4347382244",
+      "LearnAndPlayHouse",
+      8.78,
+      2002,
+      "CLEAN",
+      "ACTIVE",
+      "Back to School Bundle for Ages 3-4 | Preschool Curriculum Worksheets | Homeschoo"
+     ],
+     [
+      "1871272730",
+      "EarlyLearnersAcademy",
+      30.0,
+      655,
+      "CLEAN",
+      "ACTIVE",
+      "Full Year Preschool Activity Workbooks Age 3-5, Preschool Curriculum, Preschool "
+     ],
+     [
+      "4309035379",
+      "CreativePapersPrint",
+      2.5,
+      552,
+      "CLEAN",
+      "FADING",
+      "75 Preschool Math Worksheets | Math Practice Sheets | Homeschool Learning Printa"
+     ],
+     [
+      "4415244899",
+      "EasyLearningPrintArt",
+      7.0,
+      513,
+      "CLEAN",
+      "FADING",
+      "9000+ Pages Grade 1 Classroom Bundle Mega Worksheet Pack First Grade Curriculum "
+     ],
+     [
+      "4402561858",
+      "LilLearno",
+      5.49,
+      302,
+      "REJECT",
+      "HISTORIC",
+      "Winter Magnetic Tiles Puzzle Printable | Montessori Fine Motor Christmas Activit"
+     ],
+     [
+      "4365994743",
+      "LaLaPlayKidsClub",
+      2.99,
+      294,
+      "CLEAN",
+      "FADING",
+      "Alphabet Tracing Workbook | 120 Pages Printable ABC Worksheets | Preschool, Pre-"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4543508614",
+      "DesignDropSop",
+      1.55,
+      190,
+      20,
+      "500,000+ Kids Educational Bundle PLR MRR ,Worksheets, Canva Templates,"
+     ],
+     [
+      "4548517622",
+      "LifewithZion",
+      8.0,
+      153,
+      30,
+      "Preschool Activities (3-5 YEARS OLD) | Preschool Worksheets |  Printab"
+     ],
+     [
+      "4535487691",
+      "AlwaysSunnyCo",
+      38.0,
+      100,
+      148,
+      "Editable Classroom Decor GROWING Printable Bundle | Elementary Posters"
+     ],
+     [
+      "4537958175",
+      "GodsSweetheartStudio",
+      5.0,
+      83,
+      7,
+      "Preschool Pre-K +Kindergarten Ages 2-6 Learning Bundle Workbook Printa"
+     ]
+    ]
+   }
+  },
+  "credible_jobs": [
+   "High-school transcript",
+   "Diploma / graduation",
+   "Planner / lesson scheduling"
+  ],
+  "credible_complementary": 2,
+  "credible_with_repeat_paid": 3,
+  "flood_rating": "MEDIUM",
+  "substitute_unit_share": 0.0,
+  "under5_unit_share": 0.761,
+  "mid_price_credible_jobs": 0,
+  "gates": {
+   "G1 >=2 clean entrants on core job": true,
+   "G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)": false,
+   "G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)": true,
+   "G4 >=4 complementary relationships among credible jobs": false,
+   "G5 not dominated by substitutes (substitute-job units < 50%)": true,
+   "G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)": true,
+   "G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)": false
+  },
+  "passes": false
+ },
+ "Real estate agent": {
+  "pool_listings": 36,
+  "pool_units": 6462,
+  "clean_shops": 4,
+  "active_shops": 4,
+  "all_in_one_unit_share": 0.04,
+  "valid_jobs": 3,
+  "jobs_ge2_selling": 5,
+  "complementary": 1,
+  "partial": 1,
+  "substitute": 0,
+  "young_pool": 92,
+  "young_winners": 9,
+  "young_winner_new": 4,
+  "young_dup_pairs": 53,
+  "jobs": {
+   "Licence exam prep": {
+    "trigger": "pre-licence course",
+    "acquisition_phrase": "real estate exam cheat sheet",
+    "brand_fit": "WEAK (education)",
+    "relationship": "C",
+    "relationship_reason": "pre-licence phase; different moment",
+    "selling_shops": 1,
+    "clean_shops": 1,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 0
+    },
+    "units": 228,
+    "young_listings": 0,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 18.99,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 1.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4417676026",
+      "GetRealtyLicense",
+      18.99,
+      228,
+      "CLEAN",
+      "ACTIVE",
+      "Real Estate Exam Cheat Sheet | 32+ Pages | Instant Download | Study Guide"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Buyer consultation / guide": {
+    "trigger": "new buyer client",
+    "acquisition_phrase": "real estate buyer guide",
+    "brand_fit": "MEDIUM (client documentation)",
+    "relationship": "CORE",
+    "relationship_reason": "per buyer client",
+    "selling_shops": 4,
+    "clean_shops": 1,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 1,
+     "HISTORIC": 1,
+     "OTHER": 2
+    },
+    "units": 1305,
+    "young_listings": 12,
+    "young_winners": 1,
+    "young_winner_new_shops": 1,
+    "young_le1mo": 1,
+    "young_dup_pairs": 1,
+    "plr": 0,
+    "price_median": 9.48,
+    "price_bands": {
+     "<$5": 0.2,
+     "$5-9.99": 0.41,
+     "$10-14.99": 0.08,
+     "$15-24.99": 0.31,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 5
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4347787906",
+      "KenziREdesigns",
+      20.0,
+      298,
+      "CLEAN",
+      "FADING",
+      "Real Estate Home Buyer Guide: 24-Page Canva Template (Digital Download)"
+     ],
+     [
+      "1884603011",
+      "SmartAgentDocs",
+      7.98,
+      275,
+      "REJECT",
+      "OTHER",
+      "Real Estate Buyer Questionnaire, Buyers Questionnaire, Buyer Consultation, Buyer"
+     ],
+     [
+      "4429098864",
+      "ByCreativeAgency",
+      3.2,
+      263,
+      "REJECT",
+      "HISTORIC",
+      "Real Estate Listing & Buyer Presentation Bundle, Home Seller Guide, Home Buyer G"
+     ],
+     [
+      "4306120456",
+      "SmartAgentDocs",
+      7.98,
+      261,
+      "REJECT",
+      "OTHER",
+      "Home Buyer Roadmap, Agent Flyer, Home Buying Process Packet, Real Estate Marketi"
+     ],
+     [
+      "1878624492",
+      "SmartAgentDocs",
+      10.98,
+      106,
+      "REJECT",
+      "OTHER",
+      "Buyer Contract To Close Timeline Text Updates | Real Estate | Canva | Modern | C"
+     ],
+     [
+      "4404366406",
+      "GoldenPropertyStudio",
+      24.7,
+      102,
+      "REJECT",
+      "OTHER",
+      "Real Estate buyer and seller guide, Editable Canva Realtor Branding, Listing Pre"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4538292992",
+      "Bitzono",
+      2.99,
+      37,
+      7,
+      "Stop Paying Rent Flyer, Home Buyer Real Estate Flyer, Buyer Lead Magne"
+     ]
+    ]
+   },
+   "Seller / listing presentation": {
+    "trigger": "listing appointment",
+    "acquisition_phrase": "listing presentation template",
+    "brand_fit": "MEDIUM",
+    "relationship": "C",
+    "relationship_reason": "per listing appointment",
+    "selling_shops": 1,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 1
+    },
+    "units": 576,
+    "young_listings": 9,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 3,
+    "plr": 0,
+    "price_median": 10.48,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.6,
+     "$10-14.99": 0.4,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4299574168",
+      "SmartAgentDocs",
+      5.99,
+      346,
+      "REJECT",
+      "OTHER",
+      "Seller Real Estate Checklist Bundle | Editable Digital Real Estate | Real Estate"
+     ],
+     [
+      "4349810333",
+      "SmartAgentDocs",
+      14.96,
+      230,
+      "REJECT",
+      "OTHER",
+      "Seller Pre-Listing Presentation, Seller Guide, Real Estate Template, Canva Templ"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Open house kit": {
+    "trigger": "each open house",
+    "acquisition_phrase": "open house sign in sheet",
+    "brand_fit": "MEDIUM (records)",
+    "relationship": "C",
+    "relationship_reason": "per open house",
+    "selling_shops": 4,
+    "clean_shops": 0,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 3
+    },
+    "units": 580,
+    "young_listings": 10,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 1,
+    "young_dup_pairs": 2,
+    "plr": 0,
+    "price_median": 6.14,
+    "price_bands": {
+     "<$5": 0.5,
+     "$5-9.99": 0.5,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 2,
+     "PDF": 1
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4335164822",
+      "SlmStudioArt",
+      4.29,
+      188,
+      "REJECT",
+      "OTHER",
+      "Printable Event Sign In Sheet | Open House Sign In Sheet Template | Meeting Sign"
+     ],
+     [
+      "4479182439",
+      "Fanninghouse",
+      7.99,
+      172,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "Real Estate Flyer Template, Listing Flyer, Open House Flyer, Just Listed Flyer, "
+     ],
+     [
+      "4353833422",
+      "SmartAgentDocs",
+      9.96,
+      120,
+      "REJECT",
+      "OTHER",
+      "Open House Sign In Sheet Editable Canva Template & PDFs | Realtor Open House Fly"
+     ],
+     [
+      "4382943434",
+      "MounirShopStudio",
+      3.62,
+      100,
+      "REJECT",
+      "OTHER",
+      "Broker Open Feedback Form Editable, Real Estate Agent Open House Feedback Form, "
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Transaction / closing": {
+    "trigger": "under contract",
+    "acquisition_phrase": "real estate closing checklist",
+    "brand_fit": "STRONG (workflow)",
+    "relationship": "C",
+    "relationship_reason": "per contract",
+    "selling_shops": 1,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 1
+    },
+    "units": 132,
+    "young_listings": 3,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 19.96,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 1.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "Canva": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4371577427",
+      "SmartAgentDocs",
+      19.96,
+      132,
+      "REJECT",
+      "OTHER",
+      "Closing Day Binder Template | Closing Gift | Homeowner | Real Estate Marketing |"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Prospecting mail / farming": {
+    "trigger": "monthly prospecting",
+    "acquisition_phrase": "real estate postcard",
+    "brand_fit": "WEAK (marketing design)",
+    "relationship": "P",
+    "relationship_reason": "mega marketing bundles cover mail + social",
+    "selling_shops": 2,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 1,
+     "OTHER": 2
+    },
+    "units": 666,
+    "young_listings": 20,
+    "young_winners": 3,
+    "young_winner_new_shops": 1,
+    "young_le1mo": 1,
+    "young_dup_pairs": 23,
+    "plr": 0,
+    "price_median": 9.98,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.63,
+     "$10-14.99": 0.16,
+     "$15-24.99": 0.21,
+     "$25+": 0.0
+    },
+    "formats": {
+     "Canva": 5
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4305116989",
+      "SmartAgentDocs",
+      9.98,
+      168,
+      "REJECT",
+      "HISTORIC",
+      "Real Estate Postcards | Realtor Marketing Letters | Real Estate Agents | Canva T"
+     ],
+     [
+      "1804993831",
+      "LegendandKo",
+      18.0,
+      140,
+      "REJECT",
+      "OTHER",
+      "Modern Real Estate Brochure | Editable Luxury Property Marketing Template | Canv"
+     ],
+     [
+      "1873821162",
+      "SmartAgentDocs",
+      5.99,
+      132,
+      "REJECT",
+      "HISTORIC",
+      "Real Estate Marketing Template Bundle, Real Estate Marketing, Real Estate Letter"
+     ],
+     [
+      "1869910706",
+      "SmartAgentDocs",
+      9.96,
+      119,
+      "REJECT",
+      "OTHER",
+      "Real Estate Introduction Trifold Brochure | Real Estate Brochure | Real Estate M"
+     ],
+     [
+      "4359550077",
+      "SmartAgentDocs",
+      11.96,
+      107,
+      "REJECT",
+      "OTHER",
+      "Real Estate Fall Newsletter Bundle | Email Marketing | Farming Flyer | Canva Tem"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4312294472",
+      "TemplateFrames",
+      3.0,
+      57,
+      22,
+      "Real Estate Newsletter Bundle, Fully Year Newsletter Bundle 2025, 12 M"
+     ],
+     [
+      "4535555000",
+      "TheAgentSiteShop",
+      17.0,
+      51,
+      72,
+      "School Year Calendar 2026-2027 | School Year Schedule Mailer Campaign "
+     ],
+     [
+      "4539477071",
+      "realestatetemplateco",
+      5.0,
+      49,
+      83,
+      "School Year Calendar 2026-2027 | School Year Schedule Mailer | Back-to"
+     ]
+    ]
+   },
+   "Listing marketing (flyer / sign)": {
+    "trigger": "each new listing",
+    "acquisition_phrase": "real estate flyer",
+    "brand_fit": "WEAK (design)",
+    "relationship": "P",
+    "relationship_reason": "mega marketing bundles",
+    "selling_shops": 2,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 2
+    },
+    "units": 327,
+    "young_listings": 4,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 1,
+    "price_median": 10.96,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.6,
+     "$10-14.99": 0.4,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {
+     "unstated": 1,
+     "Canva": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4414330071",
+      "ServCrafts",
+      7.95,
+      195,
+      "REJECT",
+      "OTHER",
+      "1000+ Editable Flyer Templates | Business, Event, Party, Real Estate, Marketing "
+     ],
+     [
+      "4325872576",
+      "SmartAgentDocs",
+      13.96,
+      132,
+      "REJECT",
+      "OTHER",
+      "Real Estate Yard Sign Template, Canva Template, Custom, Sign Rider, Sold Sign, M"
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Social content": {
+    "trigger": "ongoing marketing",
+    "acquisition_phrase": "realtor instagram templates",
+    "brand_fit": "WEAK (design)",
+    "relationship": "P",
+    "relationship_reason": "mega marketing bundles (1000+ templates)",
+    "selling_shops": 6,
+    "clean_shops": 1,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 1,
+     "HISTORIC": 4,
+     "OTHER": 2
+    },
+    "units": 1805,
+    "young_listings": 21,
+    "young_winners": 2,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 1,
+    "young_dup_pairs": 15,
+    "plr": 0,
+    "price_median": 17.06,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.28,
+     "$10-14.99": 0.34,
+     "$15-24.99": 0.13,
+     "$25+": 0.24
+    },
+    "formats": {
+     "Canva": 10
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "1876239162",
+      "SmartAgentDocs",
+      9.98,
+      512,
+      "CLEAN",
+      "FADING",
+      "55 Real Estate Video Reel  Canva Video Reels | Real Estate Social Media | Real E"
+     ],
+     [
+      "1858661510",
+      "GigiAestheticAtelier",
+      28.12,
+      225,
+      "REJECT",
+      "HISTORIC",
+      "260 Modern Realtor Instagram Marketing Templates | Luxury Real Estate Instagram "
+     ],
+     [
+      "4329928228",
+      "TheAgentHaus",
+      12.89,
+      207,
+      "REJECT",
+      "OTHER",
+      "Instagram Templates for Luxury Real Estate Agents | Organic Modern Canva Marketi"
+     ],
+     [
+      "4480465159",
+      "SmartAgentDocs",
+      11.96,
+      143,
+      "REJECT",
+      "OTHER",
+      "Sage Green Real Estate Instagram Templates, 120 Canva Realtor Posts & Stories, A"
+     ],
+     [
+      "1902869485",
+      "DigiUniqueFinds",
+      19.16,
+      140,
+      "REJECT",
+      "HISTORIC",
+      "Real Estate Reels Template, Real Estate Social Media Instagram Bundle, Realtor I"
+     ],
+     [
+      "4445860121",
+      "SmartAgentDocs",
+      11.96,
+      132,
+      "REJECT",
+      "OTHER",
+      "250+ Real Estate Instagram Post + Story + Highlights Templates for Canva | Ready"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4545852656",
+      "TheAgentSiteShop",
+      27.0,
+      68,
+      72,
+      "1000+ Real Estate Social Media Posts, Instagram Template Luxury Realto"
+     ],
+     [
+      "4554542289",
+      "TheAgentSiteShop",
+      30.0,
+      34,
+      72,
+      "October 2026 Real Estate Social Media Posts + Captions, Realtor Social"
+     ]
+    ]
+   },
+   "Client gifts": {
+    "trigger": "closing gift",
+    "acquisition_phrase": "realtor closing gift",
+    "brand_fit": "WEAK (gift)",
+    "relationship": "C",
+    "relationship_reason": "closing gift",
+    "selling_shops": 1,
+    "clean_shops": 1,
+    "active_shops": 1,
+    "health": {
+     "ACTIVE": 1,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 0
+    },
+    "units": 189,
+    "young_listings": 2,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": 35.0,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 1.0
+    },
+    "formats": {
+     "unstated": 1
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4440577362",
+      "dearJJStudio",
+      35.0,
+      189,
+      "CLEAN",
+      "ACTIVE",
+      "Custom House Portrait Illustration, Hand Drawn Home Art, Realtor Housewarming Gi"
+     ]
+    ],
+    "young_evidence": []
+   }
+  },
+  "credible_jobs": [
+   "Buyer consultation / guide",
+   "Open house kit"
+  ],
+  "credible_complementary": 1,
+  "credible_with_repeat_paid": 2,
+  "flood_rating": "HIGH",
+  "substitute_unit_share": 0.0,
+  "under5_unit_share": 0.095,
+  "mid_price_credible_jobs": 1,
+  "gates": {
+   "G1 >=2 clean entrants on core job": false,
+   "G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)": false,
+   "G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)": false,
+   "G4 >=4 complementary relationships among credible jobs": false,
+   "G5 not dominated by substitutes (substitute-job units < 50%)": true,
+   "G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)": true,
+   "G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)": false
+  },
+  "passes": false
+ },
+ "Engaged couple (wedding admin)": {
+  "pool_listings": 110,
+  "pool_units": 54616,
+  "clean_shops": 54,
+  "active_shops": 49,
+  "all_in_one_unit_share": 0.103,
+  "valid_jobs": 2,
+  "jobs_ge2_selling": 4,
+  "complementary": 0,
+  "partial": 1,
+  "substitute": 2,
+  "young_pool": 94,
+  "young_winners": 5,
+  "young_winner_new": 2,
+  "young_dup_pairs": 89,
+  "jobs": {
+   "Budget / vendor payments": {
+    "trigger": "after engagement, booking vendors",
+    "acquisition_phrase": "wedding budget spreadsheet",
+    "brand_fit": "STRONG (money)",
+    "relationship": "S",
+    "relationship_reason": "all-in-one wedding planner spreadsheets include budget + guests + timeline",
+    "selling_shops": 5,
+    "clean_shops": 5,
+    "active_shops": 3,
+    "health": {
+     "ACTIVE": 3,
+     "FADING": 2,
+     "HISTORIC": 0,
+     "OTHER": 0
+    },
+    "units": 5171,
+    "young_listings": 41,
+    "young_winners": 2,
+    "young_winner_new_shops": 2,
+    "young_le1mo": 7,
+    "young_dup_pairs": 63,
+    "plr": 0,
+    "price_median": 13.61,
+    "price_bands": {
+     "<$5": 0.22,
+     "$5-9.99": 0.35,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.21,
+     "$25+": 0.22
+    },
+    "formats": {
+     "Sheets/Excel": 6
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4434900320",
+      "SheetDesignLab",
+      3.32,
+      1127,
+      "CLEAN",
+      "ACTIVE",
+      "Wedding Planning Spreadsheet Budget Tracker Guest List Timeline Checklist Itiner"
+     ],
+     [
+      "4379095171",
+      "AravellaCreative",
+      26.41,
+      1127,
+      "CLEAN",
+      "FADING",
+      "Wedding Planner Spreadsheet, Wedding Budget, Guest List & Seating Chart, Task an"
+     ],
+     [
+      "4389595935",
+      "ForeverMomentStudio",
+      9.99,
+      1104,
+      "CLEAN",
+      "ACTIVE",
+      "Wedding Planner Google Sheets, Budget Tracker Guest List Seating Chart Vendor Ch"
+     ],
+     [
+      "1865054904",
+      "NeatsheetsTemplates",
+      17.23,
+      728,
+      "CLEAN",
+      "FADING",
+      "Wedding Planner Spreadsheet Wedding Budget Tracker Wedding Timeline Checklist We"
+     ],
+     [
+      "4323497785",
+      "LinkDigitalStudio",
+      8.54,
+      705,
+      "CLEAN",
+      "ACTIVE",
+      "Wedding Planner Spreadsheet, Wedding Budget Spreadsheet, Wedding Google sheets B"
+     ],
+     [
+      "1865089832",
+      "NeatsheetsTemplates",
+      17.23,
+      380,
+      "CLEAN",
+      "FADING",
+      "Wedding Planner Spreadsheet Wedding Budget Tracker Wedding Timeline Checklist We"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4523758384",
+      "AtStillnessStudio",
+      11.29,
+      85,
+      7,
+      "Wedding Planner Spreadsheet, Google Sheets Wedding Planner Template, B"
+     ],
+     [
+      "4522803016",
+      "DigitalProductery",
+      11.97,
+      48,
+      8,
+      "Bestseller Hochzeitsplaner Google Sheets Hochzeit Budget Tracker G\u00e4ste"
+     ]
+    ]
+   },
+   "Guest list / RSVP / seating": {
+    "trigger": "invitations",
+    "acquisition_phrase": "wedding guest list",
+    "brand_fit": "STRONG (records)",
+    "relationship": "S",
+    "relationship_reason": "included in all-in-one planner spreadsheets",
+    "selling_shops": 14,
+    "clean_shops": 5,
+    "active_shops": 9,
+    "health": {
+     "ACTIVE": 9,
+     "FADING": 3,
+     "HISTORIC": 2,
+     "OTHER": 2
+    },
+    "units": 9517,
+    "young_listings": 4,
+    "young_winners": 2,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 1,
+    "price_median": 19.0,
+    "price_bands": {
+     "<$5": 0.21,
+     "$5-9.99": 0.08,
+     "$10-14.99": 0.06,
+     "$15-24.99": 0.25,
+     "$25+": 0.39
+    },
+    "formats": {
+     "unstated": 1,
+     "Sheets/Excel": 1,
+     "Canva": 12,
+     "app/web": 5
+    },
+    "valid": false,
+    "evidence": [
+     [
+      "4494346695",
+      "blahaus",
+      19.0,
+      1330,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "Olive Green Save the Date Website Template | Digital Wedding Invitation with RSV"
+     ],
+     [
+      "4400859541",
+      "RosieCreativeStudio",
+      33.02,
+      1222,
+      "CLEAN",
+      "ACTIVE",
+      "Olive Green & Burgundy Floral Wedding Website with RSVP Function: Editable Canva"
+     ],
+     [
+      "4311149239",
+      "HDTemplatesBoutique",
+      4.26,
+      1120,
+      "CLEAN",
+      "FADING",
+      "Elegant Wedding Invitation Template Set, Minimalist Wedding Bundle Canva, Weddin"
+     ],
+     [
+      "4412302488",
+      "STUDIOGWYN",
+      32.55,
+      783,
+      "CLEAN",
+      "FADING",
+      "Old Money Wedding Website Template with RSVP: Classic Burgundy Digital Invitatio"
+     ],
+     [
+      "4454862271",
+      "CreativeFilesUSA",
+      4.99,
+      648,
+      "NEAR-CLEAN",
+      "ACTIVE",
+      "Place Cards Printing Template | Printable Flat and Folded Wedding Table Name Tag"
+     ],
+     [
+      "1812338631",
+      "RoyalTemplatesShop",
+      14.85,
+      467,
+      "REJECT",
+      "HISTORIC",
+      "Wedding Seating Chart Template: Editable Modern \u201cOur Favorite People\u201d Reception "
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4536547614",
+      "MikisSunshine",
+      10.43,
+      45,
+      47,
+      "Wedding Seating Chart QR Sign, Guest List Planner, Table Finder (Digit"
+     ],
+     [
+      "4551973633",
+      "PracticalSheetsCo",
+      5.98,
+      34,
+      27,
+      "Wedding Spreadsheet Guest List Wedding Planner Spreadsheet Excel Weddi"
+     ]
+    ]
+   },
+   "Day-of timeline / binder": {
+    "trigger": "final month",
+    "acquisition_phrase": "wedding day timeline",
+    "brand_fit": "STRONG (scheduling)",
+    "relationship": "P",
+    "relationship_reason": "day-of binders are sold separately but planners include timelines",
+    "selling_shops": 7,
+    "clean_shops": 7,
+    "active_shops": 4,
+    "health": {
+     "ACTIVE": 4,
+     "FADING": 3,
+     "HISTORIC": 0,
+     "OTHER": 0
+    },
+    "units": 3218,
+    "young_listings": 13,
+    "young_winners": 1,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 1,
+    "young_dup_pairs": 2,
+    "plr": 1,
+    "price_median": 9.76,
+    "price_bands": {
+     "<$5": 0.12,
+     "$5-9.99": 0.5,
+     "$10-14.99": 0.11,
+     "$15-24.99": 0.14,
+     "$25+": 0.13
+    },
+    "formats": {
+     "Sheets/Excel": 1,
+     "unstated": 2,
+     "Canva": 4
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "4318849240",
+      "editwithella",
+      6.29,
+      852,
+      "CLEAN",
+      "FADING",
+      "Wedding Day Blueprint - Editable Canva Template"
+     ],
+     [
+      "4410836175",
+      "StarWaveStudio",
+      9.76,
+      566,
+      "CLEAN",
+      "ACTIVE",
+      "12 Page Wedding Newspaper Template | Editable Canva Wedding Magazine | Engagemen"
+     ],
+     [
+      "4382790240",
+      "DetailandDesigns",
+      15.87,
+      450,
+      "CLEAN",
+      "FADING",
+      "Bachelorette/ Hen Weekend Itinerary Template: 15 Page Canva Planner (Digital)"
+     ],
+     [
+      "4324760260",
+      "IvyRepublicDesigns",
+      45.97,
+      428,
+      "CLEAN",
+      "ACTIVE",
+      "Stress-Free 180+ Page Day of Wedding Binder, Wedding Planner, Day of Coordinator"
+     ],
+     [
+      "1827844542",
+      "TheGoldenVows",
+      2.26,
+      396,
+      "CLEAN",
+      "ACTIVE",
+      "Detailed Wedding Day Timeline Template | Main, Photographer, Venue, Hair & Makeu"
+     ],
+     [
+      "4352934659",
+      "PaperPetalsTemplate",
+      10.93,
+      339,
+      "CLEAN",
+      "ACTIVE",
+      "Bachelorette party itinerary, Bachelorette invitation, Bach invite, Bachelorette"
+     ]
+    ],
+    "young_evidence": [
+     [
+      "4543370846",
+      "HumbleArtPrint",
+      4.99,
+      392,
+      104,
+      "450 page Wedding Planner Template Bundle Complete Wedding Planning Bin"
+     ]
+    ]
+   },
+   "Master planner / binder": {
+    "trigger": "start of planning",
+    "acquisition_phrase": "wedding planner spreadsheet",
+    "brand_fit": "STRONG (planning)",
+    "relationship": "CORE",
+    "relationship_reason": "start of planning",
+    "selling_shops": 10,
+    "clean_shops": 9,
+    "active_shops": 4,
+    "health": {
+     "ACTIVE": 4,
+     "FADING": 5,
+     "HISTORIC": 2,
+     "OTHER": 0
+    },
+    "units": 4978,
+    "young_listings": 36,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 9,
+    "young_dup_pairs": 6,
+    "plr": 2,
+    "price_median": 10.22,
+    "price_bands": {
+     "<$5": 0.08,
+     "$5-9.99": 0.26,
+     "$10-14.99": 0.07,
+     "$15-24.99": 0.04,
+     "$25+": 0.55
+    },
+    "formats": {
+     "unstated": 4,
+     "Sheets/Excel": 2,
+     "Canva": 3,
+     "PDF": 2
+    },
+    "valid": true,
+    "evidence": [
+     [
+      "1844366543",
+      "RoyalTemplatesShop",
+      33.42,
+      1867,
+      "CLEAN",
+      "FADING",
+      "Editable Wedding Binder Canva Template: Minimal Wedding Planner PDF (Instant Dow"
+     ],
+     [
+      "4414508766",
+      "LaurelJamesWeddingCo",
+      6.99,
+      663,
+      "CLEAN",
+      "ACTIVE",
+      "Wedding Binder Template | Canva (Digital Download)"
+     ],
+     [
+      "4324775168",
+      "IvyRepublicDesigns",
+      57.97,
+      587,
+      "CLEAN",
+      "ACTIVE",
+      "Stress-Free 500+ Page Wedding Planner Bundle, Wedding Binder, Wedding Planner Bo"
+     ],
+     [
+      "4321860998",
+      "PaperieHeaven",
+      6.21,
+      450,
+      "CLEAN",
+      "ACTIVE",
+      "Wedding Checklist, Wedding Planning Checklist, Printable Wedding Checklist Templ"
+     ],
+     [
+      "4311549837",
+      "ETDesignsIreland",
+      10.22,
+      352,
+      "CLEAN",
+      "FADING",
+      "Digital Wedding Planner - Google Sheet Instant Download - Fully Customisable - W"
+     ],
+     [
+      "1836661694",
+      "TheBigExcelShop",
+      1.75,
+      256,
+      "REJECT",
+      "HISTORIC",
+      "My Big Fat Desi Wedding Planner | Excel Spreadsheet | Instant Download | Sikh / "
+     ]
+    ],
+    "young_evidence": []
+   },
+   "Bridesmaid / bachelorette admin": {
+    "trigger": "wedding party",
+    "acquisition_phrase": "bachelorette itinerary",
+    "brand_fit": "MEDIUM",
+    "relationship": "C",
+    "relationship_reason": "different occasion and buyer (maid of honour)",
+    "selling_shops": 0,
+    "clean_shops": 0,
+    "active_shops": 0,
+    "health": {
+     "ACTIVE": 0,
+     "FADING": 0,
+     "HISTORIC": 0,
+     "OTHER": 0
+    },
+    "units": 0,
+    "young_listings": 0,
+    "young_winners": 0,
+    "young_winner_new_shops": 0,
+    "young_le1mo": 0,
+    "young_dup_pairs": 0,
+    "plr": 0,
+    "price_median": null,
+    "price_bands": {
+     "<$5": 0.0,
+     "$5-9.99": 0.0,
+     "$10-14.99": 0.0,
+     "$15-24.99": 0.0,
+     "$25+": 0.0
+    },
+    "formats": {},
+    "valid": false,
+    "evidence": [],
+    "young_evidence": []
+   }
+  },
+  "credible_jobs": [
+   "Day-of timeline / binder",
+   "Master planner / binder"
+  ],
+  "credible_complementary": 0,
+  "credible_with_repeat_paid": 2,
+  "flood_rating": "HIGH",
+  "substitute_unit_share": 0.642,
+  "under5_unit_share": 0.171,
+  "mid_price_credible_jobs": 2,
+  "gates": {
+   "G1 >=2 clean entrants on core job": true,
+   "G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)": false,
+   "G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)": false,
+   "G4 >=4 complementary relationships among credible jobs": false,
+   "G5 not dominated by substitutes (substitute-job units < 50%)": false,
+   "G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)": false,
+   "G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)": true
+  },
+  "passes": false
+ }
+}

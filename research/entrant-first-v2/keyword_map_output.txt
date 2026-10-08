@@ -1,0 +1,39 @@
+
+## Nurse / nursing student: 14 terms; doors = {'(generic buyer door)': 3, 'Shift report / handoff sheet': 11}
+  nursing sheet report                          vol=   556 comp=  4,179  -> (generic buyer door)
+  nurses report sheet                           vol=   555 comp=  4,815  -> Shift report / handoff sheet
+  nurse's report sheet                          vol=   555 comp=  4,794  -> Shift report / handoff sheet
+  nurse reporting sheet                         vol=   459 comp=  5,283  -> (generic buyer door)
+  nursing brain report sheet                    vol=   426 comp=  2,348  -> Shift report / handoff sheet
+  nurse report sheet medsurg                    vol=   373 comp=  1,047  -> Shift report / handoff sheet
+  nursing report sheets medsurg                 vol=   370 comp=    905  -> Shift report / handoff sheet
+  rn nursing report sheets                      vol=   348 comp=  1,962  -> Shift report / handoff sheet
+  nurse report sheets patient                   vol=   345 comp=  2,331  -> Shift report / handoff sheet
+  med surg nursing report sheet                 vol=   341 comp=  1,501  -> Shift report / handoff sheet
+  icu nursing report sheet                      vol=   340 comp=  1,604  -> Shift report / handoff sheet
+  nurse report sheet brain                      vol=   339 comp=  3,008  -> Shift report / handoff sheet
+  nurse report sheets med surg                  vol=   338 comp=  1,654  -> Shift report / handoff sheet
+  icu nurse sheet report                        vol=   338 comp=  1,970  -> (generic buyer door)
+
+## Homeschool parent: 8 terms; doors = {'Planner / lesson scheduling': 8}
+  home school planner                           vol= 1,535 comp= 31,397  -> Planner / lesson scheduling
+  printable planner home school                 vol= 1,411 comp= 10,923  -> Planner / lesson scheduling
+  homeschooling planner                         vol=   740 comp=  2,182  -> Planner / lesson scheduling
+  planner homeschool                            vol=   731 comp= 18,789  -> Planner / lesson scheduling
+  homeschool planner calendar                   vol=   540 comp= 11,244  -> Planner / lesson scheduling
+  homeschool school planner                     vol=   501 comp= 11,326  -> Planner / lesson scheduling
+  homeschool kids planner                       vol=   499 comp= 10,237  -> Planner / lesson scheduling
+  printable homeschool planners                 vol=   486 comp= 15,679  -> Planner / lesson scheduling
+
+## Esthetician / lash / nail / hair pro: 11 terms; doors = {'(generic buyer door)': 11}
+  lash  tech                                    vol=   660 comp= 23,173  -> (generic buyer door)
+  lash techer                                   vol=   618 comp= 23,193  -> (generic buyer door)
+  template lash tech                            vol=   520 comp= 18,518  -> (generic buyer door)
+  lashes tech templates                         vol=   520 comp= 18,523  -> (generic buyer door)
+  lash tech book                                vol=   440 comp=  3,985  -> (generic buyer door)
+  nail lash tech                                vol=   438 comp= 11,011  -> (generic buyer door)
+  lash tech booking                             vol=   437 comp=  7,321  -> (generic buyer door)
+  lash tech canva                               vol=   415 comp= 11,785  -> (generic buyer door)
+  lash tech nail hair                           vol=   383 comp=  7,929  -> (generic buyer door)
+  lash artist tech                              vol=   381 comp=  9,554  -> (generic buyer door)
+  lash tech template canva                      vol=   380 comp= 11,790  -> (generic buyer door)

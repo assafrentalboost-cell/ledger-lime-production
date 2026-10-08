@@ -1,0 +1,46 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-08T08:06:40.386Z",
+ "tool": "view_listings",
+ "params": {
+  "listing_type": "download",
+  "shop_age_month_max": 24,
+  "transaction_sold_count_max": 15000,
+  "est_mo_sales_min": 100,
+  "time_range": "last_12_months",
+  "order_by": "est_mo_sales",
+  "order_direction": "desc",
+  "per_page": 100,
+  "title_include": "contractor"
+ },
+ "rows": [
+  {
+   "listing_id": "4323984635",
+   "title": "One Page Handyman Contract, Editable General Construction Contract Template, Printable Sub Contractor, Building Contract, Handyman Estimate",
+   "title_href": "https://www.etsy.com/listing/4323984635/one-page-handyman-contract-editable",
+   "shop_name": "MyLifeSpin",
+   "price": "$3.98",
+   "est_mo_sales": "104",
+   "est_mo_revenue": "$414.00",
+   "trends": [
+    0,
+    26,
+    0,
+    0,
+    0,
+    26,
+    26,
+    0,
+    0,
+    26,
+    0,
+    0
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "14 Mo.",
+   "shop_age_month": "20 Mo.",
+   "transaction_sold_count": "12,165",
+   "main_category": "\u2014"
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "Nurse / nursing student": [
+  {
+   "keyword": "nursing sheet report",
+   "volume": "556",
+   "competition": "4,179",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "nurses report sheet",
+   "volume": "555",
+   "competition": "4,815",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nurse's report sheet",
+   "volume": "555",
+   "competition": "4,794",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nurse reporting sheet",
+   "volume": "459",
+   "competition": "5,283",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "nursing brain report sheet",
+   "volume": "426",
+   "competition": "2,348",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nurse report sheet medsurg",
+   "volume": "373",
+   "competition": "1,047",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nursing report sheets medsurg",
+   "volume": "370",
+   "competition": "905",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "rn nursing report sheets",
+   "volume": "348",
+   "competition": "1,962",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nurse report sheets patient",
+   "volume": "345",
+   "competition": "2,331",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "med surg nursing report sheet",
+   "volume": "341",
+   "competition": "1,501",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "icu nursing report sheet",
+   "volume": "340",
+   "competition": "1,604",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nurse report sheet brain",
+   "volume": "339",
+   "competition": "3,008",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "nurse report sheets med surg",
+   "volume": "338",
+   "competition": "1,654",
+   "job_door": "Shift report / handoff sheet"
+  },
+  {
+   "keyword": "icu nurse sheet report",
+   "volume": "338",
+   "competition": "1,970",
+   "job_door": "(generic buyer door)"
+  }
+ ],
+ "Homeschool parent": [
+  {
+   "keyword": "home school planner",
+   "volume": "1,535",
+   "competition": "31,397",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "printable planner home school",
+   "volume": "1,411",
+   "competition": "10,923",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "homeschooling planner",
+   "volume": "740",
+   "competition": "2,182",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "planner homeschool",
+   "volume": "731",
+   "competition": "18,789",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "homeschool planner calendar",
+   "volume": "540",
+   "competition": "11,244",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "homeschool school planner",
+   "volume": "501",
+   "competition": "11,326",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "homeschool kids planner",
+   "volume": "499",
+   "competition": "10,237",
+   "job_door": "Planner / lesson scheduling"
+  },
+  {
+   "keyword": "printable homeschool planners",
+   "volume": "486",
+   "competition": "15,679",
+   "job_door": "Planner / lesson scheduling"
+  }
+ ],
+ "Esthetician / lash / nail / hair pro": [
+  {
+   "keyword": "lash  tech",
+   "volume": "660",
+   "competition": "23,173",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash techer",
+   "volume": "618",
+   "competition": "23,193",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "template lash tech",
+   "volume": "520",
+   "competition": "18,518",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lashes tech templates",
+   "volume": "520",
+   "competition": "18,523",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash tech book",
+   "volume": "440",
+   "competition": "3,985",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "nail lash tech",
+   "volume": "438",
+   "competition": "11,011",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash tech booking",
+   "volume": "437",
+   "competition": "7,321",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash tech canva",
+   "volume": "415",
+   "competition": "11,785",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash tech nail hair",
+   "volume": "383",
+   "competition": "7,929",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash artist tech",
+   "volume": "381",
+   "competition": "9,554",
+   "job_door": "(generic buyer door)"
+  },
+  {
+   "keyword": "lash tech template canva",
+   "volume": "380",
+   "competition": "11,790",
+   "job_door": "(generic buyer door)"
+  }
+ ]
+}

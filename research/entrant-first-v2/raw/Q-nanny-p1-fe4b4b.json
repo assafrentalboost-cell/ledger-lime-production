@@ -1,0 +1,74 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-08T08:07:00.573Z",
+ "tool": "view_listings",
+ "params": {
+  "listing_type": "download",
+  "shop_age_month_max": 24,
+  "transaction_sold_count_max": 15000,
+  "est_mo_sales_min": 100,
+  "time_range": "last_12_months",
+  "order_by": "est_mo_sales",
+  "order_direction": "desc",
+  "per_page": 100,
+  "title_include": "nanny"
+ },
+ "rows": [
+  {
+   "listing_id": "1801618122",
+   "title": "Babysitting Binder Canva Template Printable Babysitter Planner Childcare Schedule Infant Log Emergency Contacts Editable Nanny Guide",
+   "title_href": "https://www.etsy.com/listing/1801618122/babysitting-binder-canva-template",
+   "shop_name": "ForYourVillageShop",
+   "price": "$12.99",
+   "est_mo_sales": "143",
+   "est_mo_revenue": "$1,874.00",
+   "trends": [
+    17,
+    7,
+    5,
+    20,
+    18,
+    11,
+    16,
+    17,
+    6,
+    7,
+    7,
+    12
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "24 Mo.",
+   "shop_age_month": "24 Mo.",
+   "transaction_sold_count": "688",
+   "main_category": "Paper & Party Supplies"
+  },
+  {
+   "listing_id": "4327414203",
+   "title": "Caregiver Contract, Customizable Nanny Contract Form Template, Printable Elder Care Contract, Homecare Agreement, Editable in Canva",
+   "title_href": "https://www.etsy.com/listing/4327414203/caregiver-contract-customizable-nanny",
+   "shop_name": "VentureBloom",
+   "price": "$3.50",
+   "est_mo_sales": "138",
+   "est_mo_revenue": "$483.00",
+   "trends": [
+    0,
+    0,
+    0,
+    0,
+    23,
+    0,
+    23,
+    19,
+    39,
+    34,
+    0,
+    0
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "15 Mo.",
+   "shop_age_month": "15 Mo.",
+   "transaction_sold_count": "4,835",
+   "main_category": "\u2014"
+  }
+ ]
+}

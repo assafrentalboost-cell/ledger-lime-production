@@ -1,0 +1,6 @@
+data_label,finalist,credible_jobs,credible_complementary,flood,under5_unit_share,substitute_unit_share,G1,G2,G3,G4,G5,G6,G7,passes
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA,Nurse / nursing student,4,2,LOW,0.215,0.339,True,False,True,False,True,True,True,False
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA,Esthetician / lash / nail / hair pro,1,1,HIGH,0.649,0.0,True,False,False,False,True,True,False,False
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA,Homeschool parent,3,2,MEDIUM,0.761,0.0,True,False,True,False,True,True,False,False
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA,Real estate agent,2,1,HIGH,0.095,0.0,False,False,False,False,True,True,False,False
+EVERBEE ESTIMATE — NOT ETSY TRANSACTION DATA,Engaged couple (wedding admin),2,0,HIGH,0.171,0.642,True,False,False,False,False,False,True,False

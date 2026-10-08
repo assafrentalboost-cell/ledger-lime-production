@@ -1,0 +1,102 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-08T08:08:42.003Z",
+ "tool": "view_listings",
+ "params": {
+  "listing_type": "download",
+  "shop_age_month_max": 24,
+  "transaction_sold_count_max": 15000,
+  "est_mo_sales_min": 100,
+  "time_range": "last_12_months",
+  "order_by": "est_mo_sales",
+  "order_direction": "desc",
+  "per_page": 100,
+  "title_include": "cleaning business"
+ },
+ "rows": [
+  {
+   "listing_id": "4295360565",
+   "title": "Minimalist Cleaning Service Contract Template, Simple Cleaning Business form, Editable Housekeeper Agreement, Printable Cleaning Service",
+   "title_href": "https://www.etsy.com/listing/4295360565/minimalist-cleaning-service-contract",
+   "shop_name": "CrafticaBlooms",
+   "price": "$3.50",
+   "est_mo_sales": "150",
+   "est_mo_revenue": "$525.00",
+   "trends": [
+    50,
+    0,
+    0,
+    0,
+    0,
+    0,
+    50,
+    0,
+    13,
+    12,
+    25,
+    0
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "18 Mo.",
+   "shop_age_month": "18 Mo.",
+   "transaction_sold_count": "6,500",
+   "main_category": "\u2014"
+  },
+  {
+   "listing_id": "4430080298",
+   "title": "Cleaning Services Flyer, House Cleaning, Office Cleaning, Housekeeping, Cleaning Service Business, Canva Editable Template",
+   "title_href": "https://www.etsy.com/listing/4430080298/cleaning-services-flyer-house-cleaning",
+   "shop_name": "ByCreativeAgency",
+   "price": "$3.00",
+   "est_mo_sales": "132",
+   "est_mo_revenue": "$396.00",
+   "trends": [
+    0,
+    0,
+    0,
+    44,
+    0,
+    44,
+    0,
+    0,
+    44,
+    0,
+    0,
+    0
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "10 Mo.",
+   "shop_age_month": "13 Mo.",
+   "transaction_sold_count": "5,585",
+   "main_category": "\u2014"
+  },
+  {
+   "listing_id": "4327776278",
+   "title": "Cleaning Service Contract, Customizable Cleaning Business Form Template, Printable Housekeeper Agreement, Residential Cleaning Edit in Canva",
+   "title_href": "https://www.etsy.com/listing/4327776278/cleaning-service-contract-customizable",
+   "shop_name": "VentureBloom",
+   "price": "$3.50",
+   "est_mo_sales": "115",
+   "est_mo_revenue": "$403.00",
+   "trends": [
+    23,
+    0,
+    0,
+    0,
+    0,
+    23,
+    32,
+    14,
+    0,
+    23,
+    0,
+    0
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "15 Mo.",
+   "shop_age_month": "15 Mo.",
+   "transaction_sold_count": "4,835",
+   "main_category": "\u2014"
+  }
+ ]
+}

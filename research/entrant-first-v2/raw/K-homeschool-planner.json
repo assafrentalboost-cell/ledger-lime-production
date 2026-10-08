@@ -1,0 +1,214 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-08T08:13:41.419Z",
+ "tool": "view_keyword",
+ "keyword": "homeschool planner",
+ "params": {
+  "per_page": 40,
+  "order_by": "new_volume",
+  "order_direction": "desc",
+  "competition_min": 100
+ },
+ "rows": [
+  {
+   "keyword": "home school planner",
+   "new_volume": "1,535",
+   "competition": "31,397"
+  },
+  {
+   "keyword": "home schooling planner",
+   "new_volume": "1,470",
+   "competition": "321"
+  },
+  {
+   "keyword": "printable home school planner",
+   "new_volume": "1,411",
+   "competition": "10,907"
+  },
+  {
+   "keyword": "printable planner home school",
+   "new_volume": "1,411",
+   "competition": "10,923"
+  },
+  {
+   "keyword": "homeschooling planner",
+   "new_volume": "740",
+   "competition": "2,182"
+  },
+  {
+   "keyword": "homeschoolers planner",
+   "new_volume": "740",
+   "competition": "318"
+  },
+  {
+   "keyword": "homeschooler planner",
+   "new_volume": "740",
+   "competition": "317"
+  },
+  {
+   "keyword": "homeschooling  planner",
+   "new_volume": "738",
+   "competition": "2,178"
+  },
+  {
+   "keyword": "homeschool planner",
+   "new_volume": "731",
+   "competition": "18,787"
+  },
+  {
+   "keyword": "planner homeschool",
+   "new_volume": "731",
+   "competition": "18,789"
+  },
+  {
+   "keyword": "planners homeschool",
+   "new_volume": "726",
+   "competition": "18,784"
+  },
+  {
+   "keyword": "homeschooler planners",
+   "new_volume": "710",
+   "competition": "313"
+  },
+  {
+   "keyword": "homeschooling planners",
+   "new_volume": "708",
+   "competition": "2,168"
+  },
+  {
+   "keyword": "kid homeschool planner",
+   "new_volume": "595",
+   "competition": "8,598"
+  },
+  {
+   "keyword": "homeschool planner kids",
+   "new_volume": "585",
+   "competition": "8,570"
+  },
+  {
+   "keyword": "kids homeschool planner",
+   "new_volume": "585",
+   "competition": "8,538"
+  },
+  {
+   "keyword": "homeschool kid planner",
+   "new_volume": "583",
+   "competition": "8,582"
+  },
+  {
+   "keyword": "planner printable homeschool",
+   "new_volume": "567",
+   "competition": "13,164"
+  },
+  {
+   "keyword": "planners printable homeschool",
+   "new_volume": "567",
+   "competition": "13,166"
+  },
+  {
+   "keyword": "homeschool printables planner",
+   "new_volume": "567",
+   "competition": "13,141"
+  },
+  {
+   "keyword": "printable homeschools planner",
+   "new_volume": "567",
+   "competition": "13,166"
+  },
+  {
+   "keyword": "printable homeschool planner",
+   "new_volume": "567",
+   "competition": "13,165"
+  },
+  {
+   "keyword": "printable homeschooling planner",
+   "new_volume": "566",
+   "competition": "1,055"
+  },
+  {
+   "keyword": "homeschool printable planner",
+   "new_volume": "566",
+   "competition": "13,088"
+  },
+  {
+   "keyword": "printable planner homeschool",
+   "new_volume": "558",
+   "competition": "13,114"
+  },
+  {
+   "keyword": "homeschoolers planner printable",
+   "new_volume": "558",
+   "competition": "103"
+  },
+  {
+   "keyword": "homeschool planners printables",
+   "new_volume": "558",
+   "competition": "13,114"
+  },
+  {
+   "keyword": "homeschooling printable planner",
+   "new_volume": "557",
+   "competition": "1,061"
+  },
+  {
+   "keyword": "kids planner homeschool",
+   "new_volume": "543",
+   "competition": "8,592"
+  },
+  {
+   "keyword": "homeschool planner calendar",
+   "new_volume": "540",
+   "competition": "11,244"
+  },
+  {
+   "keyword": "homeschool printable planners",
+   "new_volume": "537",
+   "competition": "13,461"
+  },
+  {
+   "keyword": "homeschool planners printable",
+   "new_volume": "528",
+   "competition": "13,170"
+  },
+  {
+   "keyword": "printable homeschooler planner",
+   "new_volume": "528",
+   "competition": "103"
+  },
+  {
+   "keyword": "homeschool planner printables",
+   "new_volume": "528",
+   "competition": "13,171"
+  },
+  {
+   "keyword": "printables homeschool planner",
+   "new_volume": "528",
+   "competition": "13,152"
+  },
+  {
+   "keyword": "printables homeschooling planner",
+   "new_volume": "527",
+   "competition": "1,000"
+  },
+  {
+   "keyword": "homeschool calendar planner",
+   "new_volume": "526",
+   "competition": "11,200"
+  },
+  {
+   "keyword": "homeschool school planner",
+   "new_volume": "501",
+   "competition": "11,326"
+  },
+  {
+   "keyword": "homeschool kids planner",
+   "new_volume": "499",
+   "competition": "10,237"
+  },
+  {
+   "keyword": "printable homeschool planners",
+   "new_volume": "486",
+   "competition": "15,679"
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "label": "EVERBEE ESTIMATE \u2014 NOT ETSY TRANSACTION DATA",
+ "captured": "2026-10-08T08:06:35.582Z",
+ "tool": "view_listings",
+ "params": {
+  "listing_type": "download",
+  "shop_age_month_max": 24,
+  "transaction_sold_count_max": 15000,
+  "est_mo_sales_min": 100,
+  "time_range": "last_12_months",
+  "order_by": "est_mo_sales",
+  "order_direction": "desc",
+  "per_page": 100,
+  "title_include": "breeder"
+ },
+ "rows": [
+  {
+   "listing_id": "4410841010",
+   "title": "Stud Dog Breeding Contract Template, Editable Dog Mating Agreement PDF, AKC/UKC Puppy Litter Service Form, Dog Breeder Legal Agreement",
+   "title_href": "https://www.etsy.com/listing/4410841010/stud-dog-breeding-contract-template",
+   "shop_name": "InstantDocsStudio",
+   "price": "$3.61",
+   "est_mo_sales": "125",
+   "est_mo_revenue": "$451.00",
+   "trends": [
+    0,
+    0,
+    0,
+    25,
+    0,
+    0,
+    25,
+    50,
+    0,
+    25,
+    0,
+    0
+   ],
+   "trends_has_data": true,
+   "listing_age_in_months": "11 Mo.",
+   "shop_age_month": "14 Mo.",
+   "transaction_sold_count": "2,490",
+   "main_category": "\u2014"
+  }
+ ]
+}

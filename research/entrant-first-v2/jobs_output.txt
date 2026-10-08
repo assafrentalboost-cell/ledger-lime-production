@@ -1,0 +1,93 @@
+
+### Nurse / nursing student: pool=60 units=18284 clean_shops=15 active_shops=11 all-in-one=0.027 VALID_JOBS=7 jobs>=2 selling=8 C/P/S=3/3/1 young=20 winners=20 (new 14) dup=0
+   [VC] Shift report / handoff sheet               sell= 7 clean= 3 act= 2 units= 2865 yW= 2/ 2 dup= 0 med$5.0 CORE | STRONG (documentation / handoff)
+   [VC] Patient assessment template                sell= 2 clean= 1 act= 0 units=  910 yW= 0/ 0 dup= 0 med$7.04 P | STRONG (documentation)
+   [VC] Career documents (resume / pivot)          sell= 3 clean= 2 act= 1 units= 1144 yW= 1/ 1 dup= 0 med$11.9 C | MEDIUM (career admin)
+   [V ] Unit recognition / staff appreciation      sell= 5 clean= 0 act= 1 units=  897 yW= 1/ 1 dup= 0 med$4.0 C | WEAK (gift)
+   [VC] School planner / clinical tracker          sell= 4 clean= 2 act= 1 units= 1494 yW= 2/ 2 dup= 0 med$2.8 C | STRONG (planning / records)
+   [V ] Drug / pharmacology reference              sell= 7 clean= 3 act= 4 units= 2054 yW= 0/ 0 dup= 0 med$10.0 P | WEAK (clinical content; liability)
+   [V ] Bedside quick-reference                    sell= 6 clean= 2 act= 0 units= 1771 yW= 1/ 1 dup= 0 med$8.0 P | WEAK (clinical content; liability)
+   [  ] Course / exam study notes                  sell= 9 clean= 5 act= 3 units= 5721 yW= 3/ 3 dup= 0 med$17.0 S | WEAK (education content)
+   credible=4 complementary=2 flood=LOW <$5=0.215 substitute=0.339
+      PASS  G1 >=2 clean entrants on core job
+      FAIL  G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)
+      PASS  G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)
+      FAIL  G4 >=4 complementary relationships among credible jobs
+      PASS  G5 not dominated by substitutes (substitute-job units < 50%)
+      PASS  G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)
+      PASS  G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)
+   => DOES NOT PASS
+
+### Esthetician / lash / nail / hair pro: pool=175 units=39063 clean_shops=16 active_shops=14 all-in-one=0.006 VALID_JOBS=5 jobs>=2 selling=7 C/P/S=2/2/0 young=97 winners=6 (new 4) dup=47
+   [  ] Contracts / client policy / consent        sell= 1 clean= 0 act= 0 units=  184 yW= 0/10 dup= 0 med$3.5 C | STRONG (admin / records)
+   [  ] Client aftercare cards                     sell= 2 clean= 0 act= 0 units=  577 yW= 0/ 6 dup= 0 med$5.54 C | MEDIUM (client documentation)
+   [VC] Training / course materials                sell= 5 clean= 2 act= 0 units=  945 yW= 0/ 1 dup= 0 med$15.92 C | MEDIUM
+   [  ] Service menu / price list                  sell=10 clean= 0 act= 0 units= 2084 yW= 0/ 6 dup= 0 med$4.5 P | MEDIUM (pricing)
+   [V ] Online booking site                        sell=18 clean= 5 act= 5 units= 7691 yW= 0/12 dup=11 med$5.0 CORE | WEAK (web design)
+   [V ] Brand identity (logo / card)               sell=18 clean= 4 act= 3 units= 5391 yW= 0/17 dup= 7 med$4.33 P | WEAK (design)
+   [V ] Social content (posts / reels)             sell=12 clean= 6 act= 3 units= 2952 yW= 2/14 dup=11 med$22.5 P | WEAK (design)
+   [V ] Promotion / booking flyers                 sell=46 clean= 2 act= 4 units=18045 yW= 3/ 9 dup= 4 med$2.99 C | WEAK (design)
+   credible=1 complementary=1 flood=HIGH <$5=0.649 substitute=0.0
+      PASS  G1 >=2 clean entrants on core job
+      FAIL  G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)
+      FAIL  G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)
+      FAIL  G4 >=4 complementary relationships among credible jobs
+      PASS  G5 not dominated by substitutes (substitute-job units < 50%)
+      PASS  G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)
+      FAIL  G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)
+   => DOES NOT PASS
+
+### Homeschool parent: pool=103 units=28775 clean_shops=21 active_shops=18 all-in-one=0.0 VALID_JOBS=5 jobs>=2 selling=5 C/P/S=4/0/0 young=95 winners=95 (new 62) dup=5
+   [VC] High-school transcript                     sell= 3 clean= 1 act= 1 units=  898 yW= 1/ 1 dup= 0 med$3.98 C | STRONG (records)
+   [VC] Diploma / graduation                       sell= 2 clean= 1 act= 0 units= 1003 yW= 0/ 0 dup= 0 med$3.5 C | MEDIUM (document)
+   [  ] Attendance / compliance / progress records sell= 1 clean= 0 act= 0 units=  133 yW= 3/ 3 dup= 0 med$4.8 P | STRONG (records / compliance)
+   [VC] Planner / lesson scheduling                sell=13 clean= 5 act= 6 units= 3266 yW=10/10 dup= 0 med$3.96 CORE | STRONG (planning)
+   [V ] Faith / Bible crafts                       sell=16 clean= 5 act= 3 units=14082 yW=35/35 dup= 0 med$4.28 C | WEAK (content)
+   [V ] Curriculum / worksheets                    sell=17 clean= 9 act= 7 units= 7460 yW=24/24 dup= 0 med$3.26 C | WEAK (education content)
+   credible=3 complementary=2 flood=MEDIUM <$5=0.761 substitute=0.0
+      PASS  G1 >=2 clean entrants on core job
+      FAIL  G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)
+      PASS  G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)
+      FAIL  G4 >=4 complementary relationships among credible jobs
+      PASS  G5 not dominated by substitutes (substitute-job units < 50%)
+      PASS  G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)
+      FAIL  G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)
+   => DOES NOT PASS
+
+### Real estate agent: pool=36 units=6462 clean_shops=4 active_shops=4 all-in-one=0.04 VALID_JOBS=3 jobs>=2 selling=5 C/P/S=1/1/0 young=92 winners=9 (new 4) dup=53
+   [  ] Licence exam prep                          sell= 1 clean= 1 act= 1 units=  228 yW= 0/ 0 dup= 0 med$18.99 C | WEAK (education)
+   [VC] Buyer consultation / guide                 sell= 4 clean= 1 act= 0 units= 1305 yW= 1/12 dup= 1 med$9.48 CORE | MEDIUM (client documentation)
+   [  ] Seller / listing presentation              sell= 1 clean= 0 act= 0 units=  576 yW= 0/ 9 dup= 3 med$10.48 C | MEDIUM
+   [VC] Open house kit                             sell= 4 clean= 0 act= 1 units=  580 yW= 0/10 dup= 2 med$6.14 C | MEDIUM (records)
+   [  ] Transaction / closing                      sell= 1 clean= 0 act= 0 units=  132 yW= 0/ 3 dup= 0 med$19.96 C | STRONG (workflow)
+   [  ] Prospecting mail / farming                 sell= 2 clean= 0 act= 0 units=  666 yW= 3/20 dup=23 med$9.98 P | WEAK (marketing design)
+   [  ] Listing marketing (flyer / sign)           sell= 2 clean= 0 act= 0 units=  327 yW= 0/ 4 dup= 0 med$10.96 P | WEAK (design)
+   [V ] Social content                             sell= 6 clean= 1 act= 1 units= 1805 yW= 2/21 dup=15 med$17.06 P | WEAK (design)
+   [  ] Client gifts                               sell= 1 clean= 1 act= 1 units=  189 yW= 0/ 2 dup= 0 med$35.0 C | WEAK (gift)
+   credible=2 complementary=1 flood=HIGH <$5=0.095 substitute=0.0
+      FAIL  G1 >=2 clean entrants on core job
+      FAIL  G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)
+      FAIL  G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)
+      FAIL  G4 >=4 complementary relationships among credible jobs
+      PASS  G5 not dominated by substitutes (substitute-job units < 50%)
+      PASS  G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)
+      FAIL  G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)
+   => DOES NOT PASS
+
+### Engaged couple (wedding admin): pool=110 units=54616 clean_shops=54 active_shops=49 all-in-one=0.103 VALID_JOBS=2 jobs>=2 selling=4 C/P/S=0/1/2 young=94 winners=5 (new 2) dup=89
+   [  ] Budget / vendor payments                   sell= 5 clean= 5 act= 3 units= 5171 yW= 2/41 dup=63 med$13.61 S | STRONG (money)
+   [  ] Guest list / RSVP / seating                sell=14 clean= 5 act= 9 units= 9517 yW= 2/ 4 dup= 0 med$19.0 S | STRONG (records)
+   [VC] Day-of timeline / binder                   sell= 7 clean= 7 act= 4 units= 3218 yW= 1/13 dup= 2 med$9.76 P | STRONG (scheduling)
+   [VC] Master planner / binder                    sell=10 clean= 9 act= 4 units= 4978 yW= 0/36 dup= 6 med$10.22 CORE | STRONG (planning)
+   [  ] Bridesmaid / bachelorette admin            sell= 0 clean= 0 act= 0 units=    0 yW= 0/ 0 dup= 0 med$None C | MEDIUM
+   credible=2 complementary=0 flood=HIGH <$5=0.171 substitute=0.642
+      PASS  G1 >=2 clean entrants on core job
+      FAIL  G2 >=5 credible same-buyer jobs (valid AND brand fit not WEAK)
+      FAIL  G3 >=3 credible jobs with repeated paid evidence (>=2 selling shops)
+      FAIL  G4 >=4 complementary relationships among credible jobs
+      FAIL  G5 not dominated by substitutes (substitute-job units < 50%)
+      FAIL  G6 flood survivable (not HIGH, or HIGH with young winners from >=3 new shops)
+      PASS  G7 price credible (<$5 unit share < 50% AND >=2 credible jobs with median >= $7)
+   => DOES NOT PASS
+
+PROVISIONAL MARKET = NONE
