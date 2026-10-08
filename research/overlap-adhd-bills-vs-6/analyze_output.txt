@@ -1,0 +1,4 @@
+ADHD-titled bill listings: 30 | with >=10 units/12mo: 0 | max units: 6 | total units: 9
+  of which <=6 mo old: 26
+Generic 'bill tracker' listings (>=30 units/12mo): 40 | units 6069 | median price $3.75 | unit-weighted price $4.71 | share of units < $5: 76% | >= $10: 4%
+Young-shop (<=24mo) generic bill sellers >=100 units: [('QRTLLC', '$3.75', '147'), ('PrioriDesignStudio', '$2.82', '420'), ('TemplateMountain', '$9.99', '432'), ('BrightFoxCreation', '$3.98', '414'), ('QRTLLC', '$3.75', '1,041'), ('PlanolistaCo', '$17.79', '220')]
